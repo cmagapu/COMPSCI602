@@ -106,8 +106,14 @@ The ML baselines achieve competitive performance on the operon prediction task, 
 ## 📚 References
 
 - Janga, S. C., et al. (2006). "Transcriptional regulation constrains the organization of genes on eukaryotic chromosomes." *PNAS*. [PMC1557821](https://pmc.ncbi.nlm.nih.gov/articles/PMC1557821/)
-- DGEB: Diverse Genomic Embedding Benchmark - [GitHub](https://github.com/TattaBio/DGEB)
-- COG Database - [NCBI](https://www.ncbi.nlm.nih.gov/research/cog/)
+- West-Roberts, T., Kundaje, A., & Zou, J. (2024). "DGEB: A Diverse Genomic Embedding Benchmark for functional genomics tasks." *bioRxiv*. [doi:10.1101/2024.01.10.575096](https://www.biorxiv.org/content/10.1101/2024.01.10.575096v1)
+- Krishnakumar, R. & Ruffing, A. M. (2022). "OperonSEQer: A set of machine-learning algorithms with threshold voting for detection of operon pairs using short-read RNA-sequencing data." *PLoS Comput Biol*, 18(1), e1009731. [doi:10.1371/journal.pcbi.1009731](https://doi.org/10.1371/journal.pcbi.1009731)
+- Karaji, R. & Peña-Castillo, L. (2025). "OpDetect: A convolutional and recurrent neural network classifier for precise and sensitive operon detection from RNA-seq data." *PLoS One*, 20(8), e0329355. [doi:10.1371/journal.pone.0329355](https://doi.org/10.1371/journal.pone.0329355)
+- Moreno-Hagelsieb, G. & Collado-Vides, J. (2002). "A comparative genomics approach to predict operons in prokaryotes." *Bioinformatics*, 18(suppl 1), S329–S336.
+- Kanhere, A., Janga, S. C., & Moreno-Hagelsieb, G. (2006). "The distinctive signatures of promoter regions and operon junctions across prokaryotes." *Nucleic Acids Research*, 34(14), 3980–3987. [doi:10.1093/nar/gkl563](https://doi.org/10.1093/nar/gkl563)
+- Galperin, M. Y., et al. (2021). "COG database update: focus on microbial diversity, model organisms, and widespread pathogens." *Nucleic Acids Research*, 49(D1), D274–D281. [doi:10.1093/nar/gkaa1018](https://doi.org/10.1093/nar/gkaa1018)
+- Cantalapiedra, C. P., et al. (2021). "eggNOG-mapper v2: Functional Annotation, Orthology Assignments, and Domain Prediction at the Metagenomic Scale." *Molecular Biology and Evolution*, 38(12), 5825–5829. [doi:10.1093/molbev/msab293](https://doi.org/10.1093/molbev/msab293)
+- Sayers, E. W., et al. (2025). "Database resources of the National Center for Biotechnology Information in 2025." *Nucleic Acids Res*, 53(D1), D20–D29. [doi:10.1093/nar/gkae979](https://doi.org/10.1093/nar/gkae979)
 
 ## 👤 Author
 
