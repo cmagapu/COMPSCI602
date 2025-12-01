@@ -1,0 +1,233 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/PuuR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PuuR_753                 1.0000     40  PuuR_754                 1.0000     40  
+PuuR_755                 1.0000     40  PuuR_756                 1.0000     40  
+PuuR_757                 1.0000     40  PuuR_758                 1.0000     40  
+PuuR_759                 1.0000     40  PuuR_760                 1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/PuuR.fasta -oc meme_pwms/PuuR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=        8    maxsites=        8    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             320    N=               8
+sample: seed=            0    hsfrac=          0
+        searchsize=    320    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.325 C 0.175 G 0.175 T 0.325 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.324 C 0.176 G 0.176 T 0.324 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGKWMAWWATWWTKWMCA MEME-1	width =  18  sites =   8  llr = 104  E-value = 2.2e-008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::54964a:641:4419
+pos.-specific     C  1::15::::::::1:69:
+probability       G  :96:1::::::::51::1
+matrix            T  9144:146:a46945:::
+
+         bits    2.5                   
+                 2.3                   
+                 2.0                   
+                 1.8  *              * 
+Relative         1.5  *      **      * 
+Entropy          1.3 ***     **     ***
+(18.8 bits)      1.0 ***  *  **  *  ***
+                 0.8 *** ********** ***
+                 0.5 *** ********** ***
+                 0.3 ******************
+                 0.0 ------------------
+
+Multilevel           TGGACAATATATTGTCCA
+consensus              TTA TA  TA TAA  
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+PuuR_760                     12  5.03e-08 ATAACCGGAT TGTTCATTATATTTTCCA TGCTCAATCT
+PuuR_756                     12  5.03e-08 AGATTGAGCA TGGAAAATATAATGAACA ATCCGGTTAT
+PuuR_757                     12  2.71e-07 ATTCGAATGG TGGTCATTATATTTTACG CTTTGATAAC
+PuuR_753                     12  2.71e-07 GTTATCAAAG CGTAAAATATAATGACCA CCATTCGAAT
+PuuR_758                     12  9.28e-07 ATGACCTTTA TGTTCAATATTTTTTCAA TCTAGCAGTG
+PuuR_754                     12  9.28e-07 CACTGCTAGA TTGAAAAAATATTGAACA TAAAGGTCAT
+PuuR_759                     12  1.14e-06 TCTCACAAAG TGGACTAAATTATCGCCA TTACTGCGCT
+PuuR_755                     12  1.14e-06 AGCGCAGTAA TGGCGATAATTTAGTCCA CTTTGTGAGA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PuuR_760                            5e-08  11_[+1]_11
+PuuR_756                            5e-08  11_[+1]_11
+PuuR_757                          2.7e-07  11_[+1]_11
+PuuR_753                          2.7e-07  11_[+1]_11
+PuuR_758                          9.3e-07  11_[+1]_11
+PuuR_754                          9.3e-07  11_[+1]_11
+PuuR_759                          1.1e-06  11_[+1]_11
+PuuR_755                          1.1e-06  11_[+1]_11
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGKWMAWWATWWTKWMCA width=18 seqs=8
+PuuR_760                 (   12) TGTTCATTATATTTTCCA  1 
+PuuR_756                 (   12) TGGAAAATATAATGAACA  1 
+PuuR_757                 (   12) TGGTCATTATATTTTACG  1 
+PuuR_753                 (   12) CGTAAAATATAATGACCA  1 
+PuuR_758                 (   12) TGTTCAATATTTTTTCAA  1 
+PuuR_754                 (   12) TTGAAAAAATATTGAACA  1 
+PuuR_759                 (   12) TGGACTAAATTATCGCCA  1 
+PuuR_755                 (   12) TGGCGATAATTTAGTCCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 184 bayes= 4.45943 E= 2.2e-008 
+  -965    -49   -965    143 
+  -965   -965    231   -137 
+  -965   -965    183     21 
+    62    -49   -965     21 
+    21    151    -49   -965 
+   143   -965   -965   -137 
+    95   -965   -965     21 
+    21   -965   -965     95 
+   162   -965   -965   -965 
+  -965   -965   -965    162 
+    95   -965   -965     21 
+    21   -965   -965     95 
+  -137   -965   -965    143 
+  -965    -49    151     21 
+    21   -965    -49     62 
+    21    183   -965   -965 
+  -137    231   -965   -965 
+   143   -965    -49   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 8 E= 2.2e-008 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  0.875000  0.125000 
+ 0.000000  0.000000  0.625000  0.375000 
+ 0.500000  0.125000  0.000000  0.375000 
+ 0.375000  0.500000  0.125000  0.000000 
+ 0.875000  0.000000  0.000000  0.125000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 0.375000  0.000000  0.000000  0.625000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.625000  0.000000  0.000000  0.375000 
+ 0.375000  0.000000  0.000000  0.625000 
+ 0.125000  0.000000  0.000000  0.875000 
+ 0.000000  0.125000  0.500000  0.375000 
+ 0.375000  0.000000  0.125000  0.500000 
+ 0.375000  0.625000  0.000000  0.000000 
+ 0.125000  0.875000  0.000000  0.000000 
+ 0.875000  0.000000  0.125000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGKWMAWWATWWTKWMCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TG[GT][AT][CA]A[AT][TA]AT[AT][TA]T[GT][TA][CA]CA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.11 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PuuR_753                         6.24e-06  11_[+1(2.71e-07)]_11
+PuuR_754                         2.13e-05  11_[+1(9.28e-07)]_11
+PuuR_755                         2.62e-05  11_[+1(1.14e-06)]_11
+PuuR_756                         1.16e-06  11_[+1(5.03e-08)]_11
+PuuR_757                         6.24e-06  11_[+1(2.71e-07)]_11
+PuuR_758                         2.13e-05  11_[+1(9.28e-07)]_11
+PuuR_759                         2.62e-05  11_[+1(1.14e-06)]_11
+PuuR_760                         1.16e-06  11_[+1(5.03e-08)]_11
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: e26f4f2aa41d
+
+********************************************************************************

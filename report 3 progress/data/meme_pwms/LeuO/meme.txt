@@ -1,0 +1,272 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/LeuO.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LeuO_290                 1.0000     41  LeuO_291                 1.0000     41  
+LeuO_622                 1.0000     41  LeuO_623                 1.0000     41  
+LeuO_624                 1.0000     41  LeuO_625                 1.0000     41  
+LeuO_626                 1.0000     41  LeuO_627                 1.0000     41  
+LeuO_628                 1.0000     41  LeuO_629                 1.0000     41  
+LeuO_630                 1.0000     41  LeuO_631                 1.0000     41  
+LeuO_632                 1.0000     41  LeuO_1283                1.0000     53  
+LeuO_1284                1.0000     53  LeuO_1285                1.0000     53  
+LeuO_5094                1.0000     41  LeuO_5109                1.0000     41  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/LeuO.fasta -oc meme_pwms/LeuO -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       18    maxsites=       18    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             774    N=              18
+sample: seed=            0    hsfrac=          0
+        searchsize=    774    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.363 C 0.0801 G 0.143 T 0.413 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.362 C 0.081 G 0.144 T 0.413 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATTCATKDTATGWAT MEME-1	width =  15  sites =  18  llr = 141  E-value = 4.1e-010
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  9:12811327225a:
+pos.-specific     C  1:26:311::1::::
+probability       G  :::22:3322262::
+matrix            T  :a7::64361523:a
+
+         bits    3.6                
+                 3.3                
+                 2.9                
+                 2.5                
+Relative         2.2                
+Entropy          1.8    *           
+(11.3 bits)      1.5 ** *         **
+                 1.1 ** **        **
+                 0.7 ******     * **
+                 0.4 ******* ** * **
+                 0.0 ---------------
+
+Multilevel           ATTCATTATATGAAT
+consensus               AGCGTAGAAT  
+sequence                    G  GT   
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+LeuO_291                     14  1.12e-06 GAGATTTTAT ATTCACAGTATGAAT ATTTTATGTA
+LeuO_5094                    14  3.76e-06 ATGATTGAGT ATTCGCGGTAGTTAT GATTAGATTG
+LeuO_623                     14  3.76e-06 ATGATTGAGT ATTCGCGGTAGTTAT GATTAGATTG
+LeuO_622                     14  3.76e-06 ATGATTGAGT ATTCGCGGTAGTTAT GATTAGATTG
+LeuO_1285                    20  7.54e-06 ATCCTTAAAT ATTCATTAAATGAAT ATTAGCCGCA
+LeuO_626                     14  2.16e-05 GCGACAAATA ATTCACCAGACAAAT CCCAATAACT
+LeuO_624                     14  2.47e-05 ATGTAATAAA ATTCATGGTAATTAT TATAACTAAA
+LeuO_628                     14  5.08e-05 AGCACATTTA ATCCATTTTGTAGAT GATTGAGTAT
+LeuO_627                     14  5.08e-05 AGCACATTTA ATCCATTTTGTAGAT GATTGAGTAT
+LeuO_632                     14  7.01e-05 TTTTTTTGAT ATTGATTTGGTGAAT ATTATTGATC
+LeuO_631                     14  7.01e-05 TTTTTTTGAT ATTGATTTGGTGAAT ATTATTGATC
+LeuO_630                     14  7.01e-05 TTATTGATCA ATTAATGTTAAGAAT TAATGCATTA
+LeuO_629                     14  7.01e-05 TTATTGATCA ATTAATGTTAAGAAT TAATGCATTA
+LeuO_1283                     7  2.32e-04     TTAAAT ATCCATTAAAAATAT TTATTTGGTT
+LeuO_1284                    20  5.08e-04 CGATATTAAT ATACAAAATATGAAT ATAAAAAACC
+LeuO_290                     14  6.19e-04 GGTTAATTGT ATTAAACCAATGAAT ATATTTTTGC
+LeuO_5109                     6  9.40e-04      AATAA CTTAATTATTGGGAT TTGTTATATA
+LeuO_625                     27  2.10e-03 TAATATATGT ATAGGTTAATTGTAT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LeuO_291                          1.1e-06  13_[+1]_13
+LeuO_5094                         3.8e-06  13_[+1]_13
+LeuO_623                          3.8e-06  13_[+1]_13
+LeuO_622                          3.8e-06  13_[+1]_13
+LeuO_1285                         7.5e-06  19_[+1]_19
+LeuO_626                          2.2e-05  13_[+1]_13
+LeuO_624                          2.5e-05  13_[+1]_13
+LeuO_628                          5.1e-05  13_[+1]_13
+LeuO_627                          5.1e-05  13_[+1]_13
+LeuO_632                            7e-05  13_[+1]_13
+LeuO_631                            7e-05  13_[+1]_13
+LeuO_630                            7e-05  13_[+1]_13
+LeuO_629                            7e-05  13_[+1]_13
+LeuO_1283                         0.00023  6_[+1]_32
+LeuO_1284                         0.00051  19_[+1]_19
+LeuO_290                          0.00062  13_[+1]_13
+LeuO_5109                         0.00094  5_[+1]_21
+LeuO_625                           0.0021  26_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATTCATKDTATGWAT width=15 seqs=18
+LeuO_291                 (   14) ATTCACAGTATGAAT  1 
+LeuO_5094                (   14) ATTCGCGGTAGTTAT  1 
+LeuO_623                 (   14) ATTCGCGGTAGTTAT  1 
+LeuO_622                 (   14) ATTCGCGGTAGTTAT  1 
+LeuO_1285                (   20) ATTCATTAAATGAAT  1 
+LeuO_626                 (   14) ATTCACCAGACAAAT  1 
+LeuO_624                 (   14) ATTCATGGTAATTAT  1 
+LeuO_628                 (   14) ATCCATTTTGTAGAT  1 
+LeuO_627                 (   14) ATCCATTTTGTAGAT  1 
+LeuO_632                 (   14) ATTGATTTGGTGAAT  1 
+LeuO_631                 (   14) ATTGATTTGGTGAAT  1 
+LeuO_630                 (   14) ATTAATGTTAAGAAT  1 
+LeuO_629                 (   14) ATTAATGTTAAGAAT  1 
+LeuO_1283                (    7) ATCCATTAAAAATAT  1 
+LeuO_1284                (   20) ATACAAAATATGAAT  1 
+LeuO_290                 (   14) ATTAAACCAATGAAT  1 
+LeuO_5109                (    6) CTTAATTATTGGGAT  1 
+LeuO_625                 (   27) ATAGGTTAATTGTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 522 bayes= 4.80735 E= 4.1e-010 
+   138    -54  -1081  -1081 
+ -1081  -1081  -1081    128 
+  -170    104  -1081     81 
+   -71    292     21  -1081 
+   110  -1081     63  -1081 
+  -170    178  -1081     57 
+  -170     46    121     11 
+   -12    -54     95    -31 
+   -71  -1081     21     57 
+    88  -1081     63   -189 
+   -71    -54     63     28 
+   -71  -1081    195    -89 
+    46  -1081     21    -31 
+   146  -1081  -1081  -1081 
+ -1081  -1081  -1081    128 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 18 E= 4.1e-010 
+ 0.944444  0.055556  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.111111  0.166667  0.000000  0.722222 
+ 0.222222  0.611111  0.166667  0.000000 
+ 0.777778  0.000000  0.222222  0.000000 
+ 0.111111  0.277778  0.000000  0.611111 
+ 0.111111  0.111111  0.333333  0.444444 
+ 0.333333  0.055556  0.277778  0.333333 
+ 0.222222  0.000000  0.166667  0.611111 
+ 0.666667  0.000000  0.222222  0.111111 
+ 0.222222  0.055556  0.222222  0.500000 
+ 0.222222  0.000000  0.555556  0.222222 
+ 0.500000  0.000000  0.166667  0.333333 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATTCATKDTATGWAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+ATT[CA][AG][TC][TG][ATG][TA][AG][TAG][GAT][AT]AT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LeuO_290                         1.66e-02  41
+LeuO_291                         3.02e-05  13_[+1(1.12e-06)]_13
+LeuO_622                         1.01e-04  13_[+1(3.76e-06)]_13
+LeuO_623                         1.01e-04  13_[+1(3.76e-06)]_13
+LeuO_624                         6.66e-04  13_[+1(2.47e-05)]_13
+LeuO_625                         5.52e-02  41
+LeuO_626                         5.84e-04  13_[+1(2.16e-05)]_13
+LeuO_627                         1.37e-03  13_[+1(5.08e-05)]_13
+LeuO_628                         1.37e-03  13_[+1(5.08e-05)]_13
+LeuO_629                         1.89e-03  13_[+1(7.01e-05)]_13
+LeuO_630                         1.89e-03  13_[+1(7.01e-05)]_13
+LeuO_631                         1.89e-03  13_[+1(7.01e-05)]_13
+LeuO_632                         1.89e-03  13_[+1(7.01e-05)]_13
+LeuO_1283                        9.02e-03  53
+LeuO_1284                        1.96e-02  53
+LeuO_1285                        2.94e-04  19_[+1(7.54e-06)]_19
+LeuO_5094                        1.01e-04  13_[+1(3.76e-06)]_13
+LeuO_5109                        2.51e-02  41
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: c4ad5ade15c2
+
+********************************************************************************

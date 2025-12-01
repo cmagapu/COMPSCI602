@@ -1,0 +1,260 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/ExuR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ExuR_29                  1.0000     38  ExuR_331                 1.0000     38  
+ExuR_667                 1.0000     38  ExuR_668                 1.0000     38  
+ExuR_669                 1.0000     38  ExuR_921                 1.0000     38  
+ExuR_922                 1.0000     38  ExuR_932                 1.0000     38  
+ExuR_933                 1.0000     38  ExuR_3301                1.0000     38  
+ExuR_3303                1.0000     38  ExuR_4068                1.0000     38  
+ExuR_4473                1.0000     38  ExuR_4516                1.0000     38  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/ExuR.fasta -oc meme_pwms/ExuR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       14    maxsites=       14    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             532    N=              14
+sample: seed=            0    hsfrac=          0
+        searchsize=    532    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.291 C 0.165 G 0.199 T 0.344 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.291 C 0.166 G 0.2 T 0.343 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAHKTGKTTWACCAVTTT MEME-1	width =  18  sites =  14  llr = 147  E-value = 1.6e-015
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  794:111:24931942:1
+pos.-specific     C  :131:::12::67:41:1
+probability       G  21:6:86:111:::221:
+matrix            T  1:44913954:1111598
+
+         bits    2.6                   
+                 2.3                   
+                 2.1                   
+                 1.8                   
+Relative         1.6                   
+Entropy          1.3     ** *  * **  * 
+(15.2 bits)      1.0  *  ** *  ****  * 
+                 0.8 ** *** *  ****  **
+                 0.5 ** *****  ****  **
+                 0.3 *************** **
+                 0.0 ------------------
+
+Multilevel           AAAGTGGTTAACCAATTT
+consensus            G TT  T AT A  CA  
+sequence               C     C     GG  
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+ExuR_3303                    11  8.11e-09 AAATTCTTGT GATGTGGTTAACCAATTT CAGAATTCGG
+ExuR_331                     11  1.13e-08 ATTTGAATGC AATGTGTTCTACCACTTT ATGATCCAGG
+ExuR_921                     11  8.40e-07 TTTACGCCAC AATGTGATTAACCAGGTC ATTGATGATA
+ExuR_932                     11  1.40e-06 TAAACTCGCA AAAGTGGTATAACAAATA TAGTCTGCCG
+ExuR_4473                    11  1.55e-06 ATCAAACTGA TATTTGGTTGACCAGTTT TCGTTTTTTT
+ExuR_3301                    11  2.50e-06 TATGTTATGT AAATTGGTCAACCATTGT TGCGATGAAT
+ExuR_922                     11  4.31e-06 TATCATCAAT GACCTGGTTAATCACATT GTGGCGTAAA
+ExuR_668                     11  5.13e-06 CGCGGCCTGC AGCGAGATTTACCACTTT GAGAGTAATT
+ExuR_4516                    12  8.49e-06 GCAGAAAGAT AACTTGTCATACAACTTT AAAAGGTGA 
+ExuR_4068                    10  9.21e-06  TCACCTTTT AAAGTTGTATGACAAGTT ATCTTTCTGC
+ExuR_667                     11  1.36e-05 CTTTGAGAGT AATTTTTTTAACTACGTT TATTGATCTA
+ExuR_29                      11  1.36e-05 TAGATCAATA AACGTAGTTAAAAAAATT ACTCTCAAAG
+ExuR_669                     11  7.98e-05 CGGACTCTGG AAATTGGTGTGATAACTT TGTCAGCATC
+ExuR_933                     10  1.07e-04  GCAGTTCTG GCAGTGTTCGACCTGTTA GGTGCGCTGG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ExuR_3303                         8.1e-09  10_[+1]_10
+ExuR_331                          1.1e-08  10_[+1]_10
+ExuR_921                          8.4e-07  10_[+1]_10
+ExuR_932                          1.4e-06  10_[+1]_10
+ExuR_4473                         1.5e-06  10_[+1]_10
+ExuR_3301                         2.5e-06  10_[+1]_10
+ExuR_922                          4.3e-06  10_[+1]_10
+ExuR_668                          5.1e-06  10_[+1]_10
+ExuR_4516                         8.5e-06  11_[+1]_9
+ExuR_4068                         9.2e-06  9_[+1]_11
+ExuR_667                          1.4e-05  10_[+1]_10
+ExuR_29                           1.4e-05  10_[+1]_10
+ExuR_669                            8e-05  10_[+1]_10
+ExuR_933                          0.00011  9_[+1]_11
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAHKTGKTTWACCAVTTT width=18 seqs=14
+ExuR_3303                (   11) GATGTGGTTAACCAATTT  1 
+ExuR_331                 (   11) AATGTGTTCTACCACTTT  1 
+ExuR_921                 (   11) AATGTGATTAACCAGGTC  1 
+ExuR_932                 (   11) AAAGTGGTATAACAAATA  1 
+ExuR_4473                (   11) TATTTGGTTGACCAGTTT  1 
+ExuR_3301                (   11) AAATTGGTCAACCATTGT  1 
+ExuR_922                 (   11) GACCTGGTTAATCACATT  1 
+ExuR_668                 (   11) AGCGAGATTTACCACTTT  1 
+ExuR_4516                (   12) AACTTGTCATACAACTTT  1 
+ExuR_4068                (   10) AAAGTTGTATGACAAGTT  1 
+ExuR_667                 (   11) AATTTTTTTAACTACGTT  1 
+ExuR_29                  (   11) AACGTAGTTAAAAAAATT  1 
+ExuR_669                 (   11) AAATTGGTGTGATAACTT  1 
+ExuR_933                 (   10) GCAGTGTTCGACCTGTTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 294 bayes= 4.32193 E= 1.6e-015 
+   129  -1045     10   -226 
+   156   -122   -148  -1045 
+    30     78  -1045      6 
+ -1045   -122    152      6 
+  -202  -1045  -1045    143 
+  -202  -1045    198   -126 
+  -103  -1045    152    -26 
+ -1045   -122  -1045    143 
+   -44     37   -148     54 
+    56  -1045    -48     32 
+   156  -1045    -48  -1045 
+    -3    195  -1045   -226 
+  -103    210  -1045   -126 
+   167  -1045  -1045   -226 
+    30    110     10   -226 
+   -44   -122     10     54 
+ -1045  -1045   -148    143 
+  -103   -122  -1045    119 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 14 E= 1.6e-015 
+ 0.714286  0.000000  0.214286  0.071429 
+ 0.857143  0.071429  0.071429  0.000000 
+ 0.357143  0.285714  0.000000  0.357143 
+ 0.000000  0.071429  0.571429  0.357143 
+ 0.071429  0.000000  0.000000  0.928571 
+ 0.071429  0.000000  0.785714  0.142857 
+ 0.142857  0.000000  0.571429  0.285714 
+ 0.000000  0.071429  0.000000  0.928571 
+ 0.214286  0.214286  0.071429  0.500000 
+ 0.428571  0.000000  0.142857  0.428571 
+ 0.857143  0.000000  0.142857  0.000000 
+ 0.285714  0.642857  0.000000  0.071429 
+ 0.142857  0.714286  0.000000  0.142857 
+ 0.928571  0.000000  0.000000  0.071429 
+ 0.357143  0.357143  0.214286  0.071429 
+ 0.214286  0.071429  0.214286  0.500000 
+ 0.000000  0.000000  0.071429  0.928571 
+ 0.142857  0.071429  0.000000  0.785714 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAHKTGKTTWACCAVTTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AG]A[ATC][GT]TG[GT]T[TAC][AT]A[CA]CA[ACG][TAG]TT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ExuR_29                          2.87e-04  10_[+1(1.36e-05)]_10
+ExuR_331                         2.37e-07  10_[+1(1.13e-08)]_10
+ExuR_667                         2.87e-04  10_[+1(1.36e-05)]_10
+ExuR_668                         1.08e-04  10_[+1(5.13e-06)]_10
+ExuR_669                         1.67e-03  10_[+1(7.98e-05)]_10
+ExuR_921                         1.76e-05  10_[+1(8.40e-07)]_10
+ExuR_922                         9.05e-05  10_[+1(4.31e-06)]_10
+ExuR_932                         2.94e-05  10_[+1(1.40e-06)]_10
+ExuR_933                         2.24e-03  38
+ExuR_3301                        5.25e-05  10_[+1(2.50e-06)]_10
+ExuR_3303                        1.70e-07  10_[+1(8.11e-09)]_10
+ExuR_4068                        1.93e-04  9_[+1(9.21e-06)]_11
+ExuR_4473                        3.25e-05  10_[+1(1.55e-06)]_10
+ExuR_4516                        1.78e-04  11_[+1(8.49e-06)]_9
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 2ebcaf9dffe9
+
+********************************************************************************

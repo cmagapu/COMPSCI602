@@ -1,0 +1,285 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/IscR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+IscR_224                 1.0000     45  IscR_738                 1.0000     45  
+IscR_1074                1.0000     45  IscR_2083                1.0000     45  
+IscR_2089                1.0000     45  IscR_3635                1.0000     45  
+IscR_4632                1.0000     45  IscR_4688                1.0000     45  
+IscR_4689                1.0000     45  IscR_4804                1.0000     45  
+IscR_4818                1.0000     45  IscR_4822                1.0000     45  
+IscR_4823                1.0000     45  IscR_4963                1.0000     45  
+IscR_4964                1.0000     45  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/IscR.fasta -oc meme_pwms/IscR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       15    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             675    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    675    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.335 C 0.163 G 0.19 T 0.313 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.334 C 0.163 G 0.19 T 0.312 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1	width =  28  sites =  15  llr = 172  E-value = 4.8e-012
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  959311536:6533:5:32231151251
+pos.-specific     C  ::12772436:11:1:323:11:1:112
+probability       G  :::11:2:::331:153215641:14:5
+matrix            T  15:4111314115771434314848342
+
+         bits    2.6                             
+                 2.4                             
+                 2.1                             
+                 1.8                             
+Relative         1.6                             
+Entropy          1.3   *  *   *                  
+(16.5 bits)      1.0 * * **   *                  
+                 0.8 * * **   *   ***    * * *   
+                 0.5 *** ** ****  ****  ** * * **
+                 0.3 *** *************  *********
+                 0.0 ----------------------------
+
+Multilevel           AAATCCACACAATTTATTTGGGTATGAG
+consensus             T A  CACTGGAA GGACTAT T TTC
+sequence                C  GT        CCAA     A T
+                                      G          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+IscR_3635                    12  6.17e-12 GCTAAAAGAT AAATCCACACAGTTTGTATTGTTTTGTG CAAAAG    
+IscR_2089                    12  6.17e-12 GCTAAAAGAT AAATCCACACAGTTTGTATTGTTTTGTG CAAAAG    
+IscR_2083                     9  6.17e-12   TAAAAGAT AAATCCACACAGTTTGTATTGTTTTGTG CAAAAGTTT 
+IscR_738                      9  6.17e-12   TAAAAGAT AAATCCACACAGTTTGTATTGTTTTGTG CAAAAGTTT 
+IscR_224                     11  3.45e-07 TAAATTTAGC AAATCAATACACTTCAGGGGGGTATTAT TGTAGAG   
+IscR_4823                    11  5.70e-07 TGGGCGTATT ATAACCAACTAAAATAGTCAACTATTAG GCCATTA   
+IscR_4818                    11  1.01e-06 TGGTTCAGCG ATAACCCTTCTGTTTGCTGGTGTTTAAG ACGAGAG   
+IscR_4822                    11  1.75e-06 GCCAGCGAGA ATACTTGAACGAAATACCAGGGTATTAG ATAATGG   
+IscR_4689                    11  1.92e-06 AGTCAAGTAA ATAGTTGACCAATTTACTCGGGAATGTC AGACTTG   
+IscR_1074                    11  2.83e-05 CATCTAGCAT AAAGCCTTATTATTGATGAGGCTATCAT GCGCGTA   
+IscR_4688                    11  3.68e-05 TGAAGGTTAA ATACCCGACTAAATCAGTCAAGTAAATA GTTGACC   
+IscR_4963                    14  7.21e-05 GCGTGCCTGT TAACCCACACATCAGGGTCTATGCTTAT TAAA      
+IscR_4632                     9  8.57e-05   TTTTACGG TAAAGCCCCTGCGTTTGCTGGGTTGAAC TGATAATCA 
+IscR_4964                    18  2.54e-04 AATAACCATT ATCTAACAATGAGATACCTAATTCTTAG           
+IscR_4804                    11  3.96e-04 AAATATATTT ATAACCATTTGAAATGTGAGCAAAAGCC CGTTTTT   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IscR_3635                         6.2e-12  11_[+1]_6
+IscR_2089                         6.2e-12  11_[+1]_6
+IscR_2083                         6.2e-12  8_[+1]_9
+IscR_738                          6.2e-12  8_[+1]_9
+IscR_224                          3.4e-07  10_[+1]_7
+IscR_4823                         5.7e-07  10_[+1]_7
+IscR_4818                           1e-06  10_[+1]_7
+IscR_4822                         1.8e-06  10_[+1]_7
+IscR_4689                         1.9e-06  10_[+1]_7
+IscR_1074                         2.8e-05  10_[+1]_7
+IscR_4688                         3.7e-05  10_[+1]_7
+IscR_4963                         7.2e-05  13_[+1]_4
+IscR_4632                         8.6e-05  8_[+1]_9
+IscR_4964                         0.00025  17_[+1]
+IscR_4804                          0.0004  10_[+1]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWAHCCAHAYARWWTRBNHKGKTWTDWG width=28 seqs=15
+IscR_3635                (   12) AAATCCACACAGTTTGTATTGTTTTGTG  1 
+IscR_2089                (   12) AAATCCACACAGTTTGTATTGTTTTGTG  1 
+IscR_2083                (    9) AAATCCACACAGTTTGTATTGTTTTGTG  1 
+IscR_738                 (    9) AAATCCACACAGTTTGTATTGTTTTGTG  1 
+IscR_224                 (   11) AAATCAATACACTTCAGGGGGGTATTAT  1 
+IscR_4823                (   11) ATAACCAACTAAAATAGTCAACTATTAG  1 
+IscR_4818                (   11) ATAACCCTTCTGTTTGCTGGTGTTTAAG  1 
+IscR_4822                (   11) ATACTTGAACGAAATACCAGGGTATTAG  1 
+IscR_4689                (   11) ATAGTTGACCAATTTACTCGGGAATGTC  1 
+IscR_1074                (   11) AAAGCCTTATTATTGATGAGGCTATCAT  1 
+IscR_4688                (   11) ATACCCGACTAAATCAGTCAAGTAAATA  1 
+IscR_4963                (   14) TAACCCACACATCAGGGTCTATGCTTAT  1 
+IscR_4632                (    9) TAAAGCCCCTGCGTTTGCTGGGTTGAAC  1 
+IscR_4964                (   18) ATCTAACAATGAGATACCTAATTCTTAG  1 
+IscR_4804                (   11) ATAACCATTTGAAATGTGAGCAAAAGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 270 bayes= 4.08746 E= 4.8e-012 
+   137  -1055  -1055   -123 
+    67  -1055  -1055     58 
+   148   -129  -1055  -1055 
+   -33     29    -51     36 
+  -232    216   -151   -123 
+  -132    216  -1055   -123 
+    67     29      7   -222 
+     0    129  -1055    -23 
+    84     71  -1055   -123 
+ -1055    188  -1055     36 
+    84  -1055     49   -123 
+    48    -29     81   -222 
+   -33   -129    -51     77 
+     0  -1055  -1055    109 
+ -1055    -29    -51    123 
+    48  -1055    130   -222 
+ -1055     71     81     36 
+   -33     29      7      9 
+   -74     71    -51     36 
+   -74  -1055    130      9 
+   -33   -129    166   -222 
+  -232    -29    107     36 
+  -132  -1055   -151    136 
+    48    -29  -1055     36 
+  -132  -1055   -151    136 
+   -74   -129    107      9 
+    67   -129  -1055     36 
+  -232     29    149    -64 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 15 E= 4.8e-012 
+ 0.866667  0.000000  0.000000  0.133333 
+ 0.533333  0.000000  0.000000  0.466667 
+ 0.933333  0.066667  0.000000  0.000000 
+ 0.266667  0.200000  0.133333  0.400000 
+ 0.066667  0.733333  0.066667  0.133333 
+ 0.133333  0.733333  0.000000  0.133333 
+ 0.533333  0.200000  0.200000  0.066667 
+ 0.333333  0.400000  0.000000  0.266667 
+ 0.600000  0.266667  0.000000  0.133333 
+ 0.000000  0.600000  0.000000  0.400000 
+ 0.600000  0.000000  0.266667  0.133333 
+ 0.466667  0.133333  0.333333  0.066667 
+ 0.266667  0.066667  0.133333  0.533333 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.000000  0.133333  0.133333  0.733333 
+ 0.466667  0.000000  0.466667  0.066667 
+ 0.000000  0.266667  0.333333  0.400000 
+ 0.266667  0.200000  0.200000  0.333333 
+ 0.200000  0.266667  0.133333  0.400000 
+ 0.200000  0.000000  0.466667  0.333333 
+ 0.266667  0.066667  0.600000  0.066667 
+ 0.066667  0.133333  0.400000  0.400000 
+ 0.133333  0.000000  0.066667  0.800000 
+ 0.466667  0.133333  0.000000  0.400000 
+ 0.133333  0.000000  0.066667  0.800000 
+ 0.200000  0.066667  0.400000  0.333333 
+ 0.533333  0.066667  0.000000  0.400000 
+ 0.066667  0.200000  0.533333  0.200000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWAHCCAHAYARWWTRBNHKGKTWTDWG MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[AT]A[TAC]CC[ACG][CAT][AC][CT][AG][AG][TA][TA]T[AG][TGC][TACG][TCA][GTA][GA][GT]T[AT]T[GTA][AT][GCT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IscR_224                         6.20e-06  10_[+1(3.45e-07)]_7
+IscR_738                         1.11e-10  8_[+1(6.17e-12)]_9
+IscR_1074                        5.10e-04  10_[+1(2.83e-05)]_7
+IscR_2083                        1.11e-10  8_[+1(6.17e-12)]_9
+IscR_2089                        1.11e-10  11_[+1(6.17e-12)]_6
+IscR_3635                        1.11e-10  11_[+1(6.17e-12)]_6
+IscR_4632                        1.54e-03  8_[+1(8.57e-05)]_9
+IscR_4688                        6.62e-04  10_[+1(3.68e-05)]_7
+IscR_4689                        3.45e-05  10_[+1(1.92e-06)]_7
+IscR_4804                        7.11e-03  45
+IscR_4818                        1.82e-05  10_[+1(1.01e-06)]_7
+IscR_4822                        3.16e-05  10_[+1(1.75e-06)]_7
+IscR_4823                        1.03e-05  10_[+1(5.70e-07)]_7
+IscR_4963                        1.30e-03  13_[+1(7.21e-05)]_4
+IscR_4964                        4.55e-03  45
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 4789a3d125d5
+
+********************************************************************************

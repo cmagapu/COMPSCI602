@@ -1,0 +1,254 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/GcvA.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GcvA_603                 1.0000     35  GcvA_604                 1.0000     35  
+GcvA_605                 1.0000     35  GcvA_4043                1.0000     35  
+GcvA_4044                1.0000     35  GcvA_4046                1.0000     35  
+GcvA_4048                1.0000     35  GcvA_4470                1.0000     35  
+GcvA_4908                1.0000     35  GcvA_4909                1.0000     35  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/GcvA.fasta -oc meme_pwms/GcvA -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       10    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             350    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    350    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.297 C 0.18 G 0.123 T 0.4 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.297 C 0.181 G 0.124 T 0.398 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TCHTWTKAHATWWWCTAATKTSWB MEME-1	width =  24  sites =  10  llr = 113  E-value = 2.9e-005
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:41521838355321a8:1:16:
+pos.-specific     C  :7221::231::::6::1112613
+probability       G  :122115:1::::1:::::523:3
+matrix            T  8225374:31755629:1936:34
+
+         bits    3.0                         
+                 2.7                         
+                 2.4                         
+                 2.1                         
+Relative         1.8                 *       
+Entropy          1.5                 *       
+(16.3 bits)      1.2  *     *        *    *  
+                 0.9  *    ** *     ****  *  
+                 0.6 **    ** **** ******** *
+                 0.3 ** * *** ***************
+                 0.0 ------------------------
+
+Multilevel           TCATATGAAATAATCTAATGTCAT
+consensus            ATCCTATCC ATTAA    TCGTC
+sequence               GG    T     T     G  G
+                       T                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site        
+-------------             ----- ---------            ------------------------
+GcvA_4908                     7  5.64e-09     TTTTCC TCATTTGAAATAAACTAATTTCAC CTCCG     
+GcvA_4043                     7  5.64e-09     TTTTCC TCATTTGAAATAAACTAATTTCAC CTCCG     
+GcvA_4909                     7  7.56e-09     CCGTTT TCGCATTATATTTTCTAATGCCAT TATTT     
+GcvA_4044                     7  7.56e-09     CCGTTT TCGCATTATATTTTCTAATGCCAT TATTT     
+GcvA_4048                     7  8.44e-07     AGAAGC TCAACGGACAATTTATAATGGCTC AGATT     
+GcvA_604                      7  9.28e-07     AATGGC TCAGATTAAAAAAACTAATAGGTT ACATA     
+GcvA_605                      7  1.25e-05     TTGCAT TTTTTAACCATAAGCTAATGTGAT GATCA     
+GcvA_603                      7  2.00e-05     TATGTA ACCTATTAGTTTTTTTAATCTGAG CCATT     
+GcvA_4470                     2  1.28e-04          A ATCTGAGCCATTATAAATTGTCCG TTGAGCTTCT
+GcvA_4046                     3  2.94e-04         AA TGTGATGATCAATTTTACCTTATG GTTAACAGT 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GcvA_4908                         5.6e-09  6_[+1]_5
+GcvA_4043                         5.6e-09  6_[+1]_5
+GcvA_4909                         7.6e-09  6_[+1]_5
+GcvA_4044                         7.6e-09  6_[+1]_5
+GcvA_4048                         8.4e-07  6_[+1]_5
+GcvA_604                          9.3e-07  6_[+1]_5
+GcvA_605                          1.3e-05  6_[+1]_5
+GcvA_603                            2e-05  6_[+1]_5
+GcvA_4470                         0.00013  1_[+1]_10
+GcvA_4046                         0.00029  2_[+1]_9
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TCHTWTKAHATWWWCTAATKTSWB width=24 seqs=10
+GcvA_4908                (    7) TCATTTGAAATAAACTAATTTCAC  1 
+GcvA_4043                (    7) TCATTTGAAATAAACTAATTTCAC  1 
+GcvA_4909                (    7) TCGCATTATATTTTCTAATGCCAT  1 
+GcvA_4044                (    7) TCGCATTATATTTTCTAATGCCAT  1 
+GcvA_4048                (    7) TCAACGGACAATTTATAATGGCTC  1 
+GcvA_604                 (    7) TCAGATTAAAAAAACTAATAGGTT  1 
+GcvA_605                 (    7) TTTTTAACCATAAGCTAATGTGAT  1 
+GcvA_603                 (    7) ACCTATTAGTTTTTTTAATCTGAG  1 
+GcvA_4470                (    2) ATCTGAGCCATTATAAATTGTCCG  1 
+GcvA_4046                (    3) TGTGATGATCAATTTTACCTTATG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 120 bayes= 3.45943 E= 2.9e-005 
+   -57   -997   -997    101 
+  -997    195    -31    -99 
+    43     15     69    -99 
+  -157     15     69     33 
+    75    -85    -31    -41 
+   -57   -997    -31     81 
+  -157   -997    201      1 
+   143     15   -997   -997 
+     2     73    -31    -41 
+   143    -85   -997   -199 
+     2   -997   -997     81 
+    75   -997   -997     33 
+    75   -997   -997     33 
+     2   -997    -31     59 
+   -57    173   -997    -99 
+  -157   -997   -997    118 
+   175   -997   -997   -997 
+   143    -85   -997   -199 
+  -997    -85   -997    118 
+  -157    -85    201    -41 
+  -997     15     69     59 
+  -157    173    127   -997 
+   102    -85   -997    -41 
+  -997     73    127      1 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 10 E= 2.9e-005 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.700000  0.100000  0.200000 
+ 0.400000  0.200000  0.200000  0.200000 
+ 0.100000  0.200000  0.200000  0.500000 
+ 0.500000  0.100000  0.100000  0.300000 
+ 0.200000  0.000000  0.100000  0.700000 
+ 0.100000  0.000000  0.500000  0.400000 
+ 0.800000  0.200000  0.000000  0.000000 
+ 0.300000  0.300000  0.100000  0.300000 
+ 0.800000  0.100000  0.000000  0.100000 
+ 0.300000  0.000000  0.000000  0.700000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.300000  0.000000  0.100000  0.600000 
+ 0.200000  0.600000  0.000000  0.200000 
+ 0.100000  0.000000  0.000000  0.900000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.800000  0.100000  0.000000  0.100000 
+ 0.000000  0.100000  0.000000  0.900000 
+ 0.100000  0.100000  0.500000  0.300000 
+ 0.000000  0.200000  0.200000  0.600000 
+ 0.100000  0.600000  0.300000  0.000000 
+ 0.600000  0.100000  0.000000  0.300000 
+ 0.000000  0.300000  0.300000  0.400000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCHTWTKAHATWWWCTAATKTSWB MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][CT][ACGT][TCG][AT][TA][GT][AC][ACT]A[TA][AT][AT][TA][CAT]TAAT[GT][TCG][CG][AT][TCG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GcvA_603                         2.39e-04  6_[+1(2.00e-05)]_5
+GcvA_604                         1.11e-05  6_[+1(9.28e-07)]_5
+GcvA_605                         1.50e-04  6_[+1(1.25e-05)]_5
+GcvA_4043                        6.77e-08  6_[+1(5.64e-09)]_5
+GcvA_4044                        9.07e-08  6_[+1(7.56e-09)]_5
+GcvA_4046                        3.52e-03  35
+GcvA_4048                        1.01e-05  6_[+1(8.44e-07)]_5
+GcvA_4470                        1.53e-03  35
+GcvA_4908                        6.77e-08  6_[+1(5.64e-09)]_5
+GcvA_4909                        9.07e-08  6_[+1(7.56e-09)]_5
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 67f90f7fa0fb
+
+********************************************************************************

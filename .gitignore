@@ -1,0 +1,6 @@
+.DS_Store
+
+# Large FIMO output files (use compressed .gz versions instead)
+report 3 progress/data/fimo_intergenic/cisml.xml
+report 3 progress/data/fimo_intergenic/fimo.gff
+report 3 progress/data/fimo_intergenic/fimo.tsv

@@ -1,0 +1,325 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/DnaA.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+DnaA_42                  1.0000     29  DnaA_43                  1.0000     29  
+DnaA_250                 1.0000     29  DnaA_745                 1.0000     29  
+DnaA_746                 1.0000     29  DnaA_747                 1.0000     29  
+DnaA_748                 1.0000     29  DnaA_749                 1.0000     29  
+DnaA_750                 1.0000     29  DnaA_751                 1.0000     29  
+DnaA_752                 1.0000     29  DnaA_1080                1.0000     29  
+DnaA_1083                1.0000     29  DnaA_1084                1.0000     29  
+DnaA_1087                1.0000     29  DnaA_1088                1.0000     29  
+DnaA_1089                1.0000     29  DnaA_1090                1.0000     29  
+DnaA_1091                1.0000     29  DnaA_1092                1.0000     29  
+DnaA_2893                1.0000     29  DnaA_2894                1.0000     29  
+DnaA_3229                1.0000     29  DnaA_3230                1.0000     29  
+DnaA_3241                1.0000     29  DnaA_3758                1.0000     29  
+DnaA_3759                1.0000     29  DnaA_3959                1.0000     29  
+DnaA_4246                1.0000     29  DnaA_4296                1.0000     29  
+DnaA_5325                1.0000     29  DnaA_5326                1.0000     29  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/DnaA.fasta -oc meme_pwms/DnaA -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           29
+nsites: minsites=       32    maxsites=       32    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             928    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=    928    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.321 C 0.168 G 0.227 T 0.283 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.321 C 0.168 G 0.227 T 0.283 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTGSAYAAW MEME-1	width =  10  sites =  32  llr = 188  E-value = 5.1e-019
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :3:1192884
+pos.-specific     C  :1124:3::2
+probability       G  :6:641::2:
+matrix            T  a:911:52:4
+
+         bits    2.6           
+                 2.3           
+                 2.1           
+                 1.8 *         
+Relative         1.5 *         
+Entropy          1.3 * *  *    
+(8.5 bits)       1.0 * *  *  * 
+                 0.8 * *  * ** 
+                 0.5 ****** ** 
+                 0.3 **********
+                 0.0 ----------
+
+Multilevel           TGTGGATAAA
+consensus             A CC C  T
+sequence                   A   
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+DnaA_3758                    11  1.64e-05 GCATTGAACT TGTGGATAAA ATCACGGTC 
+DnaA_3230                     7  1.64e-05     AAGTCC TGTGGATAAA TCGGGAAAAT
+DnaA_3229                     7  1.64e-05     AAGTCC TGTGGATAAA TCGGGAAAAT
+DnaA_750                      1  1.64e-05          . TGTGGATAAA TCGGGAAAAT
+DnaA_749                      1  1.64e-05          . TGTGGATAAA TCGGGAAAAT
+DnaA_746                     11  1.64e-05 TGGAAAGTCC TGTGGATAAA TCGGGAAAA 
+DnaA_745                     11  1.64e-05 TGGAAAGTCC TGTGGATAAA TCGGGAAAA 
+DnaA_1080                    11  1.88e-05 CCACTATTCC TGTGGATAAC CATGTGTAT 
+DnaA_3959                     1  9.76e-05          . TGTGCGTAAT TTATTCACAA
+DnaA_3759                     1  9.76e-05          . TGTGCGTAAT TTATTCACAA
+DnaA_4246                    11  1.26e-04 GTATCGGCTT TATCCACAAA AACATGTCC 
+DnaA_2894                     1  1.26e-04          . TATCCACAAA GTTATGCACT
+DnaA_2893                    12  1.26e-04 CTTCCTGAGT TATCCACAAA GTTATGCA  
+DnaA_1091                    12  1.57e-04 CAGTTTATAC TGTACACAAT AACAGTAA  
+DnaA_5326                    11  2.80e-04 AGGGAATGGC TATGGAAAAT GAGCATCAA 
+DnaA_5325                    11  2.80e-04 AGGGAATGGC TATGGAAAAT GAGCATCAA 
+DnaA_1083                    12  7.26e-04 TGGAGACAGT TATCCACTAT TCCTGTGG  
+DnaA_43                      12  7.26e-04 TAAACAGAGT TATCCACAGC CTCAGGCT  
+DnaA_42                      12  7.26e-04 CTCAATAAAA TATCCACAGC GACGCGAT  
+DnaA_1088                    11  9.82e-04 GCCGTTGCTT TGGGGATAAC CCGGTAAGG 
+DnaA_1087                     1  1.25e-03          . TCTTGACAAA TGTTAAAAAA
+DnaA_752                     11  1.66e-03 CTTAGCGAGT TCTGGAAAGT CCTGTGGAT 
+DnaA_751                     11  1.66e-03 CTTAGCGAGT TCTGGAAAGT CCTGTGGAT 
+DnaA_1092                    11  1.79e-03 GCCTCTTTAC TGTATATAAA ACCAGTTTA 
+DnaA_748                     11  2.55e-03 CGGGAAAATC TGTGAGAAAC AGAAGATCT 
+DnaA_747                     11  2.55e-03 CGGGAAAATC TGTGAGAAAC AGAAGATCT 
+DnaA_4296                    10  4.54e-03  GATGATTGA TGTTAATTAA CAATGTATTC
+DnaA_1090                    12  5.05e-03 ACTGTTTTTT TATCCAGTAT AATTTGTT  
+DnaA_3241                     1  5.61e-03          . TGCACAAAGT TATCCACATG
+DnaA_1084                    11  6.21e-03 TGGATAACCA TGTGTATTAG AGTTAGAAA 
+DnaA_1089                    14  7.97e-03 GAGTAAATTT TGCTCATGAT TGACAG    
+DnaA_250                     13  1.62e-02 GAGGGTCATT TTCACACTAT CTTGCAG   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DnaA_3758                         1.6e-05  10_[+1]_9
+DnaA_3230                         1.6e-05  6_[+1]_13
+DnaA_3229                         1.6e-05  6_[+1]_13
+DnaA_750                          1.6e-05  [+1]_19
+DnaA_749                          1.6e-05  [+1]_19
+DnaA_746                          1.6e-05  10_[+1]_9
+DnaA_745                          1.6e-05  10_[+1]_9
+DnaA_1080                         1.9e-05  10_[+1]_9
+DnaA_3959                         9.8e-05  [+1]_19
+DnaA_3759                         9.8e-05  [+1]_19
+DnaA_4246                         0.00013  10_[+1]_9
+DnaA_2894                         0.00013  [+1]_19
+DnaA_2893                         0.00013  11_[+1]_8
+DnaA_1091                         0.00016  11_[+1]_8
+DnaA_5326                         0.00028  10_[+1]_9
+DnaA_5325                         0.00028  10_[+1]_9
+DnaA_1083                         0.00073  11_[+1]_8
+DnaA_43                           0.00073  11_[+1]_8
+DnaA_42                           0.00073  11_[+1]_8
+DnaA_1088                         0.00098  10_[+1]_9
+DnaA_1087                          0.0012  [+1]_19
+DnaA_752                           0.0017  10_[+1]_9
+DnaA_751                           0.0017  10_[+1]_9
+DnaA_1092                          0.0018  10_[+1]_9
+DnaA_748                           0.0025  10_[+1]_9
+DnaA_747                           0.0025  10_[+1]_9
+DnaA_4296                          0.0045  9_[+1]_10
+DnaA_1090                          0.0051  11_[+1]_8
+DnaA_3241                          0.0056  [+1]_19
+DnaA_1084                          0.0062  10_[+1]_9
+DnaA_1089                           0.008  13_[+1]_6
+DnaA_250                            0.016  12_[+1]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTGSAYAAW width=10 seqs=32
+DnaA_3758                (   11) TGTGGATAAA  1 
+DnaA_3230                (    7) TGTGGATAAA  1 
+DnaA_3229                (    7) TGTGGATAAA  1 
+DnaA_750                 (    1) TGTGGATAAA  1 
+DnaA_749                 (    1) TGTGGATAAA  1 
+DnaA_746                 (   11) TGTGGATAAA  1 
+DnaA_745                 (   11) TGTGGATAAA  1 
+DnaA_1080                (   11) TGTGGATAAC  1 
+DnaA_3959                (    1) TGTGCGTAAT  1 
+DnaA_3759                (    1) TGTGCGTAAT  1 
+DnaA_4246                (   11) TATCCACAAA  1 
+DnaA_2894                (    1) TATCCACAAA  1 
+DnaA_2893                (   12) TATCCACAAA  1 
+DnaA_1091                (   12) TGTACACAAT  1 
+DnaA_5326                (   11) TATGGAAAAT  1 
+DnaA_5325                (   11) TATGGAAAAT  1 
+DnaA_1083                (   12) TATCCACTAT  1 
+DnaA_43                  (   12) TATCCACAGC  1 
+DnaA_42                  (   12) TATCCACAGC  1 
+DnaA_1088                (   11) TGGGGATAAC  1 
+DnaA_1087                (    1) TCTTGACAAA  1 
+DnaA_752                 (   11) TCTGGAAAGT  1 
+DnaA_751                 (   11) TCTGGAAAGT  1 
+DnaA_1092                (   11) TGTATATAAA  1 
+DnaA_748                 (   11) TGTGAGAAAC  1 
+DnaA_747                 (   11) TGTGAGAAAC  1 
+DnaA_4296                (   10) TGTTAATTAA  1 
+DnaA_1090                (   12) TATCCAGTAT  1 
+DnaA_3241                (    1) TGCACAAAGT  1 
+DnaA_1084                (   11) TGTGTATTAG  1 
+DnaA_1089                (   14) TGCTCATGAT  1 
+DnaA_250                 (   13) TTCACACTAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 640 bayes= 4.24793 E= 5.1e-019 
+ -1164  -1164  -1164    182 
+   -19    -85    138   -318 
+ -1164    -85   -286    163 
+  -136     38    131   -159 
+  -177    127     94   -218 
+   145  -1164    -86  -1164 
+   -55     74   -286     73 
+   134  -1164   -286    -86 
+   139  -1164    -54  -1164 
+    34     15   -286     40 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 32 E= 5.1e-019 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.281250  0.093750  0.593750  0.031250 
+ 0.000000  0.093750  0.031250  0.875000 
+ 0.125000  0.218750  0.562500  0.093750 
+ 0.093750  0.406250  0.437500  0.062500 
+ 0.875000  0.000000  0.125000  0.000000 
+ 0.218750  0.281250  0.031250  0.468750 
+ 0.812500  0.000000  0.031250  0.156250 
+ 0.843750  0.000000  0.156250  0.000000 
+ 0.406250  0.187500  0.031250  0.375000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGSAYAAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GA]T[GC][GC]A[TCA]AA[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DnaA_42                          1.44e-02  29
+DnaA_43                          1.44e-02  29
+DnaA_250                         2.79e-01  29
+DnaA_745                         3.29e-04  10_[+1(1.64e-05)]_9
+DnaA_746                         3.29e-04  10_[+1(1.64e-05)]_9
+DnaA_747                         4.97e-02  29
+DnaA_748                         4.97e-02  29
+DnaA_749                         3.29e-04  [+1(1.64e-05)]_19
+DnaA_750                         3.29e-04  [+1(1.64e-05)]_19
+DnaA_751                         3.26e-02  29
+DnaA_752                         3.26e-02  29
+DnaA_1080                        3.75e-04  10_[+1(1.88e-05)]_9
+DnaA_1083                        1.44e-02  29
+DnaA_1084                        1.17e-01  29
+DnaA_1087                        2.47e-02  29
+DnaA_1088                        1.95e-02  29
+DnaA_1089                        1.48e-01  29
+DnaA_1090                        9.64e-02  29
+DnaA_1091                        3.13e-03  29
+DnaA_1092                        3.52e-02  29
+DnaA_2893                        2.52e-03  29
+DnaA_2894                        2.52e-03  29
+DnaA_3229                        3.29e-04  6_[+1(1.64e-05)]_13
+DnaA_3230                        3.29e-04  6_[+1(1.64e-05)]_13
+DnaA_3241                        1.06e-01  29
+DnaA_3758                        3.29e-04  10_[+1(1.64e-05)]_9
+DnaA_3759                        1.95e-03  [+1(9.76e-05)]_19
+DnaA_3959                        1.95e-03  [+1(9.76e-05)]_19
+DnaA_4246                        2.52e-03  29
+DnaA_4296                        8.70e-02  29
+DnaA_5325                        5.58e-03  29
+DnaA_5326                        5.58e-03  29
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: c365fcb560e9
+
+********************************************************************************

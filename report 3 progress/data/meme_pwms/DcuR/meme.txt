@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/DcuR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+DcuR_579                 1.0000     37  DcuR_580                 1.0000     37  
+DcuR_1289                1.0000     37  DcuR_1290                1.0000     37  
+DcuR_1291                1.0000     37  DcuR_1292                1.0000     37  
+DcuR_2227                1.0000     37  DcuR_2965                1.0000     37  
+DcuR_3672                1.0000     37  DcuR_4517                1.0000     37  
+DcuR_5163                1.0000     37  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/DcuR.fasta -oc meme_pwms/DcuR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       11    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             407    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    407    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.359 C 0.14 G 0.138 T 0.364 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.358 C 0.141 G 0.139 T 0.363 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DAWYTRATDDTTTDR MEME-1	width =  15  sites =  11  llr = 80  E-value = 3.0e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3a51:57:331:244
+pos.-specific     C  :::4::221:::1::
+probability       G  5:1115:144:1:35
+matrix            T  3:5591173499741
+
+         bits    2.9                
+                 2.6                
+                 2.3                
+                 2.0                
+Relative         1.7                
+Entropy          1.4  *             
+(10.5 bits)      1.1  *  *     **   
+                 0.9  *  ** *  **  *
+                 0.6 **  ****  *** *
+                 0.3 ***************
+                 0.0 ---------------
+
+Multilevel           GAATTAATGGTTTAG
+consensus            A TC G  AT   TA
+sequence             T       TA   G 
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+DcuR_2965                     2  5.00e-09          C GATCTGATGGTTTAG TAATTAAATT
+DcuR_2227                     2  5.00e-09          C GATCTGATGGTTTAG TAATTAAATT
+DcuR_1291                    23  8.42e-05 TATAAACCAA GATTTAACCTTTTGA           
+DcuR_3672                    22  1.01e-04 AAAACTTTAA AAAGTGCTGGTTTGT G         
+DcuR_580                      3  1.75e-04         TT TATTTAATGATTTTA AGTTTTTTAA
+DcuR_579                      2  3.88e-04          T GATTTAATTGATTTA ATGAATAAAA
+DcuR_1290                    11  5.14e-04 TCTATTTCAC AAATTAATAATTAAG GGGTAAAAAC
+DcuR_4517                    18  7.27e-04 TAACAAAAGT TAATTAACTATTATG TCACC     
+DcuR_1292                     4  8.26e-04        CCT AAAATGCTATTTCTG CGATAATAGC
+DcuR_1289                    11  8.26e-04 GAATCGCGTT TAGCTTATATTGTGG TCATTAGCAA
+DcuR_5163                     4  1.11e-03        GGT GAACGGTGTTTTTAA TTTCAAAACG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DcuR_2965                           5e-09  1_[+1]_21
+DcuR_2227                           5e-09  1_[+1]_21
+DcuR_1291                         8.4e-05  22_[+1]
+DcuR_3672                          0.0001  21_[+1]_1
+DcuR_580                          0.00017  2_[+1]_20
+DcuR_579                          0.00039  1_[+1]_21
+DcuR_1290                         0.00051  10_[+1]_12
+DcuR_4517                         0.00073  17_[+1]_5
+DcuR_1292                         0.00083  3_[+1]_19
+DcuR_1289                         0.00083  10_[+1]_12
+DcuR_5163                          0.0011  3_[+1]_19
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DAWYTRATDDTTTDR width=15 seqs=11
+DcuR_2965                (    2) GATCTGATGGTTTAG  1 
+DcuR_2227                (    2) GATCTGATGGTTTAG  1 
+DcuR_1291                (   23) GATTTAACCTTTTGA  1 
+DcuR_3672                (   22) AAAGTGCTGGTTTGT  1 
+DcuR_580                 (    3) TATTTAATGATTTTA  1 
+DcuR_579                 (    2) GATTTAATTGATTTA  1 
+DcuR_1290                (   11) AAATTAATAATTAAG  1 
+DcuR_4517                (   18) TAATTAACTATTATG  1 
+DcuR_1292                (    4) AAAATGCTATTTCTG  1 
+DcuR_1289                (   11) TAGCTTATATTGTGG  1 
+DcuR_5163                (    4) GAACGGTGTTTTTAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 253 bayes= 4.45943 E= 3.0e+002 
+   -39  -1010    171    -41 
+   148  -1010  -1010  -1010 
+    35  -1010    -61     33 
+  -197    136    -61     33 
+ -1010  -1010    -61    133 
+    35  -1010    171   -199 
+   102     37  -1010   -199 
+ -1010     37    -61    100 
+   -39    -63    139    -41 
+   -39  -1010    139      0 
+  -197  -1010  -1010    133 
+ -1010  -1010    -61    133 
+   -97    -63  -1010    100 
+     2  -1010     97      0 
+     2  -1010    197   -199 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 11 E= 3.0e+002 
+ 0.272727  0.000000  0.454545  0.272727 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.454545  0.000000  0.090909  0.454545 
+ 0.090909  0.363636  0.090909  0.454545 
+ 0.000000  0.000000  0.090909  0.909091 
+ 0.454545  0.000000  0.454545  0.090909 
+ 0.727273  0.181818  0.000000  0.090909 
+ 0.000000  0.181818  0.090909  0.727273 
+ 0.272727  0.090909  0.363636  0.272727 
+ 0.272727  0.000000  0.363636  0.363636 
+ 0.090909  0.000000  0.000000  0.909091 
+ 0.000000  0.000000  0.090909  0.909091 
+ 0.181818  0.090909  0.000000  0.727273 
+ 0.363636  0.000000  0.272727  0.363636 
+ 0.363636  0.000000  0.545455  0.090909 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DAWYTRATDDTTTDR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GAT]A[AT][TC]T[AG]AT[GAT][GTA]TTT[ATG][GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.11 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DcuR_579                         8.88e-03  37
+DcuR_580                         4.01e-03  37
+DcuR_1289                        1.88e-02  37
+DcuR_1290                        1.18e-02  37
+DcuR_1291                        1.93e-03  22_[+1(8.42e-05)]
+DcuR_1292                        1.88e-02  37
+DcuR_2227                        1.15e-07  1_[+1(5.00e-09)]_21
+DcuR_2965                        1.15e-07  1_[+1(5.00e-09)]_21
+DcuR_3672                        2.32e-03  37
+DcuR_4517                        1.66e-02  37
+DcuR_5163                        2.51e-02  37
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: f6d346c43350
+
+********************************************************************************

@@ -1,0 +1,292 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/ZraR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ZraR_362                 1.0000     37  ZraR_363                 1.0000     37  
+ZraR_1237                1.0000     38  ZraR_1238                1.0000     38  
+ZraR_1239                1.0000     38  ZraR_3152                1.0000     37  
+ZraR_3154                1.0000     37  ZraR_5209                1.0000     38  
+ZraR_5210                1.0000     38  ZraR_5211                1.0000     38  
+ZraR_5212                1.0000     38  ZraR_5213                1.0000     38  
+ZraR_5214                1.0000     38  ZraR_5215                1.0000     38  
+ZraR_5216                1.0000     38  ZraR_5217                1.0000     38  
+ZraR_5218                1.0000     38  ZraR_5219                1.0000     38  
+ZraR_5220                1.0000     38  ZraR_5221                1.0000     38  
+ZraR_5222                1.0000     38  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/ZraR.fasta -oc meme_pwms/ZraR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       21    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             794    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    794    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.272 C 0.218 G 0.189 T 0.321 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.272 C 0.218 G 0.189 T 0.321 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF BCGMGTMWDWAWWAMTCD MEME-1	width =  18  sites =  21  llr = 149  E-value = 7.5e-006
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:15224535754741:4
+pos.-specific     C  37:2::5::1:11:4:7:
+probability       G  418161:13:1:1:1::3
+matrix            T  221216:3442442:932
+
+         bits    2.4                   
+                 2.2                   
+                 1.9                   
+                 1.7                   
+Relative         1.4   *               
+Entropy          1.2   *            ** 
+(10.2 bits)      1.0  **            ** 
+                 0.7  ** * *   *  **** 
+                 0.5  ** * *   ** **** 
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           GCGAGTCATAAATAATCA
+consensus            C  C AATATTTATC TG
+sequence             T       G        T
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+ZraR_5219                    11  2.64e-08 CTTCCTGATC GCGAGACAATAATAATCA TTCTCATTCG
+ZraR_3154                    11  7.85e-08 GCTGCGGGTA GCGAGTCATTTTTACTCA TTGAAACTT 
+ZraR_362                     11  7.85e-08 CCCGCAGCAG GCGAGTCATTTTTACTCG TTTATCATG 
+ZraR_5209                    11  8.30e-07 CTCTTTCAAC CCGCGTCAAAATAAAACA GTAGAATATT
+ZraR_363                      9  2.43e-06   CATGATAA ACGAGTAAAAATGACTCG CCTGCTGCGG
+ZraR_3152                     9  2.48e-05   AAGTTTCA ATGAGTAAAAATGACTCG CTACCCGCAG
+ZraR_5216                    11  4.83e-05 CTCTCCGGCG GCGCGAATGAACATCTTA TTGGCTATCA
+ZraR_1238                    11  4.83e-05 TCATAGCCTT CCGCTTCGAAAATACTTT TCAACGTGTT
+ZraR_5214                    11  1.32e-04 CACGTTTTTG CCGCATCTCGAAAAATCA AGGAGTTGCA
+ZraR_5218                     3  1.60e-04         AT TCGTGTCTGAGATTGTCT CTGACTCCAT
+ZraR_5215                    11  1.92e-04 GTCACATTTT GTGCGTAATTTATTCACA AGCTTGCATT
+ZraR_5211                    11  1.92e-04 CATTAACGTT TCGTGTAAGTTTTAGTTT CCCTTCAAAG
+ZraR_5217                    11  2.73e-04 GAGATATTCC TCAAGTAAAAAAACATCT CTTCCTGCGA
+ZraR_5210                    13  2.98e-04 TGTTTGCAGC CTGAATCGTAAACTCTCT ATCGTTGA  
+ZraR_5221                     9  3.25e-04   TTAGTATA CTGAAATTGAAATAATCG CAGTATGAAA
+ZraR_1239                    11  1.47e-03 AGTGAATGAA GGTATGCTGCATTAATCA TTTCTTTAAT
+ZraR_5213                     8  1.68e-03    CCTTTTA GGGGCAATTTAAAAGTTG GCACAGATTT
+ZraR_5220                    10  1.92e-03  CCTGGTGGC TGGTAGCAGTAAAAATTC TGACTATACC
+ZraR_5222                    11  2.46e-03 CCAGCGTGCT GCTTGCCGTTGCAAATCA GGCGCTGCTG
+ZraR_5212                     9  2.94e-03   TAATCATG CCGATAACTCATATAACG CAGGGCTGTT
+ZraR_1237                    11  5.11e-03 AGTTCTCATT TCAGGTGTTATTCACTTA TTCCTTCTTT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ZraR_5219                         2.6e-08  10_[+1]_10
+ZraR_3154                         7.8e-08  10_[+1]_9
+ZraR_362                          7.8e-08  10_[+1]_9
+ZraR_5209                         8.3e-07  10_[+1]_10
+ZraR_363                          2.4e-06  8_[+1]_11
+ZraR_3152                         2.5e-05  8_[+1]_11
+ZraR_5216                         4.8e-05  10_[+1]_10
+ZraR_1238                         4.8e-05  10_[+1]_10
+ZraR_5214                         0.00013  10_[+1]_10
+ZraR_5218                         0.00016  2_[+1]_18
+ZraR_5215                         0.00019  10_[+1]_10
+ZraR_5211                         0.00019  10_[+1]_10
+ZraR_5217                         0.00027  10_[+1]_10
+ZraR_5210                          0.0003  12_[+1]_8
+ZraR_5221                         0.00032  8_[+1]_12
+ZraR_1239                          0.0015  10_[+1]_10
+ZraR_5213                          0.0017  7_[+1]_13
+ZraR_5220                          0.0019  9_[+1]_11
+ZraR_5222                          0.0025  10_[+1]_10
+ZraR_5212                          0.0029  8_[+1]_12
+ZraR_1237                          0.0051  10_[+1]_10
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF BCGMGTMWDWAWWAMTCD width=18 seqs=21
+ZraR_5219                (   11) GCGAGACAATAATAATCA  1 
+ZraR_3154                (   11) GCGAGTCATTTTTACTCA  1 
+ZraR_362                 (   11) GCGAGTCATTTTTACTCG  1 
+ZraR_5209                (   11) CCGCGTCAAAATAAAACA  1 
+ZraR_363                 (    9) ACGAGTAAAAATGACTCG  1 
+ZraR_3152                (    9) ATGAGTAAAAATGACTCG  1 
+ZraR_5216                (   11) GCGCGAATGAACATCTTA  1 
+ZraR_1238                (   11) CCGCTTCGAAAATACTTT  1 
+ZraR_5214                (   11) CCGCATCTCGAAAAATCA  1 
+ZraR_5218                (    3) TCGTGTCTGAGATTGTCT  1 
+ZraR_5215                (   11) GTGCGTAATTTATTCACA  1 
+ZraR_5211                (   11) TCGTGTAAGTTTTAGTTT  1 
+ZraR_5217                (   11) TCAAGTAAAAAAACATCT  1 
+ZraR_5210                (   13) CTGAATCGTAAACTCTCT  1 
+ZraR_5221                (    9) CTGAAATTGAAATAATCG  1 
+ZraR_1239                (   11) GGTATGCTGCATTAATCA  1 
+ZraR_5213                (    8) GGGGCAATTTAAAAGTTG  1 
+ZraR_5220                (   10) TGGTAGCAGTAAAAATTC  1 
+ZraR_5222                (   11) GCTTGCCGTTGCAAATCA  1 
+ZraR_5212                (    9) CCGATAACTCATATAACG  1 
+ZraR_1237                (   11) TCAGGTGTTATTCACTTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 437 bayes= 4.30812 E= 7.5e-006 
+  -151     39    101    -43 
+ -1104    161    -41    -75 
+  -151  -1104    210   -175 
+    81     13    -99    -75 
+   -51   -219    171   -117 
+   -19   -219    -99     95 
+    49    126   -199   -275 
+    81   -219    -41      6 
+     7   -219     59     25 
+    81   -119   -199     25 
+   129  -1104    -99    -43 
+    81   -119  -1104     42 
+    49   -119    -99     42 
+   139   -219  -1104    -43 
+    66     97    -41  -1104 
+   -93  -1104  -1104    142 
+ -1104    171  -1104    -17 
+    66   -219     59    -43 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 21 E= 7.5e-006 
+ 0.095238  0.285714  0.380952  0.238095 
+ 0.000000  0.666667  0.142857  0.190476 
+ 0.095238  0.000000  0.809524  0.095238 
+ 0.476190  0.238095  0.095238  0.190476 
+ 0.190476  0.047619  0.619048  0.142857 
+ 0.238095  0.047619  0.095238  0.619048 
+ 0.380952  0.523810  0.047619  0.047619 
+ 0.476190  0.047619  0.142857  0.333333 
+ 0.285714  0.047619  0.285714  0.380952 
+ 0.476190  0.095238  0.047619  0.380952 
+ 0.666667  0.000000  0.095238  0.238095 
+ 0.476190  0.095238  0.000000  0.428571 
+ 0.380952  0.095238  0.095238  0.428571 
+ 0.714286  0.047619  0.000000  0.238095 
+ 0.428571  0.428571  0.142857  0.000000 
+ 0.142857  0.000000  0.000000  0.857143 
+ 0.000000  0.714286  0.000000  0.285714 
+ 0.428571  0.047619  0.285714  0.238095 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BCGMGTMWDWAWWAMTCD MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GCT]CG[AC]G[TA][CA][AT][TAG][AT][AT][AT][TA][AT][AC]T[CT][AGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ZraR_362                         1.57e-06  10_[+1(7.85e-08)]_9
+ZraR_363                         4.85e-05  8_[+1(2.43e-06)]_11
+ZraR_1237                        1.02e-01  38
+ZraR_1238                        1.01e-03  10_[+1(4.83e-05)]_10
+ZraR_1239                        3.05e-02  38
+ZraR_3152                        4.96e-04  8_[+1(2.48e-05)]_11
+ZraR_3154                        1.57e-06  10_[+1(7.85e-08)]_9
+ZraR_5209                        1.74e-05  10_[+1(8.30e-07)]_10
+ZraR_5210                        6.24e-03  38
+ZraR_5211                        4.02e-03  38
+ZraR_5212                        6.00e-02  38
+ZraR_5213                        3.48e-02  38
+ZraR_5214                        2.77e-03  38
+ZraR_5215                        4.02e-03  38
+ZraR_5216                        1.01e-03  10_[+1(4.83e-05)]_10
+ZraR_5217                        5.73e-03  38
+ZraR_5218                        3.35e-03  38
+ZraR_5219                        5.54e-07  10_[+1(2.64e-08)]_10
+ZraR_5220                        3.95e-02  38
+ZraR_5221                        6.79e-03  38
+ZraR_5222                        5.04e-02  38
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 8ae98dfe875d
+
+********************************************************************************

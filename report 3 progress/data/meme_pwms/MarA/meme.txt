@@ -1,0 +1,364 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/MarA.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MarA_68                  1.0000     40  MarA_238                 1.0000     40  
+MarA_241                 1.0000     40  MarA_243                 1.0000     40  
+MarA_720                 1.0000     40  MarA_998                 1.0000     40  
+MarA_1001                1.0000     40  MarA_1004                1.0000     40  
+MarA_1007                1.0000     40  MarA_1022                1.0000     35  
+MarA_1023                1.0000     35  MarA_1251                1.0000     35  
+MarA_1288                1.0000     35  MarA_2062                1.0000     40  
+MarA_2076                1.0000     35  MarA_2177                1.0000     40  
+MarA_2331                1.0000     40  MarA_2394                1.0000     40  
+MarA_3157                1.0000     40  MarA_3262                1.0000     40  
+MarA_3273                1.0000     40  MarA_3462                1.0000     40  
+MarA_3485                1.0000     40  MarA_3487                1.0000     40  
+MarA_3527                1.0000     40  MarA_3793                1.0000     40  
+MarA_3823                1.0000     40  MarA_4170                1.0000     40  
+MarA_4223                1.0000     40  MarA_4285                1.0000     40  
+MarA_4360                1.0000     40  MarA_4498                1.0000     40  
+MarA_4519                1.0000     40  MarA_4686                1.0000     40  
+MarA_5154                1.0000     40  MarA_5159                1.0000     40  
+MarA_5190                1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/MarA.fasta -oc meme_pwms/MarA -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       37    maxsites=       37    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1455    N=              37
+sample: seed=            0    hsfrac=          0
+        searchsize=   1455    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.298 C 0.227 G 0.178 T 0.297 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.297 C 0.228 G 0.178 T 0.297 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTRGCAMWWWNTGYYAAM MEME-1	width =  18  sites =  37  llr = 239  E-value = 2.0e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5142:82445312:1754
+pos.-specific     C  :21:914::122:64114
+probability       G  1:47::221121811111
+matrix            T  471111245436:34122
+
+         bits    2.5                   
+                 2.2                   
+                 2.0                   
+                 1.7                   
+Relative         1.5     *       *     
+Entropy          1.2     *       *     
+(9.3 bits)       1.0    **       *     
+                 0.7    ***      *     
+                 0.5  * ***      ** *  
+                 0.2 ********** *******
+                 0.0 ------------------
+
+Multilevel           ATAGCACATATTGCTAAC
+consensus            TCGA  ATATAC TC TA
+sequence                       G       
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+MarA_5190                    11  1.33e-08 TTAACGCCCT ATGGCACGTAACGCCAAC CTTTTGCGGT
+MarA_5154                    11  1.33e-08 TTAACGCCCT ATGGCACGTAACGCCAAC CTTTTGCGGT
+MarA_2076                     8  5.91e-07    ATATGCA TTAGCACTAATTGCAAAA AATTAATTTA
+MarA_1288                     8  5.91e-07    ATATGCA TTAGCACTAATTGCAAAA AATTAATTTA
+MarA_3527                    10  3.14e-06  AAGTATTTG ACAGCACTGAATGTCAAA ACAAAACCTT
+MarA_2062                    10  3.14e-06  AAGTATTTG ACAGCACTGAATGTCAAA ACAAAACCTT
+MarA_1001                    11  4.25e-06 CGCAAAAGAC TTTGCACATTTTGCTAAT TTCACCGTAC
+MarA_4360                    14  1.50e-05 GAATGCTAAA ACAGCAAAAAATGCTATT ATCCAATTA 
+MarA_998                     11  2.51e-05 AAAACCTTCA GTGGCACGTTTGGCGAAA TTCAGAATGA
+MarA_68                      12  3.21e-05 CAACTAAACC GTGGCACAAATGGGCAAT TTATCCATCG
+MarA_243                     11  5.18e-05 TGTAGTCGTA ACGGCAAGAAATGCTCCA CATTTGAGAA
+MarA_4223                    13  8.15e-05 TTGAACCGAT TTAGCAAAACGTGGCATC GGTCAATTCA
+MarA_3462                    11  8.15e-05 CGCCGCGGCA AAAGCAGAAACTGTAAAA CGCAGCAGTA
+MarA_2394                    11  8.15e-05 CGCCGCGGCA AAAGCAGAAACTGTAAAA CGCAGCAGTA
+MarA_1004                    11  1.13e-04 GCCTAAGTAA ATAGCTCACTTTGTTAAC AACTTTAACT
+MarA_1023                    12  1.40e-04 TCTACCCCTT TTTGCAAAAAATGCTTGC TATCCC    
+MarA_238                     11  3.12e-04 TTAATTGCTA AAAGCTATAACTGTTAAA CACAATACAG
+MarA_3273                    14  3.44e-04 ATCGGGCTAT TTAACCGTTAGTGCCTCC TTTCTCTCC 
+MarA_2177                    14  3.44e-04 ATCGGGCTAT TTAACCGTTAGTGCCTCC TTTCTCTCC 
+MarA_1251                    12  3.44e-04 CACCCCAGGC TTTACACTTTATGCTTCC GGCTCG    
+MarA_3487                    11  4.15e-04 TCAAAGCGTC ATCGCATAAACCACTACA TCTTGCTCCT
+MarA_1007                    11  4.55e-04 GCGATGGAAA GTCGCTCGTTACGTTAAA AATTGCCCGT
+MarA_1022                     8  4.99e-04    AAAACAA ATGCCAGCTTTCGCTAAC CACGGCGGGT
+MarA_3793                    14  6.52e-04 TAACATGAAC ATGACAAAAGGTGCACTC ATCCTCAGC 
+MarA_4498                    15  7.77e-04 GTCATTTTTG AGTGCAAAAAGTGCTGTA ACTCTGAA  
+MarA_4686                    11  1.00e-03 ATTCATTAAT ACGACACGTTTCATTAAG ATTTTCCTCA
+MarA_5159                    15  1.09e-03 TGCGTTGAAT TTGTCATTTTGTGCCGTG GTGTTTAA  
+MarA_3262                    14  1.18e-03 CGCTTCTTGT TTGGTTTTTCGTGCCATA TGTTCGTGA 
+MarA_720                     11  2.22e-03 CGCAAAGCTG ACCGCACAAAAGGGGAGT GCTTTTCTGT
+MarA_3157                     6  3.20e-03      TGATT TTGATATTTTCCATCAAC ATGACATATA
+MarA_2331                     6  3.20e-03      TGATT TTGATATTTTCCATCAAC ATGACATATA
+MarA_3823                    11  3.44e-03 TACGAAAAGT ACGGCATTGATAATCATT TTCAATATCA
+MarA_4285                    13  3.69e-03 TTTTCCCGTA ATCGCACGGGTGGATAAG CGTTTACAGT
+MarA_4170                     3  4.24e-03         TT CCAGCAGATACAACTCAC ACAATGCACC
+MarA_241                     16  4.54e-03 TTCTCCTCTT TTATCAATTTGGGTTGTT ATCAAAT   
+MarA_4519                    11  5.19e-03 GCGGAAATCT ATAGCGCATTTTTCTCGC TTACCATTTC
+MarA_3485                    15  8.13e-03 TCTGATTGAT TTGATCGATTGAGCCTTC CAGTCCTT  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MarA_5190                         1.3e-08  10_[+1]_12
+MarA_5154                         1.3e-08  10_[+1]_12
+MarA_2076                         5.9e-07  7_[+1]_10
+MarA_1288                         5.9e-07  7_[+1]_10
+MarA_3527                         3.1e-06  9_[+1]_13
+MarA_2062                         3.1e-06  9_[+1]_13
+MarA_1001                         4.3e-06  10_[+1]_12
+MarA_4360                         1.5e-05  13_[+1]_9
+MarA_998                          2.5e-05  10_[+1]_12
+MarA_68                           3.2e-05  11_[+1]_11
+MarA_243                          5.2e-05  10_[+1]_12
+MarA_4223                         8.2e-05  12_[+1]_10
+MarA_3462                         8.2e-05  10_[+1]_12
+MarA_2394                         8.2e-05  10_[+1]_12
+MarA_1004                         0.00011  10_[+1]_12
+MarA_1023                         0.00014  11_[+1]_6
+MarA_238                          0.00031  10_[+1]_12
+MarA_3273                         0.00034  13_[+1]_9
+MarA_2177                         0.00034  13_[+1]_9
+MarA_1251                         0.00034  11_[+1]_6
+MarA_3487                         0.00041  10_[+1]_12
+MarA_1007                         0.00045  10_[+1]_12
+MarA_1022                          0.0005  7_[+1]_10
+MarA_3793                         0.00065  13_[+1]_9
+MarA_4498                         0.00078  14_[+1]_8
+MarA_4686                           0.001  10_[+1]_12
+MarA_5159                          0.0011  14_[+1]_8
+MarA_3262                          0.0012  13_[+1]_9
+MarA_720                           0.0022  10_[+1]_12
+MarA_3157                          0.0032  5_[+1]_17
+MarA_2331                          0.0032  5_[+1]_17
+MarA_3823                          0.0034  10_[+1]_12
+MarA_4285                          0.0037  12_[+1]_10
+MarA_4170                          0.0042  2_[+1]_20
+MarA_241                           0.0045  15_[+1]_7
+MarA_4519                          0.0052  10_[+1]_12
+MarA_3485                          0.0081  14_[+1]_8
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTRGCAMWWWNTGYYAAM width=18 seqs=37
+MarA_5190                (   11) ATGGCACGTAACGCCAAC  1 
+MarA_5154                (   11) ATGGCACGTAACGCCAAC  1 
+MarA_2076                (    8) TTAGCACTAATTGCAAAA  1 
+MarA_1288                (    8) TTAGCACTAATTGCAAAA  1 
+MarA_3527                (   10) ACAGCACTGAATGTCAAA  1 
+MarA_2062                (   10) ACAGCACTGAATGTCAAA  1 
+MarA_1001                (   11) TTTGCACATTTTGCTAAT  1 
+MarA_4360                (   14) ACAGCAAAAAATGCTATT  1 
+MarA_998                 (   11) GTGGCACGTTTGGCGAAA  1 
+MarA_68                  (   12) GTGGCACAAATGGGCAAT  1 
+MarA_243                 (   11) ACGGCAAGAAATGCTCCA  1 
+MarA_4223                (   13) TTAGCAAAACGTGGCATC  1 
+MarA_3462                (   11) AAAGCAGAAACTGTAAAA  1 
+MarA_2394                (   11) AAAGCAGAAACTGTAAAA  1 
+MarA_1004                (   11) ATAGCTCACTTTGTTAAC  1 
+MarA_1023                (   12) TTTGCAAAAAATGCTTGC  1 
+MarA_238                 (   11) AAAGCTATAACTGTTAAA  1 
+MarA_3273                (   14) TTAACCGTTAGTGCCTCC  1 
+MarA_2177                (   14) TTAACCGTTAGTGCCTCC  1 
+MarA_1251                (   12) TTTACACTTTATGCTTCC  1 
+MarA_3487                (   11) ATCGCATAAACCACTACA  1 
+MarA_1007                (   11) GTCGCTCGTTACGTTAAA  1 
+MarA_1022                (    8) ATGCCAGCTTTCGCTAAC  1 
+MarA_3793                (   14) ATGACAAAAGGTGCACTC  1 
+MarA_4498                (   15) AGTGCAAAAAGTGCTGTA  1 
+MarA_4686                (   11) ACGACACGTTTCATTAAG  1 
+MarA_5159                (   15) TTGTCATTTTGTGCCGTG  1 
+MarA_3262                (   14) TTGGTTTTTCGTGCCATA  1 
+MarA_720                 (   11) ACCGCACAAAAGGGGAGT  1 
+MarA_3157                (    6) TTGATATTTTCCATCAAC  1 
+MarA_2331                (    6) TTGATATTTTCCATCAAC  1 
+MarA_3823                (   11) ACGGCATTGATAATCATT  1 
+MarA_4285                (   13) ATCGCACGGGTGGATAAG  1 
+MarA_4170                (    3) CCAGCAGATACAACTCAC  1 
+MarA_241                 (   16) TTATCAATTTGGGTTGTT  1 
+MarA_4519                (   11) ATAGCGCATTTTTCTCGC  1 
+MarA_3485                (   15) TTGATCGATTGAGCCTTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 826 bayes= 4.41443 E= 2.0e-017 
+    79   -307   -114     35 
+  -187     -7   -272    119 
+    45   -107    109   -146 
+   -46   -307    198   -246 
+ -1185    197  -1185   -146 
+   140   -149   -272   -146 
+   -46     93      9    -87 
+    45   -307      9     35 
+    35   -307    -72     71 
+    86   -207   -172     24 
+   -14    -27     45      0 
+  -187     -7    -40     94 
+   -87  -1185    219   -345 
+  -346    132   -114     13 
+  -114     73   -172     54 
+   118   -107   -114   -113 
+    86    -75   -114    -29 
+    24     83   -114    -87 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 37 E= 2.0e-017 
+ 0.513514  0.027027  0.081081  0.378378 
+ 0.081081  0.216216  0.027027  0.675676 
+ 0.405405  0.108108  0.378378  0.108108 
+ 0.216216  0.027027  0.702703  0.054054 
+ 0.000000  0.891892  0.000000  0.108108 
+ 0.783784  0.081081  0.027027  0.108108 
+ 0.216216  0.432432  0.189189  0.162162 
+ 0.405405  0.027027  0.189189  0.378378 
+ 0.378378  0.027027  0.108108  0.486486 
+ 0.540541  0.054054  0.054054  0.351351 
+ 0.270270  0.189189  0.243243  0.297297 
+ 0.081081  0.216216  0.135135  0.567568 
+ 0.162162  0.000000  0.810811  0.027027 
+ 0.027027  0.567568  0.081081  0.324324 
+ 0.135135  0.378378  0.054054  0.432432 
+ 0.675676  0.108108  0.081081  0.135135 
+ 0.540541  0.135135  0.081081  0.243243 
+ 0.351351  0.405405  0.081081  0.162162 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTRGCAMWWWNTGYYAAM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][TC][AG][GA]CA[CA][AT][TA][AT][TAG][TC]G[CT][TC]A[AT][CA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.16 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MarA_68                          7.39e-04  11_[+1(3.21e-05)]_11
+MarA_238                         7.16e-03  40
+MarA_241                         9.94e-02  40
+MarA_243                         1.19e-03  10_[+1(5.18e-05)]_12
+MarA_720                         4.98e-02  40
+MarA_998                         5.77e-04  10_[+1(2.51e-05)]_12
+MarA_1001                        9.78e-05  10_[+1(4.25e-06)]_12
+MarA_1004                        2.60e-03  40
+MarA_1007                        1.04e-02  40
+MarA_1022                        8.94e-03  35
+MarA_1023                        2.51e-03  35
+MarA_1251                        6.17e-03  35
+MarA_1288                        1.06e-05  7_[+1(5.91e-07)]_10
+MarA_2062                        7.22e-05  9_[+1(3.14e-06)]_13
+MarA_2076                        1.06e-05  7_[+1(5.91e-07)]_10
+MarA_2177                        7.87e-03  40
+MarA_2331                        7.12e-02  40
+MarA_2394                        1.87e-03  10_[+1(8.15e-05)]_12
+MarA_3157                        7.12e-02  40
+MarA_3262                        2.69e-02  40
+MarA_3273                        7.87e-03  40
+MarA_3462                        1.87e-03  10_[+1(8.15e-05)]_12
+MarA_3485                        1.71e-01  40
+MarA_3487                        9.50e-03  40
+MarA_3527                        7.22e-05  9_[+1(3.14e-06)]_13
+MarA_3793                        1.49e-02  40
+MarA_3823                        7.62e-02  40
+MarA_4170                        9.31e-02  40
+MarA_4223                        1.87e-03  12_[+1(8.15e-05)]_10
+MarA_4285                        8.16e-02  40
+MarA_4360                        3.45e-04  13_[+1(1.50e-05)]_9
+MarA_4498                        1.77e-02  40
+MarA_4519                        1.13e-01  40
+MarA_4686                        2.28e-02  40
+MarA_5154                        3.06e-07  10_[+1(1.33e-08)]_12
+MarA_5159                        2.48e-02  40
+MarA_5190                        3.06e-07  10_[+1(1.33e-08)]_12
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 88893bbd8058
+
+********************************************************************************

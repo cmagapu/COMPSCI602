@@ -1,0 +1,2590 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/Nac.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Nac_786                  1.0000     35  Nac_815                  1.0000     35  
+Nac_1115                 1.0000     37  Nac_1116                 1.0000     37  
+Nac_1117                 1.0000     37  Nac_1118                 1.0000     37  
+Nac_1119                 1.0000     37  Nac_1120                 1.0000     37  
+Nac_1121                 1.0000     37  Nac_1122                 1.0000     37  
+Nac_1123                 1.0000     37  Nac_1124                 1.0000     37  
+Nac_1125                 1.0000     37  Nac_1126                 1.0000     37  
+Nac_1127                 1.0000     37  Nac_1128                 1.0000     37  
+Nac_1129                 1.0000     37  Nac_1130                 1.0000     37  
+Nac_1131                 1.0000     37  Nac_1132                 1.0000     37  
+Nac_1133                 1.0000     37  Nac_1134                 1.0000     37  
+Nac_1135                 1.0000     37  Nac_1136                 1.0000     37  
+Nac_1137                 1.0000     37  Nac_1138                 1.0000     37  
+Nac_1139                 1.0000     37  Nac_1140                 1.0000     37  
+Nac_1141                 1.0000     37  Nac_1142                 1.0000     37  
+Nac_1143                 1.0000     37  Nac_1144                 1.0000     37  
+Nac_1145                 1.0000     37  Nac_1146                 1.0000     37  
+Nac_1147                 1.0000     37  Nac_1148                 1.0000     37  
+Nac_1149                 1.0000     37  Nac_1150                 1.0000     37  
+Nac_1151                 1.0000     37  Nac_1152                 1.0000     37  
+Nac_1153                 1.0000     37  Nac_1154                 1.0000     37  
+Nac_1156                 1.0000     37  Nac_1157                 1.0000     37  
+Nac_1158                 1.0000     37  Nac_1159                 1.0000     37  
+Nac_1160                 1.0000     37  Nac_1161                 1.0000     37  
+Nac_1162                 1.0000     37  Nac_1163                 1.0000     37  
+Nac_1164                 1.0000     37  Nac_1165                 1.0000     37  
+Nac_1166                 1.0000     37  Nac_1167                 1.0000     37  
+Nac_1168                 1.0000     37  Nac_1169                 1.0000     37  
+Nac_1170                 1.0000     37  Nac_1171                 1.0000     37  
+Nac_1172                 1.0000     37  Nac_1173                 1.0000     37  
+Nac_1174                 1.0000     37  Nac_1175                 1.0000     37  
+Nac_1176                 1.0000     37  Nac_1177                 1.0000     37  
+Nac_1178                 1.0000     37  Nac_1179                 1.0000     37  
+Nac_1180                 1.0000     37  Nac_1181                 1.0000     37  
+Nac_1182                 1.0000     37  Nac_1183                 1.0000     37  
+Nac_1184                 1.0000     37  Nac_1185                 1.0000     37  
+Nac_1186                 1.0000     37  Nac_1187                 1.0000     37  
+Nac_1188                 1.0000     37  Nac_1189                 1.0000     37  
+Nac_1190                 1.0000     37  Nac_1191                 1.0000     37  
+Nac_1193                 1.0000     37  Nac_1194                 1.0000     37  
+Nac_1195                 1.0000     37  Nac_1196                 1.0000     37  
+Nac_1197                 1.0000     37  Nac_1198                 1.0000     37  
+Nac_1199                 1.0000     37  Nac_1200                 1.0000     37  
+Nac_1201                 1.0000     37  Nac_1202                 1.0000     37  
+Nac_1203                 1.0000     37  Nac_1204                 1.0000     37  
+Nac_1205                 1.0000     37  Nac_1206                 1.0000     37  
+Nac_1207                 1.0000     37  Nac_1208                 1.0000     37  
+Nac_1209                 1.0000     37  Nac_1210                 1.0000     37  
+Nac_1211                 1.0000     37  Nac_1212                 1.0000     37  
+Nac_1213                 1.0000     37  Nac_1214                 1.0000     37  
+Nac_1215                 1.0000     37  Nac_1216                 1.0000     37  
+Nac_1217                 1.0000     37  Nac_1218                 1.0000     37  
+Nac_1219                 1.0000     37  Nac_1220                 1.0000     37  
+Nac_1221                 1.0000     37  Nac_1222                 1.0000     37  
+Nac_1223                 1.0000     37  Nac_1224                 1.0000     37  
+Nac_1225                 1.0000     37  Nac_1226                 1.0000     37  
+Nac_1227                 1.0000     37  Nac_1228                 1.0000     37  
+Nac_1229                 1.0000     37  Nac_1230                 1.0000     37  
+Nac_1231                 1.0000     37  Nac_1232                 1.0000     37  
+Nac_1233                 1.0000     37  Nac_1657                 1.0000     37  
+Nac_1658                 1.0000     37  Nac_1659                 1.0000     37  
+Nac_1660                 1.0000     37  Nac_1661                 1.0000     37  
+Nac_1662                 1.0000     37  Nac_1663                 1.0000     37  
+Nac_1664                 1.0000     37  Nac_1665                 1.0000     37  
+Nac_1666                 1.0000     37  Nac_1667                 1.0000     37  
+Nac_1668                 1.0000     37  Nac_1669                 1.0000     37  
+Nac_1670                 1.0000     37  Nac_1671                 1.0000     37  
+Nac_1672                 1.0000     37  Nac_1673                 1.0000     37  
+Nac_1674                 1.0000     37  Nac_1675                 1.0000     35  
+Nac_1676                 1.0000     37  Nac_1677                 1.0000     37  
+Nac_1678                 1.0000     37  Nac_1679                 1.0000     37  
+Nac_1680                 1.0000     37  Nac_1681                 1.0000     37  
+Nac_1682                 1.0000     37  Nac_1683                 1.0000     37  
+Nac_1684                 1.0000     37  Nac_1685                 1.0000     37  
+Nac_1686                 1.0000     37  Nac_1687                 1.0000     37  
+Nac_1688                 1.0000     37  Nac_1689                 1.0000     37  
+Nac_1690                 1.0000     37  Nac_1691                 1.0000     37  
+Nac_1692                 1.0000     37  Nac_1693                 1.0000     37  
+Nac_1694                 1.0000     37  Nac_1695                 1.0000     37  
+Nac_1696                 1.0000     37  Nac_1697                 1.0000     37  
+Nac_1698                 1.0000     37  Nac_1699                 1.0000     37  
+Nac_1700                 1.0000     37  Nac_1701                 1.0000     37  
+Nac_1702                 1.0000     37  Nac_1703                 1.0000     37  
+Nac_1704                 1.0000     37  Nac_1705                 1.0000     37  
+Nac_1706                 1.0000     37  Nac_1707                 1.0000     37  
+Nac_1708                 1.0000     37  Nac_1709                 1.0000     37  
+Nac_1710                 1.0000     37  Nac_1711                 1.0000     37  
+Nac_1712                 1.0000     37  Nac_1713                 1.0000     37  
+Nac_1714                 1.0000     37  Nac_1715                 1.0000     37  
+Nac_1716                 1.0000     37  Nac_1717                 1.0000     37  
+Nac_1718                 1.0000     37  Nac_1719                 1.0000     37  
+Nac_1720                 1.0000     37  Nac_1721                 1.0000     37  
+Nac_1722                 1.0000     37  Nac_1723                 1.0000     37  
+Nac_1724                 1.0000     37  Nac_1725                 1.0000     37  
+Nac_1726                 1.0000     37  Nac_1727                 1.0000     37  
+Nac_1728                 1.0000     37  Nac_1729                 1.0000     37  
+Nac_1730                 1.0000     37  Nac_1731                 1.0000     37  
+Nac_1732                 1.0000     37  Nac_1733                 1.0000     37  
+Nac_1734                 1.0000     37  Nac_1735                 1.0000     37  
+Nac_1736                 1.0000     37  Nac_1737                 1.0000     37  
+Nac_1738                 1.0000     37  Nac_1739                 1.0000     37  
+Nac_1740                 1.0000     37  Nac_1741                 1.0000     37  
+Nac_1742                 1.0000     37  Nac_1743                 1.0000     37  
+Nac_1744                 1.0000     37  Nac_1745                 1.0000     37  
+Nac_1746                 1.0000     37  Nac_1747                 1.0000     37  
+Nac_1748                 1.0000     37  Nac_1749                 1.0000     37  
+Nac_1750                 1.0000     37  Nac_1751                 1.0000     37  
+Nac_1752                 1.0000     37  Nac_1753                 1.0000     37  
+Nac_1754                 1.0000     37  Nac_1755                 1.0000     37  
+Nac_1756                 1.0000     37  Nac_1757                 1.0000     37  
+Nac_1758                 1.0000     37  Nac_1759                 1.0000     37  
+Nac_1760                 1.0000     37  Nac_1761                 1.0000     37  
+Nac_1762                 1.0000     37  Nac_1763                 1.0000     37  
+Nac_1764                 1.0000     37  Nac_1765                 1.0000     37  
+Nac_1766                 1.0000     37  Nac_1767                 1.0000     37  
+Nac_1768                 1.0000     37  Nac_1769                 1.0000     37  
+Nac_1770                 1.0000     37  Nac_1771                 1.0000     37  
+Nac_1772                 1.0000     37  Nac_1773                 1.0000     37  
+Nac_1774                 1.0000     37  Nac_1775                 1.0000     37  
+Nac_1776                 1.0000     37  Nac_1777                 1.0000     37  
+Nac_1778                 1.0000     37  Nac_1779                 1.0000     37  
+Nac_1780                 1.0000     37  Nac_1781                 1.0000     37  
+Nac_1782                 1.0000     37  Nac_1783                 1.0000     37  
+Nac_1784                 1.0000     37  Nac_1785                 1.0000     37  
+Nac_1786                 1.0000     37  Nac_1787                 1.0000     37  
+Nac_1788                 1.0000     37  Nac_1789                 1.0000     37  
+Nac_1790                 1.0000     37  Nac_1791                 1.0000     37  
+Nac_1792                 1.0000     37  Nac_1793                 1.0000     37  
+Nac_1794                 1.0000     37  Nac_1795                 1.0000     37  
+Nac_1796                 1.0000     37  Nac_1797                 1.0000     37  
+Nac_1798                 1.0000     37  Nac_1799                 1.0000     37  
+Nac_1800                 1.0000     37  Nac_1801                 1.0000     37  
+Nac_1802                 1.0000     37  Nac_1803                 1.0000     37  
+Nac_1804                 1.0000     37  Nac_1805                 1.0000     37  
+Nac_1806                 1.0000     37  Nac_1807                 1.0000     37  
+Nac_1808                 1.0000     37  Nac_1809                 1.0000     37  
+Nac_1810                 1.0000     37  Nac_1811                 1.0000     37  
+Nac_1812                 1.0000     37  Nac_1813                 1.0000     37  
+Nac_1814                 1.0000     37  Nac_1815                 1.0000     37  
+Nac_1816                 1.0000     37  Nac_1817                 1.0000     37  
+Nac_1818                 1.0000     37  Nac_1819                 1.0000     37  
+Nac_1820                 1.0000     37  Nac_1821                 1.0000     37  
+Nac_1822                 1.0000     37  Nac_1823                 1.0000     37  
+Nac_1824                 1.0000     37  Nac_1825                 1.0000     37  
+Nac_1826                 1.0000     37  Nac_1827                 1.0000     37  
+Nac_1828                 1.0000     37  Nac_1829                 1.0000     37  
+Nac_1830                 1.0000     37  Nac_1831                 1.0000     37  
+Nac_1832                 1.0000     37  Nac_1833                 1.0000     37  
+Nac_1834                 1.0000     37  Nac_1835                 1.0000     37  
+Nac_1836                 1.0000     37  Nac_1837                 1.0000     37  
+Nac_1838                 1.0000     37  Nac_1839                 1.0000     37  
+Nac_1840                 1.0000     37  Nac_1841                 1.0000     37  
+Nac_1842                 1.0000     37  Nac_1843                 1.0000     37  
+Nac_1844                 1.0000     37  Nac_1845                 1.0000     37  
+Nac_1846                 1.0000     37  Nac_1847                 1.0000     37  
+Nac_1848                 1.0000     37  Nac_1849                 1.0000     37  
+Nac_1850                 1.0000     37  Nac_1851                 1.0000     37  
+Nac_1852                 1.0000     37  Nac_1853                 1.0000     37  
+Nac_1854                 1.0000     37  Nac_1855                 1.0000     37  
+Nac_1856                 1.0000     37  Nac_1857                 1.0000     37  
+Nac_1858                 1.0000     37  Nac_1859                 1.0000     37  
+Nac_1860                 1.0000     37  Nac_1861                 1.0000     37  
+Nac_1862                 1.0000     37  Nac_1863                 1.0000     37  
+Nac_1864                 1.0000     37  Nac_1865                 1.0000     37  
+Nac_1866                 1.0000     37  Nac_1867                 1.0000     37  
+Nac_1868                 1.0000     37  Nac_1869                 1.0000     37  
+Nac_1870                 1.0000     37  Nac_1871                 1.0000     37  
+Nac_1872                 1.0000     37  Nac_1873                 1.0000     37  
+Nac_1874                 1.0000     37  Nac_1875                 1.0000     37  
+Nac_1876                 1.0000     37  Nac_1877                 1.0000     37  
+Nac_1878                 1.0000     37  Nac_1879                 1.0000     37  
+Nac_1880                 1.0000     37  Nac_1881                 1.0000     37  
+Nac_1882                 1.0000     37  Nac_1883                 1.0000     37  
+Nac_1884                 1.0000     37  Nac_1885                 1.0000     37  
+Nac_1886                 1.0000     37  Nac_1887                 1.0000     37  
+Nac_1888                 1.0000     37  Nac_1889                 1.0000     37  
+Nac_1890                 1.0000     37  Nac_1891                 1.0000     37  
+Nac_1892                 1.0000     37  Nac_1893                 1.0000     37  
+Nac_1894                 1.0000     37  Nac_1895                 1.0000     37  
+Nac_1896                 1.0000     37  Nac_1897                 1.0000     37  
+Nac_1898                 1.0000     37  Nac_1899                 1.0000     37  
+Nac_1900                 1.0000     37  Nac_1901                 1.0000     37  
+Nac_1902                 1.0000     37  Nac_1903                 1.0000     37  
+Nac_1904                 1.0000     37  Nac_1905                 1.0000     37  
+Nac_1906                 1.0000     37  Nac_1907                 1.0000     37  
+Nac_1908                 1.0000     37  Nac_1909                 1.0000     37  
+Nac_1910                 1.0000     37  Nac_1911                 1.0000     37  
+Nac_1912                 1.0000     37  Nac_1913                 1.0000     37  
+Nac_1914                 1.0000     37  Nac_1915                 1.0000     37  
+Nac_1916                 1.0000     37  Nac_1917                 1.0000     37  
+Nac_1918                 1.0000     37  Nac_1919                 1.0000     37  
+Nac_1920                 1.0000     37  Nac_1921                 1.0000     37  
+Nac_1922                 1.0000     37  Nac_1923                 1.0000     37  
+Nac_1924                 1.0000     37  Nac_1925                 1.0000     37  
+Nac_1926                 1.0000     37  Nac_1927                 1.0000     37  
+Nac_1928                 1.0000     37  Nac_1929                 1.0000     37  
+Nac_1930                 1.0000     37  Nac_1931                 1.0000     37  
+Nac_1932                 1.0000     37  Nac_1933                 1.0000     37  
+Nac_1934                 1.0000     37  Nac_1935                 1.0000     37  
+Nac_1936                 1.0000     37  Nac_1937                 1.0000     37  
+Nac_1938                 1.0000     37  Nac_1939                 1.0000     37  
+Nac_1940                 1.0000     37  Nac_1941                 1.0000     37  
+Nac_1942                 1.0000     37  Nac_1943                 1.0000     37  
+Nac_1944                 1.0000     37  Nac_1945                 1.0000     37  
+Nac_1946                 1.0000     37  Nac_1947                 1.0000     37  
+Nac_1948                 1.0000     37  Nac_1949                 1.0000     37  
+Nac_1950                 1.0000     37  Nac_1951                 1.0000     37  
+Nac_1952                 1.0000     37  Nac_1953                 1.0000     37  
+Nac_1954                 1.0000     37  Nac_1955                 1.0000     37  
+Nac_1956                 1.0000     37  Nac_1957                 1.0000     37  
+Nac_1958                 1.0000     37  Nac_1959                 1.0000     37  
+Nac_1960                 1.0000     37  Nac_1961                 1.0000     37  
+Nac_1962                 1.0000     37  Nac_1963                 1.0000     37  
+Nac_1964                 1.0000     37  Nac_1965                 1.0000     37  
+Nac_1966                 1.0000     37  Nac_1967                 1.0000     37  
+Nac_1968                 1.0000     37  Nac_1969                 1.0000     37  
+Nac_1970                 1.0000     37  Nac_1971                 1.0000     37  
+Nac_1972                 1.0000     37  Nac_1973                 1.0000     37  
+Nac_1974                 1.0000     37  Nac_1975                 1.0000     37  
+Nac_1976                 1.0000     37  Nac_1977                 1.0000     37  
+Nac_1978                 1.0000     37  Nac_1979                 1.0000     37  
+Nac_1980                 1.0000     37  Nac_1981                 1.0000     37  
+Nac_1982                 1.0000     37  Nac_1983                 1.0000     37  
+Nac_1984                 1.0000     37  Nac_1985                 1.0000     37  
+Nac_1986                 1.0000     37  Nac_1987                 1.0000     37  
+Nac_1988                 1.0000     37  Nac_1989                 1.0000     37  
+Nac_1990                 1.0000     37  Nac_1991                 1.0000     37  
+Nac_1992                 1.0000     37  Nac_1993                 1.0000     37  
+Nac_1994                 1.0000     37  Nac_1995                 1.0000     37  
+Nac_1996                 1.0000     37  Nac_1997                 1.0000     37  
+Nac_1998                 1.0000     37  Nac_1999                 1.0000     37  
+Nac_2000                 1.0000     37  Nac_2001                 1.0000     37  
+Nac_2002                 1.0000     37  Nac_2003                 1.0000     37  
+Nac_2004                 1.0000     37  Nac_2005                 1.0000     37  
+Nac_2006                 1.0000     37  Nac_2007                 1.0000     37  
+Nac_2008                 1.0000     37  Nac_2009                 1.0000     37  
+Nac_2010                 1.0000     37  Nac_2011                 1.0000     37  
+Nac_2012                 1.0000     37  Nac_2013                 1.0000     37  
+Nac_2014                 1.0000     37  Nac_2015                 1.0000     37  
+Nac_2016                 1.0000     37  Nac_2017                 1.0000     37  
+Nac_2018                 1.0000     37  Nac_2019                 1.0000     37  
+Nac_2020                 1.0000     37  Nac_2021                 1.0000     37  
+Nac_2022                 1.0000     37  Nac_2023                 1.0000     37  
+Nac_2024                 1.0000     37  Nac_2025                 1.0000     37  
+Nac_2026                 1.0000     37  Nac_2027                 1.0000     37  
+Nac_2028                 1.0000     37  Nac_2029                 1.0000     37  
+Nac_2030                 1.0000     37  Nac_2031                 1.0000     37  
+Nac_2032                 1.0000     37  Nac_2033                 1.0000     37  
+Nac_2034                 1.0000     37  Nac_2035                 1.0000     37  
+Nac_2036                 1.0000     37  Nac_2037                 1.0000     37  
+Nac_2038                 1.0000     37  Nac_2039                 1.0000     37  
+Nac_2040                 1.0000     37  Nac_2041                 1.0000     37  
+Nac_2042                 1.0000     35  Nac_2043                 1.0000     37  
+Nac_2044                 1.0000     37  Nac_2045                 1.0000     37  
+Nac_2046                 1.0000     37  Nac_2047                 1.0000     37  
+Nac_2048                 1.0000     37  Nac_2049                 1.0000     37  
+Nac_2050                 1.0000     37  Nac_2051                 1.0000     37  
+Nac_2052                 1.0000     37  Nac_2053                 1.0000     37  
+Nac_2054                 1.0000     37  Nac_2298                 1.0000     35  
+Nac_3383                 1.0000     35  Nac_3871                 1.0000     35  
+Nac_3872                 1.0000     35  Nac_4034                 1.0000     35  
+Nac_4261                 1.0000     35  Nac_4262                 1.0000     35  
+Nac_4263                 1.0000     35  Nac_4691                 1.0000     35  
+Nac_4717                 1.0000     35  Nac_4718                 1.0000     35  
+Nac_4719                 1.0000     35  Nac_4720                 1.0000     35  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/Nac.fasta -oc meme_pwms/Nac -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=      530    maxsites=      530    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           19576    N=             530
+sample: seed=            0    hsfrac=          0
+        searchsize=  19576    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.312 C 0.184 G 0.19 T 0.314 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.312 C 0.184 G 0.19 T 0.314 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF NNYATAARNWWWDBTTATGNNN MEME-1	width =  22  sites = 530  llr = 3008  E-value = 2.6e-559
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3229:663344432119:2332
+pos.-specific     C  235::1122111242:1:1232
+probability       G  321:1:2421112211::5323
+matrix            T  232:922233443267:a2223
+
+         bits    2.4                       
+                 2.2                       
+                 2.0                       
+                 1.7                       
+Relative         1.5                  *    
+Entropy          1.2    *            **    
+(8.2 bits)       1.0    **           **    
+                 0.7    **           **    
+                 0.5    ***         ****   
+                 0.2   ******     *******  
+                 0.0 ----------------------
+
+Multilevel           GCCATAAGTAATACTTATGGCT
+consensus            ATT  T AATTATT    AAAG
+sequence             TA      C    G      TC
+                                          A
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+Nac_1150                      9  1.06e-06   AAATGACG GGGATAACCATATTTTATGGCG ATAACAT   
+Nac_1888                     10  1.35e-06  GAATCCGTG GCCATTGATATTGCTTATGAAG GCCCCG    
+Nac_1856                      9  1.35e-06   GCTGCATC GCCATTGCCTGTGCTTATGCCT TCCCGGA   
+Nac_1742                      8  1.35e-06    TTTTTTA ACCATAAGCTAATGTGATGATC AATTTTAC  
+Nac_1164                      9  2.17e-06   AAAACGCC AACATAAGAGAAACCTATGCCA TTACCCG   
+Nac_1891                      9  2.73e-06   ATGTTATC GCCATAAAATATGGTTATCCCC GTCATTT   
+Nac_1666                      8  2.73e-06    TTAAGAC GGCATAATACTTTTTTATGCCG TTTAATTC  
+Nac_1992                     11  3.42e-06 CTTTGGATAA ATAATAAGGATAATTTATGCCC CTCTT     
+Nac_1991                     11  3.42e-06 CTTTGGATAA ATAATAAGGATAATTTATGCCC CTCTT     
+Nac_1914                      8  3.42e-06    ATAATTA TCCATAAGCCGCTCTTATGATT AAAAAAAC  
+Nac_4691                      8  4.26e-06    CGGCAGC GACATCAGCAATTCCTATTGGT GCGCAT    
+Nac_2298                      8  4.26e-06    CGGCAGC GACATCAGCAATTCCTATTGGT GCGCAT    
+Nac_1917                      9  4.26e-06   GGAAAAGC GCCATATCGAACGCTTATGCGA GATGGCA   
+Nac_1916                      9  4.26e-06   GGAAAAGC GCCATATCGAACGCTTATGCGA GATGGCA   
+Nac_1750                      9  4.26e-06   ATGGTAGC ACAATCAGATTCGCTTATGACG GCGATGA   
+Nac_1814                      8  5.29e-06    TGATACG AGAATACGCATAACTTATGAAG CCAATTTT  
+Nac_2006                     11  6.54e-06 GGATACAGAA ACAATAACTATTAGTTATGAAT TTATC     
+Nac_1885                     10  6.54e-06  TTTGTGATG GCTATTAGAAATTCCTATGCAA CAACTG    
+Nac_1799                     10  6.54e-06  TACTGTCCA GGCATAAGGATAAGATATGTTC GATTTT    
+Nac_1223                      9  6.54e-06   TCATCGCC GTCATAAGCGAATCTGATTGTG CTACCAT   
+Nac_1221                      9  6.54e-06   TCTTGTTA ATTATAAGGATATTTTATGCGC TATAATG   
+Nac_2043                      8  8.05e-06    CGACTCA GACATTAGACAAGGTTATGCTC TGTAAAAA  
+Nac_2041                      8  8.05e-06    AAATTTT GCCATCACGTTCAATGATGGCG GCAACAAC  
+Nac_1170                     10  8.05e-06  GATTTTAAA TGAATAAGAAATCGTTATGGAA GCTAAT    
+Nac_1122                      9  8.05e-06   TCCTACTG AACATAGCCATTTCATATGGAT TTTTCTT   
+Nac_1832                      9  9.87e-06   TTGAAGAT CCCATCACCGTTGCTTATAACC TGGAAGT   
+Nac_1807                      9  9.87e-06   TTGAAGAT CCCATCACCGTTGCTTATAACC TGGAAGT   
+Nac_1706                      8  9.87e-06    GATGAGT TCCATTGGATTTACTTATAGGT TGCGAATG  
+Nac_2009                     10  1.20e-05  CGCGTCGAT GGCATAACCGAATCGTATGAAA CGCGAC    
+Nac_1128                      9  1.20e-05   AAAATCTT TCCATAACAAATGGTTATTCAT TAATCCT   
+Nac_2023                     11  1.46e-05 ATCTATGCCC GTGATAACCATTTTTTATGCTC ATCGC     
+Nac_1975                      8  1.46e-05    GCAGGTT GCCATCAACAATACAAATGGGG CGACCTTT  
+Nac_1974                      8  1.46e-05    GCAGGTT GCCATCAACAATACAAATGGGG CGACCTTT  
+Nac_1896                      9  1.46e-05   AAATGCCT GTTATAACTCTTCCTGATGGCA GCCAACG   
+Nac_1680                      9  1.46e-05   TCGCTACC AACATAAAGTGGCGTTATGGCT GACGTTT   
+Nac_2016                      8  1.77e-05    GCGGGGC GTTATAAGGAGTGATTATGTCT GACCATAA  
+Nac_2021                     10  2.14e-05  CAGGATAAA AATATCCGAATTTTTTATGGCG ATTCTG    
+Nac_1960                     10  2.14e-05  AGTGATTTC GCCAGAACTCAAACTGATGGAC GAAAGA    
+Nac_1806                      8  2.14e-05    TCCTCTA ATTATATGTAAATCCTATGGAT TTTGAATT  
+Nac_1937                     10  2.57e-05  TTATTCCCA GACATTAATAAACCCGATGGGC CAGCAA    
+Nac_1850                     10  2.57e-05  CTTTAGGAA GGGATAACTAACGGCTATGGAG TTAAGT    
+Nac_1819                      8  2.57e-05    AGATCGC ATTATAAGCTTTCTGTATGGGG TGTTGCTT  
+Nac_1734                      8  2.57e-05    ATCCCTT GCTATCGGGTAAACCTATCGCT ATGATTAG  
+Nac_1733                     11  2.57e-05 AGTACCTGCG TTCATCACCTTATGTGATGGAC CAATT     
+Nac_1725                     10  2.57e-05  GCTAATAGC GGCATAATTGATGATGATGGCT CGCTCT    
+Nac_1707                     10  2.57e-05  CATTCGCAA CCTATAAGTAAATCCAATGGAA CTCATC    
+Nac_1682                      9  2.57e-05   AAGAAAAA TCCATATGAAATGGCTATGTTC AGTAGGA   
+Nac_1673                      9  2.57e-05   ACAGGGGT AACATAATGGAAACCTATGCTG TTTTTGG   
+Nac_1664                     10  2.57e-05  AACGTTGAG CGCATTTCCTTTCTTTATGGCG CTTGAA    
+Nac_1138                     10  2.57e-05  GTTGTTGCC GCCATCATTGAACGTGATGGCA AAATTT    
+Nac_2012                      8  3.09e-05    ACTTAAC TCCATAGCCGTTAGTTATCCCT TCCTAAAG  
+Nac_1928                     10  3.09e-05  TATACGTAT GGCATCGCTGATGTTTATGGTT ACCCCT    
+Nac_1881                     10  3.09e-05  CGAGGTAGT CTCATAAGGTTCGTTTATAGAT CGACGG    
+Nac_1876                     11  3.09e-05 CAAAGTGGCG GTCATTGAGTTTAACTATGGCC GAAAA     
+Nac_1783                      8  3.09e-05    TTAAGGC ACAATAATCATACTTTATGAAG AATATACG  
+Nac_1731                     10  3.09e-05  ACTGGGTAA ATAATAAGGAAAAGTGATGACA GAGCCG    
+Nac_1712                      9  3.09e-05   AGAGTTCG CCCATCTGCAAACGTTATTACC CAAACCA   
+Nac_1690                      9  3.09e-05   CGACAGCT ACCATCAAAACCTGTTATGGAT AGGCCAT   
+Nac_1689                      9  3.09e-05   CGACAGCT ACCATCAAAACCTGTTATGGAT AGGCCAT   
+Nac_1202                     10  3.09e-05  ATTGTGATT GGCATAGATAATACTTATCCGA CAATTA    
+Nac_2050                      9  3.69e-05   CCACGGAC ATCATAGCGTTAGCTTATTCAT AGGCTAT   
+Nac_2033                      9  3.69e-05   CTCTTATT GACATCATGTATAGTTATAGGG CGACATA   
+Nac_1949                     11  3.69e-05 ACCGGGCAGC ATCATACGGGGCAATTATGGCC GCATT     
+Nac_1948                     11  3.69e-05 ACCGGGCAGC ATCATACGGGGCAATTATGGCC GCATT     
+Nac_1866                      8  3.69e-05    TGTACCA CTAATAAAGAATAATTATGGGC AGTATCTT  
+Nac_1853                      8  3.69e-05    TAACATT TCCATAAGTTACGCTTATTTAA AGCGTCGT  
+Nac_1732                      8  3.69e-05    CGGCTCT GTCATCACTTTTCCTTATTATT TACCCAGT  
+Nac_1691                      8  3.69e-05    ATGGCGC GCCAGAAACGTTTCTTATTGAC GGCAACGG  
+Nac_1674                      8  3.69e-05    CGCTAAA TGCATCGTCATCTTTTATGGCG CTGCCCGA  
+Nac_1658                     11  3.69e-05 GGTTAACGGC ACCATCAGTTACACCAATGAAG CAGGC     
+Nac_1127                      9  3.69e-05   ATAGCCTA TGAATAAGCTAACGCTATGATG TCCGTGG   
+Nac_2054                      9  4.39e-05   ATCCATGG AAAATTAGTGGAACTTATGCCG CAAAGTC   
+Nac_2047                      9  4.39e-05   AGTGCGGC GCTATTAGGATTTGATATTGCC GTTGCTG   
+Nac_1920                     11  4.39e-05 TGTACGTAGC CCTATCGCACATGGTTATGCCG TAAGT     
+Nac_1830                     11  4.39e-05 TGGGTCGTCA GCCATGAACAAAAATTATGGTT GCCGA     
+Nac_1812                      9  4.39e-05   AAAGAGGC GATATCGGTGAATCTGATGACG ACGATAA   
+Nac_1778                      9  4.39e-05   TCGTCATT GCCATAAGTCCTGGCGATAGCC GTTTTGC   
+Nac_1754                     11  4.39e-05 CGGCACAGGT AACATACGGTATTGTTATTGAA GACCT     
+Nac_1753                     11  4.39e-05 CGGCACAGGT AACATACGGTATTGTTATTGAA GACCT     
+Nac_1699                      8  4.39e-05    CAATGTG TTCATTGGCAAAATTGATGGGC GACAAACC  
+Nac_1662                     10  4.39e-05  CAACCGACT TGCATAAGATAAACTAATTGTT CATTGT    
+Nac_1217                      9  4.39e-05   GATGCCGG ACCATAAGCCTCACGAATGCGT TTATGTT   
+Nac_1207                     10  4.39e-05  TGCCTTCCT CGGATACGAATATATTATGACG CCGGTT    
+Nac_1167                      9  4.39e-05   TGAATTAA ATCATCACGATTATTTATTCCC CAGGATG   
+Nac_2038                      9  5.20e-05   GTGTTTCA ACCATCGAACTGCCTTATGAAG CAGTTAA   
+Nac_1999                      9  5.20e-05   TATATTTT GCTATTAGTAAAATCTATGAGA GTCGTTT   
+Nac_1703                     10  5.20e-05  TTAGCTATT CTTATCAATTATGCTTATGGGA GATCTA    
+Nac_1152                      9  5.20e-05   ACTTAATA AATATCAGCTATTCTTATAAAG AAAATCT   
+Nac_1121                      9  5.20e-05   CAACCTTT ATTATAAATAAAAGTTATGAAA TATATTC   
+Nac_1931                      8  6.15e-05    TACAGTC GCCATAAGCCTTTCCTCTGTTA AACCGCCT  
+Nac_1901                      8  6.15e-05    GATAAAA TTCATAAAAAATACTGATTGTT AGTTAATT  
+Nac_1882                      9  6.15e-05   GTGCCCTA CGCATTCGGTACACTTATCGCT GTTAATC   
+Nac_1815                     10  6.15e-05  AAATGGCTT AACATTTGTTAGACTTATGGTT GTCGGC    
+Nac_1763                      9  6.15e-05   TCGAACAG GGCATTGCTTTTTCCAATGCCT TATTACC   
+Nac_1683                      9  6.15e-05   AACATAAA CGCATTCGTGAGGCTTATGGTC CGGCATC   
+Nac_2011                      9  7.25e-05   GAAGGGGG ACGATATGATTTACCTATCGCC ATTGCGT   
+Nac_1983                     10  7.25e-05  TCGGGCAGC GCCATAAAAGATGACGATGCAT TTAGCG    
+Nac_1982                     10  7.25e-05  TCGGGCAGC GCCATAAAAGATGACGATGCAT TTAGCG    
+Nac_1973                     11  7.25e-05 TGGTTGTAGT GCCAGATACAACGCTTATGCGT CTTAT     
+Nac_1953                      9  7.25e-05   ACTGTGCT GCCATTGCGGAAATTTATAACC ACGCCGT   
+Nac_1889                     10  7.25e-05  CTTGTTAGC GGCATATCGTTTCCTGATTGAT AGCCGT    
+Nac_1851                      8  7.25e-05    GCAAACC ATCATCAATAAAACCGATGGAA GGGAATAT  
+Nac_1818                      8  7.25e-05    GCGTTGT TTGATAAGCATCGGGTATGGCA GAACCGCC  
+Nac_1805                     10  7.25e-05  AATTCAAAA TCCATAGGATTTACATATAATT AGAGGA    
+Nac_1728                     10  7.25e-05  CTCTCATTT CTCATAGATGAAATTTATGAAT TGAATG    
+Nac_1702                     10  7.25e-05  CTTTTGATC ACAATAAGAAAACAATATGTCG CTTTTG    
+Nac_1216                      9  7.25e-05   TTAGCCAA AAAATAAGAAAAGATTATGCAA GCAACAG   
+Nac_1962                      8  8.51e-05    TCCTTCT GTAATTGTTATGTCTTATGGCC TCATCCCT  
+Nac_1936                      9  8.51e-05   CATCCTGG GGAATAAATAATCGTGATGATT TAATTCA   
+Nac_1926                      9  8.51e-05   GATATGAA TAAATTGAAATATCTTATGACG CTTCTTA   
+Nac_1869                     11  8.51e-05 TCTCAGGGGC TCTAAAAGCTGTCGTTATGGCG ACCGG     
+Nac_1822                      9  8.51e-05   GGTTACGG GAAATAAGAGGTTATTATGGGA AATTCTG   
+Nac_1821                      9  8.51e-05   GGTTACGG GAAATAAGAGGTTATTATGGGA AATTCTG   
+Nac_1804                     11  8.51e-05 CGAATTGCCC GGTAGAACCGTTCCTTATGAAG TTGCC     
+Nac_1798                      9  8.51e-05   CGACGGAT GGCAGAAGAAAAAGCTATCCCG GTGATTT   
+Nac_1721                     10  8.51e-05  CAACTGGAA ACTATTATTGAAGCTTATGAAG AATTTA    
+Nac_1717                      9  8.51e-05   GATATGAA TAAATTGAAATATCTTATGACG CTTCTTA   
+Nac_1684                      9  8.51e-05   GCCTGAAT GTCATTAATAAAGGCTATAACC CTGACAG   
+Nac_1224                      9  8.51e-05   TTGCCCGT TGCATAACCTTTAATTATTCAT ATGCATT   
+Nac_1175                     10  8.51e-05  ATTTATATT GCCATCACGTTCTGGTATTGGG TGCGCT    
+Nac_1158                      9  8.51e-05   GATATGAA TAAATTGAAATATCTTATGACG CTTCTTA   
+Nac_1115                      9  8.51e-05   TTCACGTA GCGATAGTTTTTACTTATCACT AACTGAT   
+Nac_2048                     11  9.97e-05 AATATCTGCT GTCATATATAATGATGATGGTC TTGAT     
+Nac_1998                     10  9.97e-05  ATTTCCTGA GCCATGGCCTTTACTTATCGGT TATGTC    
+Nac_1930                      9  9.97e-05   TGGAAGGC GGCATAAATTTCTTTGATACCG CCAACAG   
+Nac_1848                     10  9.97e-05  AGCGCTGGA GGAATACGTTAAACCTATCGGC GGCGGT    
+Nac_1727                      8  9.97e-05    GCTGCAA TATATTAGTAAAGCTTATTACT GAGTTTGC  
+Nac_1681                      8  9.97e-05    TCTTTGC ACCATAAAGGGATATTATGTTT AGACGAAA  
+Nac_1657                      9  9.97e-05   ATCAGTTA GTGATAAGTAAAAACTATCGCT ACGTGAA   
+Nac_1213                     10  9.97e-05  AAACTCAAC GCTATAAGGCGTTGTTCTGGTT ATCGTT    
+Nac_1981                      9  1.16e-04   GATTAACA GCGATAAGTGTACCGAATGCGT AGGGCAC   
+Nac_1978                      8  1.16e-04    CAGTGGA TACATATTTTAATGTTATGGAA GTTAATTT  
+Nac_1967                     10  1.16e-04  TAACTTCCG AATATAAGGTGACATTATGGTA ATTGAA    
+Nac_1913                      8  1.16e-04    AAGTCTG AATATAAGGAAAACCAATGCAA GATTTAAG  
+Nac_1873                      7  1.16e-04     TCGGCA ACCATAATTTTTGTTCATGGCT GACGACCCA 
+Nac_1827                      9  1.16e-04   CCCCGGTT GCTATAACAAAAGCACATGGCG GGTAAAT   
+Nac_1679                      9  1.16e-04   TCGTTCCA GCAATTAAAAAAATTTATTCCG GTCGGCA   
+Nac_1678                      9  1.16e-04   TCGTTCCA GCAATTAAAAAAATTTATTCCG GTCGGCA   
+Nac_1670                      8  1.16e-04    CCTCTCT CTTATTAGTTTTTCTGATTGCC AATTAATA  
+Nac_1206                      9  1.16e-04   GTACGCGT CGTATAAAAAGATCGGATGGCG ACGTCGT   
+Nac_815                       7  1.16e-04     GTCAGG CTCATTAGCTTCGTTTATTGCA ACACAAA   
+Nac_2049                     11  1.35e-04 ATCGTGATTG ATTATAAAAAAAACTTATTATT TATTT     
+Nac_2014                      9  1.35e-04   TTATCGTC GTCATCAGATTCACCGATATCG CCTCTTT   
+Nac_1979                     10  1.35e-04  AAATTAACT TCCATAACATTAAAATATGTAT CCACTG    
+Nac_1957                      9  1.35e-04   CGAGCGTC CTCATCATAAATATCTATGAAC ACAAAAA   
+Nac_1887                      9  1.35e-04   AACAATTG GTTATAAGGAGAGAGTATGCGT GTCATCA   
+Nac_1859                      9  1.35e-04   TTCAGGAA ACCATCCGTAAAAGTGATAAAG ATAACCG   
+Nac_1811                      8  1.35e-04    GTGATCT GTCATACATTTCTGCTATGTTG TGTATGGA  
+Nac_1709                     11  1.35e-04 ACAACTGATC GCCAAAGGTCACGCTTATGTGG CGGAC     
+Nac_1671                     10  1.35e-04  ACGGGTTCG GAGATAATCGATGGTTATGCGA TAATCA    
+Nac_1212                      9  1.35e-04   ATGAACAG TCCATCGCTAATTATTATTGGT CGGGTTG   
+Nac_1148                      9  1.35e-04   TTGCGATG CGCATCAGTAAACGCTATCAAC ACCTGGT   
+Nac_2037                     11  1.57e-04 CCATGACCAC ACAATATGGATTTTTTATCGAT TCCAG     
+Nac_2017                      9  1.57e-04   CCATAGCA AAGATAATCCTTGTTTATGGAT TGGCTCA   
+Nac_2005                      9  1.57e-04   AGTTTGAT GGCATTCCTTTTTACTATGCGC ACATGCG   
+Nac_2002                     10  1.57e-04  GATAGCGCA ACCTTCAGGAAAAATTATGGAG CTGCTC    
+Nac_1946                     10  1.57e-04  CGTTAAGCG AACATATGCTGGACGTATGGTT AAAGGG    
+Nac_1862                     11  1.57e-04 GGAAGGCCAG CCGATAGGTCATTTTAATGGCA CTTGC     
+Nac_1839                     10  1.57e-04  GTACGAATC GACATAAGGTGATCGTCTGAAT CACCAG    
+Nac_1829                     11  1.57e-04 CCGTTAACGG GTCAGACGCTGGTGTTATGGGC GCTGC     
+Nac_1828                     11  1.57e-04 CCGTTAACGG GTCAGACGCTGGTGTTATGGGC GCTGC     
+Nac_1782                     10  1.57e-04  CGTTAAGCG AACATATGCTGGACGTATGGTT AAAGGG    
+Nac_1757                      8  1.57e-04    ATTTACT GCCAAAAGTATTACCGATGTTT CGTCTCAG  
+Nac_1713                      8  1.57e-04    AACAACA CACATCGGAGGCTGTTATGCCA CTGCATAA  
+Nac_1700                      8  1.57e-04    CCGTAAT GCCATCTTATTTCGTAATGGAT TGAGAATG  
+Nac_1687                     10  1.57e-04  ATCGAATAA CTAATACGGTTCTCTGATGAGG ACCGTT    
+Nac_1225                      9  1.57e-04   TTAAAAAA TCCATTGATATAACTTATATAT ACAGACA   
+Nac_1203                      9  1.57e-04   TTAATTAC AGCATAACGATTAATGATACAC GTACAGG   
+Nac_1168                     10  1.57e-04  TTACCGCTG GCAATCGGTAAATTTAATGAGC TGTATC    
+Nac_1144                     10  1.57e-04  TCGCTCCAT GCTATTGCTTAATCTTATTAAT AAAGAG    
+Nac_1996                      8  1.82e-04    GACATAA CCGATAAGTAAAGGCCATGGCT CAGGAAAT  
+Nac_1915                      8  1.82e-04    TTCAATT ACCATAATGTCACCTTATATTC GGAAGTTA  
+Nac_1835                      8  1.82e-04    TAATTTA AATATAAGGAAATCATATAAAT AGATTAAA  
+Nac_1816                      8  1.82e-04    CTTACAC AGCATAACTGTCGGATATAGCG CACATTTT  
+Nac_1743                      8  1.82e-04    CCAAACG GCTATACCGAACCGTTATTACA CGCCTGGC  
+Nac_1672                     10  1.82e-04  TGTATAACC CGCATATGACGAAGTTATTGCA GCAGGC    
+Nac_1661                      9  1.82e-04   TGGAGCGA GCCATTCGTGAAAGTTATCCGA AACCGAA   
+Nac_1228                      9  1.82e-04   TCACGAGT GCTATCATCCGCCCTTATGCTT AGCGCAT   
+Nac_1205                      9  1.82e-04   TCTGCCGT TCCATAAAGCAAACCAATTCCT CGGTATG   
+Nac_1181                      9  1.82e-04   CACTACTT AACATTAAATTAACTTATACAA TTCAGTT   
+Nac_1176                      9  1.82e-04   ACGGTTGG ATTATCAGGATGTGCTATGAAT ATGATGC   
+Nac_2035                     11  2.10e-04 TTGAACATAC AACATAATCCCACCTTATTACT CATAC     
+Nac_2034                     11  2.10e-04 TTGAACATAC AACATAATCCCACCTTATTACT CATAC     
+Nac_1997                     10  2.10e-04  ACTTATCTT TATATAAAGGAATATTATGTCC GCTTTT    
+Nac_1972                     11  2.10e-04 TGGTTATCAA CCCAGACGAAAATGAGATGGCG CGCGA     
+Nac_1971                      8  2.10e-04    TTCCCCC GATATATGTTTATTTTATGTAA AATCAATT  
+Nac_1951                     10  2.10e-04  GGCGGTAAA ACAATTAGGCAAACTTATTCAA GAACGG    
+Nac_1925                     11  2.10e-04 GCCGCGCTGA ACAATATCTTAATGATATGACG GATGA     
+Nac_1924                     11  2.10e-04 GCCGCGCTGA ACAATATCTTAATGATATGACG GATGA     
+Nac_1808                      9  2.10e-04   TCGAAATC GCCAAAGCGTTTTCCTATAACG CGAAAAT   
+Nac_1803                      9  2.10e-04   TGGCTTAT GGTATAAGCGACACGAATGAAC CACATGC   
+Nac_1777                      9  2.10e-04   GAATATAT TTCATAACTTTTATTTATAATA AAGGTTG   
+Nac_1766                      8  2.10e-04    CGCGTAA CCCATACGATGTGGGTATCGCA TATTGCGT  
+Nac_1726                      8  2.10e-04    CATTCAA TTCATAAATTTCATCTATGAGA AATGAGAG  
+Nac_1232                      9  2.10e-04   CATATATT CACATTAAATATGATTATGTAC TTGTTAC   
+Nac_1229                      9  2.10e-04   TATGTCGC CCTATAACTATACATGATGTCA ATAAGAG   
+Nac_1218                      9  2.10e-04   GAGACTTT TTTATTGGATTTACTTATACGG CAACGAT   
+Nac_1215                     10  2.10e-04  TCTTCGCCA ACTATCTGCTTTTCTTCTGGAT CTTCTG    
+Nac_1199                      9  2.10e-04   ATATTCGT CCCATAAGGAGTTTTTCTTGAT TACACAT   
+Nac_1198                      9  2.10e-04   CTTCTCAG GCGAGAAGCCGTTCTTATTACC GGACAAT   
+Nac_1197                     10  2.10e-04  ACGTGGCCC GGTATCACTTTTCTTAATGACT CTGGCT    
+Nac_1185                      9  2.10e-04   ATTCACCA AAGATATAAAATTCCTATGCCA AAAGTTC   
+Nac_1151                     10  2.10e-04  AGGCGACCT GCCAAAAGCCAAAGTTATCCAC GGGCGA    
+Nac_1141                      9  2.10e-04   AGCCTGGT GTAATAACAATTCCCGATAGTC TTTTGCT   
+Nac_1124                      9  2.10e-04   TGATGACA CGCATACTCTCTCCTTATAACC AATTGTT   
+Nac_2031                     11  2.42e-04 CATCAGCAAT TACATATCTCTTCCTGATGATT TTCCC     
+Nac_1831                     10  2.42e-04  TCCATACAC AACATAGCAGAAATGTATGACA GATCAC    
+Nac_1823                     10  2.42e-04  TATCAATGA TAGATAAAGTTATCTTATCGTT TGATTT    
+Nac_1773                     10  2.42e-04  ATATCTTGT ACTATTTACAAAACCTATGGTA ACTCTT    
+Nac_1768                      9  2.42e-04   ATAAACAC ATTGTAAGGATAACTTATGAAC AAGACTC   
+Nac_1759                      8  2.42e-04    AACACAA ACCAGATAAATATCCTATGAAT ATGCAACA  
+Nac_1756                     10  2.42e-04  CTGAGACGA AACATCGGTAATACTTTTGGCA GTAAAT    
+Nac_1694                      9  2.42e-04   TGAGCATG GATATAAGCGATTTTTATCAGA CATTTTT   
+Nac_1226                      9  2.42e-04   TGTCTGTA TATATAAGTTATATCAATGGAT TTTTTAA   
+Nac_1220                      9  2.42e-04   ATAAACAC ATTGTAAGGATAACTTATGAAC AAGACTC   
+Nac_1214                      9  2.42e-04   CCAGCAAA TACATTAGACAAAAATATGGGC ATCATGG   
+Nac_1191                      9  2.42e-04   TGCGTTGT TGAATCATTATTTGCTATGGGT TTCGATA   
+Nac_1178                     10  2.42e-04  TTACTCACG ATGATACGGTTTTGTTATTAAG AGGAAC    
+Nac_1162                     10  2.42e-04  TTCATGGCT ATCATCCCAAAAAACTATGCGC GGTTAG    
+Nac_1159                      9  2.42e-04   CTAATATA AAAATAGGGAGAAATGATGGAG CTTATAT   
+Nac_1136                      9  2.42e-04   ACGATTTG TCCATAAATGATTATTATCGTA AAGTTAA   
+Nac_2000                     10  2.78e-04  CCTGCGAGG AAAATAAGCATCTATTATTGTT TGTCAT    
+Nac_1995                      9  2.78e-04   GTGTTATT GCCATTGTAGGATGTGATGGTT CAGGTAA   
+Nac_1988                     10  2.78e-04  TGTCTATTG TCCGTAAGGAGTCACTATGGCT TTGACA    
+Nac_1987                     10  2.78e-04  TGTCTATTG TCCGTAAGGAGTCACTATGGCT TTGACA    
+Nac_1935                      9  2.78e-04   GCAGATAA AACATATTATATTTTTATGTGT TCCATTT   
+Nac_1870                      9  2.78e-04   ATTCGCGC CCTATTGTGAATATTTATAGCG CACTCTG   
+Nac_1824                      8  2.78e-04    AAATCAA ACGATAAGATAACTTTATCTAT CATTGATA  
+Nac_2004                     10  3.18e-04  AAAACGGGG GCTATAAATAAGACCTATTTTC TACCAC    
+Nac_1977                     10  3.18e-04  CACAAAACA AGGATAAGGTAATTCAATGAAG AAAATC    
+Nac_1976                     10  3.18e-04  CACAAAACA AGGATAAGGTAATTCAATGAAG AAAATC    
+Nac_1969                      9  3.18e-04   AGACGGTT ACCAGAGATAGGGCTTATGCAT AAAAAAA   
+Nac_1950                      9  3.18e-04   GCACTGGG GATATTACCTTCGGTTATAGGT CAGTTTC   
+Nac_1945                      8  3.18e-04    ATTATTC AACATGCGGCTTTTTTATGGTG AGCTGGCT  
+Nac_1919                      8  3.18e-04    TATATTA TCCATTGTGTTTATGTATGTCG GATATCTG  
+Nac_1911                      9  3.18e-04   GAGCAGGG TAAATCGACGAAACTTATGATG CTGACCG   
+Nac_1880                     11  3.18e-04 AGGAATACCT GGTCTAAGGTTTTGTGATGGAC GATGA     
+Nac_1755                      8  3.18e-04    CGTCACG CCAATCGCAATTGGTTATATCG TTGGCACG  
+Nac_1745                      8  3.18e-04    GGTATTT CACCTAAGATTAACTTATGTAA CAGTGTGG  
+Nac_1739                     11  3.18e-04 AAACACTTGC CCCATAAGAATTCACAATTATG TTTTT     
+Nac_1697                      9  3.18e-04   GTGGGTTG GTCATAAAATATGTCGATAAGG CACTGGA   
+Nac_1195                     10  3.18e-04  GTTTGAAGG CTTATTAGTTATCGATATGACA CATGTC    
+Nac_1142                      9  3.18e-04   CCGCTTAC TCAAGAAGAAAGAATTATGACG TTGTCTC   
+Nac_1118                      9  3.18e-04   ACGGCGTG GTTATAAATTTCCGCAATGGCA GCACAGT   
+Nac_2051                      8  3.63e-04    CAGTATA AGCATTCATTTTTCATATGATT TGTGCGCT  
+Nac_1961                      9  3.63e-04   TAAAAATA GCCAAACATCTTCGTTATGGGA TGCATTT   
+Nac_1677                     10  3.63e-04  TTCCCCTGC CCTATAAAAGGAGGGTATGCAC CACGAT    
+Nac_1669                      8  3.63e-04    CTGCGAT GTGATATTGCTCTCCTATGGAG AATTAATT  
+Nac_2045                      8  4.14e-04    TTGCTCA TTCATCAATTTTTCTTATTTTA AATTTACA  
+Nac_2020                     10  4.14e-04  GTCTCTTTA TTAATATGAAACACTTATACTG GAAACA    
+Nac_1984                      9  4.14e-04   CAGACTCA GGTATAAGCGTTTCAGATTGGA TCGATGC   
+Nac_1954                      8  4.14e-04    CATCATC GCTATTACAAATCCTAATAATT CATTTCCA  
+Nac_1922                      8  4.14e-04    CATTATG AACATCACACGAAGTGATGGTA AAAATATT  
+Nac_1886                     11  4.14e-04 ACATGCCGGA ACCGTCATTCGTACTTATGGCG GAGTG     
+Nac_1867                      8  4.14e-04    AGTTGCG GTTATAGGGTTCAGTTATATAA AGCCCCGA  
+Nac_1858                      8  4.14e-04    TAAAACT GTCATATTCCTTACATATAACT GTCACCTG  
+Nac_1847                     10  4.14e-04  CCACGGAAA TCAATAACCTGAAGATATGTGC GACGAG    
+Nac_1741                      8  4.14e-04    GCTGTGC GGAATAAGGACGGTATATGACT AACCTGTT  
+Nac_1668                      8  4.14e-04    TTAATTA TCAATTAATGAACTTTATGAAT TTTATCTG  
+Nac_1190                      9  4.14e-04   GCTTACCA CTTATAAAGATTAATTATAAAT ATATAAT   
+Nac_1166                      9  4.14e-04   AAATGGAA CACATAAAAATATAATATGTTT TATCTGC   
+Nac_1157                      9  4.14e-04   TTCAACGA GCAATTGTATATTGTTATGTAA GCAAGTG   
+Nac_1154                      9  4.14e-04   CTTAAGCC TCTATAAGCTGTAGTGATAAAA CTCAGAT   
+Nac_1132                      9  4.14e-04   GAACTTTT GGCATAGGAATTTTATATCTTT GGTGAAT   
+Nac_1964                     11  4.70e-04 CGCCGAGGTA TCGATACAATAGTGTTATGTGG GATCT     
+Nac_1963                     11  4.70e-04 CGCCGAGGTA TCGATACAATAGTGTTATGTGG GATCT     
+Nac_1932                     10  4.70e-04  TTAGTGGGG CCTATAAGGAGATTCAATGAAA TATAGT    
+Nac_1929                     11  4.70e-04 CGCCATTGGC CTTATATTCATTCTTAATGGCG TGGTG     
+Nac_1872                     10  4.70e-04  CCATTACGC CGAATATGATTATCTGATTGTG AATGAT    
+Nac_1871                     10  4.70e-04  TTTACGCCG CATATTGGAAAATTTAATGACC ATAGAC    
+Nac_1838                      8  4.70e-04    TAAGTTA GATATAAAAAATACATATTCAA TCATTAAA  
+Nac_1790                      9  4.70e-04   GGTGGTGG GGCATAGCGAAAACTTCTCTGC CTCTATT   
+Nac_1788                      9  4.70e-04   GGTGGTGG GGCATAGCGAAAACTTCTCTGC CTCTATT   
+Nac_1767                      8  4.70e-04    TCGCACA CGTATAAAACTTTTCTATCGCC CGGATGGA  
+Nac_1746                     11  4.70e-04 CGACACATCC TATATTGAAAAAGCTTATGATA CTCTC     
+Nac_1714                      8  4.70e-04    CGGCTGG TATATCGTTTTATGTTATGCGC TACCCAAT  
+Nac_1705                     10  4.70e-04  ATTTATCAA TGTATAAGTCTTGGAAATGGGC ATCAAA    
+Nac_1667                      9  4.70e-04   CTTCCAGT GGCAGTTTTGTTTCTTATGCCC GTGAGTT   
+Nac_1231                      9  4.70e-04   TCTTCAGA AATATCCGCTATCTTTATTGAC AAATCAT   
+Nac_1193                      9  4.70e-04   TATCGAAA CCCATAGCAAATAATGATTCAA CAACGCA   
+Nac_1184                      9  4.70e-04   AGATACGT ACCATCATTTCCTCCTATAGGC TGATTTC   
+Nac_1123                      8  4.70e-04    GCGTCAC GTTATTCACTAAAGTAATGGCA ATAAAACC  
+Nac_1993                      8  5.33e-04    TTACTGG CAGATAATGAAGCCTTATTGAT TGCCGGTT  
+Nac_1933                     11  5.33e-04 GGATTTATGG AACATCAGAGAAAACTATTCCA GCAAC     
+Nac_1923                      9  5.33e-04   CACTTGCT TACATAACAATATACAATTGCT CGTTGAA   
+Nac_1921                      9  5.33e-04   ACAGTCAG TGCATATACAAGTTTTATTGTG GGAAATA   
+Nac_1910                     11  5.33e-04 GGTGGAACGC TATATAGCGCTGGCCTATGACA AAGGC     
+Nac_1854                      8  5.33e-04    TTACTGG CAGATAATGAAGCCTTATTGAT TGCCGGTT  
+Nac_1844                      8  5.33e-04    GATTTTC TTCATTGAATTACCTTATCCTT GTTTTGTG  
+Nac_1794                      8  5.33e-04    TTTAAGA TGGATAGCATTTTTGTATGGTT TCCGAAAC  
+Nac_1791                      8  5.33e-04    AGGACGT GCCAAAAGAAGACGTTATCATT GAAAGCGT  
+Nac_1761                     11  5.33e-04 ATCCCGTTCT GCCATAAGCTTTGTTACTTCTG CGGTT     
+Nac_1222                      9  5.33e-04   TTTTTTTA TCCATTCGAACTCTTTATACTG GTTACTC   
+Nac_1210                      9  5.33e-04   TCTGACAC AAGATAAGCAAAAGTGATTTAT GTGATTA   
+Nac_1133                      9  5.33e-04   AGCCCATG GGCATATCATCCCTTTATAGAG AAAACGA   
+Nac_1130                      9  5.33e-04   CAGAGTGC GCTATAAATATTCACAATAGGG CGCGAAT   
+Nac_1934                      8  6.03e-04    CCCTGTG TGCATCGTTTTTAATTATTCCC GGACACTC  
+Nac_1912                      8  6.03e-04    TGGTGTG GTAATCGCGTTTCCTTATATTT CCACCCGT  
+Nac_1893                     11  6.03e-04 ACAACCACGG ACCATAAAAATTTATAATCTGC TGGCC     
+Nac_1857                      8  6.03e-04    CGCGTTT AACTGAAGAGTAACTTATGGCT GCAACCAA  
+Nac_1855                      8  6.03e-04    CGGTTAT GCTATAACACCACCCTATATAT GACCCGAA  
+Nac_1845                      9  6.03e-04   GAAATCAG CCTATAGGAGGAAATGATGGTA CGTATCT   
+Nac_1837                      9  6.03e-04   GCACATTG GGTATAACGTGATCATATCAAC AGAATCA   
+Nac_1826                     10  6.03e-04  CAGCGGTCG GGAATAAAAAGAAGGAATGGAT GGTGAA    
+Nac_1802                      9  6.03e-04   TTATGCAT GTCATTGATTTGTCTTATTTTG TAAAAAT   
+Nac_1772                      9  6.03e-04   AAAGCCAG AGTATTATCATTTATTATACCC CTTCATT   
+Nac_1685                      8  6.03e-04    CCCTGTG TGCATCGTTTTTAATTATTCCC GGACACTC  
+Nac_1200                      9  6.03e-04   AGACTATT ATCATAGGTAGGCCAAATGAGG ATAACCG   
+Nac_1173                      9  6.03e-04   ATCTCTTC AGCATTAGCGTTATGAATGAGT AATATAA   
+Nac_1172                      9  6.03e-04   TTATATTA CTCATTCATAACGCTAATGCTG AAGAGAT   
+Nac_1171                      9  6.03e-04   TCCATAAA TGCAAAAGTATTTTGTATGCGT GGTTTTA   
+Nac_1156                     10  6.03e-04  TGAAGCATA GTGATAAGCTTTTCGTCTTACG AGTCCC    
+Nac_2052                     10  6.80e-04  AGCGCACAA ATCATATGAAAAATGAATGCTT ATACTG    
+Nac_2028                     10  6.80e-04  AAGTAGCTC TGAATAGGTATAAGGGATGTAG CCATTT    
+Nac_1875                      8  6.80e-04    CTCGTCG CACATATCTTCAGGTTATTGAT TTCCGTGG  
+Nac_1189                      9  6.80e-04   ATTATATA TTTATAATTAATCTTTATAAGT GGTAAGC   
+Nac_1180                     10  6.80e-04  GGTTTTATT GCCATTACTTTAGTGAATAACG TGACGC    
+Nac_1163                     10  6.80e-04  ATATTCATT AATAAAAGCCATACTTATAGCA CAAAGG    
+Nac_2032                     11  7.66e-04 GGCCGTACTG GGAATAATTTTATTTTCTGGTT TTCTG     
+Nac_1940                      8  7.66e-04    GAACGCT TTCAGAGCGATCGCTTATAAGG AAATCATT  
+Nac_1895                     11  7.66e-04 CCTGTGATTC GCCCTAACAAAAAGTGATATCC AGGCC     
+Nac_1865                      9  7.66e-04   TTGAAACC AATATTGTTGGTACTTATGTCC TTTTGGA   
+Nac_1843                     10  7.66e-04  AACAATTCT CTGATAAGGAGCCGGTATGTTC TTAATT    
+Nac_1840                     10  7.66e-04  GGTTCTATG GTTATCGAAACCATTTATGGTT TGCCGG    
+Nac_1833                     11  7.66e-04 CCTGTGATTC GCCCTAACAAAAAGTGATATCC AGGCC     
+Nac_1797                     10  7.66e-04  GGCATATGG AGTATTCAGAAAATTTATGAAA AAGCGG    
+Nac_1720                      8  7.66e-04    GACAGAA ACCATTGTCTTTTTTTATATTT GCTTAAAT  
+Nac_1211                      9  7.66e-04   TTACAATT CACATAATTTGTCATTATTCAT TCCGCAA   
+Nac_1209                      9  7.66e-04   TTTTGGCA GTAATAATAAAATATGATGTTT CCTTGCC   
+Nac_1149                      9  7.66e-04   TAATATAA ATTATATATAAATCTTATTTAT GTGATAG   
+Nac_1146                      9  7.66e-04   ATTTTTAC AAAATAAGACAAATCAATGACA TGCATAA   
+Nac_1131                      9  7.66e-04   AGAATAAA TTGATAACAAATGCTGATATTG GAAATAT   
+Nac_2044                     11  8.61e-04 TACGAGCCCA AACTTAAATAAAACTTATACAG AGTTA     
+Nac_2024                     11  8.61e-04 ATATATTTTC TGCATTGTTATTCTTTATTCCA TTCGC     
+Nac_2018                     11  8.61e-04 TTTTCATTCT TGAATATAAAAAACAGATGCCC TTATT     
+Nac_1958                     10  8.61e-04  AGCATAGAG GTTAAAGGAGTTAATTATGGAT GTTACC    
+Nac_1894                      9  8.61e-04   TCTTGATT GAGATAGCCATTAATTCTGTCC ATCAGCG   
+Nac_1764                     11  8.61e-04 TACGAGCCCA AACTTAAATAAAACTTATACAG AGTTA     
+Nac_1748                      9  8.61e-04   CCGCGCCG TGTATAATAAGCTCGTATGTAG GCTTTAT   
+Nac_1719                      8  8.61e-04    GTCTATG GTCATTAAATTTTCCAATATGC GGCGTAAA  
+Nac_1177                      9  8.61e-04   GCGAAATT CCCATAACTAATTAGGATTATT ACAAAAA   
+Nac_2039                      8  9.65e-04    GTGTAAG GTATTAAGCCGTGCTTATGATT AAGCGCCT  
+Nac_2003                     10  9.65e-04  CGTTCAGTA TTTATAAGAACTTGTAATACAG TTTTTA    
+Nac_1965                     10  9.65e-04  ACCACTGCT ATTTTTAGCAAAGCTTATGGTA TACTCC    
+Nac_1906                     11  9.65e-04 ACTACTCTGA CCTATACACCGGGCTTATTGAT GTGAA     
+Nac_1874                      9  9.65e-04   TCGTGGTG GATATGCAAAACGCTTATGCCA CGCCAGG   
+Nac_1147                     10  9.65e-04  GCGGGTTAT GTCATTTATGAATGTTATCAAC CTGATG    
+Nac_1134                      9  9.65e-04   ATAAAGCC TACATACGAGCTTATTATACAC GGCGCGG   
+Nac_1994                      9  1.08e-03   CTATGTGC TGCATTATTGGTGCTTATCATG CCAATTA   
+Nac_1952                     10  1.08e-03  GCGTCATTG CCCATATGAACGAATTATTAAT CGCCCT    
+Nac_1879                      8  1.08e-03    AAGCTCT TTTAGTAGTTTTCCTTATTGTG GCAATTGG  
+Nac_1787                      8  1.08e-03    AAGCTCT TTTAGTAGTTTTCCTTATTGTG GCAATTGG  
+Nac_1738                      9  1.08e-03   CGGAGTCG CATATTGTCTTTATTGATGGCA ACGGTAA   
+Nac_1663                     10  1.08e-03  CAGGGTAAT GTCAAAAGCCCCACTTATACGC TGGTCG    
+Nac_1204                      9  1.08e-03   TTACCTGA ACCATCACATCCTACAATGGCA ATAACAC   
+Nac_1179                     10  1.08e-03  GCGTCATTG CCCATATGAACGAATTATTAAT CGCCCT    
+Nac_1129                      9  1.08e-03   TGATTCTG TTGATATGATCACGTTATACCC AATGTGC   
+Nac_1126                     10  1.08e-03  TCACAGGTG TTCGTCAAATTGAGTTATGGCG GCGTGA    
+Nac_1941                     10  1.21e-03  AATGATTTC CTTATAAGCGATCGCTCTGAAA GCGTTC    
+Nac_1842                     10  1.21e-03  TGCGCCCTG TCAATTTCCCTTCCTTATTAGC CGCTTA    
+Nac_1801                     10  1.21e-03  ATCGGTCAA TTCATTCATTTGACTTATACTT GCCTGG    
+Nac_1781                      8  1.21e-03    GTCGCGA CCTATAAGTTTGGGTAATATGT GCTGGAAT  
+Nac_1775                     11  1.21e-03 CGTTAAAAAG CGTATTAGTGAGATTTATCACG AGAAT     
+Nac_1724                     11  1.21e-03 ATAACATTAC CTAAAAGGAAGACGTTATGGTG AAGAA     
+Nac_1723                     11  1.21e-03 ATAACATTAC CTAAAAGGAAGACGTTATGGTG AAGAA     
+Nac_1659                     10  1.21e-03  ATGCCTGTA TTCATAACTATTCCTTACATCG ACGAAT    
+Nac_1233                      9  1.21e-03   TTACCCGA ATCATAAGATTCTGATATCTTA AATAAGA   
+Nac_1116                      9  1.21e-03   TGAGTCGT CAAATTCATATACATTATGCCA TTGGCTG   
+Nac_3383                      8  1.34e-03    TGACGAA TCTATCATAATCTCTTATTTGA CAGTTG    
+Nac_2001                      8  1.34e-03    GAGCAGC TCCATAATTTTTCCTGAAGGTT GCGCTATC  
+Nac_1918                     11  1.34e-03 CCAACCATCG GTCATGGACGAAGCCTATAAAG AGTTT     
+Nac_1877                     10  1.34e-03  TGTCCTGGT ACGAACAGTATTTTGTATGGGG AATGAC    
+Nac_1863                     10  1.34e-03  GGCCCCGCA ATTATCCATTTTTGTTATTGGA TTTCCA    
+Nac_1730                      8  1.34e-03    TCACGCC GCCATAACTCAATTTGACGAAC ACCTGTGA  
+Nac_1710                     10  1.34e-03  AGCCAGCTC ACCATAAAAAAGCCGCATGTTG AATAAT    
+Nac_1165                      9  1.34e-03   ATGAACAA ATCATTCGCCATGATTATAATA TTTATCC   
+Nac_2029                      9  1.49e-03   CAGTGAGC TTTATACAAAAATGATATACCT GACCAGG   
+Nac_1905                      9  1.49e-03   TGGAGCAG ATGATAAGCCAAATCGATAAGC TGGAAGA   
+Nac_1864                     10  1.49e-03  GCATGCGTT GCCATTAATTTTTCCGTTGAGC ACGACA    
+Nac_1860                      9  1.49e-03   GCTAATCC GCTATATCAGAAACATATCATT TCCATAA   
+Nac_1779                     10  1.49e-03  GGATATGAA GCTAAAACCCTTTTTTATAAAG CATTTG    
+Nac_1774                      9  1.49e-03   TGGAGCAG ATGATAAGCCAAATCGATAAGC TGGAAGA   
+Nac_1758                     10  1.49e-03  ATAGTGCAT GAAATAAGCTTTTTCTCTACCA ATCCGG    
+Nac_1729                     10  1.49e-03  TCTCAACGA GTGAGCTAGCTTGCTTATGGTG CGATGC    
+Nac_1698                      9  1.49e-03   TCAGAAAA ACAATTAGCGGACATTATCAGC CGCGGAT   
+Nac_1120                      9  1.49e-03   CTCCGTTA TCAGTAAGCCTACGCTATGGAA CACCTCG   
+Nac_2053                     10  1.66e-03  GAGACGACT CGCATTCTGTTTTGTAATTCCC TCACCT    
+Nac_2025                      9  1.66e-03   AATGAATG GTGATAATTCTTTTGGATGGAA CCATGAA   
+Nac_1959                      9  1.66e-03   TTCATGCC ATCATAGAGAAAATAAATAACC GCATCGG   
+Nac_1825                      8  1.66e-03    GTCACAA TTCATAAAAAACCTTAATATAC GCCACCCT  
+Nac_1817                      8  1.66e-03    TCAGAGT AGCATGTTTCTACCTTATGATT CGTTAGCT  
+Nac_1776                      9  1.66e-03   ATTTTGAG GGTATAAGGCTTAAAGATATCT CGGAGGC   
+Nac_1771                     10  1.66e-03  TTTTTGCAT GGTATTTTCAGAGATTATGAAT TGCCGC    
+Nac_1760                     10  1.66e-03  TCAATCTGC GCTATTCCTTTTTCTGATTTGA CCTCTC    
+Nac_1737                     10  1.66e-03  TGAAATGTA AAAATATATAAACTTGATGATT TAAGCA    
+Nac_1696                     10  1.66e-03  GAGACGACT CGCATTCTGTTTTGTAATTCCC TCACCT    
+Nac_1183                      9  1.66e-03   TTCATGCC ATCATAGAGAAAATAAATAACC GCATCGG   
+Nac_4034                      8  1.84e-03    GCACTCA TTCATATAAAAAATATATTTCC CCACGA    
+Nac_2027                      8  1.84e-03    TTTTTAC CTCATTCAATAAAGTGATAAGT AAGTTCAT  
+Nac_1904                     10  1.84e-03  ACCGTTGTA CTAAGAGGAAAAAAATATGGAG TGGAGT    
+Nac_1898                     11  1.84e-03 AAAAGCACTC TGCATTTTGGGGTGTTATGGTT ATAGC     
+Nac_1892                      8  1.84e-03    CGTCAAA AACATCGCATTTAACTATATTG TGAGGCTT  
+Nac_1769                     10  1.84e-03  TGCGGAGGC AAAATCGAATTTGCCTATTATG TCAGAA    
+Nac_1765                     10  1.84e-03  TTGCCGGGC GTCATAAGATTCGTTTTTAAGC AAACGA    
+Nac_1749                     11  1.84e-03 CTATATCGAC CGTATTCATACTTCCTATGAAA ACGTG     
+Nac_1716                     10  1.84e-03  AGGGAAAAG AAAATTAGCCCAAATTATGTTT CATAGT    
+Nac_1201                      9  1.84e-03   ATGATTTG TCAATAAAGATAGCGGATATTT CTGAAGA   
+Nac_1186                      9  1.84e-03   CGTGCTGA TGGACAACCTATTTTTATGGCC GCGATAG   
+Nac_1907                      9  2.04e-03   GGATAAAT ATTATAATCATGGCGAATGATT TGTTCAT   
+Nac_1900                     11  2.04e-03 CATTACGAGT AGCATTTGGTTTTCTCATACTG TGGGC     
+Nac_1878                     10  2.04e-03  CCACACTGT TACATAAGTTAATCTTAGGTGA AATACC    
+Nac_1820                      8  2.04e-03    CTGAAAC GCCAGAAGAGCCGGATCTGGCG CTGGTGAA  
+Nac_1800                      9  2.04e-03   CGCTGATG GACAGAATTAATGGCTATCTCA ATCAAGA   
+Nac_1780                     10  2.04e-03  TCCGTGGCA GGCATAAGAGGATCGCATTATG AGCATT    
+Nac_1752                     10  2.04e-03  CTCAATGAT TAATTAAGGAAAGCATATGCGC GCAACG    
+Nac_1751                     10  2.04e-03  CTCAATGAT TAATTAAGGAAAGCATATGCGC GCAACG    
+Nac_1182                      9  2.04e-03   TGGCATGA TAAATAGGTATAAAGAATGGGA AATCGGA   
+Nac_1169                      9  2.04e-03   ACCATATC GCAATAAGTTATGTTTTTAAAT TGAGGGC   
+Nac_1143                      9  2.04e-03   CAACAAAA TAGATTAACCAACCTAATGAAA AACAAAT   
+Nac_1955                      9  2.25e-03   TGTCTCAG CATATAAGTTGCTGGAATGATT ACGGCGG   
+Nac_1852                      7  2.25e-03     GGTGAC GCCAAATATTACGCTTATCAAT ACCATGACG 
+Nac_1813                      8  2.25e-03    TTCTGAC ATAATAGGCAAATTCGATTTTG CCTCCGCA  
+Nac_1718                     10  2.25e-03  GTGAGTTCA TATAAAGGAGGAACGTATGGCT AATCCA    
+Nac_1161                      9  2.25e-03   CGTAATTG TTAATAAATTTAACTTAAGGTT GCCATTT   
+Nac_2026                      8  2.48e-03    ACTCCGC CCTATAAGTCGGATGAATGGAA TAAAATGC  
+Nac_2019                     11  2.48e-03 CCTACAAAGT CGTATAAATTCAATGTATTGCA GTTTA     
+Nac_1970                     10  2.48e-03  TCATCGGAA TATATCAATTCCACTTATAATG CCCCCG    
+Nac_1942                      8  2.48e-03    CCGCTTT TTCATAAATTTTCTGAATACTC CATATGCC  
+Nac_1890                      9  2.48e-03   ATGCGAAT ATAATAGTTTTATTATATGTAT TGATATT   
+Nac_1861                      8  2.48e-03    ACTCCGC CCTATAAGTCGGATGAATGGAA TAAAATGC  
+Nac_1795                     10  2.48e-03  TATGTCGAG TCTATGCAAAAATGATATGGAT TACCGG    
+Nac_1792                     10  2.48e-03  ATTTCCCGC TTTATAAGCCGATTAAATGATG AATAAA    
+Nac_1740                      8  2.48e-03    TTGATAA GATATATGTTATATGAATGTTT ATTAAATG  
+Nac_1695                     10  2.48e-03  CTGGAAAAA GTAATAATTTGCACATATTGGA TTGTGC    
+Nac_1174                      9  2.48e-03   CCCATTAT TCCATACTCTGTCAATATATCC TTTTAGC   
+Nac_1135                      9  2.48e-03   TTAGTGTG CTTATCTTTTCTTCTTATGTTC ACCGCGC   
+Nac_1849                      8  2.73e-03    ATTAATC AAAATATTCAATATTTATATAT TCCAATAT  
+Nac_1796                      8  2.73e-03    CTTTCAG TTTATAACACTAACAAATCGAG ATTAATAA  
+Nac_1786                     10  2.73e-03  AATGCATTA AATATATAAATTAATTATTAAA TAAGCA    
+Nac_1676                     10  2.73e-03  AACTGGTTG GATATACAAGATTCTTTTGATG CTTCTG    
+Nac_1137                     10  2.73e-03  AACTGGTTG GATATACAAGATTCTTTTGATG CTTCTG    
+Nac_3872                      8  3.00e-03    TATTGCC GCAATATTATTTTTTGATATGT TGAAAG    
+Nac_2040                     10  3.00e-03  AGGCGCTTA ATCATAAGCACGGCTTAATACC TTACAC    
+Nac_1980                     10  3.00e-03  TGCGAAATA AATATAAAATTAATATATATGT TGTAAT    
+Nac_1903                      8  3.00e-03    TTTATTC ATCATTTAATCGGCTTATAAAG CGGGAAAT  
+Nac_1686                      8  3.00e-03    AAATTCG GTGAATACCCTTACTTATTGGT ATACTGAA  
+Nac_1990                     11  3.29e-03 TGGCCGGTGG ATTATAAGAGCTGGGCATGGAG CGAAG     
+Nac_1939                     10  3.29e-03  CGCTCCAGG CCCATAAATTTTTACGCTCCCT TAACTT    
+Nac_1938                     10  3.29e-03  CGCTCCAGG CCCATAAATTTTTACGCTCCCT TAACTT    
+Nac_1908                      8  3.29e-03    GGAGTAT ACCATAAGCTTTGCTAAAAATA GCAGTGGT  
+Nac_1784                      8  3.29e-03    TAAAAAC GTACTGGCTAAATGTTATGGCG GCGATATC  
+Nac_1194                      9  3.29e-03   CAGCCAAT GGCATAATGTATATGAATTTGA CGACTCA   
+Nac_1153                      9  3.29e-03   GTGATTGA TTAATTATCTTTACTAATAATC AGACTAA   
+Nac_1119                      9  3.29e-03   AAAGGGAG AATAAACGTCTTACTTATAGAA CAGTGAA   
+Nac_1986                     10  3.61e-03  GCGATGAAC CTCAGTTAAGAAAATTATGGTC TACACT    
+Nac_1956                      9  3.61e-03   CTGAAGTA AGAATTATCCTAGGGGATGCTG TAGTGGA   
+Nac_1943                      9  3.61e-03   GCTAAAAG GATATATTGACAGAGTATGGAA TAATGGG   
+Nac_1846                      9  3.61e-03   TGGGCCGG GCAAGATAAACAGGTTATTACC GTTTACA   
+Nac_1715                      8  3.61e-03    ACTATGA AACATAATTTGGGCTAATTTTC TTTTCCCT  
+Nac_1219                      9  3.61e-03   CTACCCGC TGGATTGGTAACCCGTATAAGA AAAACGC   
+Nac_1160                      9  3.61e-03   AATATCAA TACATATAATAAAACTATTATA TTCGCAT   
+Nac_1140                      9  3.61e-03   CTGAAGTA AGAATTATCCTAGGGGATGCTG TAGTGGA   
+Nac_1139                      9  3.61e-03   CTGAAGTA AGAATTATCCTAGGGGATGCTG TAGTGGA   
+Nac_2046                      9  3.95e-03   GTTTTGAT ACGCTAGCGTAGCCTTATAGAT CTAAGGT   
+Nac_1909                      8  3.95e-03    GCATCGC ACCATAAGCAAGCTAGCTCACT CGTTGAGA  
+Nac_1902                     10  3.95e-03  ACATGGTGA ACGATATCAAACCGATCTGGGC TTATGC    
+Nac_1834                      8  3.95e-03    ACAAAAA AGATTAAACATACCTTATACAA GACTTTTT  
+Nac_1708                      9  3.95e-03   ATTTGTTT TTCATTAGGTTGGTTAATCTAT TTTGTTG   
+Nac_1187                      9  3.95e-03   GTTTTGAT ACGCTAGCGTAGCCTTATAGAT CTAAGGT   
+Nac_1125                     10  3.95e-03  TTGTCCTGA CACTAAGCTCTTTCTTATGGCT TAATCG    
+Nac_1899                     10  4.32e-03  AGTGCATTA TGAATATCTTACATATATGTGT GACCTC    
+Nac_1897                     10  4.32e-03  AGTGCATTA TGAATATCTTACATATATGTGT GACCTC    
+Nac_1735                      8  4.32e-03    TTTACGT TTAATTGTTTTTTTTAATAGCG GGAATAAG  
+Nac_1711                     10  4.32e-03  ATTCATCGA CTCATGCCTTTCACTGATATCC CTCCCT    
+Nac_1693                     10  4.32e-03  CGCTCATAG CGAATCACACTGATCTATATCG ATATAC    
+Nac_1145                      9  4.32e-03   TCAAATAA GTCCTAAGTTTTAAATATATCA AAAATTA   
+Nac_4717                      4  4.72e-03        AGC ACAATCGTATTAATATATAAGG GTTTTATATC
+Nac_2022                      9  4.72e-03   CTTAAAAC AATATAACCTATTGTTTTAATG ACAAATC   
+Nac_1989                     10  4.72e-03  GTTAAGATA TTCATTCAGTCTATTTATAATA TTAACA    
+Nac_1966                      9  4.72e-03   TTACAGCA GCATTACAATTTTGTAATGAAC CAGGCTG   
+Nac_1747                     10  4.72e-03  TTTAGCCAG CAAATAACGTTTACCGCTCGCA ATATTT    
+Nac_1736                     10  4.72e-03  CTTATTCCC GCTATTAAAAAAAACAATTAAA CGTAAA    
+Nac_1665                     10  4.72e-03  AGCTAACGA ATCATAAGGTAGAAACATGCTA CTCTGA    
+Nac_1660                     11  4.72e-03 ACACGGAGGA AGTATAGATGTCCTTGATTAAC ACCAA     
+Nac_1208                      9  4.72e-03   GGTATTTG TCCGTATTAAAAAATTATGTTG GTTTCTC   
+Nac_1196                      9  4.72e-03   TGCCGGTG ACGATCGTTATTTTTAATAATG GCGGCAT   
+Nac_1793                      8  5.14e-03    CCGGTAA TCCATATCATTTTTGCATAGAC TCGACATA  
+Nac_1785                      8  5.14e-03    TGCTTAT TTAATAATTAATTTATATATTT AATGCATT  
+Nac_1985                      8  5.60e-03    AGTGTAG ACCATAATTTTCTTAACTGAGG TTCATCGC  
+Nac_1968                      8  5.60e-03    AATTCTC TAAGAAAGGATTTCTTATGAGC GAACAAAT  
+Nac_1841                      8  5.60e-03    ACTTATT CTTAGCTATTATAGTTATAGAG AGCTTACT  
+Nac_1692                     10  5.60e-03  CTAAGCCGT GCATAACGGAGGACTTATGGCT GGCTGG    
+Nac_2030                     10  6.09e-03  AAATGGTAT GGGATATGATTTTCTTACATCA TTTGCA    
+Nac_2008                     10  6.09e-03  ACAGATGAA TTTATTATGATAAGAAATGTGT TGTTAG    
+Nac_1836                      8  6.09e-03    TAAAAGT ATAATTTTTATTTTGTATGTAT TATCTTCG  
+Nac_1770                      8  6.09e-03    CTAACAA CACATTTCTTATCATAATAAAT TCATCTGT  
+Nac_1722                      7  6.09e-03     TTGGTG TTAATCAAGGACATCTATACTT CCTCCGTGT 
+Nac_2013                     10  6.62e-03  CGCTCTACA GAGGTTTAAATTTCTTATGTAC CAGGTT    
+Nac_2015                     10  7.18e-03  CATACGCCG TTAATTGCTTTCTTTTTTGGCG TAAGCG    
+Nac_1944                     10  9.11e-03  GAATTGTTG ATGATGAGAAGAAGAAATGATG AGCAGA    
+Nac_1868                      8  9.11e-03    GCGGCAA TTCATAATCTCTGAAAATACCA TGCAAAAA  
+Nac_1789                      8  9.11e-03    GTCTTGG TCGCTAAATTTTTCTAATCGAA TGATGGTC  
+Nac_2010                      8  9.85e-03    TCCTGGT GGCATACTAAGGAGGAATAAAA AGAAAAAG  
+Nac_1701                      9  9.85e-03   TTCACTGT TCTATAAGTAAGACGTTTATTC TCCCTTT   
+Nac_2036                     10  1.06e-02  CTAATCTGG TCGAGATCGAAAAAATATAACC CACGAC    
+Nac_1810                     10  1.15e-02  CGAAGATAA TACATACAAAATAAAAATTATA CTTTTA    
+Nac_1188                     10  1.15e-02  GTATTGGCT GTCAGGAATTATTTTTCTTGCC TATGGA    
+Nac_1809                      9  1.23e-02   AGATACCA TGAATAAGAAGGTGTTAACCCT GTCTGCT   
+Nac_1704                      4  1.33e-02        CAT AAAATTAACATTAGATCTAAAT CTTAGTATTC
+Nac_1688                      9  1.33e-02   GGTGATAA TACATCCAATTTTTCTCTTATT GTCGATA   
+Nac_1117                      9  1.33e-02   GGTGATAA TACATCCAATTTTTCTCTTATT GTCGATA   
+Nac_1927                      8  1.43e-02    GTGCGGG AGTATAAGTACCGCCTTTCATC ACCCAGGC  
+Nac_1883                     10  1.65e-02  ATTTGTTCG CTCATAAGAAATCCTTTCTTAG AGAATT    
+Nac_1947                      8  2.16e-02    AGCGCGC ATAAGTAGATGAATATATATAC TTAGCGCT  
+Nac_1744                      9  2.47e-02   CCGGCAAG CCTATCTATAACGCCATTGTCT GGCAGTG   
+Nac_1230                      9  2.47e-02   CTTTCGTT AACATAAGGAGTGCATTATGCG CATAGCT   
+Nac_1227                      7  2.80e-02     TTTTTG ATAAGAAGAAAAAGACATTTGG TTTCATAAG 
+Nac_3871                      8  2.98e-02    GCAAACG TTCATATTGCCGCAATATTATT TTTTGA    
+Nac_4719                      9  3.17e-02   TTCTTGCT TACCGTCACATTCTTGATGGTA TAGTC     
+Nac_2007                      6  3.37e-02      CATCC CCCAGATCAGTTTTTTCCGCCT AATACACGCA
+Nac_1884                     10  3.37e-02  CGAGCTTCA TCATAACCCTTTCCTTATACAA GGCCCC    
+Nac_1675                      7  3.37e-02     TCCATA GGATTTTCTTATGCGGATTGAT GATTCAT   
+Nac_1762                     10  3.58e-02  ACAAATAAG CATATAAGGAAAAGAGAGAATG GCTAAG    
+Nac_4261                      9  4.03e-02   ATGAATCA TCAATCCGCATAAGAAAATCCT ATGGA     
+Nac_4262                      8  5.63e-02    AAACCGA CACACATGCAATAATCATTCAA TAAAAA    
+Nac_786                       4  5.63e-02        CAC AACCTGAATAAATTTTCTCAGG GGCGAAGGTG
+Nac_2042                      9  6.59e-02   GATATAAA ACCCTTATATATTAATACGATT GTGCT     
+Nac_4263                      7  8.04e-02     TAAAAA AGAAGGCTAAAATAGAATGAAT CATCAAT   
+Nac_4718                      8  8.85e-02    TCGCATT TGGTTATGAGATTACTCTCGTT ATTAAT    
+Nac_4720                      4  1.74e-01        CAC ATGACATAAACAACATAAGCAC AATCGTATTA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Nac_1150                          1.1e-06  8_[+1]_7
+Nac_1888                          1.3e-06  9_[+1]_6
+Nac_1856                          1.3e-06  8_[+1]_7
+Nac_1742                          1.3e-06  7_[+1]_8
+Nac_1164                          2.2e-06  8_[+1]_7
+Nac_1891                          2.7e-06  8_[+1]_7
+Nac_1666                          2.7e-06  7_[+1]_8
+Nac_1992                          3.4e-06  10_[+1]_5
+Nac_1991                          3.4e-06  10_[+1]_5
+Nac_1914                          3.4e-06  7_[+1]_8
+Nac_4691                          4.3e-06  7_[+1]_6
+Nac_2298                          4.3e-06  7_[+1]_6
+Nac_1917                          4.3e-06  8_[+1]_7
+Nac_1916                          4.3e-06  8_[+1]_7
+Nac_1750                          4.3e-06  8_[+1]_7
+Nac_1814                          5.3e-06  7_[+1]_8
+Nac_2006                          6.5e-06  10_[+1]_5
+Nac_1885                          6.5e-06  9_[+1]_6
+Nac_1799                          6.5e-06  9_[+1]_6
+Nac_1223                          6.5e-06  8_[+1]_7
+Nac_1221                          6.5e-06  8_[+1]_7
+Nac_2043                            8e-06  7_[+1]_8
+Nac_2041                            8e-06  7_[+1]_8
+Nac_1170                            8e-06  9_[+1]_6
+Nac_1122                            8e-06  8_[+1]_7
+Nac_1832                          9.9e-06  8_[+1]_7
+Nac_1807                          9.9e-06  8_[+1]_7
+Nac_1706                          9.9e-06  7_[+1]_8
+Nac_2009                          1.2e-05  9_[+1]_6
+Nac_1128                          1.2e-05  8_[+1]_7
+Nac_2023                          1.5e-05  10_[+1]_5
+Nac_1975                          1.5e-05  7_[+1]_8
+Nac_1974                          1.5e-05  7_[+1]_8
+Nac_1896                          1.5e-05  8_[+1]_7
+Nac_1680                          1.5e-05  8_[+1]_7
+Nac_2016                          1.8e-05  7_[+1]_8
+Nac_2021                          2.1e-05  9_[+1]_6
+Nac_1960                          2.1e-05  9_[+1]_6
+Nac_1806                          2.1e-05  7_[+1]_8
+Nac_1937                          2.6e-05  9_[+1]_6
+Nac_1850                          2.6e-05  9_[+1]_6
+Nac_1819                          2.6e-05  7_[+1]_8
+Nac_1734                          2.6e-05  7_[+1]_8
+Nac_1733                          2.6e-05  10_[+1]_5
+Nac_1725                          2.6e-05  9_[+1]_6
+Nac_1707                          2.6e-05  9_[+1]_6
+Nac_1682                          2.6e-05  8_[+1]_7
+Nac_1673                          2.6e-05  8_[+1]_7
+Nac_1664                          2.6e-05  9_[+1]_6
+Nac_1138                          2.6e-05  9_[+1]_6
+Nac_2012                          3.1e-05  7_[+1]_8
+Nac_1928                          3.1e-05  9_[+1]_6
+Nac_1881                          3.1e-05  9_[+1]_6
+Nac_1876                          3.1e-05  10_[+1]_5
+Nac_1783                          3.1e-05  7_[+1]_8
+Nac_1731                          3.1e-05  9_[+1]_6
+Nac_1712                          3.1e-05  8_[+1]_7
+Nac_1690                          3.1e-05  8_[+1]_7
+Nac_1689                          3.1e-05  8_[+1]_7
+Nac_1202                          3.1e-05  9_[+1]_6
+Nac_2050                          3.7e-05  8_[+1]_7
+Nac_2033                          3.7e-05  8_[+1]_7
+Nac_1949                          3.7e-05  10_[+1]_5
+Nac_1948                          3.7e-05  10_[+1]_5
+Nac_1866                          3.7e-05  7_[+1]_8
+Nac_1853                          3.7e-05  7_[+1]_8
+Nac_1732                          3.7e-05  7_[+1]_8
+Nac_1691                          3.7e-05  7_[+1]_8
+Nac_1674                          3.7e-05  7_[+1]_8
+Nac_1658                          3.7e-05  10_[+1]_5
+Nac_1127                          3.7e-05  8_[+1]_7
+Nac_2054                          4.4e-05  8_[+1]_7
+Nac_2047                          4.4e-05  8_[+1]_7
+Nac_1920                          4.4e-05  10_[+1]_5
+Nac_1830                          4.4e-05  10_[+1]_5
+Nac_1812                          4.4e-05  8_[+1]_7
+Nac_1778                          4.4e-05  8_[+1]_7
+Nac_1754                          4.4e-05  10_[+1]_5
+Nac_1753                          4.4e-05  10_[+1]_5
+Nac_1699                          4.4e-05  7_[+1]_8
+Nac_1662                          4.4e-05  9_[+1]_6
+Nac_1217                          4.4e-05  8_[+1]_7
+Nac_1207                          4.4e-05  9_[+1]_6
+Nac_1167                          4.4e-05  8_[+1]_7
+Nac_2038                          5.2e-05  8_[+1]_7
+Nac_1999                          5.2e-05  8_[+1]_7
+Nac_1703                          5.2e-05  9_[+1]_6
+Nac_1152                          5.2e-05  8_[+1]_7
+Nac_1121                          5.2e-05  8_[+1]_7
+Nac_1931                          6.1e-05  7_[+1]_8
+Nac_1901                          6.1e-05  7_[+1]_8
+Nac_1882                          6.1e-05  8_[+1]_7
+Nac_1815                          6.1e-05  9_[+1]_6
+Nac_1763                          6.1e-05  8_[+1]_7
+Nac_1683                          6.1e-05  8_[+1]_7
+Nac_2011                          7.2e-05  8_[+1]_7
+Nac_1983                          7.2e-05  9_[+1]_6
+Nac_1982                          7.2e-05  9_[+1]_6
+Nac_1973                          7.2e-05  10_[+1]_5
+Nac_1953                          7.2e-05  8_[+1]_7
+Nac_1889                          7.2e-05  9_[+1]_6
+Nac_1851                          7.2e-05  7_[+1]_8
+Nac_1818                          7.2e-05  7_[+1]_8
+Nac_1805                          7.2e-05  9_[+1]_6
+Nac_1728                          7.2e-05  9_[+1]_6
+Nac_1702                          7.2e-05  9_[+1]_6
+Nac_1216                          7.2e-05  8_[+1]_7
+Nac_1962                          8.5e-05  7_[+1]_8
+Nac_1936                          8.5e-05  8_[+1]_7
+Nac_1926                          8.5e-05  8_[+1]_7
+Nac_1869                          8.5e-05  10_[+1]_5
+Nac_1822                          8.5e-05  8_[+1]_7
+Nac_1821                          8.5e-05  8_[+1]_7
+Nac_1804                          8.5e-05  10_[+1]_5
+Nac_1798                          8.5e-05  8_[+1]_7
+Nac_1721                          8.5e-05  9_[+1]_6
+Nac_1717                          8.5e-05  8_[+1]_7
+Nac_1684                          8.5e-05  8_[+1]_7
+Nac_1224                          8.5e-05  8_[+1]_7
+Nac_1175                          8.5e-05  9_[+1]_6
+Nac_1158                          8.5e-05  8_[+1]_7
+Nac_1115                          8.5e-05  8_[+1]_7
+Nac_2048                           0.0001  10_[+1]_5
+Nac_1998                           0.0001  9_[+1]_6
+Nac_1930                           0.0001  8_[+1]_7
+Nac_1848                           0.0001  9_[+1]_6
+Nac_1727                           0.0001  7_[+1]_8
+Nac_1681                           0.0001  7_[+1]_8
+Nac_1657                           0.0001  8_[+1]_7
+Nac_1213                           0.0001  9_[+1]_6
+Nac_1981                          0.00012  8_[+1]_7
+Nac_1978                          0.00012  7_[+1]_8
+Nac_1967                          0.00012  9_[+1]_6
+Nac_1913                          0.00012  7_[+1]_8
+Nac_1873                          0.00012  6_[+1]_9
+Nac_1827                          0.00012  8_[+1]_7
+Nac_1679                          0.00012  8_[+1]_7
+Nac_1678                          0.00012  8_[+1]_7
+Nac_1670                          0.00012  7_[+1]_8
+Nac_1206                          0.00012  8_[+1]_7
+Nac_815                           0.00012  6_[+1]_7
+Nac_2049                          0.00014  10_[+1]_5
+Nac_2014                          0.00014  8_[+1]_7
+Nac_1979                          0.00014  9_[+1]_6
+Nac_1957                          0.00014  8_[+1]_7
+Nac_1887                          0.00014  8_[+1]_7
+Nac_1859                          0.00014  8_[+1]_7
+Nac_1811                          0.00014  7_[+1]_8
+Nac_1709                          0.00014  10_[+1]_5
+Nac_1671                          0.00014  9_[+1]_6
+Nac_1212                          0.00014  8_[+1]_7
+Nac_1148                          0.00014  8_[+1]_7
+Nac_2037                          0.00016  10_[+1]_5
+Nac_2017                          0.00016  8_[+1]_7
+Nac_2005                          0.00016  8_[+1]_7
+Nac_2002                          0.00016  9_[+1]_6
+Nac_1946                          0.00016  9_[+1]_6
+Nac_1862                          0.00016  10_[+1]_5
+Nac_1839                          0.00016  9_[+1]_6
+Nac_1829                          0.00016  10_[+1]_5
+Nac_1828                          0.00016  10_[+1]_5
+Nac_1782                          0.00016  9_[+1]_6
+Nac_1757                          0.00016  7_[+1]_8
+Nac_1713                          0.00016  7_[+1]_8
+Nac_1700                          0.00016  7_[+1]_8
+Nac_1687                          0.00016  9_[+1]_6
+Nac_1225                          0.00016  8_[+1]_7
+Nac_1203                          0.00016  8_[+1]_7
+Nac_1168                          0.00016  9_[+1]_6
+Nac_1144                          0.00016  9_[+1]_6
+Nac_1996                          0.00018  7_[+1]_8
+Nac_1915                          0.00018  7_[+1]_8
+Nac_1835                          0.00018  7_[+1]_8
+Nac_1816                          0.00018  7_[+1]_8
+Nac_1743                          0.00018  7_[+1]_8
+Nac_1672                          0.00018  9_[+1]_6
+Nac_1661                          0.00018  8_[+1]_7
+Nac_1228                          0.00018  8_[+1]_7
+Nac_1205                          0.00018  8_[+1]_7
+Nac_1181                          0.00018  8_[+1]_7
+Nac_1176                          0.00018  8_[+1]_7
+Nac_2035                          0.00021  10_[+1]_5
+Nac_2034                          0.00021  10_[+1]_5
+Nac_1997                          0.00021  9_[+1]_6
+Nac_1972                          0.00021  10_[+1]_5
+Nac_1971                          0.00021  7_[+1]_8
+Nac_1951                          0.00021  9_[+1]_6
+Nac_1925                          0.00021  10_[+1]_5
+Nac_1924                          0.00021  10_[+1]_5
+Nac_1808                          0.00021  8_[+1]_7
+Nac_1803                          0.00021  8_[+1]_7
+Nac_1777                          0.00021  8_[+1]_7
+Nac_1766                          0.00021  7_[+1]_8
+Nac_1726                          0.00021  7_[+1]_8
+Nac_1232                          0.00021  8_[+1]_7
+Nac_1229                          0.00021  8_[+1]_7
+Nac_1218                          0.00021  8_[+1]_7
+Nac_1215                          0.00021  9_[+1]_6
+Nac_1199                          0.00021  8_[+1]_7
+Nac_1198                          0.00021  8_[+1]_7
+Nac_1197                          0.00021  9_[+1]_6
+Nac_1185                          0.00021  8_[+1]_7
+Nac_1151                          0.00021  9_[+1]_6
+Nac_1141                          0.00021  8_[+1]_7
+Nac_1124                          0.00021  8_[+1]_7
+Nac_2031                          0.00024  10_[+1]_5
+Nac_1831                          0.00024  9_[+1]_6
+Nac_1823                          0.00024  9_[+1]_6
+Nac_1773                          0.00024  9_[+1]_6
+Nac_1768                          0.00024  8_[+1]_7
+Nac_1759                          0.00024  7_[+1]_8
+Nac_1756                          0.00024  9_[+1]_6
+Nac_1694                          0.00024  8_[+1]_7
+Nac_1226                          0.00024  8_[+1]_7
+Nac_1220                          0.00024  8_[+1]_7
+Nac_1214                          0.00024  8_[+1]_7
+Nac_1191                          0.00024  8_[+1]_7
+Nac_1178                          0.00024  9_[+1]_6
+Nac_1162                          0.00024  9_[+1]_6
+Nac_1159                          0.00024  8_[+1]_7
+Nac_1136                          0.00024  8_[+1]_7
+Nac_2000                          0.00028  9_[+1]_6
+Nac_1995                          0.00028  8_[+1]_7
+Nac_1988                          0.00028  9_[+1]_6
+Nac_1987                          0.00028  9_[+1]_6
+Nac_1935                          0.00028  8_[+1]_7
+Nac_1870                          0.00028  8_[+1]_7
+Nac_1824                          0.00028  7_[+1]_8
+Nac_2004                          0.00032  9_[+1]_6
+Nac_1977                          0.00032  9_[+1]_6
+Nac_1976                          0.00032  9_[+1]_6
+Nac_1969                          0.00032  8_[+1]_7
+Nac_1950                          0.00032  8_[+1]_7
+Nac_1945                          0.00032  7_[+1]_8
+Nac_1919                          0.00032  7_[+1]_8
+Nac_1911                          0.00032  8_[+1]_7
+Nac_1880                          0.00032  10_[+1]_5
+Nac_1755                          0.00032  7_[+1]_8
+Nac_1745                          0.00032  7_[+1]_8
+Nac_1739                          0.00032  10_[+1]_5
+Nac_1697                          0.00032  8_[+1]_7
+Nac_1195                          0.00032  9_[+1]_6
+Nac_1142                          0.00032  8_[+1]_7
+Nac_1118                          0.00032  8_[+1]_7
+Nac_2051                          0.00036  7_[+1]_8
+Nac_1961                          0.00036  8_[+1]_7
+Nac_1677                          0.00036  9_[+1]_6
+Nac_1669                          0.00036  7_[+1]_8
+Nac_2045                          0.00041  7_[+1]_8
+Nac_2020                          0.00041  9_[+1]_6
+Nac_1984                          0.00041  8_[+1]_7
+Nac_1954                          0.00041  7_[+1]_8
+Nac_1922                          0.00041  7_[+1]_8
+Nac_1886                          0.00041  10_[+1]_5
+Nac_1867                          0.00041  7_[+1]_8
+Nac_1858                          0.00041  7_[+1]_8
+Nac_1847                          0.00041  9_[+1]_6
+Nac_1741                          0.00041  7_[+1]_8
+Nac_1668                          0.00041  7_[+1]_8
+Nac_1190                          0.00041  8_[+1]_7
+Nac_1166                          0.00041  8_[+1]_7
+Nac_1157                          0.00041  8_[+1]_7
+Nac_1154                          0.00041  8_[+1]_7
+Nac_1132                          0.00041  8_[+1]_7
+Nac_1964                          0.00047  10_[+1]_5
+Nac_1963                          0.00047  10_[+1]_5
+Nac_1932                          0.00047  9_[+1]_6
+Nac_1929                          0.00047  10_[+1]_5
+Nac_1872                          0.00047  9_[+1]_6
+Nac_1871                          0.00047  9_[+1]_6
+Nac_1838                          0.00047  7_[+1]_8
+Nac_1790                          0.00047  8_[+1]_7
+Nac_1788                          0.00047  8_[+1]_7
+Nac_1767                          0.00047  7_[+1]_8
+Nac_1746                          0.00047  10_[+1]_5
+Nac_1714                          0.00047  7_[+1]_8
+Nac_1705                          0.00047  9_[+1]_6
+Nac_1667                          0.00047  8_[+1]_7
+Nac_1231                          0.00047  8_[+1]_7
+Nac_1193                          0.00047  8_[+1]_7
+Nac_1184                          0.00047  8_[+1]_7
+Nac_1123                          0.00047  7_[+1]_8
+Nac_1993                          0.00053  7_[+1]_8
+Nac_1933                          0.00053  10_[+1]_5
+Nac_1923                          0.00053  8_[+1]_7
+Nac_1921                          0.00053  8_[+1]_7
+Nac_1910                          0.00053  10_[+1]_5
+Nac_1854                          0.00053  7_[+1]_8
+Nac_1844                          0.00053  7_[+1]_8
+Nac_1794                          0.00053  7_[+1]_8
+Nac_1791                          0.00053  7_[+1]_8
+Nac_1761                          0.00053  10_[+1]_5
+Nac_1222                          0.00053  8_[+1]_7
+Nac_1210                          0.00053  8_[+1]_7
+Nac_1133                          0.00053  8_[+1]_7
+Nac_1130                          0.00053  8_[+1]_7
+Nac_1934                           0.0006  7_[+1]_8
+Nac_1912                           0.0006  7_[+1]_8
+Nac_1893                           0.0006  10_[+1]_5
+Nac_1857                           0.0006  7_[+1]_8
+Nac_1855                           0.0006  7_[+1]_8
+Nac_1845                           0.0006  8_[+1]_7
+Nac_1837                           0.0006  8_[+1]_7
+Nac_1826                           0.0006  9_[+1]_6
+Nac_1802                           0.0006  8_[+1]_7
+Nac_1772                           0.0006  8_[+1]_7
+Nac_1685                           0.0006  7_[+1]_8
+Nac_1200                           0.0006  8_[+1]_7
+Nac_1173                           0.0006  8_[+1]_7
+Nac_1172                           0.0006  8_[+1]_7
+Nac_1171                           0.0006  8_[+1]_7
+Nac_1156                           0.0006  9_[+1]_6
+Nac_2052                          0.00068  9_[+1]_6
+Nac_2028                          0.00068  9_[+1]_6
+Nac_1875                          0.00068  7_[+1]_8
+Nac_1189                          0.00068  8_[+1]_7
+Nac_1180                          0.00068  9_[+1]_6
+Nac_1163                          0.00068  9_[+1]_6
+Nac_2032                          0.00077  10_[+1]_5
+Nac_1940                          0.00077  7_[+1]_8
+Nac_1895                          0.00077  10_[+1]_5
+Nac_1865                          0.00077  8_[+1]_7
+Nac_1843                          0.00077  9_[+1]_6
+Nac_1840                          0.00077  9_[+1]_6
+Nac_1833                          0.00077  10_[+1]_5
+Nac_1797                          0.00077  9_[+1]_6
+Nac_1720                          0.00077  7_[+1]_8
+Nac_1211                          0.00077  8_[+1]_7
+Nac_1209                          0.00077  8_[+1]_7
+Nac_1149                          0.00077  8_[+1]_7
+Nac_1146                          0.00077  8_[+1]_7
+Nac_1131                          0.00077  8_[+1]_7
+Nac_2044                          0.00086  10_[+1]_5
+Nac_2024                          0.00086  10_[+1]_5
+Nac_2018                          0.00086  10_[+1]_5
+Nac_1958                          0.00086  9_[+1]_6
+Nac_1894                          0.00086  8_[+1]_7
+Nac_1764                          0.00086  10_[+1]_5
+Nac_1748                          0.00086  8_[+1]_7
+Nac_1719                          0.00086  7_[+1]_8
+Nac_1177                          0.00086  8_[+1]_7
+Nac_2039                          0.00096  7_[+1]_8
+Nac_2003                          0.00096  9_[+1]_6
+Nac_1965                          0.00096  9_[+1]_6
+Nac_1906                          0.00096  10_[+1]_5
+Nac_1874                          0.00096  8_[+1]_7
+Nac_1147                          0.00096  9_[+1]_6
+Nac_1134                          0.00096  8_[+1]_7
+Nac_1994                           0.0011  8_[+1]_7
+Nac_1952                           0.0011  9_[+1]_6
+Nac_1879                           0.0011  7_[+1]_8
+Nac_1787                           0.0011  7_[+1]_8
+Nac_1738                           0.0011  8_[+1]_7
+Nac_1663                           0.0011  9_[+1]_6
+Nac_1204                           0.0011  8_[+1]_7
+Nac_1179                           0.0011  9_[+1]_6
+Nac_1129                           0.0011  8_[+1]_7
+Nac_1126                           0.0011  9_[+1]_6
+Nac_1941                           0.0012  9_[+1]_6
+Nac_1842                           0.0012  9_[+1]_6
+Nac_1801                           0.0012  9_[+1]_6
+Nac_1781                           0.0012  7_[+1]_8
+Nac_1775                           0.0012  10_[+1]_5
+Nac_1724                           0.0012  10_[+1]_5
+Nac_1723                           0.0012  10_[+1]_5
+Nac_1659                           0.0012  9_[+1]_6
+Nac_1233                           0.0012  8_[+1]_7
+Nac_1116                           0.0012  8_[+1]_7
+Nac_3383                           0.0013  7_[+1]_6
+Nac_2001                           0.0013  7_[+1]_8
+Nac_1918                           0.0013  10_[+1]_5
+Nac_1877                           0.0013  9_[+1]_6
+Nac_1863                           0.0013  9_[+1]_6
+Nac_1730                           0.0013  7_[+1]_8
+Nac_1710                           0.0013  9_[+1]_6
+Nac_1165                           0.0013  8_[+1]_7
+Nac_2029                           0.0015  8_[+1]_7
+Nac_1905                           0.0015  8_[+1]_7
+Nac_1864                           0.0015  9_[+1]_6
+Nac_1860                           0.0015  8_[+1]_7
+Nac_1779                           0.0015  9_[+1]_6
+Nac_1774                           0.0015  8_[+1]_7
+Nac_1758                           0.0015  9_[+1]_6
+Nac_1729                           0.0015  9_[+1]_6
+Nac_1698                           0.0015  8_[+1]_7
+Nac_1120                           0.0015  8_[+1]_7
+Nac_2053                           0.0017  9_[+1]_6
+Nac_2025                           0.0017  8_[+1]_7
+Nac_1959                           0.0017  8_[+1]_7
+Nac_1825                           0.0017  7_[+1]_8
+Nac_1817                           0.0017  7_[+1]_8
+Nac_1776                           0.0017  8_[+1]_7
+Nac_1771                           0.0017  9_[+1]_6
+Nac_1760                           0.0017  9_[+1]_6
+Nac_1737                           0.0017  9_[+1]_6
+Nac_1696                           0.0017  9_[+1]_6
+Nac_1183                           0.0017  8_[+1]_7
+Nac_4034                           0.0018  7_[+1]_6
+Nac_2027                           0.0018  7_[+1]_8
+Nac_1904                           0.0018  9_[+1]_6
+Nac_1898                           0.0018  10_[+1]_5
+Nac_1892                           0.0018  7_[+1]_8
+Nac_1769                           0.0018  9_[+1]_6
+Nac_1765                           0.0018  9_[+1]_6
+Nac_1749                           0.0018  10_[+1]_5
+Nac_1716                           0.0018  9_[+1]_6
+Nac_1201                           0.0018  8_[+1]_7
+Nac_1186                           0.0018  8_[+1]_7
+Nac_1907                            0.002  8_[+1]_7
+Nac_1900                            0.002  10_[+1]_5
+Nac_1878                            0.002  9_[+1]_6
+Nac_1820                            0.002  7_[+1]_8
+Nac_1800                            0.002  8_[+1]_7
+Nac_1780                            0.002  9_[+1]_6
+Nac_1752                            0.002  9_[+1]_6
+Nac_1751                            0.002  9_[+1]_6
+Nac_1182                            0.002  8_[+1]_7
+Nac_1169                            0.002  8_[+1]_7
+Nac_1143                            0.002  8_[+1]_7
+Nac_1955                           0.0022  8_[+1]_7
+Nac_1852                           0.0022  6_[+1]_9
+Nac_1813                           0.0022  7_[+1]_8
+Nac_1718                           0.0022  9_[+1]_6
+Nac_1161                           0.0022  8_[+1]_7
+Nac_2026                           0.0025  7_[+1]_8
+Nac_2019                           0.0025  10_[+1]_5
+Nac_1970                           0.0025  9_[+1]_6
+Nac_1942                           0.0025  7_[+1]_8
+Nac_1890                           0.0025  8_[+1]_7
+Nac_1861                           0.0025  7_[+1]_8
+Nac_1795                           0.0025  9_[+1]_6
+Nac_1792                           0.0025  9_[+1]_6
+Nac_1740                           0.0025  7_[+1]_8
+Nac_1695                           0.0025  9_[+1]_6
+Nac_1174                           0.0025  8_[+1]_7
+Nac_1135                           0.0025  8_[+1]_7
+Nac_1849                           0.0027  7_[+1]_8
+Nac_1796                           0.0027  7_[+1]_8
+Nac_1786                           0.0027  9_[+1]_6
+Nac_1676                           0.0027  9_[+1]_6
+Nac_1137                           0.0027  9_[+1]_6
+Nac_3872                            0.003  7_[+1]_6
+Nac_2040                            0.003  9_[+1]_6
+Nac_1980                            0.003  9_[+1]_6
+Nac_1903                            0.003  7_[+1]_8
+Nac_1686                            0.003  7_[+1]_8
+Nac_1990                           0.0033  10_[+1]_5
+Nac_1939                           0.0033  9_[+1]_6
+Nac_1938                           0.0033  9_[+1]_6
+Nac_1908                           0.0033  7_[+1]_8
+Nac_1784                           0.0033  7_[+1]_8
+Nac_1194                           0.0033  8_[+1]_7
+Nac_1153                           0.0033  8_[+1]_7
+Nac_1119                           0.0033  8_[+1]_7
+Nac_1986                           0.0036  9_[+1]_6
+Nac_1956                           0.0036  8_[+1]_7
+Nac_1943                           0.0036  8_[+1]_7
+Nac_1846                           0.0036  8_[+1]_7
+Nac_1715                           0.0036  7_[+1]_8
+Nac_1219                           0.0036  8_[+1]_7
+Nac_1160                           0.0036  8_[+1]_7
+Nac_1140                           0.0036  8_[+1]_7
+Nac_1139                           0.0036  8_[+1]_7
+Nac_2046                            0.004  8_[+1]_7
+Nac_1909                            0.004  7_[+1]_8
+Nac_1902                            0.004  9_[+1]_6
+Nac_1834                            0.004  7_[+1]_8
+Nac_1708                            0.004  8_[+1]_7
+Nac_1187                            0.004  8_[+1]_7
+Nac_1125                            0.004  9_[+1]_6
+Nac_1899                           0.0043  9_[+1]_6
+Nac_1897                           0.0043  9_[+1]_6
+Nac_1735                           0.0043  7_[+1]_8
+Nac_1711                           0.0043  9_[+1]_6
+Nac_1693                           0.0043  9_[+1]_6
+Nac_1145                           0.0043  8_[+1]_7
+Nac_4717                           0.0047  3_[+1]_10
+Nac_2022                           0.0047  8_[+1]_7
+Nac_1989                           0.0047  9_[+1]_6
+Nac_1966                           0.0047  8_[+1]_7
+Nac_1747                           0.0047  9_[+1]_6
+Nac_1736                           0.0047  9_[+1]_6
+Nac_1665                           0.0047  9_[+1]_6
+Nac_1660                           0.0047  10_[+1]_5
+Nac_1208                           0.0047  8_[+1]_7
+Nac_1196                           0.0047  8_[+1]_7
+Nac_1793                           0.0051  7_[+1]_8
+Nac_1785                           0.0051  7_[+1]_8
+Nac_1985                           0.0056  7_[+1]_8
+Nac_1968                           0.0056  7_[+1]_8
+Nac_1841                           0.0056  7_[+1]_8
+Nac_1692                           0.0056  9_[+1]_6
+Nac_2030                           0.0061  9_[+1]_6
+Nac_2008                           0.0061  9_[+1]_6
+Nac_1836                           0.0061  7_[+1]_8
+Nac_1770                           0.0061  7_[+1]_8
+Nac_1722                           0.0061  6_[+1]_9
+Nac_2013                           0.0066  9_[+1]_6
+Nac_2015                           0.0072  9_[+1]_6
+Nac_1944                           0.0091  9_[+1]_6
+Nac_1868                           0.0091  7_[+1]_8
+Nac_1789                           0.0091  7_[+1]_8
+Nac_2010                           0.0098  7_[+1]_8
+Nac_1701                           0.0098  8_[+1]_7
+Nac_2036                            0.011  9_[+1]_6
+Nac_1810                            0.011  9_[+1]_6
+Nac_1188                            0.011  9_[+1]_6
+Nac_1809                            0.012  8_[+1]_7
+Nac_1704                            0.013  3_[+1]_12
+Nac_1688                            0.013  8_[+1]_7
+Nac_1117                            0.013  8_[+1]_7
+Nac_1927                            0.014  7_[+1]_8
+Nac_1883                            0.016  9_[+1]_6
+Nac_1947                            0.022  7_[+1]_8
+Nac_1744                            0.025  8_[+1]_7
+Nac_1230                            0.025  8_[+1]_7
+Nac_1227                            0.028  6_[+1]_9
+Nac_3871                             0.03  7_[+1]_6
+Nac_4719                            0.032  8_[+1]_5
+Nac_2007                            0.034  5_[+1]_10
+Nac_1884                            0.034  9_[+1]_6
+Nac_1675                            0.034  6_[+1]_7
+Nac_1762                            0.036  9_[+1]_6
+Nac_4261                             0.04  8_[+1]_5
+Nac_4262                            0.056  7_[+1]_6
+Nac_786                             0.056  3_[+1]_10
+Nac_2042                            0.066  8_[+1]_5
+Nac_4263                             0.08  6_[+1]_7
+Nac_4718                            0.088  7_[+1]_6
+Nac_4720                             0.17  3_[+1]_10
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF NNYATAARNWWWDBTTATGNNN width=22 seqs=530
+Nac_1150                 (    9) GGGATAACCATATTTTATGGCG  1 
+Nac_1888                 (   10) GCCATTGATATTGCTTATGAAG  1 
+Nac_1856                 (    9) GCCATTGCCTGTGCTTATGCCT  1 
+Nac_1742                 (    8) ACCATAAGCTAATGTGATGATC  1 
+Nac_1164                 (    9) AACATAAGAGAAACCTATGCCA  1 
+Nac_1891                 (    9) GCCATAAAATATGGTTATCCCC  1 
+Nac_1666                 (    8) GGCATAATACTTTTTTATGCCG  1 
+Nac_1992                 (   11) ATAATAAGGATAATTTATGCCC  1 
+Nac_1991                 (   11) ATAATAAGGATAATTTATGCCC  1 
+Nac_1914                 (    8) TCCATAAGCCGCTCTTATGATT  1 
+Nac_4691                 (    8) GACATCAGCAATTCCTATTGGT  1 
+Nac_2298                 (    8) GACATCAGCAATTCCTATTGGT  1 
+Nac_1917                 (    9) GCCATATCGAACGCTTATGCGA  1 
+Nac_1916                 (    9) GCCATATCGAACGCTTATGCGA  1 
+Nac_1750                 (    9) ACAATCAGATTCGCTTATGACG  1 
+Nac_1814                 (    8) AGAATACGCATAACTTATGAAG  1 
+Nac_2006                 (   11) ACAATAACTATTAGTTATGAAT  1 
+Nac_1885                 (   10) GCTATTAGAAATTCCTATGCAA  1 
+Nac_1799                 (   10) GGCATAAGGATAAGATATGTTC  1 
+Nac_1223                 (    9) GTCATAAGCGAATCTGATTGTG  1 
+Nac_1221                 (    9) ATTATAAGGATATTTTATGCGC  1 
+Nac_2043                 (    8) GACATTAGACAAGGTTATGCTC  1 
+Nac_2041                 (    8) GCCATCACGTTCAATGATGGCG  1 
+Nac_1170                 (   10) TGAATAAGAAATCGTTATGGAA  1 
+Nac_1122                 (    9) AACATAGCCATTTCATATGGAT  1 
+Nac_1832                 (    9) CCCATCACCGTTGCTTATAACC  1 
+Nac_1807                 (    9) CCCATCACCGTTGCTTATAACC  1 
+Nac_1706                 (    8) TCCATTGGATTTACTTATAGGT  1 
+Nac_2009                 (   10) GGCATAACCGAATCGTATGAAA  1 
+Nac_1128                 (    9) TCCATAACAAATGGTTATTCAT  1 
+Nac_2023                 (   11) GTGATAACCATTTTTTATGCTC  1 
+Nac_1975                 (    8) GCCATCAACAATACAAATGGGG  1 
+Nac_1974                 (    8) GCCATCAACAATACAAATGGGG  1 
+Nac_1896                 (    9) GTTATAACTCTTCCTGATGGCA  1 
+Nac_1680                 (    9) AACATAAAGTGGCGTTATGGCT  1 
+Nac_2016                 (    8) GTTATAAGGAGTGATTATGTCT  1 
+Nac_2021                 (   10) AATATCCGAATTTTTTATGGCG  1 
+Nac_1960                 (   10) GCCAGAACTCAAACTGATGGAC  1 
+Nac_1806                 (    8) ATTATATGTAAATCCTATGGAT  1 
+Nac_1937                 (   10) GACATTAATAAACCCGATGGGC  1 
+Nac_1850                 (   10) GGGATAACTAACGGCTATGGAG  1 
+Nac_1819                 (    8) ATTATAAGCTTTCTGTATGGGG  1 
+Nac_1734                 (    8) GCTATCGGGTAAACCTATCGCT  1 
+Nac_1733                 (   11) TTCATCACCTTATGTGATGGAC  1 
+Nac_1725                 (   10) GGCATAATTGATGATGATGGCT  1 
+Nac_1707                 (   10) CCTATAAGTAAATCCAATGGAA  1 
+Nac_1682                 (    9) TCCATATGAAATGGCTATGTTC  1 
+Nac_1673                 (    9) AACATAATGGAAACCTATGCTG  1 
+Nac_1664                 (   10) CGCATTTCCTTTCTTTATGGCG  1 
+Nac_1138                 (   10) GCCATCATTGAACGTGATGGCA  1 
+Nac_2012                 (    8) TCCATAGCCGTTAGTTATCCCT  1 
+Nac_1928                 (   10) GGCATCGCTGATGTTTATGGTT  1 
+Nac_1881                 (   10) CTCATAAGGTTCGTTTATAGAT  1 
+Nac_1876                 (   11) GTCATTGAGTTTAACTATGGCC  1 
+Nac_1783                 (    8) ACAATAATCATACTTTATGAAG  1 
+Nac_1731                 (   10) ATAATAAGGAAAAGTGATGACA  1 
+Nac_1712                 (    9) CCCATCTGCAAACGTTATTACC  1 
+Nac_1690                 (    9) ACCATCAAAACCTGTTATGGAT  1 
+Nac_1689                 (    9) ACCATCAAAACCTGTTATGGAT  1 
+Nac_1202                 (   10) GGCATAGATAATACTTATCCGA  1 
+Nac_2050                 (    9) ATCATAGCGTTAGCTTATTCAT  1 
+Nac_2033                 (    9) GACATCATGTATAGTTATAGGG  1 
+Nac_1949                 (   11) ATCATACGGGGCAATTATGGCC  1 
+Nac_1948                 (   11) ATCATACGGGGCAATTATGGCC  1 
+Nac_1866                 (    8) CTAATAAAGAATAATTATGGGC  1 
+Nac_1853                 (    8) TCCATAAGTTACGCTTATTTAA  1 
+Nac_1732                 (    8) GTCATCACTTTTCCTTATTATT  1 
+Nac_1691                 (    8) GCCAGAAACGTTTCTTATTGAC  1 
+Nac_1674                 (    8) TGCATCGTCATCTTTTATGGCG  1 
+Nac_1658                 (   11) ACCATCAGTTACACCAATGAAG  1 
+Nac_1127                 (    9) TGAATAAGCTAACGCTATGATG  1 
+Nac_2054                 (    9) AAAATTAGTGGAACTTATGCCG  1 
+Nac_2047                 (    9) GCTATTAGGATTTGATATTGCC  1 
+Nac_1920                 (   11) CCTATCGCACATGGTTATGCCG  1 
+Nac_1830                 (   11) GCCATGAACAAAAATTATGGTT  1 
+Nac_1812                 (    9) GATATCGGTGAATCTGATGACG  1 
+Nac_1778                 (    9) GCCATAAGTCCTGGCGATAGCC  1 
+Nac_1754                 (   11) AACATACGGTATTGTTATTGAA  1 
+Nac_1753                 (   11) AACATACGGTATTGTTATTGAA  1 
+Nac_1699                 (    8) TTCATTGGCAAAATTGATGGGC  1 
+Nac_1662                 (   10) TGCATAAGATAAACTAATTGTT  1 
+Nac_1217                 (    9) ACCATAAGCCTCACGAATGCGT  1 
+Nac_1207                 (   10) CGGATACGAATATATTATGACG  1 
+Nac_1167                 (    9) ATCATCACGATTATTTATTCCC  1 
+Nac_2038                 (    9) ACCATCGAACTGCCTTATGAAG  1 
+Nac_1999                 (    9) GCTATTAGTAAAATCTATGAGA  1 
+Nac_1703                 (   10) CTTATCAATTATGCTTATGGGA  1 
+Nac_1152                 (    9) AATATCAGCTATTCTTATAAAG  1 
+Nac_1121                 (    9) ATTATAAATAAAAGTTATGAAA  1 
+Nac_1931                 (    8) GCCATAAGCCTTTCCTCTGTTA  1 
+Nac_1901                 (    8) TTCATAAAAAATACTGATTGTT  1 
+Nac_1882                 (    9) CGCATTCGGTACACTTATCGCT  1 
+Nac_1815                 (   10) AACATTTGTTAGACTTATGGTT  1 
+Nac_1763                 (    9) GGCATTGCTTTTTCCAATGCCT  1 
+Nac_1683                 (    9) CGCATTCGTGAGGCTTATGGTC  1 
+Nac_2011                 (    9) ACGATATGATTTACCTATCGCC  1 
+Nac_1983                 (   10) GCCATAAAAGATGACGATGCAT  1 
+Nac_1982                 (   10) GCCATAAAAGATGACGATGCAT  1 
+Nac_1973                 (   11) GCCAGATACAACGCTTATGCGT  1 
+Nac_1953                 (    9) GCCATTGCGGAAATTTATAACC  1 
+Nac_1889                 (   10) GGCATATCGTTTCCTGATTGAT  1 
+Nac_1851                 (    8) ATCATCAATAAAACCGATGGAA  1 
+Nac_1818                 (    8) TTGATAAGCATCGGGTATGGCA  1 
+Nac_1805                 (   10) TCCATAGGATTTACATATAATT  1 
+Nac_1728                 (   10) CTCATAGATGAAATTTATGAAT  1 
+Nac_1702                 (   10) ACAATAAGAAAACAATATGTCG  1 
+Nac_1216                 (    9) AAAATAAGAAAAGATTATGCAA  1 
+Nac_1962                 (    8) GTAATTGTTATGTCTTATGGCC  1 
+Nac_1936                 (    9) GGAATAAATAATCGTGATGATT  1 
+Nac_1926                 (    9) TAAATTGAAATATCTTATGACG  1 
+Nac_1869                 (   11) TCTAAAAGCTGTCGTTATGGCG  1 
+Nac_1822                 (    9) GAAATAAGAGGTTATTATGGGA  1 
+Nac_1821                 (    9) GAAATAAGAGGTTATTATGGGA  1 
+Nac_1804                 (   11) GGTAGAACCGTTCCTTATGAAG  1 
+Nac_1798                 (    9) GGCAGAAGAAAAAGCTATCCCG  1 
+Nac_1721                 (   10) ACTATTATTGAAGCTTATGAAG  1 
+Nac_1717                 (    9) TAAATTGAAATATCTTATGACG  1 
+Nac_1684                 (    9) GTCATTAATAAAGGCTATAACC  1 
+Nac_1224                 (    9) TGCATAACCTTTAATTATTCAT  1 
+Nac_1175                 (   10) GCCATCACGTTCTGGTATTGGG  1 
+Nac_1158                 (    9) TAAATTGAAATATCTTATGACG  1 
+Nac_1115                 (    9) GCGATAGTTTTTACTTATCACT  1 
+Nac_2048                 (   11) GTCATATATAATGATGATGGTC  1 
+Nac_1998                 (   10) GCCATGGCCTTTACTTATCGGT  1 
+Nac_1930                 (    9) GGCATAAATTTCTTTGATACCG  1 
+Nac_1848                 (   10) GGAATACGTTAAACCTATCGGC  1 
+Nac_1727                 (    8) TATATTAGTAAAGCTTATTACT  1 
+Nac_1681                 (    8) ACCATAAAGGGATATTATGTTT  1 
+Nac_1657                 (    9) GTGATAAGTAAAAACTATCGCT  1 
+Nac_1213                 (   10) GCTATAAGGCGTTGTTCTGGTT  1 
+Nac_1981                 (    9) GCGATAAGTGTACCGAATGCGT  1 
+Nac_1978                 (    8) TACATATTTTAATGTTATGGAA  1 
+Nac_1967                 (   10) AATATAAGGTGACATTATGGTA  1 
+Nac_1913                 (    8) AATATAAGGAAAACCAATGCAA  1 
+Nac_1873                 (    7) ACCATAATTTTTGTTCATGGCT  1 
+Nac_1827                 (    9) GCTATAACAAAAGCACATGGCG  1 
+Nac_1679                 (    9) GCAATTAAAAAAATTTATTCCG  1 
+Nac_1678                 (    9) GCAATTAAAAAAATTTATTCCG  1 
+Nac_1670                 (    8) CTTATTAGTTTTTCTGATTGCC  1 
+Nac_1206                 (    9) CGTATAAAAAGATCGGATGGCG  1 
+Nac_815                  (    7) CTCATTAGCTTCGTTTATTGCA  1 
+Nac_2049                 (   11) ATTATAAAAAAAACTTATTATT  1 
+Nac_2014                 (    9) GTCATCAGATTCACCGATATCG  1 
+Nac_1979                 (   10) TCCATAACATTAAAATATGTAT  1 
+Nac_1957                 (    9) CTCATCATAAATATCTATGAAC  1 
+Nac_1887                 (    9) GTTATAAGGAGAGAGTATGCGT  1 
+Nac_1859                 (    9) ACCATCCGTAAAAGTGATAAAG  1 
+Nac_1811                 (    8) GTCATACATTTCTGCTATGTTG  1 
+Nac_1709                 (   11) GCCAAAGGTCACGCTTATGTGG  1 
+Nac_1671                 (   10) GAGATAATCGATGGTTATGCGA  1 
+Nac_1212                 (    9) TCCATCGCTAATTATTATTGGT  1 
+Nac_1148                 (    9) CGCATCAGTAAACGCTATCAAC  1 
+Nac_2037                 (   11) ACAATATGGATTTTTTATCGAT  1 
+Nac_2017                 (    9) AAGATAATCCTTGTTTATGGAT  1 
+Nac_2005                 (    9) GGCATTCCTTTTTACTATGCGC  1 
+Nac_2002                 (   10) ACCTTCAGGAAAAATTATGGAG  1 
+Nac_1946                 (   10) AACATATGCTGGACGTATGGTT  1 
+Nac_1862                 (   11) CCGATAGGTCATTTTAATGGCA  1 
+Nac_1839                 (   10) GACATAAGGTGATCGTCTGAAT  1 
+Nac_1829                 (   11) GTCAGACGCTGGTGTTATGGGC  1 
+Nac_1828                 (   11) GTCAGACGCTGGTGTTATGGGC  1 
+Nac_1782                 (   10) AACATATGCTGGACGTATGGTT  1 
+Nac_1757                 (    8) GCCAAAAGTATTACCGATGTTT  1 
+Nac_1713                 (    8) CACATCGGAGGCTGTTATGCCA  1 
+Nac_1700                 (    8) GCCATCTTATTTCGTAATGGAT  1 
+Nac_1687                 (   10) CTAATACGGTTCTCTGATGAGG  1 
+Nac_1225                 (    9) TCCATTGATATAACTTATATAT  1 
+Nac_1203                 (    9) AGCATAACGATTAATGATACAC  1 
+Nac_1168                 (   10) GCAATCGGTAAATTTAATGAGC  1 
+Nac_1144                 (   10) GCTATTGCTTAATCTTATTAAT  1 
+Nac_1996                 (    8) CCGATAAGTAAAGGCCATGGCT  1 
+Nac_1915                 (    8) ACCATAATGTCACCTTATATTC  1 
+Nac_1835                 (    8) AATATAAGGAAATCATATAAAT  1 
+Nac_1816                 (    8) AGCATAACTGTCGGATATAGCG  1 
+Nac_1743                 (    8) GCTATACCGAACCGTTATTACA  1 
+Nac_1672                 (   10) CGCATATGACGAAGTTATTGCA  1 
+Nac_1661                 (    9) GCCATTCGTGAAAGTTATCCGA  1 
+Nac_1228                 (    9) GCTATCATCCGCCCTTATGCTT  1 
+Nac_1205                 (    9) TCCATAAAGCAAACCAATTCCT  1 
+Nac_1181                 (    9) AACATTAAATTAACTTATACAA  1 
+Nac_1176                 (    9) ATTATCAGGATGTGCTATGAAT  1 
+Nac_2035                 (   11) AACATAATCCCACCTTATTACT  1 
+Nac_2034                 (   11) AACATAATCCCACCTTATTACT  1 
+Nac_1997                 (   10) TATATAAAGGAATATTATGTCC  1 
+Nac_1972                 (   11) CCCAGACGAAAATGAGATGGCG  1 
+Nac_1971                 (    8) GATATATGTTTATTTTATGTAA  1 
+Nac_1951                 (   10) ACAATTAGGCAAACTTATTCAA  1 
+Nac_1925                 (   11) ACAATATCTTAATGATATGACG  1 
+Nac_1924                 (   11) ACAATATCTTAATGATATGACG  1 
+Nac_1808                 (    9) GCCAAAGCGTTTTCCTATAACG  1 
+Nac_1803                 (    9) GGTATAAGCGACACGAATGAAC  1 
+Nac_1777                 (    9) TTCATAACTTTTATTTATAATA  1 
+Nac_1766                 (    8) CCCATACGATGTGGGTATCGCA  1 
+Nac_1726                 (    8) TTCATAAATTTCATCTATGAGA  1 
+Nac_1232                 (    9) CACATTAAATATGATTATGTAC  1 
+Nac_1229                 (    9) CCTATAACTATACATGATGTCA  1 
+Nac_1218                 (    9) TTTATTGGATTTACTTATACGG  1 
+Nac_1215                 (   10) ACTATCTGCTTTTCTTCTGGAT  1 
+Nac_1199                 (    9) CCCATAAGGAGTTTTTCTTGAT  1 
+Nac_1198                 (    9) GCGAGAAGCCGTTCTTATTACC  1 
+Nac_1197                 (   10) GGTATCACTTTTCTTAATGACT  1 
+Nac_1185                 (    9) AAGATATAAAATTCCTATGCCA  1 
+Nac_1151                 (   10) GCCAAAAGCCAAAGTTATCCAC  1 
+Nac_1141                 (    9) GTAATAACAATTCCCGATAGTC  1 
+Nac_1124                 (    9) CGCATACTCTCTCCTTATAACC  1 
+Nac_2031                 (   11) TACATATCTCTTCCTGATGATT  1 
+Nac_1831                 (   10) AACATAGCAGAAATGTATGACA  1 
+Nac_1823                 (   10) TAGATAAAGTTATCTTATCGTT  1 
+Nac_1773                 (   10) ACTATTTACAAAACCTATGGTA  1 
+Nac_1768                 (    9) ATTGTAAGGATAACTTATGAAC  1 
+Nac_1759                 (    8) ACCAGATAAATATCCTATGAAT  1 
+Nac_1756                 (   10) AACATCGGTAATACTTTTGGCA  1 
+Nac_1694                 (    9) GATATAAGCGATTTTTATCAGA  1 
+Nac_1226                 (    9) TATATAAGTTATATCAATGGAT  1 
+Nac_1220                 (    9) ATTGTAAGGATAACTTATGAAC  1 
+Nac_1214                 (    9) TACATTAGACAAAAATATGGGC  1 
+Nac_1191                 (    9) TGAATCATTATTTGCTATGGGT  1 
+Nac_1178                 (   10) ATGATACGGTTTTGTTATTAAG  1 
+Nac_1162                 (   10) ATCATCCCAAAAAACTATGCGC  1 
+Nac_1159                 (    9) AAAATAGGGAGAAATGATGGAG  1 
+Nac_1136                 (    9) TCCATAAATGATTATTATCGTA  1 
+Nac_2000                 (   10) AAAATAAGCATCTATTATTGTT  1 
+Nac_1995                 (    9) GCCATTGTAGGATGTGATGGTT  1 
+Nac_1988                 (   10) TCCGTAAGGAGTCACTATGGCT  1 
+Nac_1987                 (   10) TCCGTAAGGAGTCACTATGGCT  1 
+Nac_1935                 (    9) AACATATTATATTTTTATGTGT  1 
+Nac_1870                 (    9) CCTATTGTGAATATTTATAGCG  1 
+Nac_1824                 (    8) ACGATAAGATAACTTTATCTAT  1 
+Nac_2004                 (   10) GCTATAAATAAGACCTATTTTC  1 
+Nac_1977                 (   10) AGGATAAGGTAATTCAATGAAG  1 
+Nac_1976                 (   10) AGGATAAGGTAATTCAATGAAG  1 
+Nac_1969                 (    9) ACCAGAGATAGGGCTTATGCAT  1 
+Nac_1950                 (    9) GATATTACCTTCGGTTATAGGT  1 
+Nac_1945                 (    8) AACATGCGGCTTTTTTATGGTG  1 
+Nac_1919                 (    8) TCCATTGTGTTTATGTATGTCG  1 
+Nac_1911                 (    9) TAAATCGACGAAACTTATGATG  1 
+Nac_1880                 (   11) GGTCTAAGGTTTTGTGATGGAC  1 
+Nac_1755                 (    8) CCAATCGCAATTGGTTATATCG  1 
+Nac_1745                 (    8) CACCTAAGATTAACTTATGTAA  1 
+Nac_1739                 (   11) CCCATAAGAATTCACAATTATG  1 
+Nac_1697                 (    9) GTCATAAAATATGTCGATAAGG  1 
+Nac_1195                 (   10) CTTATTAGTTATCGATATGACA  1 
+Nac_1142                 (    9) TCAAGAAGAAAGAATTATGACG  1 
+Nac_1118                 (    9) GTTATAAATTTCCGCAATGGCA  1 
+Nac_2051                 (    8) AGCATTCATTTTTCATATGATT  1 
+Nac_1961                 (    9) GCCAAACATCTTCGTTATGGGA  1 
+Nac_1677                 (   10) CCTATAAAAGGAGGGTATGCAC  1 
+Nac_1669                 (    8) GTGATATTGCTCTCCTATGGAG  1 
+Nac_2045                 (    8) TTCATCAATTTTTCTTATTTTA  1 
+Nac_2020                 (   10) TTAATATGAAACACTTATACTG  1 
+Nac_1984                 (    9) GGTATAAGCGTTTCAGATTGGA  1 
+Nac_1954                 (    8) GCTATTACAAATCCTAATAATT  1 
+Nac_1922                 (    8) AACATCACACGAAGTGATGGTA  1 
+Nac_1886                 (   11) ACCGTCATTCGTACTTATGGCG  1 
+Nac_1867                 (    8) GTTATAGGGTTCAGTTATATAA  1 
+Nac_1858                 (    8) GTCATATTCCTTACATATAACT  1 
+Nac_1847                 (   10) TCAATAACCTGAAGATATGTGC  1 
+Nac_1741                 (    8) GGAATAAGGACGGTATATGACT  1 
+Nac_1668                 (    8) TCAATTAATGAACTTTATGAAT  1 
+Nac_1190                 (    9) CTTATAAAGATTAATTATAAAT  1 
+Nac_1166                 (    9) CACATAAAAATATAATATGTTT  1 
+Nac_1157                 (    9) GCAATTGTATATTGTTATGTAA  1 
+Nac_1154                 (    9) TCTATAAGCTGTAGTGATAAAA  1 
+Nac_1132                 (    9) GGCATAGGAATTTTATATCTTT  1 
+Nac_1964                 (   11) TCGATACAATAGTGTTATGTGG  1 
+Nac_1963                 (   11) TCGATACAATAGTGTTATGTGG  1 
+Nac_1932                 (   10) CCTATAAGGAGATTCAATGAAA  1 
+Nac_1929                 (   11) CTTATATTCATTCTTAATGGCG  1 
+Nac_1872                 (   10) CGAATATGATTATCTGATTGTG  1 
+Nac_1871                 (   10) CATATTGGAAAATTTAATGACC  1 
+Nac_1838                 (    8) GATATAAAAAATACATATTCAA  1 
+Nac_1790                 (    9) GGCATAGCGAAAACTTCTCTGC  1 
+Nac_1788                 (    9) GGCATAGCGAAAACTTCTCTGC  1 
+Nac_1767                 (    8) CGTATAAAACTTTTCTATCGCC  1 
+Nac_1746                 (   11) TATATTGAAAAAGCTTATGATA  1 
+Nac_1714                 (    8) TATATCGTTTTATGTTATGCGC  1 
+Nac_1705                 (   10) TGTATAAGTCTTGGAAATGGGC  1 
+Nac_1667                 (    9) GGCAGTTTTGTTTCTTATGCCC  1 
+Nac_1231                 (    9) AATATCCGCTATCTTTATTGAC  1 
+Nac_1193                 (    9) CCCATAGCAAATAATGATTCAA  1 
+Nac_1184                 (    9) ACCATCATTTCCTCCTATAGGC  1 
+Nac_1123                 (    8) GTTATTCACTAAAGTAATGGCA  1 
+Nac_1993                 (    8) CAGATAATGAAGCCTTATTGAT  1 
+Nac_1933                 (   11) AACATCAGAGAAAACTATTCCA  1 
+Nac_1923                 (    9) TACATAACAATATACAATTGCT  1 
+Nac_1921                 (    9) TGCATATACAAGTTTTATTGTG  1 
+Nac_1910                 (   11) TATATAGCGCTGGCCTATGACA  1 
+Nac_1854                 (    8) CAGATAATGAAGCCTTATTGAT  1 
+Nac_1844                 (    8) TTCATTGAATTACCTTATCCTT  1 
+Nac_1794                 (    8) TGGATAGCATTTTTGTATGGTT  1 
+Nac_1791                 (    8) GCCAAAAGAAGACGTTATCATT  1 
+Nac_1761                 (   11) GCCATAAGCTTTGTTACTTCTG  1 
+Nac_1222                 (    9) TCCATTCGAACTCTTTATACTG  1 
+Nac_1210                 (    9) AAGATAAGCAAAAGTGATTTAT  1 
+Nac_1133                 (    9) GGCATATCATCCCTTTATAGAG  1 
+Nac_1130                 (    9) GCTATAAATATTCACAATAGGG  1 
+Nac_1934                 (    8) TGCATCGTTTTTAATTATTCCC  1 
+Nac_1912                 (    8) GTAATCGCGTTTCCTTATATTT  1 
+Nac_1893                 (   11) ACCATAAAAATTTATAATCTGC  1 
+Nac_1857                 (    8) AACTGAAGAGTAACTTATGGCT  1 
+Nac_1855                 (    8) GCTATAACACCACCCTATATAT  1 
+Nac_1845                 (    9) CCTATAGGAGGAAATGATGGTA  1 
+Nac_1837                 (    9) GGTATAACGTGATCATATCAAC  1 
+Nac_1826                 (   10) GGAATAAAAAGAAGGAATGGAT  1 
+Nac_1802                 (    9) GTCATTGATTTGTCTTATTTTG  1 
+Nac_1772                 (    9) AGTATTATCATTTATTATACCC  1 
+Nac_1685                 (    8) TGCATCGTTTTTAATTATTCCC  1 
+Nac_1200                 (    9) ATCATAGGTAGGCCAAATGAGG  1 
+Nac_1173                 (    9) AGCATTAGCGTTATGAATGAGT  1 
+Nac_1172                 (    9) CTCATTCATAACGCTAATGCTG  1 
+Nac_1171                 (    9) TGCAAAAGTATTTTGTATGCGT  1 
+Nac_1156                 (   10) GTGATAAGCTTTTCGTCTTACG  1 
+Nac_2052                 (   10) ATCATATGAAAAATGAATGCTT  1 
+Nac_2028                 (   10) TGAATAGGTATAAGGGATGTAG  1 
+Nac_1875                 (    8) CACATATCTTCAGGTTATTGAT  1 
+Nac_1189                 (    9) TTTATAATTAATCTTTATAAGT  1 
+Nac_1180                 (   10) GCCATTACTTTAGTGAATAACG  1 
+Nac_1163                 (   10) AATAAAAGCCATACTTATAGCA  1 
+Nac_2032                 (   11) GGAATAATTTTATTTTCTGGTT  1 
+Nac_1940                 (    8) TTCAGAGCGATCGCTTATAAGG  1 
+Nac_1895                 (   11) GCCCTAACAAAAAGTGATATCC  1 
+Nac_1865                 (    9) AATATTGTTGGTACTTATGTCC  1 
+Nac_1843                 (   10) CTGATAAGGAGCCGGTATGTTC  1 
+Nac_1840                 (   10) GTTATCGAAACCATTTATGGTT  1 
+Nac_1833                 (   11) GCCCTAACAAAAAGTGATATCC  1 
+Nac_1797                 (   10) AGTATTCAGAAAATTTATGAAA  1 
+Nac_1720                 (    8) ACCATTGTCTTTTTTTATATTT  1 
+Nac_1211                 (    9) CACATAATTTGTCATTATTCAT  1 
+Nac_1209                 (    9) GTAATAATAAAATATGATGTTT  1 
+Nac_1149                 (    9) ATTATATATAAATCTTATTTAT  1 
+Nac_1146                 (    9) AAAATAAGACAAATCAATGACA  1 
+Nac_1131                 (    9) TTGATAACAAATGCTGATATTG  1 
+Nac_2044                 (   11) AACTTAAATAAAACTTATACAG  1 
+Nac_2024                 (   11) TGCATTGTTATTCTTTATTCCA  1 
+Nac_2018                 (   11) TGAATATAAAAAACAGATGCCC  1 
+Nac_1958                 (   10) GTTAAAGGAGTTAATTATGGAT  1 
+Nac_1894                 (    9) GAGATAGCCATTAATTCTGTCC  1 
+Nac_1764                 (   11) AACTTAAATAAAACTTATACAG  1 
+Nac_1748                 (    9) TGTATAATAAGCTCGTATGTAG  1 
+Nac_1719                 (    8) GTCATTAAATTTTCCAATATGC  1 
+Nac_1177                 (    9) CCCATAACTAATTAGGATTATT  1 
+Nac_2039                 (    8) GTATTAAGCCGTGCTTATGATT  1 
+Nac_2003                 (   10) TTTATAAGAACTTGTAATACAG  1 
+Nac_1965                 (   10) ATTTTTAGCAAAGCTTATGGTA  1 
+Nac_1906                 (   11) CCTATACACCGGGCTTATTGAT  1 
+Nac_1874                 (    9) GATATGCAAAACGCTTATGCCA  1 
+Nac_1147                 (   10) GTCATTTATGAATGTTATCAAC  1 
+Nac_1134                 (    9) TACATACGAGCTTATTATACAC  1 
+Nac_1994                 (    9) TGCATTATTGGTGCTTATCATG  1 
+Nac_1952                 (   10) CCCATATGAACGAATTATTAAT  1 
+Nac_1879                 (    8) TTTAGTAGTTTTCCTTATTGTG  1 
+Nac_1787                 (    8) TTTAGTAGTTTTCCTTATTGTG  1 
+Nac_1738                 (    9) CATATTGTCTTTATTGATGGCA  1 
+Nac_1663                 (   10) GTCAAAAGCCCCACTTATACGC  1 
+Nac_1204                 (    9) ACCATCACATCCTACAATGGCA  1 
+Nac_1179                 (   10) CCCATATGAACGAATTATTAAT  1 
+Nac_1129                 (    9) TTGATATGATCACGTTATACCC  1 
+Nac_1126                 (   10) TTCGTCAAATTGAGTTATGGCG  1 
+Nac_1941                 (   10) CTTATAAGCGATCGCTCTGAAA  1 
+Nac_1842                 (   10) TCAATTTCCCTTCCTTATTAGC  1 
+Nac_1801                 (   10) TTCATTCATTTGACTTATACTT  1 
+Nac_1781                 (    8) CCTATAAGTTTGGGTAATATGT  1 
+Nac_1775                 (   11) CGTATTAGTGAGATTTATCACG  1 
+Nac_1724                 (   11) CTAAAAGGAAGACGTTATGGTG  1 
+Nac_1723                 (   11) CTAAAAGGAAGACGTTATGGTG  1 
+Nac_1659                 (   10) TTCATAACTATTCCTTACATCG  1 
+Nac_1233                 (    9) ATCATAAGATTCTGATATCTTA  1 
+Nac_1116                 (    9) CAAATTCATATACATTATGCCA  1 
+Nac_3383                 (    8) TCTATCATAATCTCTTATTTGA  1 
+Nac_2001                 (    8) TCCATAATTTTTCCTGAAGGTT  1 
+Nac_1918                 (   11) GTCATGGACGAAGCCTATAAAG  1 
+Nac_1877                 (   10) ACGAACAGTATTTTGTATGGGG  1 
+Nac_1863                 (   10) ATTATCCATTTTTGTTATTGGA  1 
+Nac_1730                 (    8) GCCATAACTCAATTTGACGAAC  1 
+Nac_1710                 (   10) ACCATAAAAAAGCCGCATGTTG  1 
+Nac_1165                 (    9) ATCATTCGCCATGATTATAATA  1 
+Nac_2029                 (    9) TTTATACAAAAATGATATACCT  1 
+Nac_1905                 (    9) ATGATAAGCCAAATCGATAAGC  1 
+Nac_1864                 (   10) GCCATTAATTTTTCCGTTGAGC  1 
+Nac_1860                 (    9) GCTATATCAGAAACATATCATT  1 
+Nac_1779                 (   10) GCTAAAACCCTTTTTTATAAAG  1 
+Nac_1774                 (    9) ATGATAAGCCAAATCGATAAGC  1 
+Nac_1758                 (   10) GAAATAAGCTTTTTCTCTACCA  1 
+Nac_1729                 (   10) GTGAGCTAGCTTGCTTATGGTG  1 
+Nac_1698                 (    9) ACAATTAGCGGACATTATCAGC  1 
+Nac_1120                 (    9) TCAGTAAGCCTACGCTATGGAA  1 
+Nac_2053                 (   10) CGCATTCTGTTTTGTAATTCCC  1 
+Nac_2025                 (    9) GTGATAATTCTTTTGGATGGAA  1 
+Nac_1959                 (    9) ATCATAGAGAAAATAAATAACC  1 
+Nac_1825                 (    8) TTCATAAAAAACCTTAATATAC  1 
+Nac_1817                 (    8) AGCATGTTTCTACCTTATGATT  1 
+Nac_1776                 (    9) GGTATAAGGCTTAAAGATATCT  1 
+Nac_1771                 (   10) GGTATTTTCAGAGATTATGAAT  1 
+Nac_1760                 (   10) GCTATTCCTTTTTCTGATTTGA  1 
+Nac_1737                 (   10) AAAATATATAAACTTGATGATT  1 
+Nac_1696                 (   10) CGCATTCTGTTTTGTAATTCCC  1 
+Nac_1183                 (    9) ATCATAGAGAAAATAAATAACC  1 
+Nac_4034                 (    8) TTCATATAAAAAATATATTTCC  1 
+Nac_2027                 (    8) CTCATTCAATAAAGTGATAAGT  1 
+Nac_1904                 (   10) CTAAGAGGAAAAAAATATGGAG  1 
+Nac_1898                 (   11) TGCATTTTGGGGTGTTATGGTT  1 
+Nac_1892                 (    8) AACATCGCATTTAACTATATTG  1 
+Nac_1769                 (   10) AAAATCGAATTTGCCTATTATG  1 
+Nac_1765                 (   10) GTCATAAGATTCGTTTTTAAGC  1 
+Nac_1749                 (   11) CGTATTCATACTTCCTATGAAA  1 
+Nac_1716                 (   10) AAAATTAGCCCAAATTATGTTT  1 
+Nac_1201                 (    9) TCAATAAAGATAGCGGATATTT  1 
+Nac_1186                 (    9) TGGACAACCTATTTTTATGGCC  1 
+Nac_1907                 (    9) ATTATAATCATGGCGAATGATT  1 
+Nac_1900                 (   11) AGCATTTGGTTTTCTCATACTG  1 
+Nac_1878                 (   10) TACATAAGTTAATCTTAGGTGA  1 
+Nac_1820                 (    8) GCCAGAAGAGCCGGATCTGGCG  1 
+Nac_1800                 (    9) GACAGAATTAATGGCTATCTCA  1 
+Nac_1780                 (   10) GGCATAAGAGGATCGCATTATG  1 
+Nac_1752                 (   10) TAATTAAGGAAAGCATATGCGC  1 
+Nac_1751                 (   10) TAATTAAGGAAAGCATATGCGC  1 
+Nac_1182                 (    9) TAAATAGGTATAAAGAATGGGA  1 
+Nac_1169                 (    9) GCAATAAGTTATGTTTTTAAAT  1 
+Nac_1143                 (    9) TAGATTAACCAACCTAATGAAA  1 
+Nac_1955                 (    9) CATATAAGTTGCTGGAATGATT  1 
+Nac_1852                 (    7) GCCAAATATTACGCTTATCAAT  1 
+Nac_1813                 (    8) ATAATAGGCAAATTCGATTTTG  1 
+Nac_1718                 (   10) TATAAAGGAGGAACGTATGGCT  1 
+Nac_1161                 (    9) TTAATAAATTTAACTTAAGGTT  1 
+Nac_2026                 (    8) CCTATAAGTCGGATGAATGGAA  1 
+Nac_2019                 (   11) CGTATAAATTCAATGTATTGCA  1 
+Nac_1970                 (   10) TATATCAATTCCACTTATAATG  1 
+Nac_1942                 (    8) TTCATAAATTTTCTGAATACTC  1 
+Nac_1890                 (    9) ATAATAGTTTTATTATATGTAT  1 
+Nac_1861                 (    8) CCTATAAGTCGGATGAATGGAA  1 
+Nac_1795                 (   10) TCTATGCAAAAATGATATGGAT  1 
+Nac_1792                 (   10) TTTATAAGCCGATTAAATGATG  1 
+Nac_1740                 (    8) GATATATGTTATATGAATGTTT  1 
+Nac_1695                 (   10) GTAATAATTTGCACATATTGGA  1 
+Nac_1174                 (    9) TCCATACTCTGTCAATATATCC  1 
+Nac_1135                 (    9) CTTATCTTTTCTTCTTATGTTC  1 
+Nac_1849                 (    8) AAAATATTCAATATTTATATAT  1 
+Nac_1796                 (    8) TTTATAACACTAACAAATCGAG  1 
+Nac_1786                 (   10) AATATATAAATTAATTATTAAA  1 
+Nac_1676                 (   10) GATATACAAGATTCTTTTGATG  1 
+Nac_1137                 (   10) GATATACAAGATTCTTTTGATG  1 
+Nac_3872                 (    8) GCAATATTATTTTTTGATATGT  1 
+Nac_2040                 (   10) ATCATAAGCACGGCTTAATACC  1 
+Nac_1980                 (   10) AATATAAAATTAATATATATGT  1 
+Nac_1903                 (    8) ATCATTTAATCGGCTTATAAAG  1 
+Nac_1686                 (    8) GTGAATACCCTTACTTATTGGT  1 
+Nac_1990                 (   11) ATTATAAGAGCTGGGCATGGAG  1 
+Nac_1939                 (   10) CCCATAAATTTTTACGCTCCCT  1 
+Nac_1938                 (   10) CCCATAAATTTTTACGCTCCCT  1 
+Nac_1908                 (    8) ACCATAAGCTTTGCTAAAAATA  1 
+Nac_1784                 (    8) GTACTGGCTAAATGTTATGGCG  1 
+Nac_1194                 (    9) GGCATAATGTATATGAATTTGA  1 
+Nac_1153                 (    9) TTAATTATCTTTACTAATAATC  1 
+Nac_1119                 (    9) AATAAACGTCTTACTTATAGAA  1 
+Nac_1986                 (   10) CTCAGTTAAGAAAATTATGGTC  1 
+Nac_1956                 (    9) AGAATTATCCTAGGGGATGCTG  1 
+Nac_1943                 (    9) GATATATTGACAGAGTATGGAA  1 
+Nac_1846                 (    9) GCAAGATAAACAGGTTATTACC  1 
+Nac_1715                 (    8) AACATAATTTGGGCTAATTTTC  1 
+Nac_1219                 (    9) TGGATTGGTAACCCGTATAAGA  1 
+Nac_1160                 (    9) TACATATAATAAAACTATTATA  1 
+Nac_1140                 (    9) AGAATTATCCTAGGGGATGCTG  1 
+Nac_1139                 (    9) AGAATTATCCTAGGGGATGCTG  1 
+Nac_2046                 (    9) ACGCTAGCGTAGCCTTATAGAT  1 
+Nac_1909                 (    8) ACCATAAGCAAGCTAGCTCACT  1 
+Nac_1902                 (   10) ACGATATCAAACCGATCTGGGC  1 
+Nac_1834                 (    8) AGATTAAACATACCTTATACAA  1 
+Nac_1708                 (    9) TTCATTAGGTTGGTTAATCTAT  1 
+Nac_1187                 (    9) ACGCTAGCGTAGCCTTATAGAT  1 
+Nac_1125                 (   10) CACTAAGCTCTTTCTTATGGCT  1 
+Nac_1899                 (   10) TGAATATCTTACATATATGTGT  1 
+Nac_1897                 (   10) TGAATATCTTACATATATGTGT  1 
+Nac_1735                 (    8) TTAATTGTTTTTTTTAATAGCG  1 
+Nac_1711                 (   10) CTCATGCCTTTCACTGATATCC  1 
+Nac_1693                 (   10) CGAATCACACTGATCTATATCG  1 
+Nac_1145                 (    9) GTCCTAAGTTTTAAATATATCA  1 
+Nac_4717                 (    4) ACAATCGTATTAATATATAAGG  1 
+Nac_2022                 (    9) AATATAACCTATTGTTTTAATG  1 
+Nac_1989                 (   10) TTCATTCAGTCTATTTATAATA  1 
+Nac_1966                 (    9) GCATTACAATTTTGTAATGAAC  1 
+Nac_1747                 (   10) CAAATAACGTTTACCGCTCGCA  1 
+Nac_1736                 (   10) GCTATTAAAAAAAACAATTAAA  1 
+Nac_1665                 (   10) ATCATAAGGTAGAAACATGCTA  1 
+Nac_1660                 (   11) AGTATAGATGTCCTTGATTAAC  1 
+Nac_1208                 (    9) TCCGTATTAAAAAATTATGTTG  1 
+Nac_1196                 (    9) ACGATCGTTATTTTTAATAATG  1 
+Nac_1793                 (    8) TCCATATCATTTTTGCATAGAC  1 
+Nac_1785                 (    8) TTAATAATTAATTTATATATTT  1 
+Nac_1985                 (    8) ACCATAATTTTCTTAACTGAGG  1 
+Nac_1968                 (    8) TAAGAAAGGATTTCTTATGAGC  1 
+Nac_1841                 (    8) CTTAGCTATTATAGTTATAGAG  1 
+Nac_1692                 (   10) GCATAACGGAGGACTTATGGCT  1 
+Nac_2030                 (   10) GGGATATGATTTTCTTACATCA  1 
+Nac_2008                 (   10) TTTATTATGATAAGAAATGTGT  1 
+Nac_1836                 (    8) ATAATTTTTATTTTGTATGTAT  1 
+Nac_1770                 (    8) CACATTTCTTATCATAATAAAT  1 
+Nac_1722                 (    7) TTAATCAAGGACATCTATACTT  1 
+Nac_2013                 (   10) GAGGTTTAAATTTCTTATGTAC  1 
+Nac_2015                 (   10) TTAATTGCTTTCTTTTTTGGCG  1 
+Nac_1944                 (   10) ATGATGAGAAGAAGAAATGATG  1 
+Nac_1868                 (    8) TTCATAATCTCTGAAAATACCA  1 
+Nac_1789                 (    8) TCGCTAAATTTTTCTAATCGAA  1 
+Nac_2010                 (    8) GGCATACTAAGGAGGAATAAAA  1 
+Nac_1701                 (    9) TCTATAAGTAAGACGTTTATTC  1 
+Nac_2036                 (   10) TCGAGATCGAAAAAATATAACC  1 
+Nac_1810                 (   10) TACATACAAAATAAAAATTATA  1 
+Nac_1188                 (   10) GTCAGGAATTATTTTTCTTGCC  1 
+Nac_1809                 (    9) TGAATAAGAAGGTGTTAACCCT  1 
+Nac_1704                 (    4) AAAATTAACATTAGATCTAAAT  1 
+Nac_1688                 (    9) TACATCCAATTTTTCTCTTATT  1 
+Nac_1117                 (    9) TACATCCAATTTTTCTCTTATT  1 
+Nac_1927                 (    8) AGTATAAGTACCGCCTTTCATC  1 
+Nac_1883                 (   10) CTCATAAGAAATCCTTTCTTAG  1 
+Nac_1947                 (    8) ATAAGTAGATGAATATATATAC  1 
+Nac_1744                 (    9) CCTATCTATAACGCCATTGTCT  1 
+Nac_1230                 (    9) AACATAAGGAGTGCATTATGCG  1 
+Nac_1227                 (    7) ATAAGAAGAAAAAGACATTTGG  1 
+Nac_3871                 (    8) TTCATATTGCCGCAATATTATT  1 
+Nac_4719                 (    9) TACCGTCACATTCTTGATGGTA  1 
+Nac_2007                 (    6) CCCAGATCAGTTTTTTCCGCCT  1 
+Nac_1884                 (   10) TCATAACCCTTTCCTTATACAA  1 
+Nac_1675                 (    7) GGATTTTCTTATGCGGATTGAT  1 
+Nac_1762                 (   10) CATATAAGGAAAAGAGAGAATG  1 
+Nac_4261                 (    9) TCAATCCGCATAAGAAAATCCT  1 
+Nac_4262                 (    8) CACACATGCAATAATCATTCAA  1 
+Nac_786                  (    4) AACCTGAATAAATTTTCTCAGG  1 
+Nac_2042                 (    9) ACCCTTATATATTAATACGATT  1 
+Nac_4263                 (    7) AGAAGGCTAAAATAGAATGAAT  1 
+Nac_4718                 (    8) TGGTTATGAGATTACTCTCGTT  1 
+Nac_4720                 (    4) ATGACATAAACAACATAAGCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 8446 bayes= 3.90071 E= 2.6e-559 
+   -12    -20     72    -39 
+   -47     84    -10    -23 
+   -72    136    -95    -38 
+   158   -302   -333   -347 
+  -284   -502   -170    151 
+   101    -36   -295    -62 
+    84    -63    -13   -106 
+   -30      3    107    -97 
+    -6     18      0     -6 
+    37    -61    -59     15 
+    37   -140    -54     34 
+    24    -54   -107     40 
+    14    -17    -11      1 
+   -93    107     23    -47 
+  -126    -13    -90     93 
+  -112   -315    -41    114 
+   157   -185  -1569   -368 
+  -437   -402   -565    163 
+   -56   -106    144    -78 
+    -6      2     84    -86 
+   -14     69    -11    -37 
+   -56     26     40      1 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 530 E= 2.6e-559 
+ 0.286792  0.160377  0.313208  0.239623 
+ 0.224528  0.330189  0.177358  0.267925 
+ 0.188679  0.471698  0.098113  0.241509 
+ 0.930189  0.022642  0.018868  0.028302 
+ 0.043396  0.005660  0.058491  0.892453 
+ 0.628302  0.143396  0.024528  0.203774 
+ 0.556604  0.118868  0.173585  0.150943 
+ 0.252830  0.188679  0.398113  0.160377 
+ 0.298113  0.209434  0.190566  0.301887 
+ 0.403774  0.120755  0.126415  0.349057 
+ 0.403774  0.069811  0.130189  0.396226 
+ 0.367925  0.126415  0.090566  0.415094 
+ 0.343396  0.164151  0.175472  0.316981 
+ 0.164151  0.386792  0.222642  0.226415 
+ 0.130189  0.167925  0.101887  0.600000 
+ 0.143396  0.020755  0.143396  0.692453 
+ 0.924528  0.050943  0.000000  0.024528 
+ 0.015094  0.011321  0.003774  0.969811 
+ 0.211321  0.088679  0.516981  0.183019 
+ 0.300000  0.186792  0.339623  0.173585 
+ 0.283019  0.298113  0.175472  0.243396 
+ 0.211321  0.220755  0.250943  0.316981 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NNYATAARNWWWDBTTATGNNN MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GAT][CTA][CT]AT[AT]A[GA][TAC][AT][AT][TA][AT][CTG]TTAT[GA][GA][CAT][TGCA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  9.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Nac_786                          5.56e-01  35
+Nac_815                          1.63e-03  35
+Nac_1115                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1116                         1.91e-02  37
+Nac_1117                         1.93e-01  37
+Nac_1118                         5.07e-03  37
+Nac_1119                         5.14e-02  37
+Nac_1120                         2.37e-02  37
+Nac_1121                         8.32e-04  8_[+1(5.20e-05)]_7
+Nac_1122                         1.29e-04  8_[+1(8.05e-06)]_7
+Nac_1123                         7.49e-03  37
+Nac_1124                         3.36e-03  37
+Nac_1125                         6.14e-02  37
+Nac_1126                         1.71e-02  37
+Nac_1127                         5.90e-04  8_[+1(3.69e-05)]_7
+Nac_1128                         1.93e-04  8_[+1(1.20e-05)]_7
+Nac_1129                         1.71e-02  37
+Nac_1130                         8.49e-03  37
+Nac_1131                         1.22e-02  37
+Nac_1132                         6.60e-03  37
+Nac_1133                         8.49e-03  37
+Nac_1134                         1.53e-02  37
+Nac_1135                         3.89e-02  37
+Nac_1136                         3.86e-03  37
+Nac_1137                         4.28e-02  37
+Nac_1138                         4.12e-04  9_[+1(2.57e-05)]_6
+Nac_1139                         5.62e-02  37
+Nac_1140                         5.62e-02  37
+Nac_1141                         3.36e-03  37
+Nac_1142                         5.07e-03  37
+Nac_1143                         3.21e-02  37
+Nac_1144                         2.51e-03  37
+Nac_1145                         6.69e-02  37
+Nac_1146                         1.22e-02  37
+Nac_1147                         1.53e-02  37
+Nac_1148                         2.17e-03  37
+Nac_1149                         8.49e-03  37
+Nac_1150                         1.69e-05  8_[+1(1.06e-06)]_7
+Nac_1151                         3.36e-03  37
+Nac_1152                         8.32e-04  8_[+1(5.20e-05)]_7
+Nac_1153                         5.14e-02  37
+Nac_1154                         6.60e-03  37
+Nac_1156                         9.60e-03  37
+Nac_1157                         6.60e-03  37
+Nac_1158                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1159                         3.86e-03  37
+Nac_1160                         4.70e-02  37
+Nac_1161                         3.54e-02  37
+Nac_1162                         3.86e-03  37
+Nac_1163                         1.08e-02  37
+Nac_1164                         3.47e-05  8_[+1(2.17e-06)]_7
+Nac_1165                         2.13e-02  37
+Nac_1166                         6.60e-03  37
+Nac_1167                         7.02e-04  8_[+1(4.39e-05)]_7
+Nac_1168                         2.51e-03  37
+Nac_1169                         6.60e-03  37
+Nac_1170                         1.29e-04  9_[+1(8.05e-06)]_6
+Nac_1171                         9.60e-03  37
+Nac_1172                         9.60e-03  37
+Nac_1173                         9.60e-03  37
+Nac_1174                         3.89e-02  37
+Nac_1175                         1.36e-03  9_[+1(8.51e-05)]_6
+Nac_1176                         2.91e-03  37
+Nac_1177                         1.37e-02  37
+Nac_1178                         3.86e-03  37
+Nac_1179                         1.71e-02  37
+Nac_1180                         1.08e-02  37
+Nac_1181                         2.91e-03  37
+Nac_1182                         2.62e-02  37
+Nac_1183                         2.62e-02  37
+Nac_1184                         7.49e-03  37
+Nac_1185                         3.36e-03  37
+Nac_1186                         2.90e-02  37
+Nac_1187                         6.14e-02  37
+Nac_1188                         1.68e-01  37
+Nac_1189                         1.08e-02  37
+Nac_1190                         6.60e-03  37
+Nac_1191                         3.86e-03  37
+Nac_1193                         7.49e-03  37
+Nac_1194                         5.14e-02  37
+Nac_1195                         5.07e-03  37
+Nac_1196                         7.29e-02  37
+Nac_1197                         3.36e-03  37
+Nac_1198                         3.36e-03  37
+Nac_1199                         3.36e-03  37
+Nac_1200                         9.60e-03  37
+Nac_1201                         2.90e-02  37
+Nac_1202                         4.94e-04  9_[+1(3.09e-05)]_6
+Nac_1203                         2.51e-03  37
+Nac_1204                         1.71e-02  37
+Nac_1205                         2.91e-03  37
+Nac_1206                         1.86e-03  37
+Nac_1207                         7.02e-04  9_[+1(4.39e-05)]_6
+Nac_1208                         7.29e-02  37
+Nac_1209                         1.22e-02  37
+Nac_1210                         8.49e-03  37
+Nac_1211                         1.22e-02  37
+Nac_1212                         2.17e-03  37
+Nac_1213                         1.59e-03  9_[+1(9.97e-05)]_6
+Nac_1214                         3.86e-03  37
+Nac_1215                         3.36e-03  37
+Nac_1216                         1.16e-03  8_[+1(7.25e-05)]_7
+Nac_1217                         7.02e-04  8_[+1(4.39e-05)]_7
+Nac_1218                         3.36e-03  37
+Nac_1219                         5.62e-02  37
+Nac_1220                         3.86e-03  37
+Nac_1221                         1.05e-04  8_[+1(6.54e-06)]_7
+Nac_1222                         8.49e-03  37
+Nac_1223                         1.05e-04  8_[+1(6.54e-06)]_7
+Nac_1224                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1225                         2.51e-03  37
+Nac_1226                         3.86e-03  37
+Nac_1227                         3.65e-01  37
+Nac_1228                         2.91e-03  37
+Nac_1229                         3.36e-03  37
+Nac_1230                         3.29e-01  37
+Nac_1231                         7.49e-03  37
+Nac_1232                         3.36e-03  37
+Nac_1233                         1.91e-02  37
+Nac_1657                         1.59e-03  8_[+1(9.97e-05)]_7
+Nac_1658                         5.90e-04  10_[+1(3.69e-05)]_5
+Nac_1659                         1.91e-02  37
+Nac_1660                         7.29e-02  37
+Nac_1661                         2.91e-03  37
+Nac_1662                         7.02e-04  9_[+1(4.39e-05)]_6
+Nac_1663                         1.71e-02  37
+Nac_1664                         4.12e-04  9_[+1(2.57e-05)]_6
+Nac_1665                         7.29e-02  37
+Nac_1666                         4.37e-05  7_[+1(2.73e-06)]_8
+Nac_1667                         7.49e-03  37
+Nac_1668                         6.60e-03  37
+Nac_1669                         5.79e-03  37
+Nac_1670                         1.86e-03  37
+Nac_1671                         2.17e-03  37
+Nac_1672                         2.91e-03  37
+Nac_1673                         4.12e-04  8_[+1(2.57e-05)]_7
+Nac_1674                         5.90e-04  7_[+1(3.69e-05)]_8
+Nac_1675                         1.26e-06  [+1(8.99e-08)]_13
+Nac_1676                         4.28e-02  37
+Nac_1677                         5.79e-03  37
+Nac_1678                         1.86e-03  37
+Nac_1679                         1.86e-03  37
+Nac_1680                         2.34e-04  8_[+1(1.46e-05)]_7
+Nac_1681                         1.59e-03  7_[+1(9.97e-05)]_8
+Nac_1682                         4.12e-04  8_[+1(2.57e-05)]_7
+Nac_1683                         9.84e-04  8_[+1(6.15e-05)]_7
+Nac_1684                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1685                         9.60e-03  37
+Nac_1686                         4.70e-02  37
+Nac_1687                         2.51e-03  37
+Nac_1688                         1.93e-01  37
+Nac_1689                         4.94e-04  8_[+1(3.09e-05)]_7
+Nac_1690                         4.94e-04  8_[+1(3.09e-05)]_7
+Nac_1691                         5.90e-04  7_[+1(3.69e-05)]_8
+Nac_1692                         8.59e-02  37
+Nac_1693                         6.69e-02  37
+Nac_1694                         3.86e-03  37
+Nac_1695                         3.89e-02  37
+Nac_1696                         2.62e-02  37
+Nac_1697                         5.07e-03  37
+Nac_1698                         2.37e-02  37
+Nac_1699                         7.02e-04  7_[+1(4.39e-05)]_8
+Nac_1700                         2.51e-03  37
+Nac_1701                         1.46e-01  37
+Nac_1702                         1.16e-03  9_[+1(7.25e-05)]_6
+Nac_1703                         8.32e-04  9_[+1(5.20e-05)]_6
+Nac_1704                         1.93e-01  37
+Nac_1705                         7.49e-03  37
+Nac_1706                         1.58e-04  7_[+1(9.87e-06)]_8
+Nac_1707                         4.12e-04  9_[+1(2.57e-05)]_6
+Nac_1708                         6.14e-02  37
+Nac_1709                         2.17e-03  37
+Nac_1710                         2.13e-02  37
+Nac_1711                         6.69e-02  37
+Nac_1712                         4.94e-04  8_[+1(3.09e-05)]_7
+Nac_1713                         2.51e-03  37
+Nac_1714                         7.49e-03  37
+Nac_1715                         5.62e-02  37
+Nac_1716                         2.90e-02  37
+Nac_1717                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1718                         3.54e-02  37
+Nac_1719                         1.37e-02  37
+Nac_1720                         1.22e-02  37
+Nac_1721                         1.36e-03  9_[+1(8.51e-05)]_6
+Nac_1722                         9.31e-02  37
+Nac_1723                         1.91e-02  37
+Nac_1724                         1.91e-02  37
+Nac_1725                         4.12e-04  9_[+1(2.57e-05)]_6
+Nac_1726                         3.36e-03  37
+Nac_1727                         1.59e-03  7_[+1(9.97e-05)]_8
+Nac_1728                         1.16e-03  9_[+1(7.25e-05)]_6
+Nac_1729                         2.37e-02  37
+Nac_1730                         2.13e-02  37
+Nac_1731                         4.94e-04  9_[+1(3.09e-05)]_6
+Nac_1732                         5.90e-04  7_[+1(3.69e-05)]_8
+Nac_1733                         4.12e-04  10_[+1(2.57e-05)]_5
+Nac_1734                         4.12e-04  7_[+1(2.57e-05)]_8
+Nac_1735                         6.69e-02  37
+Nac_1736                         7.29e-02  37
+Nac_1737                         2.62e-02  37
+Nac_1738                         1.71e-02  37
+Nac_1739                         5.07e-03  37
+Nac_1740                         3.89e-02  37
+Nac_1741                         6.60e-03  37
+Nac_1742                         2.16e-05  7_[+1(1.35e-06)]_8
+Nac_1743                         2.91e-03  37
+Nac_1744                         5.62e-02  37
+Nac_1745                         5.07e-03  37
+Nac_1746                         7.49e-03  37
+Nac_1747                         7.29e-02  37
+Nac_1748                         1.37e-02  37
+Nac_1749                         2.90e-02  37
+Nac_1750                         6.82e-05  8_[+1(4.26e-06)]_7
+Nac_1751                         3.21e-02  37
+Nac_1752                         3.21e-02  37
+Nac_1753                         7.02e-04  10_[+1(4.39e-05)]_5
+Nac_1754                         7.02e-04  10_[+1(4.39e-05)]_5
+Nac_1755                         5.07e-03  37
+Nac_1756                         3.86e-03  37
+Nac_1757                         2.51e-03  37
+Nac_1758                         2.37e-02  37
+Nac_1759                         3.86e-03  37
+Nac_1760                         2.62e-02  37
+Nac_1761                         8.49e-03  37
+Nac_1762                         4.42e-01  37
+Nac_1763                         9.84e-04  8_[+1(6.15e-05)]_7
+Nac_1764                         1.37e-02  37
+Nac_1765                         2.90e-02  37
+Nac_1766                         3.36e-03  37
+Nac_1767                         7.49e-03  37
+Nac_1768                         3.86e-03  37
+Nac_1769                         2.90e-02  37
+Nac_1770                         9.31e-02  37
+Nac_1771                         2.62e-02  37
+Nac_1772                         9.60e-03  37
+Nac_1773                         3.86e-03  37
+Nac_1774                         2.37e-02  37
+Nac_1775                         1.91e-02  37
+Nac_1776                         2.62e-02  37
+Nac_1777                         3.36e-03  37
+Nac_1778                         7.02e-04  8_[+1(4.39e-05)]_7
+Nac_1779                         2.37e-02  37
+Nac_1780                         3.21e-02  37
+Nac_1781                         1.91e-02  37
+Nac_1782                         2.51e-03  37
+Nac_1783                         4.94e-04  7_[+1(3.09e-05)]_8
+Nac_1784                         5.14e-02  37
+Nac_1785                         6.69e-02  37
+Nac_1786                         4.28e-02  37
+Nac_1787                         1.71e-02  37
+Nac_1788                         7.49e-03  37
+Nac_1789                         1.36e-01  37
+Nac_1790                         7.49e-03  37
+Nac_1791                         8.49e-03  37
+Nac_1792                         3.89e-02  37
+Nac_1793                         7.92e-02  37
+Nac_1794                         8.49e-03  37
+Nac_1795                         3.89e-02  37
+Nac_1796                         4.28e-02  37
+Nac_1797                         1.22e-02  37
+Nac_1798                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1799                         1.05e-04  9_[+1(6.54e-06)]_6
+Nac_1800                         3.21e-02  37
+Nac_1801                         1.91e-02  37
+Nac_1802                         9.60e-03  37
+Nac_1803                         3.36e-03  37
+Nac_1804                         1.36e-03  10_[+1(8.51e-05)]_5
+Nac_1805                         1.16e-03  9_[+1(7.25e-05)]_6
+Nac_1806                         3.43e-04  7_[+1(2.14e-05)]_8
+Nac_1807                         1.58e-04  8_[+1(9.87e-06)]_7
+Nac_1808                         3.36e-03  37
+Nac_1809                         1.80e-01  37
+Nac_1810                         1.68e-01  37
+Nac_1811                         2.17e-03  37
+Nac_1812                         7.02e-04  8_[+1(4.39e-05)]_7
+Nac_1813                         3.54e-02  37
+Nac_1814                         8.46e-05  7_[+1(5.29e-06)]_8
+Nac_1815                         9.84e-04  9_[+1(6.15e-05)]_6
+Nac_1816                         2.91e-03  37
+Nac_1817                         2.62e-02  37
+Nac_1818                         1.16e-03  7_[+1(7.25e-05)]_8
+Nac_1819                         4.12e-04  7_[+1(2.57e-05)]_8
+Nac_1820                         3.21e-02  37
+Nac_1821                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1822                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1823                         3.86e-03  37
+Nac_1824                         4.43e-03  37
+Nac_1825                         2.62e-02  37
+Nac_1826                         9.60e-03  37
+Nac_1827                         1.86e-03  37
+Nac_1828                         2.51e-03  37
+Nac_1829                         2.51e-03  37
+Nac_1830                         7.02e-04  10_[+1(4.39e-05)]_5
+Nac_1831                         3.86e-03  37
+Nac_1832                         1.58e-04  8_[+1(9.87e-06)]_7
+Nac_1833                         1.22e-02  37
+Nac_1834                         6.14e-02  37
+Nac_1835                         2.91e-03  37
+Nac_1836                         9.31e-02  37
+Nac_1837                         9.60e-03  37
+Nac_1838                         7.49e-03  37
+Nac_1839                         2.51e-03  37
+Nac_1840                         1.22e-02  37
+Nac_1841                         8.59e-02  37
+Nac_1842                         1.91e-02  37
+Nac_1843                         1.22e-02  37
+Nac_1844                         8.49e-03  37
+Nac_1845                         9.60e-03  37
+Nac_1846                         5.62e-02  37
+Nac_1847                         6.60e-03  37
+Nac_1848                         1.59e-03  9_[+1(9.97e-05)]_6
+Nac_1849                         4.28e-02  37
+Nac_1850                         4.12e-04  9_[+1(2.57e-05)]_6
+Nac_1851                         1.16e-03  7_[+1(7.25e-05)]_8
+Nac_1852                         3.54e-02  37
+Nac_1853                         5.90e-04  7_[+1(3.69e-05)]_8
+Nac_1854                         8.49e-03  37
+Nac_1855                         9.60e-03  37
+Nac_1856                         2.16e-05  8_[+1(1.35e-06)]_7
+Nac_1857                         9.60e-03  37
+Nac_1858                         6.60e-03  37
+Nac_1859                         2.17e-03  37
+Nac_1860                         2.37e-02  37
+Nac_1861                         3.89e-02  37
+Nac_1862                         2.51e-03  37
+Nac_1863                         2.13e-02  37
+Nac_1864                         2.37e-02  37
+Nac_1865                         1.22e-02  37
+Nac_1866                         5.90e-04  7_[+1(3.69e-05)]_8
+Nac_1867                         6.60e-03  37
+Nac_1868                         1.36e-01  37
+Nac_1869                         1.36e-03  10_[+1(8.51e-05)]_5
+Nac_1870                         4.43e-03  37
+Nac_1871                         7.49e-03  37
+Nac_1872                         7.49e-03  37
+Nac_1873                         1.86e-03  37
+Nac_1874                         1.53e-02  37
+Nac_1875                         1.08e-02  37
+Nac_1876                         4.94e-04  10_[+1(3.09e-05)]_5
+Nac_1877                         2.13e-02  37
+Nac_1878                         3.21e-02  37
+Nac_1879                         1.71e-02  37
+Nac_1880                         5.07e-03  37
+Nac_1881                         4.94e-04  9_[+1(3.09e-05)]_6
+Nac_1882                         9.84e-04  8_[+1(6.15e-05)]_7
+Nac_1883                         2.33e-01  37
+Nac_1884                         4.22e-01  37
+Nac_1885                         1.05e-04  9_[+1(6.54e-06)]_6
+Nac_1886                         6.60e-03  37
+Nac_1887                         2.17e-03  37
+Nac_1888                         2.16e-05  9_[+1(1.35e-06)]_6
+Nac_1889                         1.16e-03  9_[+1(7.25e-05)]_6
+Nac_1890                         3.89e-02  37
+Nac_1891                         4.37e-05  8_[+1(2.73e-06)]_7
+Nac_1892                         2.90e-02  37
+Nac_1893                         9.60e-03  37
+Nac_1894                         1.37e-02  37
+Nac_1895                         1.22e-02  37
+Nac_1896                         2.34e-04  8_[+1(1.46e-05)]_7
+Nac_1897                         6.69e-02  37
+Nac_1898                         2.90e-02  37
+Nac_1899                         6.69e-02  37
+Nac_1900                         3.21e-02  37
+Nac_1901                         9.84e-04  7_[+1(6.15e-05)]_8
+Nac_1902                         6.14e-02  37
+Nac_1903                         4.70e-02  37
+Nac_1904                         2.90e-02  37
+Nac_1905                         2.37e-02  37
+Nac_1906                         1.53e-02  37
+Nac_1907                         3.21e-02  37
+Nac_1908                         5.14e-02  37
+Nac_1909                         6.14e-02  37
+Nac_1910                         8.49e-03  37
+Nac_1911                         5.07e-03  37
+Nac_1912                         9.60e-03  37
+Nac_1913                         1.86e-03  37
+Nac_1914                         5.47e-05  7_[+1(3.42e-06)]_8
+Nac_1915                         2.91e-03  37
+Nac_1916                         6.82e-05  8_[+1(4.26e-06)]_7
+Nac_1917                         6.82e-05  8_[+1(4.26e-06)]_7
+Nac_1918                         2.13e-02  37
+Nac_1919                         5.07e-03  37
+Nac_1920                         7.02e-04  10_[+1(4.39e-05)]_5
+Nac_1921                         8.49e-03  37
+Nac_1922                         6.60e-03  37
+Nac_1923                         8.49e-03  37
+Nac_1924                         3.36e-03  37
+Nac_1925                         3.36e-03  37
+Nac_1926                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1927                         2.06e-01  37
+Nac_1928                         4.94e-04  9_[+1(3.09e-05)]_6
+Nac_1929                         7.49e-03  37
+Nac_1930                         1.59e-03  8_[+1(9.97e-05)]_7
+Nac_1931                         9.84e-04  7_[+1(6.15e-05)]_8
+Nac_1932                         7.49e-03  37
+Nac_1933                         8.49e-03  37
+Nac_1934                         9.60e-03  37
+Nac_1935                         4.43e-03  37
+Nac_1936                         1.36e-03  8_[+1(8.51e-05)]_7
+Nac_1937                         4.12e-04  9_[+1(2.57e-05)]_6
+Nac_1938                         5.14e-02  37
+Nac_1939                         5.14e-02  37
+Nac_1940                         1.22e-02  37
+Nac_1941                         1.91e-02  37
+Nac_1942                         3.89e-02  37
+Nac_1943                         5.62e-02  37
+Nac_1944                         3.89e-02  37
+Nac_1945                         5.07e-03  37
+Nac_1946                         2.51e-03  37
+Nac_1947                         2.95e-01  37
+Nac_1948                         5.90e-04  10_[+1(3.69e-05)]_5
+Nac_1949                         5.90e-04  10_[+1(3.69e-05)]_5
+Nac_1950                         5.07e-03  37
+Nac_1951                         3.36e-03  37
+Nac_1952                         1.71e-02  37
+Nac_1953                         1.16e-03  8_[+1(7.25e-05)]_7
+Nac_1954                         6.60e-03  37
+Nac_1955                         3.54e-02  37
+Nac_1956                         5.62e-02  37
+Nac_1957                         2.17e-03  37
+Nac_1958                         1.37e-02  37
+Nac_1959                         2.62e-02  37
+Nac_1960                         3.43e-04  9_[+1(2.14e-05)]_6
+Nac_1961                         5.79e-03  37
+Nac_1962                         1.36e-03  7_[+1(8.51e-05)]_8
+Nac_1963                         7.49e-03  37
+Nac_1964                         7.49e-03  37
+Nac_1965                         1.53e-02  37
+Nac_1966                         7.29e-02  37
+Nac_1967                         1.86e-03  37
+Nac_1968                         8.59e-02  37
+Nac_1969                         5.07e-03  37
+Nac_1970                         3.89e-02  37
+Nac_1971                         3.36e-03  37
+Nac_1972                         3.36e-03  37
+Nac_1973                         1.16e-03  10_[+1(7.25e-05)]_5
+Nac_1974                         2.34e-04  7_[+1(1.46e-05)]_8
+Nac_1975                         2.34e-04  7_[+1(1.46e-05)]_8
+Nac_1976                         5.07e-03  37
+Nac_1977                         5.07e-03  37
+Nac_1978                         1.86e-03  37
+Nac_1979                         2.17e-03  37
+Nac_1980                         4.70e-02  37
+Nac_1981                         1.86e-03  37
+Nac_1982                         1.16e-03  9_[+1(7.25e-05)]_6
+Nac_1983                         1.16e-03  9_[+1(7.25e-05)]_6
+Nac_1984                         6.60e-03  37
+Nac_1985                         8.59e-02  37
+Nac_1986                         5.62e-02  37
+Nac_1987                         4.43e-03  37
+Nac_1988                         4.43e-03  37
+Nac_1989                         7.29e-02  37
+Nac_1990                         5.14e-02  37
+Nac_1991                         5.47e-05  10_[+1(3.42e-06)]_5
+Nac_1992                         5.47e-05  10_[+1(3.42e-06)]_5
+Nac_1993                         8.49e-03  37
+Nac_1994                         1.71e-02  37
+Nac_1995                         4.43e-03  37
+Nac_1996                         2.91e-03  37
+Nac_1997                         3.36e-03  37
+Nac_1998                         1.59e-03  9_[+1(9.97e-05)]_6
+Nac_1999                         8.32e-04  8_[+1(5.20e-05)]_7
+Nac_2000                         4.43e-03  37
+Nac_2001                         2.13e-02  37
+Nac_2002                         2.51e-03  37
+Nac_2003                         1.53e-02  37
+Nac_2004                         5.07e-03  37
+Nac_2005                         2.51e-03  37
+Nac_2006                         1.05e-04  10_[+1(6.54e-06)]_5
+Nac_2007                         4.22e-01  37
+Nac_2008                         9.31e-02  37
+Nac_2009                         1.93e-04  9_[+1(1.20e-05)]_6
+Nac_2010                         1.46e-01  37
+Nac_2011                         1.16e-03  8_[+1(7.25e-05)]_7
+Nac_2012                         4.94e-04  7_[+1(3.09e-05)]_8
+Nac_2013                         1.01e-01  37
+Nac_2014                         2.17e-03  37
+Nac_2015                         1.09e-01  37
+Nac_2016                         2.84e-04  7_[+1(1.77e-05)]_8
+Nac_2017                         2.51e-03  37
+Nac_2018                         1.37e-02  37
+Nac_2019                         3.89e-02  37
+Nac_2020                         6.60e-03  37
+Nac_2021                         3.43e-04  9_[+1(2.14e-05)]_6
+Nac_2022                         7.29e-02  37
+Nac_2023                         2.34e-04  10_[+1(1.46e-05)]_5
+Nac_2024                         1.37e-02  37
+Nac_2025                         2.62e-02  37
+Nac_2026                         3.89e-02  37
+Nac_2027                         2.90e-02  37
+Nac_2028                         1.08e-02  37
+Nac_2029                         2.37e-02  37
+Nac_2030                         9.31e-02  37
+Nac_2031                         3.86e-03  37
+Nac_2032                         1.22e-02  37
+Nac_2033                         5.90e-04  8_[+1(3.69e-05)]_7
+Nac_2034                         3.36e-03  37
+Nac_2035                         3.36e-03  37
+Nac_2036                         1.57e-01  37
+Nac_2037                         2.51e-03  37
+Nac_2038                         8.32e-04  8_[+1(5.20e-05)]_7
+Nac_2039                         1.53e-02  37
+Nac_2040                         4.70e-02  37
+Nac_2041                         1.29e-04  7_[+1(8.05e-06)]_8
+Nac_2042                         8.20e-02  35
+Nac_2043                         1.29e-04  7_[+1(8.05e-06)]_8
+Nac_2044                         1.37e-02  37
+Nac_2045                         6.60e-03  37
+Nac_2046                         6.14e-02  37
+Nac_2047                         7.02e-04  8_[+1(4.39e-05)]_7
+Nac_2048                         1.59e-03  10_[+1(9.97e-05)]_5
+Nac_2049                         2.17e-03  37
+Nac_2050                         5.90e-04  8_[+1(3.69e-05)]_7
+Nac_2051                         5.79e-03  37
+Nac_2052                         1.08e-02  37
+Nac_2053                         2.62e-02  37
+Nac_2054                         7.02e-04  8_[+1(4.39e-05)]_7
+Nac_2298                         5.97e-05  7_[+1(4.26e-06)]_6
+Nac_3383                         1.86e-02  35
+Nac_3871                         3.46e-01  35
+Nac_3872                         2.81e-02  35
+Nac_4034                         2.55e-02  35
+Nac_4261                         2.34e-01  35
+Nac_4262                         5.56e-01  35
+Nac_4263                         6.91e-01  35
+Nac_4691                         5.97e-05  7_[+1(4.26e-06)]_6
+Nac_4717                         6.41e-02  35
+Nac_4718                         3.10e-02  35
+Nac_4719                         3.63e-01  35
+Nac_4720                         9.23e-01  35
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: e9028ac535eb
+
+********************************************************************************

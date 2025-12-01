@@ -1,0 +1,222 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/AscG.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AscG_96                  1.0000     34  AscG_98                  1.0000     26  
+AscG_99                  1.0000     26  AscG_100                 1.0000     26  
+AscG_101                 1.0000     26  AscG_102                 1.0000     26  
+AscG_103                 1.0000     34  AscG_104                 1.0000     34  
+AscG_4840                1.0000     34  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/AscG.fasta -oc meme_pwms/AscG -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           26
+nsites: minsites=        9    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             266    N=               9
+sample: seed=            0    hsfrac=          0
+        searchsize=    266    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.323 C 0.203 G 0.177 T 0.297 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.322 C 0.204 G 0.178 T 0.296 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GTKWMACMRV MEME-1	width =  10  sites =   9  llr = 68  E-value = 1.9e-003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1::44a:332
+pos.-specific     C  ::::6:7414
+probability       G  9:4:::1163
+matrix            T  :a66::21::
+
+         bits    2.5           
+                 2.2           
+                 2.0 *         
+                 1.7 **   *    
+Relative         1.5 **   *    
+Entropy          1.2 **   *    
+(10.9 bits)      1.0 *** ***   
+                 0.7 ******* **
+                 0.5 ******* **
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           GTTTCACCGC
+consensus              GAA TAAG
+sequence                      A
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+AscG_100                      1  1.27e-06          . GTTTCACCGC GTTTCATTGC
+AscG_99                      11  1.27e-06 TTCAGGCAAT GTTTCACCGC GTTTCA    
+AscG_96                      10  7.80e-06  CATGATTTT GTGAAACCGG TTTCTTAATT
+AscG_104                     10  2.31e-05  CAGTCAGAA GTGAAACAGC TTCTGCACCT
+AscG_4840                    19  2.09e-04 CAGGTGACCG GTTTCACAAA TATAAA    
+AscG_101                      4  2.44e-04        CGC GTTTCATTGC AACAATTATG
+AscG_103                     10  2.66e-04  CAGCTCACA GTGAAATCAG ATGTGTACGA
+AscG_102                     10  9.76e-04  GCAACAATT ATGAAACAAG ACTAAAC   
+AscG_98                      11  1.20e-03 TTCAGTTAAC GTTTCAGGCA ATGTTT    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AscG_100                          1.3e-06  [+1]_16
+AscG_99                           1.3e-06  10_[+1]_6
+AscG_96                           7.8e-06  9_[+1]_15
+AscG_104                          2.3e-05  9_[+1]_15
+AscG_4840                         0.00021  18_[+1]_6
+AscG_101                          0.00024  3_[+1]_13
+AscG_103                          0.00027  9_[+1]_15
+AscG_102                          0.00098  9_[+1]_7
+AscG_98                            0.0012  10_[+1]_6
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GTKWMACMRV width=10 seqs=9
+AscG_100                 (    1) GTTTCACCGC  1 
+AscG_99                  (   11) GTTTCACCGC  1 
+AscG_96                  (   10) GTGAAACCGG  1 
+AscG_104                 (   10) GTGAAACAGC  1 
+AscG_4840                (   19) GTTTCACAAA  1 
+AscG_101                 (    4) GTTTCATTGC  1 
+AscG_103                 (   10) GTGAAATCAG  1 
+AscG_102                 (   10) ATGAAACAAG  1 
+AscG_98                  (   11) GTTTCAGGCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 185 bayes= 4.28951 E= 1.9e-003 
+  -153   -982    232   -982 
+  -982   -982   -982    175 
+  -982   -982    132     91 
+    46   -982   -982     91 
+    46    145   -982   -982 
+   163   -982   -982   -982 
+  -982    171    -68    -41 
+     5    112    -68   -141 
+     5    -87    164   -982 
+   -54    112     91   -982 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 9 E= 1.9e-003 
+ 0.111111  0.000000  0.888889  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.444444  0.555556 
+ 0.444444  0.000000  0.000000  0.555556 
+ 0.444444  0.555556  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.666667  0.111111  0.222222 
+ 0.333333  0.444444  0.111111  0.111111 
+ 0.333333  0.111111  0.555556  0.000000 
+ 0.222222  0.444444  0.333333  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTKWMACMRV MEME-1 regular expression
+--------------------------------------------------------------------------------
+GT[TG][TA][CA]A[CT][CA][GA][CGA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.11 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AscG_96                          1.95e-04  9_[+1(7.80e-06)]_15
+AscG_98                          2.02e-02  26
+AscG_99                          2.17e-05  10_[+1(1.27e-06)]_6
+AscG_100                         2.17e-05  [+1(1.27e-06)]_16
+AscG_101                         4.14e-03  26
+AscG_102                         1.65e-02  26
+AscG_103                         6.63e-03  34
+AscG_104                         5.77e-04  9_[+1(2.31e-05)]_15
+AscG_4840                        5.22e-03  34
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 042e3414eaea
+
+********************************************************************************

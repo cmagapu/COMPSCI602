@@ -1,0 +1,231 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/UxuR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+UxuR_504                 1.0000     38  UxuR_505                 1.0000     38  
+UxuR_678                 1.0000     38  UxuR_679                 1.0000     38  
+UxuR_934                 1.0000     38  UxuR_3302                1.0000     38  
+UxuR_3304                1.0000     38  UxuR_4474                1.0000     38  
+UxuR_4476                1.0000     38  UxuR_4509                1.0000     38  
+UxuR_4510                1.0000     38  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/UxuR.fasta -oc meme_pwms/UxuR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       11    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             418    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    418    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.304 C 0.184 G 0.189 T 0.323 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.303 C 0.185 G 0.19 T 0.322 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGGTTAACCA MEME-1	width =  10  sites =  11  llr = 114  E-value = 1.2e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::2::7a::8
+pos.-specific     C  ::::3::89:
+probability       G  :a7::3:::1
+matrix            T  a:1a7::211
+
+         bits    2.4  *        
+                 2.2  *        
+                 1.9  *      * 
+                 1.7 ** *  *** 
+Relative         1.5 ** *  *** 
+Entropy          1.2 ****  *** 
+(15.0 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           TGGTTAACCA
+consensus                CG    
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+UxuR_4509                    15  1.15e-06 ATTCTGAAAT TGGTTAACCA CATCACAAGA
+UxuR_3304                    15  1.15e-06 TCTTGTGATG TGGTTAACCA ATTTCAGAAT
+UxuR_3302                    15  1.81e-06 TTATGTAAAT TGGTCAACCA TTGTTGCGAT
+UxuR_4510                    15  2.53e-06 ATCGCAACAA TGGTTGACCA ATTTACATAA
+UxuR_4474                    15  2.53e-06 AACTGATATT TGGTTGACCA GTTTTCGTTT
+UxuR_504                     15  5.49e-06 CGCCACAATG TGATTAACCA GGTCATTGAT
+UxuR_505                     15  7.49e-06 ATCAATGACC TGGTTAATCA CATTGTGGCG
+UxuR_678                     15  1.29e-05 ACAGACTTAC TGGTCAATCA AACTGATATT
+UxuR_4476                    15  2.05e-05 AACACAGAAT TGGTTAACTA ATCAGATTAA
+UxuR_679                     15  2.82e-05 GGCAAAAATT TGATTAACCG CACCTAACGG
+UxuR_934                     14  9.87e-05 GTTCTGGCAG TGTTCGACCT GTTAGGTGCG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+UxuR_4509                         1.1e-06  14_[+1]_14
+UxuR_3304                         1.1e-06  14_[+1]_14
+UxuR_3302                         1.8e-06  14_[+1]_14
+UxuR_4510                         2.5e-06  14_[+1]_14
+UxuR_4474                         2.5e-06  14_[+1]_14
+UxuR_504                          5.5e-06  14_[+1]_14
+UxuR_505                          7.5e-06  14_[+1]_14
+UxuR_678                          1.3e-05  14_[+1]_14
+UxuR_4476                           2e-05  14_[+1]_14
+UxuR_679                          2.8e-05  14_[+1]_14
+UxuR_934                          9.9e-05  13_[+1]_15
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGGTTAACCA width=10 seqs=11
+UxuR_4509                (   15) TGGTTAACCA  1 
+UxuR_3304                (   15) TGGTTAACCA  1 
+UxuR_3302                (   15) TGGTCAACCA  1 
+UxuR_4510                (   15) TGGTTGACCA  1 
+UxuR_4474                (   15) TGGTTGACCA  1 
+UxuR_504                 (   15) TGATTAACCA  1 
+UxuR_505                 (   15) TGGTTAATCA  1 
+UxuR_678                 (   15) TGGTCAATCA  1 
+UxuR_4476                (   15) TGGTTAACTA  1 
+UxuR_679                 (   15) TGATTAACCG  1 
+UxuR_934                 (   14) TGTTCGACCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 319 bayes= 4.80735 E= 1.2e-017 
+ -1010  -1010  -1010    163 
+ -1010  -1010    240  -1010 
+   -74  -1010    194   -182 
+ -1010  -1010  -1010    163 
+ -1010     56  -1010    117 
+   126  -1010     52  -1010 
+   172  -1010  -1010  -1010 
+ -1010    215  -1010    -82 
+ -1010    230  -1010   -182 
+   143  -1010   -106   -182 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 11 E= 1.2e-017 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.181818  0.000000  0.727273  0.090909 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.272727  0.000000  0.727273 
+ 0.727273  0.000000  0.272727  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.818182  0.000000  0.181818 
+ 0.000000  0.909091  0.000000  0.090909 
+ 0.818182  0.000000  0.090909  0.090909 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTTAACCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGGT[TC][AG]ACCA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.11 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+UxuR_504                         1.59e-04  14_[+1(5.49e-06)]_14
+UxuR_505                         2.17e-04  14_[+1(7.49e-06)]_14
+UxuR_678                         3.75e-04  14_[+1(1.29e-05)]_14
+UxuR_679                         8.19e-04  14_[+1(2.82e-05)]_14
+UxuR_934                         2.86e-03  13_[+1(9.87e-05)]_15
+UxuR_3302                        5.24e-05  14_[+1(1.81e-06)]_14
+UxuR_3304                        3.33e-05  14_[+1(1.15e-06)]_14
+UxuR_4474                        7.33e-05  14_[+1(2.53e-06)]_14
+UxuR_4476                        5.94e-04  14_[+1(2.05e-05)]_14
+UxuR_4509                        3.33e-05  14_[+1(1.15e-06)]_14
+UxuR_4510                        7.33e-05  14_[+1(2.53e-06)]_14
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: c7e55ab0eaef
+
+********************************************************************************

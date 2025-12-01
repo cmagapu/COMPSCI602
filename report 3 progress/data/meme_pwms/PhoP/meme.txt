@@ -1,0 +1,394 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/PhoP.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PhoP_190                 1.0000     37  PhoP_191                 1.0000     37  
+PhoP_226                 1.0000     38  PhoP_227                 1.0000     37  
+PhoP_228                 1.0000     37  PhoP_229                 1.0000     37  
+PhoP_230                 1.0000     37  PhoP_270                 1.0000     37  
+PhoP_271                 1.0000     36  PhoP_295                 1.0000     37  
+PhoP_296                 1.0000     37  PhoP_297                 1.0000     38  
+PhoP_305                 1.0000     43  PhoP_308                 1.0000     37  
+PhoP_360                 1.0000     37  PhoP_1075                1.0000     37  
+PhoP_2317                1.0000     37  PhoP_2464                1.0000     37  
+PhoP_2802                1.0000     38  PhoP_2947                1.0000     37  
+PhoP_3263                1.0000     37  PhoP_3355                1.0000     37  
+PhoP_3408                1.0000     37  PhoP_3896                1.0000     37  
+PhoP_3972                1.0000     37  PhoP_4361                1.0000     37  
+PhoP_4362                1.0000     37  PhoP_4363                1.0000     37  
+PhoP_4364                1.0000     37  PhoP_4379                1.0000     37  
+PhoP_4380                1.0000     37  PhoP_4381                1.0000     37  
+PhoP_4382                1.0000     37  PhoP_4383                1.0000     37  
+PhoP_4568                1.0000     35  PhoP_4578                1.0000     37  
+PhoP_4658                1.0000     37  PhoP_4659                1.0000     37  
+PhoP_4660                1.0000     37  PhoP_4661                1.0000     37  
+PhoP_4690                1.0000     40  PhoP_5185                1.0000     37  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/PhoP.fasta -oc meme_pwms/PhoP -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       42    maxsites=       42    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1563    N=              42
+sample: seed=            0    hsfrac=          0
+        searchsize=   1563    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.295 C 0.171 G 0.173 T 0.361 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.295 C 0.171 G 0.173 T 0.361 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RTTTAYVWDHTRTTTANNNTAM MEME-1	width =  22  sites =  42  llr = 267  E-value = 7.7e-022
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3:23822442:3122a222253
+pos.-specific     C  2:1::241142:::::333114
+probability       G  511:12322126::2:232211
+matrix            T  :9671413335:975:223522
+
+         bits    2.5                       
+                 2.3                       
+                 2.0                       
+                 1.8                       
+Relative         1.5                *      
+Entropy          1.3                *      
+(9.2 bits)       1.0     *      **  *      
+                 0.8  *  *      **  *      
+                 0.5 ** **      *** *      
+                 0.3 ***** *  ********** **
+                 0.0 ----------------------
+
+Multilevel           GTTTATCAACTGTTTACCCTAC
+consensus            A  A CGTTTCA AA AGTATA
+sequence                   A GAG     TTG   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+PhoP_4383                    12  5.41e-07 TGAATGTTTT GTTTATAATTGGTTGATCCTAC TTTC      
+PhoP_4382                    12  5.41e-07 TGAATGTTTT GTTTATAATTGGTTGATCCTAC TTTC      
+PhoP_190                     12  2.40e-06 GATTAACCGA GTTTAAGCTCCGTTTAACATTC ATTG      
+PhoP_4379                    12  3.37e-06 AAGAGGCATT GTTTAGGTTTTGTTTAAGTTAA TCGA      
+PhoP_4361                    12  6.45e-06 AAATTCATCT GTTTATGGGCGGTGTAGGTAAC GACG      
+PhoP_4658                    12  8.79e-06 GTAAAGTCTG GTTTATCGTTGGTTTAGTTGTC AGCA      
+PhoP_4661                    12  1.37e-05 ATATCGACAT AGTTAGGCGCTGTTTAACTAAC GCAT      
+PhoP_4381                    12  1.37e-05 ATGAAAACTT GTTTAGAAACGATTGATAGTAA GTAA      
+PhoP_360                     12  1.37e-05 ATCTCATTTT GTTTAACATCCATTGAGATTCC TTGC      
+PhoP_270                     12  1.37e-05 ATCTCATTTT GTTTAACATCCATTGAGATTCC TTGC      
+PhoP_4380                    12  1.58e-05 TCAACTCATT GTTTAGGGTTTGTTTAATTTTC TACA      
+PhoP_3408                    12  1.58e-05 CTCCCCGCTG GTTTATTTAATGTTTACCCCCA TAAC      
+PhoP_3355                    12  1.58e-05 CTCCCCGCTG GTTTATTTAATGTTTACCCCCA TAAC      
+PhoP_191                     12  3.14e-05 TAAAGATTTA ATTCAGCCTTCGTTTAGGTTAC CTCT      
+PhoP_4660                    10  4.07e-05  TGCTGACAA CTAAACCAACGATAAACCAGAC TTTACC    
+PhoP_4659                    10  4.07e-05  TGCTGACAA CTAAACCAACGATAAACCAGAC TTTACC    
+PhoP_4578                    12  4.07e-05 ATTGACGTCC ATTAACACAATGTTTACTCTGG TGCC      
+PhoP_2464                    12  5.92e-05 CTGGTTTTCT GTATATGTCATGTTGATGGAAA ATAT      
+PhoP_229                     12  5.92e-05 CTGGTTTTCT GTATATGTCATGTTGATGGAAA ATAT      
+PhoP_4364                    12  8.47e-05 GCTACGCTTT CTTTAAGTTTTATTTAACCTAT GCCC      
+PhoP_4363                    12  2.05e-04 TGTTGGGTCT ATTAAGGTTATGTTAATTGTAG CTTT      
+PhoP_3263                    12  3.38e-04 GCAGCAATGG GTTTATTAACTTTTGACCATTG ACCA      
+PhoP_297                     13  3.73e-04 ACTTATCGTA TTTAATCTATTGTTTAACGATA ATAG      
+PhoP_4690                    15  4.50e-04 CATCGTTGTT TTCAATCTGCCGTTTATGGGAT TGAC      
+PhoP_3896                    12  4.50e-04 AAATCTGAAA CTATGTCACGTGTTAACGATTC AGAT      
+PhoP_3972                    12  5.41e-04 TGTGGTTATA ATTTCACATTTGTTTATGCGTA ACAG      
+PhoP_230                     12  5.41e-04 TTTGTTTGCT ATTTACAAGCTGATAACAACCA GGAA      
+PhoP_308                     12  6.48e-04 ATGTTTCATG ATTTACCGGGAGTTAAATAGAG CATT      
+PhoP_4362                    12  7.71e-04 GCAGCCTGAT GTTTGACGAGTATTTAACTTGT TATG      
+PhoP_4568                    10  9.15e-04  TATGTGCAA CTGTTTTGACCGTTTAGTCCAC TTTT      
+PhoP_2317                    10  1.17e-03  ATATTTTCC ATCAACATGACATATACAGAAA ACCAGG    
+PhoP_227                     10  1.17e-03  ATATTTTCC ATCAACATGACATATACAGAAA ACCAGG    
+PhoP_5185                    12  1.61e-03 TTTCAGCGAC GTTTGACTGCCGTTTGAGCAGT CATG      
+PhoP_226                     10  1.61e-03  CATTCAATA CTAAACAAAATATAAACAGTGG AGCAATA   
+PhoP_2802                    13  2.33e-03 CCGGAAAGTG CTGCTCCAGTTGTTAATTCTGC AAAA      
+PhoP_295                     12  2.69e-03 TAAGCATACT GATTAACGATTTTTAACGTTAT CCGC      
+PhoP_296                      8  3.78e-03    TTTTTAA CGTTATCCGCTAAATAAACATA TTTGAAAT  
+PhoP_305                     14  4.58e-03 TATACACTAA GGCTATAAATGATATAGTGGTT ATAGTTAG  
+PhoP_228                     10  4.88e-03  CATTTTTTT ATAAACATAAGCTATACGCTGT GCGAAA    
+PhoP_2947                    12  6.61e-03 AAACTTCGTA ATGAATTACGTGTTCACTCTTG AGAC      
+PhoP_1075                    11  1.47e-02 GACAAGGGGC AGGTATGAATCAAAAATTTGAA GCAGT     
+PhoP_271                     13  7.44e-02 AATGTTTAGC AAATTGGCACAAAGTAGCATAA AG        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PhoP_4383                         5.4e-07  11_[+1]_4
+PhoP_4382                         5.4e-07  11_[+1]_4
+PhoP_190                          2.4e-06  11_[+1]_4
+PhoP_4379                         3.4e-06  11_[+1]_4
+PhoP_4361                         6.5e-06  11_[+1]_4
+PhoP_4658                         8.8e-06  11_[+1]_4
+PhoP_4661                         1.4e-05  11_[+1]_4
+PhoP_4381                         1.4e-05  11_[+1]_4
+PhoP_360                          1.4e-05  11_[+1]_4
+PhoP_270                          1.4e-05  11_[+1]_4
+PhoP_4380                         1.6e-05  11_[+1]_4
+PhoP_3408                         1.6e-05  11_[+1]_4
+PhoP_3355                         1.6e-05  11_[+1]_4
+PhoP_191                          3.1e-05  11_[+1]_4
+PhoP_4660                         4.1e-05  9_[+1]_6
+PhoP_4659                         4.1e-05  9_[+1]_6
+PhoP_4578                         4.1e-05  11_[+1]_4
+PhoP_2464                         5.9e-05  11_[+1]_4
+PhoP_229                          5.9e-05  11_[+1]_4
+PhoP_4364                         8.5e-05  11_[+1]_4
+PhoP_4363                          0.0002  11_[+1]_4
+PhoP_3263                         0.00034  11_[+1]_4
+PhoP_297                          0.00037  12_[+1]_4
+PhoP_4690                         0.00045  14_[+1]_4
+PhoP_3896                         0.00045  11_[+1]_4
+PhoP_3972                         0.00054  11_[+1]_4
+PhoP_230                          0.00054  11_[+1]_4
+PhoP_308                          0.00065  11_[+1]_4
+PhoP_4362                         0.00077  11_[+1]_4
+PhoP_4568                         0.00091  9_[+1]_4
+PhoP_2317                          0.0012  9_[+1]_6
+PhoP_227                           0.0012  9_[+1]_6
+PhoP_5185                          0.0016  11_[+1]_4
+PhoP_226                           0.0016  9_[+1]_7
+PhoP_2802                          0.0023  12_[+1]_4
+PhoP_295                           0.0027  11_[+1]_4
+PhoP_296                           0.0038  7_[+1]_8
+PhoP_305                           0.0046  13_[+1]_8
+PhoP_228                           0.0049  9_[+1]_6
+PhoP_2947                          0.0066  11_[+1]_4
+PhoP_1075                           0.015  10_[+1]_5
+PhoP_271                            0.074  12_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RTTTAYVWDHTRTTTANNNTAM width=22 seqs=42
+PhoP_4383                (   12) GTTTATAATTGGTTGATCCTAC  1 
+PhoP_4382                (   12) GTTTATAATTGGTTGATCCTAC  1 
+PhoP_190                 (   12) GTTTAAGCTCCGTTTAACATTC  1 
+PhoP_4379                (   12) GTTTAGGTTTTGTTTAAGTTAA  1 
+PhoP_4361                (   12) GTTTATGGGCGGTGTAGGTAAC  1 
+PhoP_4658                (   12) GTTTATCGTTGGTTTAGTTGTC  1 
+PhoP_4661                (   12) AGTTAGGCGCTGTTTAACTAAC  1 
+PhoP_4381                (   12) GTTTAGAAACGATTGATAGTAA  1 
+PhoP_360                 (   12) GTTTAACATCCATTGAGATTCC  1 
+PhoP_270                 (   12) GTTTAACATCCATTGAGATTCC  1 
+PhoP_4380                (   12) GTTTAGGGTTTGTTTAATTTTC  1 
+PhoP_3408                (   12) GTTTATTTAATGTTTACCCCCA  1 
+PhoP_3355                (   12) GTTTATTTAATGTTTACCCCCA  1 
+PhoP_191                 (   12) ATTCAGCCTTCGTTTAGGTTAC  1 
+PhoP_4660                (   10) CTAAACCAACGATAAACCAGAC  1 
+PhoP_4659                (   10) CTAAACCAACGATAAACCAGAC  1 
+PhoP_4578                (   12) ATTAACACAATGTTTACTCTGG  1 
+PhoP_2464                (   12) GTATATGTCATGTTGATGGAAA  1 
+PhoP_229                 (   12) GTATATGTCATGTTGATGGAAA  1 
+PhoP_4364                (   12) CTTTAAGTTTTATTTAACCTAT  1 
+PhoP_4363                (   12) ATTAAGGTTATGTTAATTGTAG  1 
+PhoP_3263                (   12) GTTTATTAACTTTTGACCATTG  1 
+PhoP_297                 (   13) TTTAATCTATTGTTTAACGATA  1 
+PhoP_4690                (   15) TTCAATCTGCCGTTTATGGGAT  1 
+PhoP_3896                (   12) CTATGTCACGTGTTAACGATTC  1 
+PhoP_3972                (   12) ATTTCACATTTGTTTATGCGTA  1 
+PhoP_230                 (   12) ATTTACAAGCTGATAACAACCA  1 
+PhoP_308                 (   12) ATTTACCGGGAGTTAAATAGAG  1 
+PhoP_4362                (   12) GTTTGACGAGTATTTAACTTGT  1 
+PhoP_4568                (   10) CTGTTTTGACCGTTTAGTCCAC  1 
+PhoP_2317                (   10) ATCAACATGACATATACAGAAA  1 
+PhoP_227                 (   10) ATCAACATGACATATACAGAAA  1 
+PhoP_5185                (   12) GTTTGACTGCCGTTTGAGCAGT  1 
+PhoP_226                 (   10) CTAAACAAAATATAAACAGTGG  1 
+PhoP_2802                (   13) CTGCTCCAGTTGTTAATTCTGC  1 
+PhoP_295                 (   12) GATTAACGATTTTTAACGTTAT  1 
+PhoP_296                 (    8) CGTTATCCGCTAAATAAACATA  1 
+PhoP_305                 (   14) GGCTATAAATGATATAGTGGTT  1 
+PhoP_228                 (   10) ATAAACATAAGCTATACGCTGT  1 
+PhoP_2947                (   12) ATGAATTACGTGTTCACTCTTG  1 
+PhoP_1075                (   11) AGGTATGAATCAAAAATTTGAA  1 
+PhoP_271                 (   13) AAATTGGCACAAAGTAGCATAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 681 bayes= 3.92735 E= 7.7e-022 
+     7     16    139   -292 
+  -263  -1204    -86    125 
+   -63    -84    -86     78 
+   -17   -184  -1204     93 
+   150   -284   -128   -234 
+   -63     48     -5     16 
+   -31    116     60   -160 
+    37    -26     -5    -22 
+    37    -84     46    -34 
+   -31    106    -86    -22 
+  -263     48     31     47 
+    18   -284    178   -292 
+  -163  -1204  -1204    132 
+   -46  -1204   -186    103 
+   -31   -284     14     60 
+   173  -1204   -286  -1204 
+   -31     96     14    -60 
+   -63     86     60    -60 
+   -63     86     46    -46 
+   -46    -84     14     47 
+    76    -52    -28    -60 
+    18    106    -28   -112 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 42 E= 7.7e-022 
+ 0.309524  0.190476  0.452381  0.047619 
+ 0.047619  0.000000  0.095238  0.857143 
+ 0.190476  0.095238  0.095238  0.619048 
+ 0.261905  0.047619  0.000000  0.690476 
+ 0.833333  0.023810  0.071429  0.071429 
+ 0.190476  0.238095  0.166667  0.404762 
+ 0.238095  0.380952  0.261905  0.119048 
+ 0.380952  0.142857  0.166667  0.309524 
+ 0.380952  0.095238  0.238095  0.285714 
+ 0.238095  0.357143  0.095238  0.309524 
+ 0.047619  0.238095  0.214286  0.500000 
+ 0.333333  0.023810  0.595238  0.047619 
+ 0.095238  0.000000  0.000000  0.904762 
+ 0.214286  0.000000  0.047619  0.738095 
+ 0.238095  0.023810  0.190476  0.547619 
+ 0.976190  0.000000  0.023810  0.000000 
+ 0.238095  0.333333  0.190476  0.238095 
+ 0.190476  0.309524  0.261905  0.238095 
+ 0.190476  0.309524  0.238095  0.261905 
+ 0.214286  0.095238  0.190476  0.500000 
+ 0.500000  0.119048  0.142857  0.238095 
+ 0.333333  0.357143  0.142857  0.166667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTTTAYVWDHTRTTTANNNTAM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA]TT[TA]A[TC][CGA][AT][ATG][CTA][TCG][GA]T[TA][TA]A[CAT][CGT][CTG][TA][AT][CA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.18 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PhoP_190                         3.83e-05  11_[+1(2.40e-06)]_4
+PhoP_191                         5.03e-04  11_[+1(3.14e-05)]_4
+PhoP_226                         2.69e-02  38
+PhoP_227                         1.86e-02  37
+PhoP_228                         7.53e-02  37
+PhoP_229                         9.48e-04  11_[+1(5.92e-05)]_4
+PhoP_230                         8.63e-03  37
+PhoP_270                         2.19e-04  11_[+1(1.37e-05)]_4
+PhoP_271                         5.96e-01  36
+PhoP_295                         4.21e-02  37
+PhoP_296                         5.87e-02  37
+PhoP_297                         6.32e-03  38
+PhoP_305                         9.61e-02  43
+PhoP_308                         1.03e-02  37
+PhoP_360                         2.19e-04  11_[+1(1.37e-05)]_4
+PhoP_1075                        2.11e-01  37
+PhoP_2317                        1.86e-02  37
+PhoP_2464                        9.48e-04  11_[+1(5.92e-05)]_4
+PhoP_2802                        3.89e-02  38
+PhoP_2947                        1.01e-01  37
+PhoP_3263                        5.40e-03  37
+PhoP_3355                        2.53e-04  11_[+1(1.58e-05)]_4
+PhoP_3408                        2.53e-04  11_[+1(1.58e-05)]_4
+PhoP_3896                        7.18e-03  37
+PhoP_3972                        8.63e-03  37
+PhoP_4361                        1.03e-04  11_[+1(6.45e-06)]_4
+PhoP_4362                        1.23e-02  37
+PhoP_4363                        3.27e-03  37
+PhoP_4364                        1.36e-03  11_[+1(8.47e-05)]_4
+PhoP_4379                        5.39e-05  11_[+1(3.37e-06)]_4
+PhoP_4380                        2.53e-04  11_[+1(1.58e-05)]_4
+PhoP_4381                        2.19e-04  11_[+1(1.37e-05)]_4
+PhoP_4382                        8.66e-06  11_[+1(5.41e-07)]_4
+PhoP_4383                        8.66e-06  11_[+1(5.41e-07)]_4
+PhoP_4568                        1.27e-02  35
+PhoP_4578                        6.52e-04  11_[+1(4.07e-05)]_4
+PhoP_4658                        1.41e-04  11_[+1(8.79e-06)]_4
+PhoP_4659                        6.52e-04  9_[+1(4.07e-05)]_6
+PhoP_4660                        6.52e-04  9_[+1(4.07e-05)]_6
+PhoP_4661                        2.19e-04  11_[+1(1.37e-05)]_4
+PhoP_4690                        8.52e-03  40
+PhoP_5185                        2.54e-02  37
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: c93879083ab5
+
+********************************************************************************

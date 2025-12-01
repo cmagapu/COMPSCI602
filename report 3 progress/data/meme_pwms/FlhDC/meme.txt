@@ -1,0 +1,286 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/FlhDC.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+FlhDC_2942               1.0000     62  FlhDC_3146               1.0000     65  
+FlhDC_3573               1.0000     66  FlhDC_4728               1.0000     65  
+FlhDC_4819               1.0000     66  FlhDC_4820               1.0000     66  
+FlhDC_4821               1.0000     62  FlhDC_4826               1.0000     65  
+FlhDC_4827               1.0000     63  FlhDC_4829               1.0000     64  
+FlhDC_4830               1.0000     66  FlhDC_5456               1.0000     63  
+FlhDC_5457               1.0000     63  FlhDC_5458               1.0000     63  
+FlhDC_5460               1.0000     64  FlhDC_5461               1.0000     64  
+FlhDC_5462               1.0000     62  FlhDC_5463               1.0000     63  
+FlhDC_5464               1.0000     64  FlhDC_5465               1.0000     64  
+FlhDC_5466               1.0000     64  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/FlhDC.fasta -oc meme_pwms/FlhDC -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       21    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1344    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=   1344    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.254 C 0.26 G 0.237 T 0.249 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.254 C 0.26 G 0.237 T 0.249 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GSCWTWAAHVVCGYH MEME-1	width =  15  sites =  21  llr = 162  E-value = 2.7e-006
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2::42487343::13
+pos.-specific     C  1771::2:3338:54
+probability       G  733211:::242a1:
+matrix            T  :::275:24::::32
+
+         bits    2.1                
+                 1.9             *  
+                 1.7             *  
+                 1.5             *  
+Relative         1.2       *     *  
+Entropy          1.0  *    **   **  
+(11.1 bits)      0.8 *** * **   **  
+                 0.6 *** ****   **  
+                 0.4 *** ********* *
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           GCCATTAATAGCGCC
+consensus             GGT A TACC  TA
+sequence                     CGA   T
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+FlhDC_4830                   16  1.27e-06 GGCAGCAAAA GCCCTAAATCCCGCC TGTTTTGCCC
+FlhDC_4827                   15  3.80e-06 GACCATCAAC GGCATAAATAGCGAC CCATTTTGCG
+FlhDC_5457                   39  7.21e-06 GAGAAAGGCA ACGATTAAAAACGCC GTCGAGGTCA
+FlhDC_5465                    5  8.37e-06       CTTT GCCAATAACGCCGTC CATAATCAGC
+FlhDC_5461                    3  9.68e-06         TA GCCATAAATAAGGTT GAAAAGACGC
+FlhDC_4821                    6  9.68e-06      ATAAC GCCTTAAATGGCGAA GAAACGGTCT
+FlhDC_4819                   17  1.47e-05 TTTTCTATCC GCCAATAAACCCGTT TTTTTGTTGC
+FlhDC_5464                   14  4.95e-05 GGGCTGCAGT CGCATTCATCGCGCA CCTCGTGGCT
+FlhDC_4829                   15  6.78e-05 CCTACAGATG GCAAGAAATAGCGCC TGCCAGGCGT
+FlhDC_3146                   27  7.50e-05 CAGAGGTAGC ACCGTAATCCGCGTC TTTTCCCCGC
+FlhDC_4820                   39  9.13e-05 ACAAAAAAAC GGGTTTATTGGCGGA TAGAAAAAAA
+FlhDC_5462                   35  1.00e-04 CCGATGAACT GGCTTTCACAAGGCC GTATGGCGAG
+FlhDC_4728                   37  1.10e-04 CTTTTCTCTG CCCCTTATTCCCGCT ATTAAAAAAA
+FlhDC_5463                   14  1.21e-04 GGTTGGTCGG GCCGAGAACACCGGC AACGTAGCGC
+FlhDC_4826                   16  1.57e-04 GCGCGTTATC GGCGGAATAAACGCA AAATGGGTCG
+FlhDC_5460                   29  1.71e-04 AAATTGCGGG AGGATTAACGCGGCA AGTAGCCGAA
+FlhDC_5458                   27  1.85e-04 TTTAATCGTT GCCTTTCTCACCGGT ATTGCGGGCG
+FlhDC_2942                   23  4.46e-04 TGCCTGCGCT ACGTTGAAAGAGGCA GGTGCTTGCG
+FlhDC_3573                   50  5.39e-04 CACTAATCGT CCGATTAAAAACCCT GC        
+FlhDC_5466                   14  5.73e-04 TGACGACAAA GCGCAGCAACGCGTC GTGCCCTCAC
+FlhDC_5456                   27  2.29e-03 TTAAACTGAT GGCGGAACTCGAGTA ATTTCCCGGG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FlhDC_4830                        1.3e-06  15_[+1]_36
+FlhDC_4827                        3.8e-06  14_[+1]_34
+FlhDC_5457                        7.2e-06  38_[+1]_10
+FlhDC_5465                        8.4e-06  4_[+1]_45
+FlhDC_5461                        9.7e-06  2_[+1]_47
+FlhDC_4821                        9.7e-06  5_[+1]_42
+FlhDC_4819                        1.5e-05  16_[+1]_35
+FlhDC_5464                        4.9e-05  13_[+1]_36
+FlhDC_4829                        6.8e-05  14_[+1]_35
+FlhDC_3146                        7.5e-05  26_[+1]_24
+FlhDC_4820                        9.1e-05  38_[+1]_13
+FlhDC_5462                         0.0001  34_[+1]_13
+FlhDC_4728                        0.00011  36_[+1]_14
+FlhDC_5463                        0.00012  13_[+1]_35
+FlhDC_4826                        0.00016  15_[+1]_35
+FlhDC_5460                        0.00017  28_[+1]_21
+FlhDC_5458                        0.00019  26_[+1]_22
+FlhDC_2942                        0.00045  22_[+1]_25
+FlhDC_3573                        0.00054  49_[+1]_2
+FlhDC_5466                        0.00057  13_[+1]_36
+FlhDC_5456                         0.0023  26_[+1]_22
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GSCWTWAAHVVCGYH width=15 seqs=21
+FlhDC_4830               (   16) GCCCTAAATCCCGCC  1 
+FlhDC_4827               (   15) GGCATAAATAGCGAC  1 
+FlhDC_5457               (   39) ACGATTAAAAACGCC  1 
+FlhDC_5465               (    5) GCCAATAACGCCGTC  1 
+FlhDC_5461               (    3) GCCATAAATAAGGTT  1 
+FlhDC_4821               (    6) GCCTTAAATGGCGAA  1 
+FlhDC_4819               (   17) GCCAATAAACCCGTT  1 
+FlhDC_5464               (   14) CGCATTCATCGCGCA  1 
+FlhDC_4829               (   15) GCAAGAAATAGCGCC  1 
+FlhDC_3146               (   27) ACCGTAATCCGCGTC  1 
+FlhDC_4820               (   39) GGGTTTATTGGCGGA  1 
+FlhDC_5462               (   35) GGCTTTCACAAGGCC  1 
+FlhDC_4728               (   37) CCCCTTATTCCCGCT  1 
+FlhDC_5463               (   14) GCCGAGAACACCGGC  1 
+FlhDC_4826               (   16) GGCGGAATAAACGCA  1 
+FlhDC_5460               (   29) AGGATTAACGCGGCA  1 
+FlhDC_5458               (   27) GCCTTTCTCACCGGT  1 
+FlhDC_2942               (   23) ACGTTGAAAGAGGCA  1 
+FlhDC_3573               (   50) CCGATTAAAAACCCT  1 
+FlhDC_5466               (   14) GCGCAGCAACGCGTC  1 
+FlhDC_5456               (   27) GGCGGAACTCGAGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 1050 bayes= 5.61471 E= 2.7e-006 
+   -41    -87    149  -1104 
+ -1104    136     49  -1104 
+  -241    136     27  -1104 
+    76    -87    -32     -6 
+   -41  -1104    -73    142 
+    59  -1104    -73     94 
+   167    -45  -1104  -1104 
+   149   -245  -1104     -6 
+    17     13  -1104     79 
+    76     36      0  -1104 
+    17     36     68  -1104 
+  -241    155    -32  -1104 
+ -1104   -245    200  -1104 
+  -141     87    -73     20 
+    39     72  -1104     -6 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 21 E= 2.7e-006 
+ 0.190476  0.142857  0.666667  0.000000 
+ 0.000000  0.666667  0.333333  0.000000 
+ 0.047619  0.666667  0.285714  0.000000 
+ 0.428571  0.142857  0.190476  0.238095 
+ 0.190476  0.000000  0.142857  0.666667 
+ 0.380952  0.000000  0.142857  0.476190 
+ 0.809524  0.190476  0.000000  0.000000 
+ 0.714286  0.047619  0.000000  0.238095 
+ 0.285714  0.285714  0.000000  0.428571 
+ 0.428571  0.333333  0.238095  0.000000 
+ 0.285714  0.333333  0.380952  0.000000 
+ 0.047619  0.761905  0.190476  0.000000 
+ 0.000000  0.047619  0.952381  0.000000 
+ 0.095238  0.476190  0.142857  0.285714 
+ 0.333333  0.428571  0.000000  0.238095 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCWTWAAHVVCGYH MEME-1 regular expression
+--------------------------------------------------------------------------------
+G[CG][CG][AT]T[TA]A[AT][TAC][ACG][GCA]CG[CT][CAT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.17 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FlhDC_2942                       2.12e-02  62
+FlhDC_3146                       3.82e-03  26_[+1(7.50e-05)]_24
+FlhDC_3573                       2.77e-02  66
+FlhDC_4728                       5.60e-03  65
+FlhDC_4819                       7.66e-04  16_[+1(1.47e-05)]_35
+FlhDC_4820                       4.74e-03  38_[+1(9.13e-05)]_13
+FlhDC_4821                       4.65e-04  5_[+1(9.68e-06)]_42
+FlhDC_4826                       7.97e-03  65
+FlhDC_4827                       1.86e-04  14_[+1(3.80e-06)]_34
+FlhDC_4829                       3.39e-03  14_[+1(6.78e-05)]_35
+FlhDC_4830                       6.58e-05  15_[+1(1.27e-06)]_36
+FlhDC_5456                       1.06e-01  63
+FlhDC_5457                       3.53e-04  38_[+1(7.21e-06)]_10
+FlhDC_5458                       9.05e-03  63
+FlhDC_5460                       8.50e-03  64
+FlhDC_5461                       4.84e-04  2_[+1(9.68e-06)]_47
+FlhDC_5462                       4.81e-03  62
+FlhDC_5463                       5.90e-03  63
+FlhDC_5464                       2.47e-03  13_[+1(4.95e-05)]_36
+FlhDC_5465                       4.19e-04  4_[+1(8.37e-06)]_45
+FlhDC_5466                       2.83e-02  64
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 82f201cbe68e
+
+********************************************************************************

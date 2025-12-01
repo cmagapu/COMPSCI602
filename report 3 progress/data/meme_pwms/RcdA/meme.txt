@@ -1,0 +1,245 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/RcdA.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RcdA_711                 1.0000     30  RcdA_712                 1.0000     30  
+RcdA_713                 1.0000     30  RcdA_714                 1.0000     30  
+RcdA_716                 1.0000     30  RcdA_717                 1.0000     30  
+RcdA_718                 1.0000     30  RcdA_719                 1.0000     30  
+RcdA_723                 1.0000     30  RcdA_724                 1.0000     30  
+RcdA_725                 1.0000     30  RcdA_727                 1.0000     30  
+RcdA_2355                1.0000     30  RcdA_2451                1.0000     30  
+RcdA_2452                1.0000     30  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/RcdA.fasta -oc meme_pwms/RcdA -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       15    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             450    N=              15
+sample: seed=            0    hsfrac=          0
+        searchsize=    450    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.296 C 0.198 G 0.184 T 0.322 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.295 C 0.198 G 0.185 T 0.322 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTGTACA MEME-1	width =   8  sites =  15  llr = 131  E-value = 4.5e-023
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1:::a:9
+pos.-specific     C  ::1:2:a:
+probability       G  :6:a::::
+matrix            T  a39:8::1
+
+         bits    2.4    *  * 
+                 2.2    *  * 
+                 1.9    *  * 
+                 1.7 *  * ** 
+Relative         1.5 *  * ***
+Entropy          1.2 * ** ***
+(12.6 bits)      1.0 * ******
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           TGTGTACA
+consensus             T  C   
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+RcdA_719                     23  1.97e-05 GTACGAAATA TGTGTACA           
+RcdA_718                     12  1.97e-05 GTACGAAATA TGTGTACA GAATGATAAA
+RcdA_714                      2  1.97e-05          T TGTGTACA AATGTACACA
+RcdA_713                     12  1.97e-05 TTAGCAAGGT TGTGTACA TTTGTACACA
+RcdA_712                     12  1.97e-05 TCTCTGCAAT TGTGTACA AATGTACACA
+RcdA_711                      2  1.97e-05          T TGTGTACA TTTGTACACA
+RcdA_2452                     2  7.82e-05          G TTTGTACA TATCGTTACA
+RcdA_2451                    12  7.82e-05 TTATTCAGCG TTTGTACA TATCGTTACA
+RcdA_724                     12  7.82e-05 TTATTCAGCG TTTGTACA TATCGTTACA
+RcdA_723                      2  7.82e-05          G TTTGTACA TATCGTTACA
+RcdA_716                     10  1.10e-04  TGGATTGAT TATGTACA CTTCAGGCTA
+RcdA_2355                    12  1.38e-04 CGATATGTCT TGCGCACA AGCCGTGACA
+RcdA_725                     12  1.38e-04 CGATATGTCT TGCGCACA AGCCGTGACA
+RcdA_727                     12  1.81e-04 ATAATGGCAT TGTGTACT CTTACTACCT
+RcdA_717                     12  2.00e-04 CACTTCAGGC TATGCACA TCGTTCTTCG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RcdA_719                            2e-05  22_[+1]
+RcdA_718                            2e-05  11_[+1]_11
+RcdA_714                            2e-05  1_[+1]_21
+RcdA_713                            2e-05  11_[+1]_11
+RcdA_712                            2e-05  11_[+1]_11
+RcdA_711                            2e-05  1_[+1]_21
+RcdA_2452                         7.8e-05  1_[+1]_21
+RcdA_2451                         7.8e-05  11_[+1]_11
+RcdA_724                          7.8e-05  11_[+1]_11
+RcdA_723                          7.8e-05  1_[+1]_21
+RcdA_716                          0.00011  9_[+1]_13
+RcdA_2355                         0.00014  11_[+1]_11
+RcdA_725                          0.00014  11_[+1]_11
+RcdA_727                          0.00018  11_[+1]_11
+RcdA_717                           0.0002  11_[+1]_11
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTGTACA width=8 seqs=15
+RcdA_719                 (   23) TGTGTACA  1 
+RcdA_718                 (   12) TGTGTACA  1 
+RcdA_714                 (    2) TGTGTACA  1 
+RcdA_713                 (   12) TGTGTACA  1 
+RcdA_712                 (   12) TGTGTACA  1 
+RcdA_711                 (    2) TGTGTACA  1 
+RcdA_2452                (    2) TTTGTACA  1 
+RcdA_2451                (   12) TTTGTACA  1 
+RcdA_724                 (   12) TTTGTACA  1 
+RcdA_723                 (    2) TTTGTACA  1 
+RcdA_716                 (   10) TATGTACA  1 
+RcdA_2355                (   12) TGCGCACA  1 
+RcdA_725                 (   12) TGCGCACA  1 
+RcdA_727                 (   12) TGTGTACT  1 
+RcdA_717                 (   12) TATGCACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 345 bayes= 4.45943 E= 4.5e-023 
+ -1055  -1055  -1055    164 
+  -115  -1055    170    -27 
+ -1055    -57  -1055    143 
+ -1055  -1055    243  -1055 
+ -1055      1  -1055    131 
+   176  -1055  -1055  -1055 
+ -1055    233  -1055  -1055 
+   166  -1055  -1055   -227 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 15 E= 4.5e-023 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.133333  0.000000  0.600000  0.266667 
+ 0.000000  0.133333  0.000000  0.866667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.933333  0.000000  0.000000  0.066667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTGTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GT]TG[TC]ACA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RcdA_711                         4.53e-04  1_[+1(1.97e-05)]_[+1(7.82e-05)]_13
+RcdA_712                         4.53e-04  11_[+1(1.97e-05)]_11
+RcdA_713                         4.53e-04  11_[+1(1.97e-05)]_[+1(7.82e-05)]_3
+RcdA_714                         4.53e-04  1_[+1(1.97e-05)]_21
+RcdA_716                         2.52e-03  30
+RcdA_717                         4.59e-03  30
+RcdA_718                         4.53e-04  11_[+1(1.97e-05)]_11
+RcdA_719                         4.53e-04  22_[+1(1.97e-05)]
+RcdA_723                         1.80e-03  1_[+1(7.82e-05)]_21
+RcdA_724                         1.80e-03  11_[+1(7.82e-05)]_11
+RcdA_725                         3.17e-03  30
+RcdA_727                         4.15e-03  30
+RcdA_2355                        3.17e-03  30
+RcdA_2451                        1.80e-03  11_[+1(7.82e-05)]_11
+RcdA_2452                        1.80e-03  1_[+1(7.82e-05)]_21
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 034c70dc7d11
+
+********************************************************************************

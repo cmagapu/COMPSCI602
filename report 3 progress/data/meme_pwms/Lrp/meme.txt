@@ -1,0 +1,1203 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/Lrp.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Lrp_23                   1.0000     32  Lrp_24                   1.0000     32  
+Lrp_25                   1.0000     32  Lrp_26                   1.0000     32  
+Lrp_27                   1.0000     32  Lrp_28                   1.0000     32  
+Lrp_183                  1.0000     36  Lrp_184                  1.0000     36  
+Lrp_185                  1.0000     36  Lrp_585                  1.0000     35  
+Lrp_586                  1.0000     35  Lrp_587                  1.0000     35  
+Lrp_588                  1.0000     35  Lrp_589                  1.0000     35  
+Lrp_590                  1.0000     35  Lrp_591                  1.0000     35  
+Lrp_592                  1.0000     35  Lrp_593                  1.0000     35  
+Lrp_594                  1.0000     35  Lrp_595                  1.0000     35  
+Lrp_596                  1.0000     35  Lrp_597                  1.0000     35  
+Lrp_598                  1.0000     35  Lrp_599                  1.0000     35  
+Lrp_600                  1.0000     35  Lrp_601                  1.0000     35  
+Lrp_602                  1.0000     35  Lrp_670                  1.0000     32  
+Lrp_671                  1.0000     32  Lrp_672                  1.0000     32  
+Lrp_768                  1.0000     32  Lrp_769                  1.0000     32  
+Lrp_770                  1.0000     32  Lrp_771                  1.0000     32  
+Lrp_993                  1.0000     35  Lrp_994                  1.0000     35  
+Lrp_1279                 1.0000     35  Lrp_1597                 1.0000     35  
+Lrp_1598                 1.0000     35  Lrp_1599                 1.0000     35  
+Lrp_1600                 1.0000     35  Lrp_1601                 1.0000     35  
+Lrp_1602                 1.0000     35  Lrp_1603                 1.0000     35  
+Lrp_1604                 1.0000     35  Lrp_1605                 1.0000     35  
+Lrp_1606                 1.0000     35  Lrp_1607                 1.0000     35  
+Lrp_1608                 1.0000     35  Lrp_1609                 1.0000     35  
+Lrp_1610                 1.0000     35  Lrp_1611                 1.0000     35  
+Lrp_1612                 1.0000     35  Lrp_1613                 1.0000     35  
+Lrp_1614                 1.0000     35  Lrp_1615                 1.0000     35  
+Lrp_1616                 1.0000     35  Lrp_1617                 1.0000     35  
+Lrp_1618                 1.0000     35  Lrp_1619                 1.0000     35  
+Lrp_1620                 1.0000     35  Lrp_1621                 1.0000     35  
+Lrp_1622                 1.0000     35  Lrp_1623                 1.0000     35  
+Lrp_1624                 1.0000     35  Lrp_1625                 1.0000     35  
+Lrp_1626                 1.0000     35  Lrp_1627                 1.0000     35  
+Lrp_1628                 1.0000     35  Lrp_1629                 1.0000     35  
+Lrp_1630                 1.0000     35  Lrp_1631                 1.0000     35  
+Lrp_1632                 1.0000     35  Lrp_1633                 1.0000     35  
+Lrp_1634                 1.0000     35  Lrp_1635                 1.0000     35  
+Lrp_1636                 1.0000     35  Lrp_1637                 1.0000     35  
+Lrp_1638                 1.0000     35  Lrp_1639                 1.0000     35  
+Lrp_1640                 1.0000     35  Lrp_1641                 1.0000     35  
+Lrp_1642                 1.0000     35  Lrp_1643                 1.0000     35  
+Lrp_1644                 1.0000     35  Lrp_1645                 1.0000     35  
+Lrp_1646                 1.0000     35  Lrp_1647                 1.0000     35  
+Lrp_1648                 1.0000     35  Lrp_1649                 1.0000     35  
+Lrp_1650                 1.0000     35  Lrp_1651                 1.0000     35  
+Lrp_1652                 1.0000     35  Lrp_1653                 1.0000     35  
+Lrp_1654                 1.0000     35  Lrp_1655                 1.0000     35  
+Lrp_1656                 1.0000     35  Lrp_2056                 1.0000     35  
+Lrp_2057                 1.0000     35  Lrp_2058                 1.0000     32  
+Lrp_2059                 1.0000     35  Lrp_2070                 1.0000     32  
+Lrp_2071                 1.0000     32  Lrp_2106                 1.0000     35  
+Lrp_2107                 1.0000     33  Lrp_2108                 1.0000     35  
+Lrp_2118                 1.0000     35  Lrp_2124                 1.0000     35  
+Lrp_2125                 1.0000     35  Lrp_2126                 1.0000     35  
+Lrp_2291                 1.0000     35  Lrp_2292                 1.0000     35  
+Lrp_2324                 1.0000     35  Lrp_2325                 1.0000     35  
+Lrp_2326                 1.0000     35  Lrp_2327                 1.0000     35  
+Lrp_2328                 1.0000     35  Lrp_2329                 1.0000     35  
+Lrp_2442                 1.0000     32  Lrp_2443                 1.0000     32  
+Lrp_2447                 1.0000     32  Lrp_2813                 1.0000     35  
+Lrp_2814                 1.0000     35  Lrp_2815                 1.0000     35  
+Lrp_2816                 1.0000     35  Lrp_2817                 1.0000     35  
+Lrp_2818                 1.0000     35  Lrp_2904                 1.0000     35  
+Lrp_2905                 1.0000     35  Lrp_2906                 1.0000     35  
+Lrp_2907                 1.0000     35  Lrp_2908                 1.0000     35  
+Lrp_2909                 1.0000     32  Lrp_2910                 1.0000     35  
+Lrp_2911                 1.0000     35  Lrp_3150                 1.0000     35  
+Lrp_3267                 1.0000     32  Lrp_3268                 1.0000     35  
+Lrp_3269                 1.0000     35  Lrp_3311                 1.0000     35  
+Lrp_3312                 1.0000     35  Lrp_3313                 1.0000     35  
+Lrp_3314                 1.0000     35  Lrp_3315                 1.0000     35  
+Lrp_3316                 1.0000     35  Lrp_3317                 1.0000     35  
+Lrp_3318                 1.0000     35  Lrp_3319                 1.0000     35  
+Lrp_3336                 1.0000     35  Lrp_3337                 1.0000     35  
+Lrp_3338                 1.0000     35  Lrp_3339                 1.0000     35  
+Lrp_3340                 1.0000     35  Lrp_3343                 1.0000     35  
+Lrp_3344                 1.0000     35  Lrp_3345                 1.0000     35  
+Lrp_3346                 1.0000     35  Lrp_3347                 1.0000     35  
+Lrp_3392                 1.0000     32  Lrp_3445                 1.0000     35  
+Lrp_3446                 1.0000     35  Lrp_3447                 1.0000     35  
+Lrp_3530                 1.0000     35  Lrp_3531                 1.0000     32  
+Lrp_3532                 1.0000     35  Lrp_3533                 1.0000     35  
+Lrp_3552                 1.0000     35  Lrp_3553                 1.0000     35  
+Lrp_3557                 1.0000     35  Lrp_3558                 1.0000     35  
+Lrp_3559                 1.0000     35  Lrp_3565                 1.0000     32  
+Lrp_3593                 1.0000     35  Lrp_3594                 1.0000     35  
+Lrp_3595                 1.0000     35  Lrp_3596                 1.0000     35  
+Lrp_3597                 1.0000     35  Lrp_3598                 1.0000     35  
+Lrp_3601                 1.0000     35  Lrp_3602                 1.0000     35  
+Lrp_3603                 1.0000     35  Lrp_3604                 1.0000     35  
+Lrp_3605                 1.0000     35  Lrp_3621                 1.0000     35  
+Lrp_3622                 1.0000     35  Lrp_3623                 1.0000     35  
+Lrp_3624                 1.0000     35  Lrp_3625                 1.0000     35  
+Lrp_3626                 1.0000     35  Lrp_3627                 1.0000     35  
+Lrp_3628                 1.0000     35  Lrp_3629                 1.0000     35  
+Lrp_3687                 1.0000     35  Lrp_3688                 1.0000     35  
+Lrp_3689                 1.0000     35  Lrp_3734                 1.0000     35  
+Lrp_3735                 1.0000     35  Lrp_3763                 1.0000     35  
+Lrp_3764                 1.0000     35  Lrp_3868                 1.0000     35  
+Lrp_3916                 1.0000     35  Lrp_3917                 1.0000     35  
+Lrp_4045                 1.0000     35  Lrp_4284                 1.0000     35  
+Lrp_4322                 1.0000     32  Lrp_4733                 1.0000     32  
+Lrp_5099                 1.0000     35  Lrp_5100                 1.0000     35  
+Lrp_5101                 1.0000     35  Lrp_5102                 1.0000     35  
+Lrp_5103                 1.0000     35  Lrp_5104                 1.0000     35  
+Lrp_5140                 1.0000     35  Lrp_5141                 1.0000     33  
+Lrp_5142                 1.0000     35  Lrp_5146                 1.0000     35  
+Lrp_5147                 1.0000     37  Lrp_5148                 1.0000     35  
+Lrp_5288                 1.0000     45  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/Lrp.fasta -oc meme_pwms/Lrp -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=      219    maxsites=      219    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            7598    N=             219
+sample: seed=            0    hsfrac=          0
+        searchsize=   7598    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.297 C 0.19 G 0.202 T 0.31 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.297 C 0.19 G 0.202 T 0.31 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1	width =  28  sites = 219  llr = 748  E-value = 9.4e-052
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2133343162353443533113332432
+pos.-specific     C  222222151:3111:121:731221322
+probability       G  3332223126121111113114231213
+matrix            T  34243323:2325445254251335243
+
+         bits    2.4                             
+                 2.2                             
+                 1.9                             
+                 1.7                             
+Relative         1.4                             
+Entropy          1.2                             
+(4.9 bits)       1.0                             
+                 0.7                    *        
+                 0.5        ***         *        
+                 0.2        *** ***********      
+                 0.0 ----------------------------
+
+Multilevel           GTATAAGCAGAATATTATTCTGTTTATT
+consensus            TGGATTATGACGATAATAG CAAAACAG
+sequence             CCTC  T   T       A   GG T  
+                     A C                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+Lrp_3594                      4  1.95e-07        CGC TTCTGAACGGAATTTTATGCTGGATAAA AAGG      
+Lrp_3558                      3  1.95e-07         CA ATTAAGGCAGTATAAAATGCTGGTTTTG TCGTC     
+Lrp_2125                      3  1.95e-07         CA ATTAAGGCAGTATAAAATGCTGGTTTTG TCGTC     
+Lrp_598                       4  1.95e-07        CGC TTCTGAACGGAATTTTATGCTGGATAAA AAGG      
+Lrp_592                       4  1.95e-07        CGC TTCTGAACGGAATTTTATGCTGGATAAA AAGG      
+Lrp_3269                      5  2.40e-07       ACAA TGAATAACAGCACAAAATTCTGTTTCTC AAG       
+Lrp_2814                      4  9.41e-07        TTA TTGAATGTAGAATTTTATTCTGAATGTG TGGG      
+Lrp_589                       4  9.41e-07        TTA TTGAATGTAGAATTTTATTCTGAATGTG TGGG      
+Lrp_1609                      6  3.83e-06      CCATT CTACCTGCAGTATTGTTTGCCGCTTTCG CT        
+Lrp_1624                      3  5.31e-06         TT GTGTTGACAACATTTTCTGCTAACCCTG TGACC     
+Lrp_1625                      5  9.97e-06       GCTG CGCGCTGCAAAATTATCTGCTGTTTTTA ACC       
+Lrp_1642                      6  1.08e-05      TATAT GTCACCGCAGAATAATCATCTGCAGCGT CC        
+Lrp_3917                      4  3.21e-05        AAT ATTTTCGCCGGATTTTATTCGGAATATC CTGC      
+Lrp_3916                      4  3.21e-05        AAT ATTTTCGCCGGATTTTATTCGGAATATC CTGC      
+Lrp_1622                      5  3.45e-05       GACA TTTCTGACGGCGTTAAATACCGTTCAAT GCG       
+Lrp_1645                      3  3.69e-05         CC GATTTTGCAGAATTAACAACTGGAGCAG CACTT     
+Lrp_1619                      3  3.69e-05         TT GCCCGGACGGCATAATATTACGACGCTG ACCTG     
+Lrp_1614                      6  4.53e-05      GGTAT GTTTTAGCAGAGTATGCTGCTAAAGCAC GG        
+Lrp_1651                      5  5.54e-05       TTTA GCGTTGACCGGGCATAATTCTGAAAAAT TAC       
+Lrp_1653                      3  5.92e-05         TA TTTATTTCCGCATAATCAGCCATGTATT ATTTG     
+Lrp_1604                      5  5.92e-05       TTTC ACGGAAATAGTGTTTTATACTGGTTGGT GAT       
+Lrp_1629                      3  6.32e-05         CC TCTAAACCAGCATATTCATCCAAGAATT ACCTT     
+Lrp_4733                      3  8.20e-05         AT GCGCGGTCAGAAAATTATTTTAAATTTC CT        
+Lrp_3392                      3  8.20e-05         TT GCGCGGTCAGAAAATTATTTTAAATTTC CT        
+Lrp_2447                      3  8.20e-05         TT GCGCGGTCAGAAAATTATTTTAAATTTC CT        
+Lrp_2071                      3  8.20e-05         AT GCGCGGTCAGAAAATTATTTTAAATTTC CT        
+Lrp_1618                      5  9.93e-05       GCCG GCATTGTCAGGAAAAATTTCCAGCCACG TTT       
+Lrp_3687                      4  1.27e-04        CAT TTTCGCATAGCGTATATCGCTGGCTATG ACTA      
+Lrp_3446                      4  1.27e-04        AAG ATAACAATAGAATATTAAGCCAACAAAT AAAC      
+Lrp_1648                      5  1.53e-04       ACTC ATAACCCCAGCATATAAATCCAGTTGGT AAC       
+Lrp_1633                      5  1.53e-04       CCCT CTCAGTGCAGTGAAAAAATCTGCCGTTA CGT       
+Lrp_1636                      3  1.95e-04         TG CTGTTGTCGAAGAAAAATGCCGAGGAAC GTCTG     
+Lrp_1635                      8  1.95e-04    GGCAAAA CGCCCAGCGAAAAATAATGCAATATCGG           
+Lrp_1599                      3  2.46e-04         AC GGCATAATACTTTTTTATGCCGTTTAAT TCTTC     
+Lrp_1601                      5  2.61e-04       AAGC CGCCAACCAGGATAAAATGTCAGCCCTA ATC       
+Lrp_1644                      5  2.93e-04       ATCA CTATTTCCGGTTTTTTATTCTCTTAATT TGC       
+Lrp_1613                      3  2.93e-04         GA GCACTACCCGAATTTTTCACTGGAGCAT GCCTG     
+Lrp_3603                      4  3.28e-04        AAG ATGTGATTAGATTATTATTCTTTTACTG TATC      
+Lrp_3345                      4  3.28e-04        AAG ATGTGATTAGATTATTATTCTTTTACTG TATC      
+Lrp_3338                      4  3.28e-04        AAG ATGTGATTAGATTATTATTCTTTTACTG TATC      
+Lrp_1627                      5  3.28e-04       CCTG GTACGAACAGTATTTTGTATGGGGAATG ACC       
+Lrp_993                       4  4.10e-04        TAG TCATAGCCAGCGATATACGCTATGCGAA AATG      
+Lrp_3593                      4  4.33e-04        AAA GGGCGTTCAGCAGGAGATACTAAAGACG CCAT      
+Lrp_597                       4  4.33e-04        AAA GGGCGTTCAGCAGGAGATACTAAAGACG CCAT      
+Lrp_591                       4  4.33e-04        AAA GGGCGTTCAGCAGGAGATACTAAAGACG CCAT      
+Lrp_3447                      4  4.84e-04        CCA CCTCATGCAATATAAACATCTATAAATA AAGA      
+Lrp_3150                      5  4.84e-04       GGGT GACCTGACAGTAAAAACATCGGCTTTTT GCT       
+Lrp_1603                      6  4.84e-04      GATAT CGAACCACAGAATATTGCACTAACAAAC GG        
+Lrp_2070                      5  5.68e-04       ATAA GCATAAAGAATAAAAAATGCGCGGTCAG           
+Lrp_1615                      5  5.68e-04       TAAT TTACATGCGGTTGATCCTGCGGGTTATG ACC       
+Lrp_1611                      5  5.68e-04       GTCA AAAGTAGTAGCAGAAAATGCTCTACAAG ATG       
+Lrp_672                       5  5.68e-04       ATAA GCATAAAGAATAAAAAATGCGCGGTCAG           
+Lrp_1638                      3  6.00e-04         GC CCGCGCTCGGGGTGAAATTCCGCGCGGC GAAAG     
+Lrp_1597                      5  6.00e-04       CGCA CAATGATCCGCAAAATACACCGCGAGCG AGC       
+Lrp_3604                      4  6.32e-04        GCA TGTTGAATAATATTTTCAACTGAGTTAT CAAG      
+Lrp_3346                      4  6.32e-04        GCA TGTTGAATAATATTTTCAACTGAGTTAT CAAG      
+Lrp_3339                      4  6.32e-04        GCA TGTTGAATAATATTTTCAACTGAGTTAT CAAG      
+Lrp_1650                      6  6.32e-04      TTTCA TCTGGTAACGGATGAAATTCTGAATCAG CT        
+Lrp_3596                      4  6.67e-04        CGC GTCGCCGGAGAATTTTTTTCTTTGCGAT TTCT      
+Lrp_1626                      6  6.67e-04      GACGG CCTGGGGCCAGATAATATGTTGAGTGAA GA        
+Lrp_1602                      5  6.67e-04       AATC AGCGTTGCAGGATAAAGCACCGCTCACT CTT       
+Lrp_600                       4  6.67e-04        CGC GTCGCCGGAGAATTTTTTTCTTTGCGAT TTCT      
+Lrp_594                       4  6.67e-04        CGC GTCGCCGGAGAATTTTTTTCTTTGCGAT TTCT      
+Lrp_1649                      5  7.40e-04       CCGC AACGTGACGGTTAAAAATTCTGAATAAA TAA       
+Lrp_1616                      4  8.64e-04        GAT CTGCTGAGAACATTTGTTGCTGTTGCCG ATCT      
+Lrp_1647                      3  1.11e-03         AG CCTGAAGGCTAATATTATGCCGGGCGAA CCGGG     
+Lrp_1631                      3  1.11e-03         GT ACATTAACAGCAGAAAGCACCAGTGATG GATGT     
+Lrp_1621                      2  1.23e-03          T ATTGGCGCAGGGATGTTTTCTCTGCCAG TGGTCA    
+Lrp_1652                      3  1.35e-03         TC AATATAGCAACATCAAATTCCAATTAGT AATAA     
+Lrp_1598                      5  1.35e-03       ATAA CTATTTCCCGCACAATGATCCGCAAAAT ACA       
+Lrp_1639                      3  1.42e-03         CC AGACTGGCAGAACAAAGCACAGATTAAT CGACA     
+Lrp_1608                      5  1.42e-03       TTGA TTCACCAGAGATATTTCTGCTGGTTTGC TCT       
+Lrp_185                       3  1.42e-03         AC GCTGAGGCCAGATAATACTCTCTGGCCT CTCTCT    
+Lrp_2442                      3  1.57e-03         AA TTCATTACGAAGTTTAATTCTTTGAGCG TC        
+Lrp_671                       3  1.57e-03         AA TTCATTACGAAGTTTAATTCTTTGAGCG TC        
+Lrp_3602                      4  1.64e-03        AGT GGCTATGCGAGTTGTCATACTGGGAAGT GGTG      
+Lrp_3344                      4  1.64e-03        AGT GGCTATGCGAGTTGTCATACTGGGAAGT GGTG      
+Lrp_3337                      4  1.64e-03        AGT GGCTATGCGAGTTGTCATACTGGGAAGT GGTG      
+Lrp_3626                      6  1.72e-03      GTATC ATATTCGTGTTGGATTATTCTGCATTTT TG        
+Lrp_3316                      5  1.72e-03       TATC ATATTCGTGTTGGATTATTCTGCATTTT TGG       
+Lrp_2911                      5  1.72e-03       TATC ATATTCGTGTTGGATTATTCTGCATTTT TGG       
+Lrp_1655                      5  2.28e-03       CTAT AGTCACTAAGCATTAAAATTTGCGCCTC ATA       
+Lrp_1630                      5  2.74e-03       AGTT CTTCCAGCTGTGGATTACGCTGTCGCTG GTG       
+Lrp_1607                      2  2.74e-03          T TGCCAAACGGCGCTATTTTGTGTTGCAA AGACCC    
+Lrp_5101                      4  2.86e-03        CAT TGTATTGAAATAAAAATATCTGATTTTG ATAT      
+Lrp_2815                      7  2.86e-03     TTGTGG GATTCAGCCGATTTATTATCAATTTAAT C         
+Lrp_2327                      4  2.86e-03        CAT TGTATTGAAATAAAAATATCTGATTTTG ATAT      
+Lrp_1623                      6  2.86e-03      CCAAT GAAAGCGCAGGGCAAAAAGTCGATAGCT CT        
+Lrp_1610                      6  2.86e-03      TTGAA AGGAAAGCAGCATGAAAATTAAAACTCT GG        
+Lrp_590                       7  2.86e-03     TTGTGG GATTCAGCCGATTTATTATCAATTTAAT C         
+Lrp_1646                      5  2.99e-03       ATGT TAACAGATAGCATTAAATATTGCACAAA TGA       
+Lrp_1628                      5  3.13e-03       CTTT TGATTTACAGAGTAAAGCGTTGGGATAA TCT       
+Lrp_3530                      7  3.57e-03     GATGCC TCGCATTCGGTTTTTTTTACCCTTCTTT A         
+Lrp_2059                      7  3.57e-03     GATGCC TCGCATTCGGTTTTTTTTACCCTTCTTT A         
+Lrp_1656                      4  3.57e-03        CCT TCTGCTCAAAATTTTTATGCTGGCGCTG GGCG      
+Lrp_1617                      3  3.57e-03         GT ATTAACCGGGATTTATATGCTGGCAACA GGCGC     
+Lrp_1632                      5  3.89e-03       TAGC GCACAGACAGATAAAAATTACAGAGTAC ACA       
+Lrp_1606                      5  3.89e-03       CCAT GGCAGCACAGCGAAAAGTTGTATAGCCT GGC       
+Lrp_1620                      3  4.81e-03         AC GCAGTCGCACTATTTTTCACTGGAGAGA AGCCC     
+Lrp_1640                      6  5.01e-03      GCTGG GAATGTTCAGGAAAAACAGTTGCGATGG TA        
+Lrp_5104                      4  5.91e-03        AAT CCCCTGCTATCAATCTATGCCAAAAACG CGTC      
+Lrp_4045                      2  5.91e-03          G CTCTTAATATTGTCTTATTCAAATTGAC TTTCTC    
+Lrp_2324                      4  5.91e-03        AAT CCCCTGCTATCAATCTATGCCAAAAACG CGTC      
+Lrp_1279                      4  5.91e-03        AGA GTTTTCCCATAATGTGGTGCTGGCCAAT TAAT      
+Lrp_2816                      2  6.16e-03          C TCTGTAATGGAGGATTTTATCGTTTCTT TTCACC    
+Lrp_587                       2  6.16e-03          C TCTGTAATGGAGGATTTTATCGTTTCTT TTCACC    
+Lrp_1600                      4  6.67e-03        TTG GGTACCAGGGAAGTTCCAGCTGATGCCT ACTA      
+Lrp_4322                      3  6.94e-03         AT CACAATCCAGAATAATTTTTCTCTTTTC CA        
+Lrp_1605                      8  7.82e-03    TCCCCAG GGATTGGCACAAAAATTTAACGTTACAA           
+Lrp_1634                      6  8.13e-03      CAGGA CAGAAGAAAGCGTGAAAAACAGAACCCT GG        
+Lrp_1643                      6  8.45e-03      TCCTT GGCGACGAAGCGCAAAATATCAGCCGTA AA        
+Lrp_3531                      2  9.13e-03          A CACTTTTCATTATTCTGTGCTACCACAG AAA       
+Lrp_2058                      2  9.13e-03          A CACTTTTCATTATTCTGTGCTACCACAG AAA       
+Lrp_3532                      8  9.48e-03    TGAATGT CTGTTTACCCCTATTTCAACCGGATGCC           
+Lrp_2443                      3  9.48e-03         CG GCAGAGAAAGCAAAAATAAATGCTTGAC TC        
+Lrp_2057                      8  9.48e-03    TGAATGT CTGTTTACCCCTATTTCAACCGGATGCC           
+Lrp_1637                      3  9.48e-03         TC CTGGAATTAGCAAGAAAAACGCCAGATT GTCGC     
+Lrp_670                       3  9.48e-03         CG GCAGAGAAAGCAAAAATAAATGCTTGAC TC        
+Lrp_3689                      4  9.85e-03        AAT ATATAATCTTGAAATTATTCTGAGAGTT TCAG      
+Lrp_3601                      2  9.85e-03          C TGGGAAGTGGTGTGGTAGGCGTTGCCAG CGCCTG    
+Lrp_3343                      2  9.85e-03          C TGGGAAGTGGTGTGGTAGGCGTTGCCAG CGCCTG    
+Lrp_3336                      2  9.85e-03          C TGGGAAGTGGTGTGGTAGGCGTTGCCAG CGCCTG    
+Lrp_3735                      5  1.02e-02       AGAC CCGCGAGCATTAATTCTTGCCTCCAGGG CGC       
+Lrp_3629                      3  1.02e-02         GA GGGTTAATAACATGAAAGTTAAAGTACT GTCCC     
+Lrp_3319                      3  1.02e-02         GA GGGTTAATAACATGAAAGTTAAAGTACT GTCCC     
+Lrp_2910                      3  1.02e-02         GA GGGTTAATAACATGAAAGTTAAAGTACT GTCCC     
+Lrp_2291                      5  1.02e-02       AGAC CCGCGAGCATTAATTCTTGCCTCCAGGG CGC       
+Lrp_5102                      4  1.06e-02        TTC CTAATTGCAGTATCTGATGCATCTGTAA CTCA      
+Lrp_2326                      4  1.06e-02        TTC CTAATTGCAGTATCTGATGCATCTGTAA CTCA      
+Lrp_183                       3  1.06e-02         TT CTGATTGCCAATTAATATTATCAATTTC CGCTAA    
+Lrp_3625                      8  1.10e-02    TTTGTTT TGACATTCAGTGCTGTCAAATACTTAAG           
+Lrp_3315                      8  1.10e-02    TTTGTTT TGACATTCAGTGCTGTCAAATACTTAAG           
+Lrp_1612                      5  1.10e-02       TCTG GTTTATTCTGCATTTTTTATTGAATGTA GAA       
+Lrp_3598                      4  1.14e-02        ACG CGCACCTCATTGTTGTCGGCGCTCTCTG TGTG      
+Lrp_602                       4  1.14e-02        ACG CGCACCTCATTGTTGTCGGCGCTCTCTG TGTG      
+Lrp_596                       4  1.14e-02        ACG CGCACCTCATTGTTGTCGGCGCTCTCTG TGTG      
+Lrp_3621                      6  1.23e-02      GTTTT TCTGTGGTAGCACAGAATAATGAAAAGT GT        
+Lrp_3311                      6  1.23e-02      GTTTT TCTGTGGTAGCACAGAATAATGAAAAGT GT        
+Lrp_2904                      6  1.23e-02      GTTTT TCTGTGGTAGCACAGAATAATGAAAAGT GT        
+Lrp_5140                      4  1.28e-02        GAA GCAAAAGCCGGATAATGTTAGCCATAAA TAAG      
+Lrp_2108                      4  1.28e-02        GAA GCAAAAGCCGGATAATGTTAGCCATAAA TAAG      
+Lrp_5146                      5  1.32e-02       AAAC ATTCGAGGAAGAAAAAAAACAGTATTCT TAT       
+Lrp_3622                      8  1.32e-02    TAAAGAA GGGTAAAAAAAACCGAATGCGAGGCATC           
+Lrp_3312                      8  1.32e-02    TAAAGAA GGGTAAAAAAAACCGAATGCGAGGCATC           
+Lrp_2905                      8  1.32e-02    TAAAGAA GGGTAAAAAAAACCGAATGCGAGGCATC           
+Lrp_5148                      3  1.37e-02         TT TTAGCCTTAAAGATAAAATCCATTTTAA TTTCA     
+Lrp_3605                      6  1.37e-02      GCCGC AGAGTCAGGGAGATGTGAGCCAGCTCAC CA        
+Lrp_3559                      6  1.37e-02      AGGCA AAAACAGTAGCATGAAACGTCATTACCA AT        
+Lrp_3347                      6  1.37e-02      GCCGC AGAGTCAGGGAGATGTGAGCCAGCTCAC CA        
+Lrp_3340                      6  1.37e-02      GCCGC AGAGTCAGGGAGATGTGAGCCAGCTCAC CA        
+Lrp_2124                      6  1.37e-02      AGGCA AAAACAGTAGCATGAAACGTCATTACCA AT        
+Lrp_2118                      3  1.37e-02         TT TTAGCCTTAAAGATAAAATCCATTTTAA TTTCA     
+Lrp_769                       2  1.37e-02          G GTTAAAACCTGATTTTCTCCTTTCTAAG CCG       
+Lrp_3627                      5  1.42e-02       TTTG GGGAGAATGGACTTGCCGACTGATTAAT GAG       
+Lrp_3317                      5  1.42e-02       TTTG GGGAGAATGGACTTGCCGACTGATTAAT GAG       
+Lrp_2908                      5  1.42e-02       TTTG GGGAGAATGGACTTGCCGACTGATTAAT GAG       
+Lrp_1654                      3  1.58e-02         TG TGCCGTAGAGCGCGAAACTCCACAGAGT TTCTT     
+Lrp_5288                      7  1.64e-02     AAGACC CCGTAAGCGTGTATTTTTGTGAGCTGTT TCGCGTTATC
+Lrp_3597                      4  1.70e-02        TCT CTGTGTGGAGCACCTCATTTCAAGCATA GAAC      
+Lrp_601                       4  1.70e-02        TCT CTGTGTGGAGCACCTCATTTCAAGCATA GAAC      
+Lrp_595                       4  1.70e-02        TCT CTGTGTGGAGCACCTCATTTCAAGCATA GAAC      
+Lrp_768                       2  1.82e-02          C TGATTAATGATTCAATTATCGGGTTGAT ATC       
+Lrp_5099                      4  2.01e-02        ATG ACATATACAGAAAACCAGGTTATAACCT CAGT      
+Lrp_2329                      4  2.01e-02        ATG ACATATACAGAAAACCAGGTTATAACCT CAGT      
+Lrp_5103                      3  2.08e-02         CA GTCGATTTAATAAAAATTTCCTAATTGC AGTAT     
+Lrp_2325                      3  2.08e-02         CA GTCGATTTAATAAAAATTTCCTAATTGC AGTAT     
+Lrp_2818                      5  2.23e-02       TTCT TATTACCCCGTGTTTATGTCTCTGGCTG CCA       
+Lrp_586                       5  2.23e-02       TTCT TATTACCCCGTGTTTATGTCTCTGGCTG CCA       
+Lrp_3553                      8  2.54e-02    AATATCT GGCATGTTGTACTAAAAATCGATGTTTT           
+Lrp_3565                      5  2.62e-02       TGGA TGAGAGTCCGGGGTTTTTGTTTTTTGGG           
+Lrp_26                        4  2.79e-02        GGC TTACCCGCGATTTTTCAATTTGGCGGCC T         
+Lrp_3734                      3  3.17e-02         CT GGCACAGGAACGTTATCCGGACGTTCAG TTCCA     
+Lrp_2292                      3  3.17e-02         CT GGCACAGGAACGTTATCCGGACGTTCAG TTCCA     
+Lrp_770                       4  3.17e-02        ACA GATTGGTTAGCATATTCACCTTTAATCG C         
+Lrp_1641                      4  3.27e-02        TGA AAGAGGCCAACAAAATCATTCGTGAGCA TGAG      
+Lrp_2813                      7  3.58e-02     AGACAT GAATGTCTGGTTTATTCTGCATTTTTTA T         
+Lrp_588                       7  3.58e-02     AGACAT GAATGTCTGGTTTATTCTGCATTTTTTA T         
+Lrp_5142                      6  3.80e-02      CCAAA TCATACTACAATTTATTAACTGTTAGCT AT        
+Lrp_2106                      6  3.80e-02      CCAAA TCATACTACAATTTATTAACTGTTAGCT AT        
+Lrp_3557                      7  4.04e-02     CCTTTA TGACAGTCAGGAATTGACTGTTTCTCTA A         
+Lrp_2126                      7  4.04e-02     CCTTTA TGACAGTCAGGAATTGACTGTTTCTCTA A         
+Lrp_28                        4  4.16e-02        CAT GCCACAGAGTTTTCATAATTTATGTCAA C         
+Lrp_184                       9  4.28e-02   TGGCCTCT CTCTTATTAGTTTTTCTGATTGCCAATT           
+Lrp_5147                      8  4.67e-02    CAGTATT CTTATATGCGCATAACCATGCATGTAAA TA        
+Lrp_5141                      6  4.80e-02      TAAAA TTGCTATCATTCGTTATTGTTATCTAGT           
+Lrp_3628                      3  4.80e-02         AG CAAATAAAGGCATATAACAGAGGGTTAA TAACA     
+Lrp_3445                      4  4.80e-02        GAC GCATCTTCCTCATTCTTCTCTCCAAAAA CCAC      
+Lrp_3318                      3  4.80e-02         AG CAAATAAAGGCATATAACAGAGGGTTAA TAACA     
+Lrp_2909                      2  4.80e-02          G CAAATAAAGGCATATAACAGAGGGTTAA TAA       
+Lrp_2107                      6  4.80e-02      TAAAA TTGCTATCATTCGTTATTGTTATCTAGT           
+Lrp_5100                      4  4.94e-02        GAA ATAAAAATATCTGATTTTGATATTTTCC ATCA      
+Lrp_3595                      7  4.94e-02     TTCTTA TTATCAGAGTGCCACTAATCCGCTTCTG A         
+Lrp_2328                      4  4.94e-02        GAA ATAAAAATATCTGATTTTGATATTTTCC ATCA      
+Lrp_599                       7  4.94e-02     TTCTTA TTATCAGAGTGCCACTAATCCGCTTCTG A         
+Lrp_593                       7  4.94e-02     TTCTTA TTATCAGAGTGCCACTAATCCGCTTCTG A         
+Lrp_23                        4  5.23e-02        AAA AGAATAAAAATAAGAATTATTATTGCTG T         
+Lrp_27                        4  5.68e-02        ACT GTCGCTGCATCAGGATAAAGACGAACCG G         
+Lrp_4284                      2  6.16e-02          C ATTTAAACCATTTTGATGGTTATTTATT AGTGAT    
+Lrp_3688                      8  6.33e-02    AATTTTT ATTTAGTCAGTTTTTGTAGATAAAATAT           
+Lrp_3623                      7  7.40e-02     GGCATC CGGTTGAAATAGGGGTAAACAGACATTC A         
+Lrp_3313                      7  7.40e-02     GGCATC CGGTTGAAATAGGGGTAAACAGACATTC A         
+Lrp_2906                      7  7.40e-02     GGCATC CGGTTGAAATAGGGGTAAACAGACATTC A         
+Lrp_24                        5  7.59e-02       CAGG CAGGTAAAAAAGAATAAAAATAAGAATT           
+Lrp_3624                      8  8.60e-02    TTCAGAA ATGAATGACGGTAATAAATAAAGTTAAT           
+Lrp_3533                      6  8.60e-02      ATTAA CTTTATTTATTACCGTCATTCATTTCTG AA        
+Lrp_3314                      8  8.60e-02    TTCAGAA ATGAATGACGGTAATAAATAAAGTTAAT           
+Lrp_2907                      8  8.60e-02    TTCAGAA ATGAATGACGGTAATAAATAAAGTTAAT           
+Lrp_2056                      6  8.60e-02      ATTAA CTTTATTTATTACCGTCATTCATTTCTG AA        
+Lrp_3763                      8  9.71e-02    AGAGACA TCAAGTTACACGTTATTTATCCTGAATT           
+Lrp_3552                      3  1.22e-01         AT AACCATGCATGTAAATACCATGTTTACC GTGCT     
+Lrp_2817                      4  1.28e-01        TTC ACCTTTCCTCCTGTTTATTCTTATTACC CCGT      
+Lrp_585                       4  1.28e-01        TTC ACCTTTCCTCCTGTTTATTCTTATTACC CCGT      
+Lrp_994                       4  1.48e-01        ATA TTTTATCTACAAAAACTGACTAAATAAA AATT      
+Lrp_3267                      4  1.51e-01        AAG ACCCCCGCACCGAAAGGTCCGGGGGTTT T         
+Lrp_771                       3  1.74e-01         AT CGAAAGATAATTAAAGAGGTTAATGTGT TC        
+Lrp_3868                      2  1.77e-01          T TTCAAATGAAACGGAGCTGCCATGCTCC GTTTAC    
+Lrp_3268                      4  2.06e-01        TTT TTGACCTTAAAAACATAACCGAGGAGCA GACA      
+Lrp_3764                      7  2.66e-01     GTTACA CGTTATTTATCCTGAATTTTGCAGAAGT G         
+Lrp_25                        2  3.19e-01          C GCTCAAACGTTTGTTGTTGGAACATGGC GAT       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Lrp_3594                          1.9e-07  3_[+1]_4
+Lrp_3558                          1.9e-07  2_[+1]_5
+Lrp_2125                          1.9e-07  2_[+1]_5
+Lrp_598                           1.9e-07  3_[+1]_4
+Lrp_592                           1.9e-07  3_[+1]_4
+Lrp_3269                          2.4e-07  4_[+1]_3
+Lrp_2814                          9.4e-07  3_[+1]_4
+Lrp_589                           9.4e-07  3_[+1]_4
+Lrp_1609                          3.8e-06  5_[+1]_2
+Lrp_1624                          5.3e-06  2_[+1]_5
+Lrp_1625                            1e-05  4_[+1]_3
+Lrp_1642                          1.1e-05  5_[+1]_2
+Lrp_3917                          3.2e-05  3_[+1]_4
+Lrp_3916                          3.2e-05  3_[+1]_4
+Lrp_1622                          3.4e-05  4_[+1]_3
+Lrp_1645                          3.7e-05  2_[+1]_5
+Lrp_1619                          3.7e-05  2_[+1]_5
+Lrp_1614                          4.5e-05  5_[+1]_2
+Lrp_1651                          5.5e-05  4_[+1]_3
+Lrp_1653                          5.9e-05  2_[+1]_5
+Lrp_1604                          5.9e-05  4_[+1]_3
+Lrp_1629                          6.3e-05  2_[+1]_5
+Lrp_4733                          8.2e-05  2_[+1]_2
+Lrp_3392                          8.2e-05  2_[+1]_2
+Lrp_2447                          8.2e-05  2_[+1]_2
+Lrp_2071                          8.2e-05  2_[+1]_2
+Lrp_1618                          9.9e-05  4_[+1]_3
+Lrp_3687                          0.00013  3_[+1]_4
+Lrp_3446                          0.00013  3_[+1]_4
+Lrp_1648                          0.00015  4_[+1]_3
+Lrp_1633                          0.00015  4_[+1]_3
+Lrp_1636                          0.00019  2_[+1]_5
+Lrp_1635                          0.00019  7_[+1]
+Lrp_1599                          0.00025  2_[+1]_5
+Lrp_1601                          0.00026  4_[+1]_3
+Lrp_1644                          0.00029  4_[+1]_3
+Lrp_1613                          0.00029  2_[+1]_5
+Lrp_3603                          0.00033  3_[+1]_4
+Lrp_3345                          0.00033  3_[+1]_4
+Lrp_3338                          0.00033  3_[+1]_4
+Lrp_1627                          0.00033  4_[+1]_3
+Lrp_993                           0.00041  3_[+1]_4
+Lrp_3593                          0.00043  3_[+1]_4
+Lrp_597                           0.00043  3_[+1]_4
+Lrp_591                           0.00043  3_[+1]_4
+Lrp_3447                          0.00048  3_[+1]_4
+Lrp_3150                          0.00048  4_[+1]_3
+Lrp_1603                          0.00048  5_[+1]_2
+Lrp_2070                          0.00057  4_[+1]
+Lrp_1615                          0.00057  4_[+1]_3
+Lrp_1611                          0.00057  4_[+1]_3
+Lrp_672                           0.00057  4_[+1]
+Lrp_1638                           0.0006  2_[+1]_5
+Lrp_1597                           0.0006  4_[+1]_3
+Lrp_3604                          0.00063  3_[+1]_4
+Lrp_3346                          0.00063  3_[+1]_4
+Lrp_3339                          0.00063  3_[+1]_4
+Lrp_1650                          0.00063  5_[+1]_2
+Lrp_3596                          0.00067  3_[+1]_4
+Lrp_1626                          0.00067  5_[+1]_2
+Lrp_1602                          0.00067  4_[+1]_3
+Lrp_600                           0.00067  3_[+1]_4
+Lrp_594                           0.00067  3_[+1]_4
+Lrp_1649                          0.00074  4_[+1]_3
+Lrp_1616                          0.00086  3_[+1]_4
+Lrp_1647                           0.0011  2_[+1]_5
+Lrp_1631                           0.0011  2_[+1]_5
+Lrp_1621                           0.0012  1_[+1]_6
+Lrp_1652                           0.0014  2_[+1]_5
+Lrp_1598                           0.0014  4_[+1]_3
+Lrp_1639                           0.0014  2_[+1]_5
+Lrp_1608                           0.0014  4_[+1]_3
+Lrp_185                            0.0014  2_[+1]_6
+Lrp_2442                           0.0016  2_[+1]_2
+Lrp_671                            0.0016  2_[+1]_2
+Lrp_3602                           0.0016  3_[+1]_4
+Lrp_3344                           0.0016  3_[+1]_4
+Lrp_3337                           0.0016  3_[+1]_4
+Lrp_3626                           0.0017  5_[+1]_2
+Lrp_3316                           0.0017  4_[+1]_3
+Lrp_2911                           0.0017  4_[+1]_3
+Lrp_1655                           0.0023  4_[+1]_3
+Lrp_1630                           0.0027  4_[+1]_3
+Lrp_1607                           0.0027  1_[+1]_6
+Lrp_5101                           0.0029  3_[+1]_4
+Lrp_2815                           0.0029  6_[+1]_1
+Lrp_2327                           0.0029  3_[+1]_4
+Lrp_1623                           0.0029  5_[+1]_2
+Lrp_1610                           0.0029  5_[+1]_2
+Lrp_590                            0.0029  6_[+1]_1
+Lrp_1646                            0.003  4_[+1]_3
+Lrp_1628                           0.0031  4_[+1]_3
+Lrp_3530                           0.0036  6_[+1]_1
+Lrp_2059                           0.0036  6_[+1]_1
+Lrp_1656                           0.0036  3_[+1]_4
+Lrp_1617                           0.0036  2_[+1]_5
+Lrp_1632                           0.0039  4_[+1]_3
+Lrp_1606                           0.0039  4_[+1]_3
+Lrp_1620                           0.0048  2_[+1]_5
+Lrp_1640                            0.005  5_[+1]_2
+Lrp_5104                           0.0059  3_[+1]_4
+Lrp_4045                           0.0059  1_[+1]_6
+Lrp_2324                           0.0059  3_[+1]_4
+Lrp_1279                           0.0059  3_[+1]_4
+Lrp_2816                           0.0062  1_[+1]_6
+Lrp_587                            0.0062  1_[+1]_6
+Lrp_1600                           0.0067  3_[+1]_4
+Lrp_4322                           0.0069  2_[+1]_2
+Lrp_1605                           0.0078  7_[+1]
+Lrp_1634                           0.0081  5_[+1]_2
+Lrp_1643                           0.0084  5_[+1]_2
+Lrp_3531                           0.0091  1_[+1]_3
+Lrp_2058                           0.0091  1_[+1]_3
+Lrp_3532                           0.0095  7_[+1]
+Lrp_2443                           0.0095  2_[+1]_2
+Lrp_2057                           0.0095  7_[+1]
+Lrp_1637                           0.0095  2_[+1]_5
+Lrp_670                            0.0095  2_[+1]_2
+Lrp_3689                           0.0098  3_[+1]_4
+Lrp_3601                           0.0098  1_[+1]_6
+Lrp_3343                           0.0098  1_[+1]_6
+Lrp_3336                           0.0098  1_[+1]_6
+Lrp_3735                             0.01  4_[+1]_3
+Lrp_3629                             0.01  2_[+1]_5
+Lrp_3319                             0.01  2_[+1]_5
+Lrp_2910                             0.01  2_[+1]_5
+Lrp_2291                             0.01  4_[+1]_3
+Lrp_5102                            0.011  3_[+1]_4
+Lrp_2326                            0.011  3_[+1]_4
+Lrp_183                             0.011  2_[+1]_6
+Lrp_3625                            0.011  7_[+1]
+Lrp_3315                            0.011  7_[+1]
+Lrp_1612                            0.011  4_[+1]_3
+Lrp_3598                            0.011  3_[+1]_4
+Lrp_602                             0.011  3_[+1]_4
+Lrp_596                             0.011  3_[+1]_4
+Lrp_3621                            0.012  5_[+1]_2
+Lrp_3311                            0.012  5_[+1]_2
+Lrp_2904                            0.012  5_[+1]_2
+Lrp_5140                            0.013  3_[+1]_4
+Lrp_2108                            0.013  3_[+1]_4
+Lrp_5146                            0.013  4_[+1]_3
+Lrp_3622                            0.013  7_[+1]
+Lrp_3312                            0.013  7_[+1]
+Lrp_2905                            0.013  7_[+1]
+Lrp_5148                            0.014  2_[+1]_5
+Lrp_3605                            0.014  5_[+1]_2
+Lrp_3559                            0.014  5_[+1]_2
+Lrp_3347                            0.014  5_[+1]_2
+Lrp_3340                            0.014  5_[+1]_2
+Lrp_2124                            0.014  5_[+1]_2
+Lrp_2118                            0.014  2_[+1]_5
+Lrp_769                             0.014  1_[+1]_3
+Lrp_3627                            0.014  4_[+1]_3
+Lrp_3317                            0.014  4_[+1]_3
+Lrp_2908                            0.014  4_[+1]_3
+Lrp_1654                            0.016  2_[+1]_5
+Lrp_5288                            0.016  6_[+1]_11
+Lrp_3597                            0.017  3_[+1]_4
+Lrp_601                             0.017  3_[+1]_4
+Lrp_595                             0.017  3_[+1]_4
+Lrp_768                             0.018  1_[+1]_3
+Lrp_5099                             0.02  3_[+1]_4
+Lrp_2329                             0.02  3_[+1]_4
+Lrp_5103                            0.021  2_[+1]_5
+Lrp_2325                            0.021  2_[+1]_5
+Lrp_2818                            0.022  4_[+1]_3
+Lrp_586                             0.022  4_[+1]_3
+Lrp_3553                            0.025  7_[+1]
+Lrp_3565                            0.026  4_[+1]
+Lrp_26                              0.028  3_[+1]_1
+Lrp_3734                            0.032  2_[+1]_5
+Lrp_2292                            0.032  2_[+1]_5
+Lrp_770                             0.032  3_[+1]_1
+Lrp_1641                            0.033  3_[+1]_4
+Lrp_2813                            0.036  6_[+1]_1
+Lrp_588                             0.036  6_[+1]_1
+Lrp_5142                            0.038  5_[+1]_2
+Lrp_2106                            0.038  5_[+1]_2
+Lrp_3557                             0.04  6_[+1]_1
+Lrp_2126                             0.04  6_[+1]_1
+Lrp_28                              0.042  3_[+1]_1
+Lrp_184                             0.043  8_[+1]
+Lrp_5147                            0.047  7_[+1]_2
+Lrp_5141                            0.048  5_[+1]
+Lrp_3628                            0.048  2_[+1]_5
+Lrp_3445                            0.048  3_[+1]_4
+Lrp_3318                            0.048  2_[+1]_5
+Lrp_2909                            0.048  1_[+1]_3
+Lrp_2107                            0.048  5_[+1]
+Lrp_5100                            0.049  3_[+1]_4
+Lrp_3595                            0.049  6_[+1]_1
+Lrp_2328                            0.049  3_[+1]_4
+Lrp_599                             0.049  6_[+1]_1
+Lrp_593                             0.049  6_[+1]_1
+Lrp_23                              0.052  3_[+1]_1
+Lrp_27                              0.057  3_[+1]_1
+Lrp_4284                            0.062  1_[+1]_6
+Lrp_3688                            0.063  7_[+1]
+Lrp_3623                            0.074  6_[+1]_1
+Lrp_3313                            0.074  6_[+1]_1
+Lrp_2906                            0.074  6_[+1]_1
+Lrp_24                              0.076  4_[+1]
+Lrp_3624                            0.086  7_[+1]
+Lrp_3533                            0.086  5_[+1]_2
+Lrp_3314                            0.086  7_[+1]
+Lrp_2907                            0.086  7_[+1]
+Lrp_2056                            0.086  5_[+1]_2
+Lrp_3763                            0.097  7_[+1]
+Lrp_3552                             0.12  2_[+1]_5
+Lrp_2817                             0.13  3_[+1]_4
+Lrp_585                              0.13  3_[+1]_4
+Lrp_994                              0.15  3_[+1]_4
+Lrp_3267                             0.15  3_[+1]_1
+Lrp_771                              0.17  2_[+1]_2
+Lrp_3868                             0.18  1_[+1]_6
+Lrp_3268                             0.21  3_[+1]_4
+Lrp_3764                             0.27  6_[+1]_1
+Lrp_25                               0.32  1_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF NBNHDDDCAGHAWWWWAWDCTRNDTHHN width=28 seqs=219
+Lrp_3594                 (    4) TTCTGAACGGAATTTTATGCTGGATAAA  1 
+Lrp_3558                 (    3) ATTAAGGCAGTATAAAATGCTGGTTTTG  1 
+Lrp_2125                 (    3) ATTAAGGCAGTATAAAATGCTGGTTTTG  1 
+Lrp_598                  (    4) TTCTGAACGGAATTTTATGCTGGATAAA  1 
+Lrp_592                  (    4) TTCTGAACGGAATTTTATGCTGGATAAA  1 
+Lrp_3269                 (    5) TGAATAACAGCACAAAATTCTGTTTCTC  1 
+Lrp_2814                 (    4) TTGAATGTAGAATTTTATTCTGAATGTG  1 
+Lrp_589                  (    4) TTGAATGTAGAATTTTATTCTGAATGTG  1 
+Lrp_1609                 (    6) CTACCTGCAGTATTGTTTGCCGCTTTCG  1 
+Lrp_1624                 (    3) GTGTTGACAACATTTTCTGCTAACCCTG  1 
+Lrp_1625                 (    5) CGCGCTGCAAAATTATCTGCTGTTTTTA  1 
+Lrp_1642                 (    6) GTCACCGCAGAATAATCATCTGCAGCGT  1 
+Lrp_3917                 (    4) ATTTTCGCCGGATTTTATTCGGAATATC  1 
+Lrp_3916                 (    4) ATTTTCGCCGGATTTTATTCGGAATATC  1 
+Lrp_1622                 (    5) TTTCTGACGGCGTTAAATACCGTTCAAT  1 
+Lrp_1645                 (    3) GATTTTGCAGAATTAACAACTGGAGCAG  1 
+Lrp_1619                 (    3) GCCCGGACGGCATAATATTACGACGCTG  1 
+Lrp_1614                 (    6) GTTTTAGCAGAGTATGCTGCTAAAGCAC  1 
+Lrp_1651                 (    5) GCGTTGACCGGGCATAATTCTGAAAAAT  1 
+Lrp_1653                 (    3) TTTATTTCCGCATAATCAGCCATGTATT  1 
+Lrp_1604                 (    5) ACGGAAATAGTGTTTTATACTGGTTGGT  1 
+Lrp_1629                 (    3) TCTAAACCAGCATATTCATCCAAGAATT  1 
+Lrp_4733                 (    3) GCGCGGTCAGAAAATTATTTTAAATTTC  1 
+Lrp_3392                 (    3) GCGCGGTCAGAAAATTATTTTAAATTTC  1 
+Lrp_2447                 (    3) GCGCGGTCAGAAAATTATTTTAAATTTC  1 
+Lrp_2071                 (    3) GCGCGGTCAGAAAATTATTTTAAATTTC  1 
+Lrp_1618                 (    5) GCATTGTCAGGAAAAATTTCCAGCCACG  1 
+Lrp_3687                 (    4) TTTCGCATAGCGTATATCGCTGGCTATG  1 
+Lrp_3446                 (    4) ATAACAATAGAATATTAAGCCAACAAAT  1 
+Lrp_1648                 (    5) ATAACCCCAGCATATAAATCCAGTTGGT  1 
+Lrp_1633                 (    5) CTCAGTGCAGTGAAAAAATCTGCCGTTA  1 
+Lrp_1636                 (    3) CTGTTGTCGAAGAAAAATGCCGAGGAAC  1 
+Lrp_1635                 (    8) CGCCCAGCGAAAAATAATGCAATATCGG  1 
+Lrp_1599                 (    3) GGCATAATACTTTTTTATGCCGTTTAAT  1 
+Lrp_1601                 (    5) CGCCAACCAGGATAAAATGTCAGCCCTA  1 
+Lrp_1644                 (    5) CTATTTCCGGTTTTTTATTCTCTTAATT  1 
+Lrp_1613                 (    3) GCACTACCCGAATTTTTCACTGGAGCAT  1 
+Lrp_3603                 (    4) ATGTGATTAGATTATTATTCTTTTACTG  1 
+Lrp_3345                 (    4) ATGTGATTAGATTATTATTCTTTTACTG  1 
+Lrp_3338                 (    4) ATGTGATTAGATTATTATTCTTTTACTG  1 
+Lrp_1627                 (    5) GTACGAACAGTATTTTGTATGGGGAATG  1 
+Lrp_993                  (    4) TCATAGCCAGCGATATACGCTATGCGAA  1 
+Lrp_3593                 (    4) GGGCGTTCAGCAGGAGATACTAAAGACG  1 
+Lrp_597                  (    4) GGGCGTTCAGCAGGAGATACTAAAGACG  1 
+Lrp_591                  (    4) GGGCGTTCAGCAGGAGATACTAAAGACG  1 
+Lrp_3447                 (    4) CCTCATGCAATATAAACATCTATAAATA  1 
+Lrp_3150                 (    5) GACCTGACAGTAAAAACATCGGCTTTTT  1 
+Lrp_1603                 (    6) CGAACCACAGAATATTGCACTAACAAAC  1 
+Lrp_2070                 (    5) GCATAAAGAATAAAAAATGCGCGGTCAG  1 
+Lrp_1615                 (    5) TTACATGCGGTTGATCCTGCGGGTTATG  1 
+Lrp_1611                 (    5) AAAGTAGTAGCAGAAAATGCTCTACAAG  1 
+Lrp_672                  (    5) GCATAAAGAATAAAAAATGCGCGGTCAG  1 
+Lrp_1638                 (    3) CCGCGCTCGGGGTGAAATTCCGCGCGGC  1 
+Lrp_1597                 (    5) CAATGATCCGCAAAATACACCGCGAGCG  1 
+Lrp_3604                 (    4) TGTTGAATAATATTTTCAACTGAGTTAT  1 
+Lrp_3346                 (    4) TGTTGAATAATATTTTCAACTGAGTTAT  1 
+Lrp_3339                 (    4) TGTTGAATAATATTTTCAACTGAGTTAT  1 
+Lrp_1650                 (    6) TCTGGTAACGGATGAAATTCTGAATCAG  1 
+Lrp_3596                 (    4) GTCGCCGGAGAATTTTTTTCTTTGCGAT  1 
+Lrp_1626                 (    6) CCTGGGGCCAGATAATATGTTGAGTGAA  1 
+Lrp_1602                 (    5) AGCGTTGCAGGATAAAGCACCGCTCACT  1 
+Lrp_600                  (    4) GTCGCCGGAGAATTTTTTTCTTTGCGAT  1 
+Lrp_594                  (    4) GTCGCCGGAGAATTTTTTTCTTTGCGAT  1 
+Lrp_1649                 (    5) AACGTGACGGTTAAAAATTCTGAATAAA  1 
+Lrp_1616                 (    4) CTGCTGAGAACATTTGTTGCTGTTGCCG  1 
+Lrp_1647                 (    3) CCTGAAGGCTAATATTATGCCGGGCGAA  1 
+Lrp_1631                 (    3) ACATTAACAGCAGAAAGCACCAGTGATG  1 
+Lrp_1621                 (    2) ATTGGCGCAGGGATGTTTTCTCTGCCAG  1 
+Lrp_1652                 (    3) AATATAGCAACATCAAATTCCAATTAGT  1 
+Lrp_1598                 (    5) CTATTTCCCGCACAATGATCCGCAAAAT  1 
+Lrp_1639                 (    3) AGACTGGCAGAACAAAGCACAGATTAAT  1 
+Lrp_1608                 (    5) TTCACCAGAGATATTTCTGCTGGTTTGC  1 
+Lrp_185                  (    3) GCTGAGGCCAGATAATACTCTCTGGCCT  1 
+Lrp_2442                 (    3) TTCATTACGAAGTTTAATTCTTTGAGCG  1 
+Lrp_671                  (    3) TTCATTACGAAGTTTAATTCTTTGAGCG  1 
+Lrp_3602                 (    4) GGCTATGCGAGTTGTCATACTGGGAAGT  1 
+Lrp_3344                 (    4) GGCTATGCGAGTTGTCATACTGGGAAGT  1 
+Lrp_3337                 (    4) GGCTATGCGAGTTGTCATACTGGGAAGT  1 
+Lrp_3626                 (    6) ATATTCGTGTTGGATTATTCTGCATTTT  1 
+Lrp_3316                 (    5) ATATTCGTGTTGGATTATTCTGCATTTT  1 
+Lrp_2911                 (    5) ATATTCGTGTTGGATTATTCTGCATTTT  1 
+Lrp_1655                 (    5) AGTCACTAAGCATTAAAATTTGCGCCTC  1 
+Lrp_1630                 (    5) CTTCCAGCTGTGGATTACGCTGTCGCTG  1 
+Lrp_1607                 (    2) TGCCAAACGGCGCTATTTTGTGTTGCAA  1 
+Lrp_5101                 (    4) TGTATTGAAATAAAAATATCTGATTTTG  1 
+Lrp_2815                 (    7) GATTCAGCCGATTTATTATCAATTTAAT  1 
+Lrp_2327                 (    4) TGTATTGAAATAAAAATATCTGATTTTG  1 
+Lrp_1623                 (    6) GAAAGCGCAGGGCAAAAAGTCGATAGCT  1 
+Lrp_1610                 (    6) AGGAAAGCAGCATGAAAATTAAAACTCT  1 
+Lrp_590                  (    7) GATTCAGCCGATTTATTATCAATTTAAT  1 
+Lrp_1646                 (    5) TAACAGATAGCATTAAATATTGCACAAA  1 
+Lrp_1628                 (    5) TGATTTACAGAGTAAAGCGTTGGGATAA  1 
+Lrp_3530                 (    7) TCGCATTCGGTTTTTTTTACCCTTCTTT  1 
+Lrp_2059                 (    7) TCGCATTCGGTTTTTTTTACCCTTCTTT  1 
+Lrp_1656                 (    4) TCTGCTCAAAATTTTTATGCTGGCGCTG  1 
+Lrp_1617                 (    3) ATTAACCGGGATTTATATGCTGGCAACA  1 
+Lrp_1632                 (    5) GCACAGACAGATAAAAATTACAGAGTAC  1 
+Lrp_1606                 (    5) GGCAGCACAGCGAAAAGTTGTATAGCCT  1 
+Lrp_1620                 (    3) GCAGTCGCACTATTTTTCACTGGAGAGA  1 
+Lrp_1640                 (    6) GAATGTTCAGGAAAAACAGTTGCGATGG  1 
+Lrp_5104                 (    4) CCCCTGCTATCAATCTATGCCAAAAACG  1 
+Lrp_4045                 (    2) CTCTTAATATTGTCTTATTCAAATTGAC  1 
+Lrp_2324                 (    4) CCCCTGCTATCAATCTATGCCAAAAACG  1 
+Lrp_1279                 (    4) GTTTTCCCATAATGTGGTGCTGGCCAAT  1 
+Lrp_2816                 (    2) TCTGTAATGGAGGATTTTATCGTTTCTT  1 
+Lrp_587                  (    2) TCTGTAATGGAGGATTTTATCGTTTCTT  1 
+Lrp_1600                 (    4) GGTACCAGGGAAGTTCCAGCTGATGCCT  1 
+Lrp_4322                 (    3) CACAATCCAGAATAATTTTTCTCTTTTC  1 
+Lrp_1605                 (    8) GGATTGGCACAAAAATTTAACGTTACAA  1 
+Lrp_1634                 (    6) CAGAAGAAAGCGTGAAAAACAGAACCCT  1 
+Lrp_1643                 (    6) GGCGACGAAGCGCAAAATATCAGCCGTA  1 
+Lrp_3531                 (    2) CACTTTTCATTATTCTGTGCTACCACAG  1 
+Lrp_2058                 (    2) CACTTTTCATTATTCTGTGCTACCACAG  1 
+Lrp_3532                 (    8) CTGTTTACCCCTATTTCAACCGGATGCC  1 
+Lrp_2443                 (    3) GCAGAGAAAGCAAAAATAAATGCTTGAC  1 
+Lrp_2057                 (    8) CTGTTTACCCCTATTTCAACCGGATGCC  1 
+Lrp_1637                 (    3) CTGGAATTAGCAAGAAAAACGCCAGATT  1 
+Lrp_670                  (    3) GCAGAGAAAGCAAAAATAAATGCTTGAC  1 
+Lrp_3689                 (    4) ATATAATCTTGAAATTATTCTGAGAGTT  1 
+Lrp_3601                 (    2) TGGGAAGTGGTGTGGTAGGCGTTGCCAG  1 
+Lrp_3343                 (    2) TGGGAAGTGGTGTGGTAGGCGTTGCCAG  1 
+Lrp_3336                 (    2) TGGGAAGTGGTGTGGTAGGCGTTGCCAG  1 
+Lrp_3735                 (    5) CCGCGAGCATTAATTCTTGCCTCCAGGG  1 
+Lrp_3629                 (    3) GGGTTAATAACATGAAAGTTAAAGTACT  1 
+Lrp_3319                 (    3) GGGTTAATAACATGAAAGTTAAAGTACT  1 
+Lrp_2910                 (    3) GGGTTAATAACATGAAAGTTAAAGTACT  1 
+Lrp_2291                 (    5) CCGCGAGCATTAATTCTTGCCTCCAGGG  1 
+Lrp_5102                 (    4) CTAATTGCAGTATCTGATGCATCTGTAA  1 
+Lrp_2326                 (    4) CTAATTGCAGTATCTGATGCATCTGTAA  1 
+Lrp_183                  (    3) CTGATTGCCAATTAATATTATCAATTTC  1 
+Lrp_3625                 (    8) TGACATTCAGTGCTGTCAAATACTTAAG  1 
+Lrp_3315                 (    8) TGACATTCAGTGCTGTCAAATACTTAAG  1 
+Lrp_1612                 (    5) GTTTATTCTGCATTTTTTATTGAATGTA  1 
+Lrp_3598                 (    4) CGCACCTCATTGTTGTCGGCGCTCTCTG  1 
+Lrp_602                  (    4) CGCACCTCATTGTTGTCGGCGCTCTCTG  1 
+Lrp_596                  (    4) CGCACCTCATTGTTGTCGGCGCTCTCTG  1 
+Lrp_3621                 (    6) TCTGTGGTAGCACAGAATAATGAAAAGT  1 
+Lrp_3311                 (    6) TCTGTGGTAGCACAGAATAATGAAAAGT  1 
+Lrp_2904                 (    6) TCTGTGGTAGCACAGAATAATGAAAAGT  1 
+Lrp_5140                 (    4) GCAAAAGCCGGATAATGTTAGCCATAAA  1 
+Lrp_2108                 (    4) GCAAAAGCCGGATAATGTTAGCCATAAA  1 
+Lrp_5146                 (    5) ATTCGAGGAAGAAAAAAAACAGTATTCT  1 
+Lrp_3622                 (    8) GGGTAAAAAAAACCGAATGCGAGGCATC  1 
+Lrp_3312                 (    8) GGGTAAAAAAAACCGAATGCGAGGCATC  1 
+Lrp_2905                 (    8) GGGTAAAAAAAACCGAATGCGAGGCATC  1 
+Lrp_5148                 (    3) TTAGCCTTAAAGATAAAATCCATTTTAA  1 
+Lrp_3605                 (    6) AGAGTCAGGGAGATGTGAGCCAGCTCAC  1 
+Lrp_3559                 (    6) AAAACAGTAGCATGAAACGTCATTACCA  1 
+Lrp_3347                 (    6) AGAGTCAGGGAGATGTGAGCCAGCTCAC  1 
+Lrp_3340                 (    6) AGAGTCAGGGAGATGTGAGCCAGCTCAC  1 
+Lrp_2124                 (    6) AAAACAGTAGCATGAAACGTCATTACCA  1 
+Lrp_2118                 (    3) TTAGCCTTAAAGATAAAATCCATTTTAA  1 
+Lrp_769                  (    2) GTTAAAACCTGATTTTCTCCTTTCTAAG  1 
+Lrp_3627                 (    5) GGGAGAATGGACTTGCCGACTGATTAAT  1 
+Lrp_3317                 (    5) GGGAGAATGGACTTGCCGACTGATTAAT  1 
+Lrp_2908                 (    5) GGGAGAATGGACTTGCCGACTGATTAAT  1 
+Lrp_1654                 (    3) TGCCGTAGAGCGCGAAACTCCACAGAGT  1 
+Lrp_5288                 (    7) CCGTAAGCGTGTATTTTTGTGAGCTGTT  1 
+Lrp_3597                 (    4) CTGTGTGGAGCACCTCATTTCAAGCATA  1 
+Lrp_601                  (    4) CTGTGTGGAGCACCTCATTTCAAGCATA  1 
+Lrp_595                  (    4) CTGTGTGGAGCACCTCATTTCAAGCATA  1 
+Lrp_768                  (    2) TGATTAATGATTCAATTATCGGGTTGAT  1 
+Lrp_5099                 (    4) ACATATACAGAAAACCAGGTTATAACCT  1 
+Lrp_2329                 (    4) ACATATACAGAAAACCAGGTTATAACCT  1 
+Lrp_5103                 (    3) GTCGATTTAATAAAAATTTCCTAATTGC  1 
+Lrp_2325                 (    3) GTCGATTTAATAAAAATTTCCTAATTGC  1 
+Lrp_2818                 (    5) TATTACCCCGTGTTTATGTCTCTGGCTG  1 
+Lrp_586                  (    5) TATTACCCCGTGTTTATGTCTCTGGCTG  1 
+Lrp_3553                 (    8) GGCATGTTGTACTAAAAATCGATGTTTT  1 
+Lrp_3565                 (    5) TGAGAGTCCGGGGTTTTTGTTTTTTGGG  1 
+Lrp_26                   (    4) TTACCCGCGATTTTTCAATTTGGCGGCC  1 
+Lrp_3734                 (    3) GGCACAGGAACGTTATCCGGACGTTCAG  1 
+Lrp_2292                 (    3) GGCACAGGAACGTTATCCGGACGTTCAG  1 
+Lrp_770                  (    4) GATTGGTTAGCATATTCACCTTTAATCG  1 
+Lrp_1641                 (    4) AAGAGGCCAACAAAATCATTCGTGAGCA  1 
+Lrp_2813                 (    7) GAATGTCTGGTTTATTCTGCATTTTTTA  1 
+Lrp_588                  (    7) GAATGTCTGGTTTATTCTGCATTTTTTA  1 
+Lrp_5142                 (    6) TCATACTACAATTTATTAACTGTTAGCT  1 
+Lrp_2106                 (    6) TCATACTACAATTTATTAACTGTTAGCT  1 
+Lrp_3557                 (    7) TGACAGTCAGGAATTGACTGTTTCTCTA  1 
+Lrp_2126                 (    7) TGACAGTCAGGAATTGACTGTTTCTCTA  1 
+Lrp_28                   (    4) GCCACAGAGTTTTCATAATTTATGTCAA  1 
+Lrp_184                  (    9) CTCTTATTAGTTTTTCTGATTGCCAATT  1 
+Lrp_5147                 (    8) CTTATATGCGCATAACCATGCATGTAAA  1 
+Lrp_5141                 (    6) TTGCTATCATTCGTTATTGTTATCTAGT  1 
+Lrp_3628                 (    3) CAAATAAAGGCATATAACAGAGGGTTAA  1 
+Lrp_3445                 (    4) GCATCTTCCTCATTCTTCTCTCCAAAAA  1 
+Lrp_3318                 (    3) CAAATAAAGGCATATAACAGAGGGTTAA  1 
+Lrp_2909                 (    2) CAAATAAAGGCATATAACAGAGGGTTAA  1 
+Lrp_2107                 (    6) TTGCTATCATTCGTTATTGTTATCTAGT  1 
+Lrp_5100                 (    4) ATAAAAATATCTGATTTTGATATTTTCC  1 
+Lrp_3595                 (    7) TTATCAGAGTGCCACTAATCCGCTTCTG  1 
+Lrp_2328                 (    4) ATAAAAATATCTGATTTTGATATTTTCC  1 
+Lrp_599                  (    7) TTATCAGAGTGCCACTAATCCGCTTCTG  1 
+Lrp_593                  (    7) TTATCAGAGTGCCACTAATCCGCTTCTG  1 
+Lrp_23                   (    4) AGAATAAAAATAAGAATTATTATTGCTG  1 
+Lrp_27                   (    4) GTCGCTGCATCAGGATAAAGACGAACCG  1 
+Lrp_4284                 (    2) ATTTAAACCATTTTGATGGTTATTTATT  1 
+Lrp_3688                 (    8) ATTTAGTCAGTTTTTGTAGATAAAATAT  1 
+Lrp_3623                 (    7) CGGTTGAAATAGGGGTAAACAGACATTC  1 
+Lrp_3313                 (    7) CGGTTGAAATAGGGGTAAACAGACATTC  1 
+Lrp_2906                 (    7) CGGTTGAAATAGGGGTAAACAGACATTC  1 
+Lrp_24                   (    5) CAGGTAAAAAAGAATAAAAATAAGAATT  1 
+Lrp_3624                 (    8) ATGAATGACGGTAATAAATAAAGTTAAT  1 
+Lrp_3533                 (    6) CTTTATTTATTACCGTCATTCATTTCTG  1 
+Lrp_3314                 (    8) ATGAATGACGGTAATAAATAAAGTTAAT  1 
+Lrp_2907                 (    8) ATGAATGACGGTAATAAATAAAGTTAAT  1 
+Lrp_2056                 (    6) CTTTATTTATTACCGTCATTCATTTCTG  1 
+Lrp_3763                 (    8) TCAAGTTACACGTTATTTATCCTGAATT  1 
+Lrp_3552                 (    3) AACCATGCATGTAAATACCATGTTTACC  1 
+Lrp_2817                 (    4) ACCTTTCCTCCTGTTTATTCTTATTACC  1 
+Lrp_585                  (    4) ACCTTTCCTCCTGTTTATTCTTATTACC  1 
+Lrp_994                  (    4) TTTTATCTACAAAAACTGACTAAATAAA  1 
+Lrp_3267                 (    4) ACCCCCGCACCGAAAGGTCCGGGGGTTT  1 
+Lrp_771                  (    3) CGAAAGATAATTAAAGAGGTTAATGTGT  1 
+Lrp_3868                 (    2) TTCAAATGAAACGGAGCTGCCATGCTCC  1 
+Lrp_3268                 (    4) TTGACCTTAAAAACATAACCGAGGAGCA  1 
+Lrp_3764                 (    7) CGTTATTTATCCTGAATTTTGCAGAAGT  1 
+Lrp_25                   (    2) GCTCAAACGTTTGTTGTTGGAACATGGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 1685 bayes= 2.74288 E= 9.4e-052 
+   -53     29     55    -23 
+  -122     26     46     24 
+     4     20     31    -47 
+   -14      8    -26     22 
+    13    -29     -4      6 
+    26    -13    -11    -13 
+    13    -99     76    -39 
+  -112    143   -101    -31 
+   104    -43     15   -376 
+   -44   -221    150    -88 
+     0     57    -47    -18 
+    83   -192     18    -69 
+   -22    -74    -77     72 
+    51   -157    -66     31 
+    42   -206    -66     47 
+    18   -113   -156     71 
+    85    -17   -138    -50 
+   -12    -80   -115     76 
+   -19   -306     70     32 
+  -163    178   -188    -66 
+  -122     40    -82     71 
+    20    -86    109   -133 
+    -5    -25     20      4 
+   -17    -29     31      8 
+   -35    -43    -56     65 
+    26     45    -38    -44 
+    18      1    -77     18 
+   -60     -6     49     12 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 219 E= 9.4e-052 
+ 0.205479  0.232877  0.296804  0.264840 
+ 0.127854  0.228311  0.278539  0.365297 
+ 0.305936  0.219178  0.251142  0.223744 
+ 0.269406  0.200913  0.168950  0.360731 
+ 0.324201  0.155251  0.196347  0.324201 
+ 0.356164  0.173516  0.187215  0.283105 
+ 0.324201  0.095890  0.342466  0.237443 
+ 0.136986  0.511416  0.100457  0.251142 
+ 0.611872  0.141553  0.223744  0.022831 
+ 0.219178  0.041096  0.570776  0.168950 
+ 0.296804  0.283105  0.146119  0.273973 
+ 0.529680  0.050228  0.228311  0.191781 
+ 0.255708  0.114155  0.118721  0.511416 
+ 0.424658  0.063927  0.127854  0.383562 
+ 0.397260  0.045662  0.127854  0.429224 
+ 0.337900  0.086758  0.068493  0.506849 
+ 0.534247  0.168950  0.077626  0.219178 
+ 0.273973  0.109589  0.091324  0.525114 
+ 0.260274  0.022831  0.328767  0.388128 
+ 0.095890  0.652968  0.054795  0.196347 
+ 0.127854  0.251142  0.114155  0.506849 
+ 0.342466  0.105023  0.429224  0.123288 
+ 0.287671  0.159817  0.232877  0.319635 
+ 0.264840  0.155251  0.251142  0.328767 
+ 0.232877  0.141553  0.136986  0.488584 
+ 0.356164  0.260274  0.155251  0.228311 
+ 0.337900  0.191781  0.118721  0.351598 
+ 0.196347  0.182648  0.283105  0.337900 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif NBNHDDDCAGHAWWWWAWDCTRNDTHHN MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GTCA][TGC][AGTC][TAC][AT][AT][GAT][CT][AG][GA][ACT][AG][TA][AT][TA][TA][AT][TA][TGA]C[TC][GA][TAG][TAG][TA][ACT][TA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  1.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Lrp_23                           2.35e-01  32
+Lrp_24                           3.26e-01  32
+Lrp_25                           7.34e-01  32
+Lrp_26                           1.32e-01  32
+Lrp_27                           2.53e-01  32
+Lrp_28                           1.91e-01  32
+Lrp_183                          9.16e-02  36
+Lrp_184                          3.25e-01  36
+Lrp_185                          1.27e-02  36
+Lrp_585                          6.64e-01  35
+Lrp_586                          1.65e-01  35
+Lrp_587                          4.82e-02  35
+Lrp_588                          2.53e-01  35
+Lrp_589                          7.53e-06  3_[+1(9.41e-07)]_4
+Lrp_590                          2.27e-02  35
+Lrp_591                          3.46e-03  35
+Lrp_592                          1.56e-06  3_[+1(1.95e-07)]_4
+Lrp_593                          3.33e-01  35
+Lrp_594                          5.32e-03  35
+Lrp_595                          1.28e-01  35
+Lrp_596                          8.79e-02  35
+Lrp_597                          3.46e-03  35
+Lrp_598                          1.56e-06  3_[+1(1.95e-07)]_4
+Lrp_599                          3.33e-01  35
+Lrp_600                          5.32e-03  35
+Lrp_601                          1.28e-01  35
+Lrp_602                          8.79e-02  35
+Lrp_670                          4.65e-02  32
+Lrp_671                          7.81e-03  32
+Lrp_672                          2.84e-03  32
+Lrp_768                          8.77e-02  32
+Lrp_769                          6.68e-02  32
+Lrp_770                          1.49e-01  32
+Lrp_771                          6.15e-01  32
+Lrp_993                          3.28e-03  35
+Lrp_994                          7.22e-01  35
+Lrp_1279                         4.63e-02  35
+Lrp_1597                         4.79e-03  35
+Lrp_1598                         1.08e-02  35
+Lrp_1599                         1.97e-03  35
+Lrp_1600                         5.21e-02  35
+Lrp_1601                         2.09e-03  35
+Lrp_1602                         5.32e-03  35
+Lrp_1603                         3.86e-03  35
+Lrp_1604                         4.74e-04  4_[+1(5.92e-05)]_3
+Lrp_1605                         6.08e-02  35
+Lrp_1606                         3.07e-02  35
+Lrp_1607                         2.17e-02  35
+Lrp_1608                         1.13e-02  35
+Lrp_1609                         3.06e-05  5_[+1(3.83e-06)]_2
+Lrp_1610                         2.27e-02  35
+Lrp_1611                         4.54e-03  35
+Lrp_1612                         8.48e-02  35
+Lrp_1613                         2.34e-03  35
+Lrp_1614                         3.62e-04  5_[+1(4.53e-05)]_2
+Lrp_1615                         4.54e-03  35
+Lrp_1616                         6.89e-03  35
+Lrp_1617                         2.82e-02  35
+Lrp_1618                         7.94e-04  4_[+1(9.93e-05)]_3
+Lrp_1619                         2.95e-04  2_[+1(3.69e-05)]_5
+Lrp_1620                         3.78e-02  35
+Lrp_1621                         9.78e-03  35
+Lrp_1622                         2.76e-04  4_[+1(3.45e-05)]_3
+Lrp_1623                         2.27e-02  35
+Lrp_1624                         4.25e-05  2_[+1(5.31e-06)]_5
+Lrp_1625                         7.98e-05  4_[+1(9.97e-06)]_3
+Lrp_1626                         5.32e-03  35
+Lrp_1627                         2.62e-03  35
+Lrp_1628                         2.47e-02  35
+Lrp_1629                         5.06e-04  2_[+1(6.32e-05)]_5
+Lrp_1630                         2.17e-02  35
+Lrp_1631                         8.86e-03  35
+Lrp_1632                         3.07e-02  35
+Lrp_1633                         1.22e-03  35
+Lrp_1634                         6.32e-02  35
+Lrp_1635                         1.56e-03  35
+Lrp_1636                         1.56e-03  35
+Lrp_1637                         7.34e-02  35
+Lrp_1638                         4.79e-03  35
+Lrp_1639                         1.13e-02  35
+Lrp_1640                         3.94e-02  35
+Lrp_1641                         2.33e-01  35
+Lrp_1642                         8.61e-05  5_[+1(1.08e-05)]_2
+Lrp_1643                         6.56e-02  35
+Lrp_1644                         2.34e-03  35
+Lrp_1645                         2.95e-04  2_[+1(3.69e-05)]_5
+Lrp_1646                         2.37e-02  35
+Lrp_1647                         8.86e-03  35
+Lrp_1648                         1.22e-03  35
+Lrp_1649                         5.91e-03  35
+Lrp_1650                         5.05e-03  35
+Lrp_1651                         4.43e-04  4_[+1(5.54e-05)]_3
+Lrp_1652                         1.08e-02  35
+Lrp_1653                         4.74e-04  2_[+1(5.92e-05)]_5
+Lrp_1654                         1.20e-01  35
+Lrp_1655                         1.81e-02  35
+Lrp_1656                         2.82e-02  35
+Lrp_2056                         5.13e-01  35
+Lrp_2057                         7.34e-02  35
+Lrp_2058                         4.48e-02  32
+Lrp_2059                         2.82e-02  35
+Lrp_2070                         2.84e-03  32
+Lrp_2071                         4.10e-04  2_[+1(8.20e-05)]_2
+Lrp_2106                         2.67e-01  35
+Lrp_2107                         2.56e-01  33
+Lrp_2108                         9.77e-02  35
+Lrp_2118                         1.05e-01  35
+Lrp_2124                         1.05e-01  35
+Lrp_2125                         1.56e-06  2_[+1(1.95e-07)]_5
+Lrp_2126                         2.81e-01  35
+Lrp_2291                         7.89e-02  35
+Lrp_2292                         2.27e-01  35
+Lrp_2324                         4.63e-02  35
+Lrp_2325                         1.55e-01  35
+Lrp_2326                         8.19e-02  35
+Lrp_2327                         2.27e-02  35
+Lrp_2328                         3.33e-01  35
+Lrp_2329                         1.50e-01  35
+Lrp_2442                         7.81e-03  32
+Lrp_2443                         4.65e-02  32
+Lrp_2447                         4.10e-04  2_[+1(8.20e-05)]_2
+Lrp_2813                         2.53e-01  35
+Lrp_2814                         7.53e-06  3_[+1(9.41e-07)]_4
+Lrp_2815                         2.27e-02  35
+Lrp_2816                         4.82e-02  35
+Lrp_2817                         6.64e-01  35
+Lrp_2818                         1.65e-01  35
+Lrp_2904                         9.44e-02  35
+Lrp_2905                         2.70e-02  35
+Lrp_2906                         4.59e-01  35
+Lrp_2907                         5.13e-01  35
+Lrp_2908                         1.08e-01  35
+Lrp_2909                         2.18e-01  32
+Lrp_2910                         7.89e-02  35
+Lrp_2911                         1.37e-02  35
+Lrp_3150                         3.86e-03  35
+Lrp_3267                         5.59e-01  32
+Lrp_3268                         8.42e-01  35
+Lrp_3269                         1.92e-06  4_[+1(2.40e-07)]_3
+Lrp_3311                         9.44e-02  35
+Lrp_3312                         2.70e-02  35
+Lrp_3313                         4.59e-01  35
+Lrp_3314                         5.13e-01  35
+Lrp_3315                         8.48e-02  35
+Lrp_3316                         1.37e-02  35
+Lrp_3317                         1.08e-01  35
+Lrp_3318                         3.26e-01  35
+Lrp_3319                         7.89e-02  35
+Lrp_3336                         7.61e-02  35
+Lrp_3337                         1.31e-02  35
+Lrp_3338                         2.62e-03  35
+Lrp_3339                         5.05e-03  35
+Lrp_3340                         1.05e-01  35
+Lrp_3343                         7.61e-02  35
+Lrp_3344                         1.31e-02  35
+Lrp_3345                         2.62e-03  35
+Lrp_3346                         5.05e-03  35
+Lrp_3347                         1.05e-01  35
+Lrp_3392                         4.10e-04  2_[+1(8.20e-05)]_2
+Lrp_3445                         3.26e-01  35
+Lrp_3446                         1.02e-03  35
+Lrp_3447                         3.86e-03  35
+Lrp_3530                         2.82e-02  35
+Lrp_3531                         4.48e-02  32
+Lrp_3532                         7.34e-02  35
+Lrp_3533                         5.13e-01  35
+Lrp_3552                         4.95e-01  35
+Lrp_3553                         1.86e-01  35
+Lrp_3557                         2.81e-01  35
+Lrp_3558                         1.56e-06  2_[+1(1.95e-07)]_5
+Lrp_3559                         1.05e-01  35
+Lrp_3565                         1.24e-01  32
+Lrp_3593                         3.46e-03  35
+Lrp_3594                         1.56e-06  3_[+1(1.95e-07)]_4
+Lrp_3595                         3.33e-01  35
+Lrp_3596                         5.32e-03  35
+Lrp_3597                         1.28e-01  35
+Lrp_3598                         8.79e-02  35
+Lrp_3601                         7.61e-02  35
+Lrp_3602                         1.31e-02  35
+Lrp_3603                         2.62e-03  35
+Lrp_3604                         5.05e-03  35
+Lrp_3605                         1.05e-01  35
+Lrp_3621                         9.44e-02  35
+Lrp_3622                         2.70e-02  35
+Lrp_3623                         4.59e-01  35
+Lrp_3624                         5.13e-01  35
+Lrp_3625                         8.48e-02  35
+Lrp_3626                         1.37e-02  35
+Lrp_3627                         1.08e-01  35
+Lrp_3628                         3.26e-01  35
+Lrp_3629                         7.89e-02  35
+Lrp_3687                         1.02e-03  35
+Lrp_3688                         4.07e-01  35
+Lrp_3689                         7.61e-02  35
+Lrp_3734                         2.27e-01  35
+Lrp_3735                         7.89e-02  35
+Lrp_3763                         3.41e-01  35
+Lrp_3764                         9.15e-01  35
+Lrp_3868                         7.90e-01  35
+Lrp_3916                         2.57e-04  3_[+1(3.21e-05)]_4
+Lrp_3917                         2.57e-04  3_[+1(3.21e-05)]_4
+Lrp_4045                         4.63e-02  35
+Lrp_4284                         3.99e-01  35
+Lrp_4322                         3.42e-02  32
+Lrp_4733                         4.10e-04  2_[+1(8.20e-05)]_2
+Lrp_5099                         1.50e-01  35
+Lrp_5100                         3.33e-01  35
+Lrp_5101                         2.27e-02  35
+Lrp_5102                         8.19e-02  35
+Lrp_5103                         1.55e-01  35
+Lrp_5104                         4.63e-02  35
+Lrp_5140                         9.77e-02  35
+Lrp_5141                         2.56e-01  33
+Lrp_5142                         2.67e-01  35
+Lrp_5146                         1.01e-01  35
+Lrp_5147                         3.80e-01  37
+Lrp_5148                         1.05e-01  35
+Lrp_5288                         2.00e-01  45
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: cc136d28e8f6
+
+********************************************************************************

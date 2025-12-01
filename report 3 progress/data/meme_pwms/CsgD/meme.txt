@@ -1,0 +1,345 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/CsgD.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CsgD_421                 1.0000     34  CsgD_422                 1.0000     34  
+CsgD_423                 1.0000     34  CsgD_424                 1.0000     34  
+CsgD_425                 1.0000     34  CsgD_426                 1.0000     34  
+CsgD_427                 1.0000     34  CsgD_428                 1.0000     34  
+CsgD_429                 1.0000     34  CsgD_430                 1.0000     34  
+CsgD_431                 1.0000     34  CsgD_432                 1.0000     34  
+CsgD_433                 1.0000     34  CsgD_434                 1.0000     34  
+CsgD_435                 1.0000     34  CsgD_436                 1.0000     34  
+CsgD_437                 1.0000     34  CsgD_438                 1.0000     34  
+CsgD_467                 1.0000     34  CsgD_468                 1.0000     34  
+CsgD_835                 1.0000     34  CsgD_836                 1.0000     34  
+CsgD_837                 1.0000     34  CsgD_2216                1.0000     34  
+CsgD_2217                1.0000     34  CsgD_2218                1.0000     34  
+CsgD_2220                1.0000     31  CsgD_2362                1.0000     34  
+CsgD_2363                1.0000     34  CsgD_2364                1.0000     34  
+CsgD_2385                1.0000     34  CsgD_3591                1.0000     31  
+CsgD_3662                1.0000     34  CsgD_4879                1.0000     31  
+CsgD_4880                1.0000     34  CsgD_4881                1.0000     31  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/CsgD.fasta -oc meme_pwms/CsgD -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       36    maxsites=       36    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1212    N=              36
+sample: seed=            0    hsfrac=          0
+        searchsize=   1212    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.334 C 0.157 G 0.182 T 0.327 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.334 C 0.157 G 0.183 T 0.326 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CBDRTRWDYTA MEME-1	width =  11  sites =  36  llr = 180  E-value = 4.6e-006
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :125:47312a
+pos.-specific     C  63:::::143:
+probability       G  2333:6:411:
+matrix            T  3341a:3355:
+
+         bits    2.7            
+                 2.4            
+                 2.1            
+                 1.9            
+Relative         1.6            
+Entropy          1.3     *     *
+(7.2 bits)       1.1     **    *
+                 0.8 *   ***   *
+                 0.5 *   *** * *
+                 0.3 ******* ***
+                 0.0 -----------
+
+Multilevel           CGTATGAGTTA
+consensus            TCGG ATACC 
+sequence              TA    T   
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+CsgD_4880                    14  2.63e-07 ATAGTGCTAA CGGGTGAGCTA CGAAAATGGC
+CsgD_3591                    11  1.84e-06 ATACAACGCG CGGGTGAGTTA TTAAAAATAT
+CsgD_2220                    11  1.84e-06 ATACAACGCG CGGGTGAGTTA TTAAAAATAT
+CsgD_2218                     2  1.84e-06          G CGGGTGAGTTA TTAAAAATAT
+CsgD_430                      2  1.84e-06          G CGGGTGAGTTA TTAAAAATAT
+CsgD_4879                    11  1.09e-04 TACTGTTTTG CGGGTGATCGA CAAGGAGACT
+CsgD_2217                     1  1.84e-04          . GGTATGAACTA AAAAAGAAAA
+CsgD_2216                    24  1.84e-04 TTAATACTTT GGTATGAACTA           
+CsgD_432                     24  1.84e-04 TTAATACTTT GGTATGAACTA           
+CsgD_431                      1  1.84e-04          . GGTATGAACTA AAAAAGAAAA
+CsgD_424                      8  1.84e-04    AAGCCTA CCAGTAAGTCA ATAAGACAAA
+CsgD_835                      4  9.08e-04        TTG CCGATAAATAA GCAACACATG
+CsgD_438                     15  9.08e-04 TTAAAAAAAC GCGATGAGATA AAAATGTGT 
+CsgD_467                     20  1.01e-03 ATAAGCCGCT CTTATGATTAA AAAA      
+CsgD_429                     16  1.01e-03 GCAGCTAATA CGAATGAATGA GAGCAAAA  
+CsgD_428                      5  1.13e-03       AGCG CCTTTGTCTTA TTGACTTACT
+CsgD_427                     20  1.13e-03 CTATTTAGCG CCTTTGTCTTA TTGA      
+CsgD_426                     20  1.13e-03 CTATTTAGCG CCTTTGTCTTA TTGA      
+CsgD_425                      5  1.13e-03       AGCG CCTTTGTCTTA TTGACTTACT
+CsgD_422                      9  2.45e-03   TTATTTTT CTGATATGGCA AAATAGGATG
+CsgD_2362                     6  3.16e-03      CATTA TTAGTAAGTTA TCACCATTTG
+CsgD_435                      6  3.16e-03      CATTA TTAGTAAGTTA TCACCATTTG
+CsgD_2364                    11  3.99e-03 ATTGAAATCA GATGTAATCCA TTAGTTTTAT
+CsgD_433                     11  3.99e-03 ATTGAAATCA GATGTAATCCA TTAGTTTTAT
+CsgD_437                      9  4.29e-03   TGCCAGAC TTTATATTCCA CTTTTATTCC
+CsgD_436                     24  4.29e-03 AGTGCCAGAC TTTATATTCCA           
+CsgD_3662                     9  5.32e-03   ATAAAAAC CAAATGTACAA CTTTTCTATC
+CsgD_2385                     9  5.32e-03   ATAAAAAC CAAATGTACAA CTTTTCTATC
+CsgD_2363                     7  6.48e-03     ATTAGT TTTATATTTTA CCCATTTAGG
+CsgD_434                      7  6.48e-03     ATTAGT TTTATATTTTA CCCATTTAGG
+CsgD_836                     21  6.92e-03 AAAAGCGCCC TCAATGAGGAA TAA       
+CsgD_423                      1  6.92e-03          . TCAATAAGACA AAGGCGCTAA
+CsgD_4881                    19  1.10e-02 AATGGCTCAC CCGAAATATCA TA        
+CsgD_421                      4  1.10e-02        TGA TTGTTGAAACA GGGAGTAAAA
+CsgD_837                     14  1.16e-02 CCTGCAGAAA CGGATAATCAT GCCGATAACT
+CsgD_468                      1  2.33e-02          . CTTCTTAGCGA GAATAGATAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CsgD_4880                         2.6e-07  13_[+1]_10
+CsgD_3591                         1.8e-06  10_[+1]_10
+CsgD_2220                         1.8e-06  10_[+1]_10
+CsgD_2218                         1.8e-06  1_[+1]_22
+CsgD_430                          1.8e-06  1_[+1]_22
+CsgD_4879                         0.00011  10_[+1]_10
+CsgD_2217                         0.00018  [+1]_23
+CsgD_2216                         0.00018  23_[+1]
+CsgD_432                          0.00018  23_[+1]
+CsgD_431                          0.00018  [+1]_23
+CsgD_424                          0.00018  7_[+1]_16
+CsgD_835                          0.00091  3_[+1]_20
+CsgD_438                          0.00091  14_[+1]_9
+CsgD_467                            0.001  19_[+1]_4
+CsgD_429                            0.001  15_[+1]_8
+CsgD_428                           0.0011  4_[+1]_19
+CsgD_427                           0.0011  19_[+1]_4
+CsgD_426                           0.0011  19_[+1]_4
+CsgD_425                           0.0011  4_[+1]_19
+CsgD_422                           0.0024  8_[+1]_15
+CsgD_2362                          0.0032  5_[+1]_18
+CsgD_435                           0.0032  5_[+1]_18
+CsgD_2364                           0.004  10_[+1]_13
+CsgD_433                            0.004  10_[+1]_13
+CsgD_437                           0.0043  8_[+1]_15
+CsgD_436                           0.0043  23_[+1]
+CsgD_3662                          0.0053  8_[+1]_15
+CsgD_2385                          0.0053  8_[+1]_15
+CsgD_2363                          0.0065  6_[+1]_17
+CsgD_434                           0.0065  6_[+1]_17
+CsgD_836                           0.0069  20_[+1]_3
+CsgD_423                           0.0069  [+1]_23
+CsgD_4881                           0.011  18_[+1]_2
+CsgD_421                            0.011  3_[+1]_20
+CsgD_837                            0.012  13_[+1]_10
+CsgD_468                            0.023  [+1]_23
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CBDRTRWDYTA width=11 seqs=36
+CsgD_4880                (   14) CGGGTGAGCTA  1 
+CsgD_3591                (   11) CGGGTGAGTTA  1 
+CsgD_2220                (   11) CGGGTGAGTTA  1 
+CsgD_2218                (    2) CGGGTGAGTTA  1 
+CsgD_430                 (    2) CGGGTGAGTTA  1 
+CsgD_4879                (   11) CGGGTGATCGA  1 
+CsgD_2217                (    1) GGTATGAACTA  1 
+CsgD_2216                (   24) GGTATGAACTA  1 
+CsgD_432                 (   24) GGTATGAACTA  1 
+CsgD_431                 (    1) GGTATGAACTA  1 
+CsgD_424                 (    8) CCAGTAAGTCA  1 
+CsgD_835                 (    4) CCGATAAATAA  1 
+CsgD_438                 (   15) GCGATGAGATA  1 
+CsgD_467                 (   20) CTTATGATTAA  1 
+CsgD_429                 (   16) CGAATGAATGA  1 
+CsgD_428                 (    5) CCTTTGTCTTA  1 
+CsgD_427                 (   20) CCTTTGTCTTA  1 
+CsgD_426                 (   20) CCTTTGTCTTA  1 
+CsgD_425                 (    5) CCTTTGTCTTA  1 
+CsgD_422                 (    9) CTGATATGGCA  1 
+CsgD_2362                (    6) TTAGTAAGTTA  1 
+CsgD_435                 (    6) TTAGTAAGTTA  1 
+CsgD_2364                (   11) GATGTAATCCA  1 
+CsgD_433                 (   11) GATGTAATCCA  1 
+CsgD_437                 (    9) TTTATATTCCA  1 
+CsgD_436                 (   24) TTTATATTCCA  1 
+CsgD_3662                (    9) CAAATGTACAA  1 
+CsgD_2385                (    9) CAAATGTACAA  1 
+CsgD_2363                (    7) TTTATATTTTA  1 
+CsgD_434                 (    7) TTTATATTTTA  1 
+CsgD_836                 (   21) TCAATGAGGAA  1 
+CsgD_423                 (    1) TCAATAAGACA  1 
+CsgD_4881                (   19) CCGAAATATCA  1 
+CsgD_421                 (    4) TTGTTGAAACA  1 
+CsgD_837                 (   14) CGGATAATCAT  1 
+CsgD_468                 (    1) CTTCTTAGCGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 852 bayes= 4.5025 E= 4.6e-006 
+ -1181    182      9    -38 
+  -159     82     87    -23 
+   -59  -1181     87     44 
+    66   -250     74   -123 
+  -358  -1181  -1181    157 
+    22  -1181    168   -355 
+   100  -1181  -1181      3 
+   -27    -50     98    -38 
+  -200    131   -172     53 
+  -100     67   -113     61 
+   154  -1181  -1181   -355 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 36 E= 4.6e-006 
+ 0.000000  0.555556  0.194444  0.250000 
+ 0.111111  0.277778  0.333333  0.277778 
+ 0.222222  0.000000  0.333333  0.444444 
+ 0.527778  0.027778  0.305556  0.138889 
+ 0.027778  0.000000  0.000000  0.972222 
+ 0.388889  0.000000  0.583333  0.027778 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.277778  0.111111  0.361111  0.250000 
+ 0.083333  0.388889  0.055556  0.472222 
+ 0.166667  0.250000  0.083333  0.500000 
+ 0.972222  0.000000  0.000000  0.027778 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CBDRTRWDYTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT][GCT][TGA][AG]T[GA][AT][GAT][TC][TC]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CsgD_421                         2.33e-01  34
+CsgD_422                         5.71e-02  34
+CsgD_423                         1.53e-01  34
+CsgD_424                         4.40e-03  34
+CsgD_425                         2.67e-02  34
+CsgD_426                         2.67e-02  34
+CsgD_427                         2.67e-02  34
+CsgD_428                         2.67e-02  34
+CsgD_429                         2.40e-02  34
+CsgD_430                         4.42e-05  1_[+1(1.84e-06)]_22
+CsgD_431                         4.40e-03  34
+CsgD_432                         4.40e-03  34
+CsgD_433                         9.15e-02  34
+CsgD_434                         1.45e-01  34
+CsgD_435                         7.31e-02  34
+CsgD_436                         9.80e-02  34
+CsgD_437                         9.80e-02  34
+CsgD_438                         2.16e-02  34
+CsgD_467                         2.40e-02  34
+CsgD_468                         4.32e-01  34
+CsgD_835                         2.16e-02  34
+CsgD_836                         1.53e-01  34
+CsgD_837                         2.44e-01  34
+CsgD_2216                        4.40e-03  34
+CsgD_2217                        4.40e-03  34
+CsgD_2218                        4.42e-05  1_[+1(1.84e-06)]_22
+CsgD_2220                        3.87e-05  10_[+1(1.84e-06)]_10
+CsgD_2362                        7.31e-02  34
+CsgD_2363                        1.45e-01  34
+CsgD_2364                        9.15e-02  34
+CsgD_2385                        1.20e-01  34
+CsgD_3591                        3.87e-05  10_[+1(1.84e-06)]_10
+CsgD_3662                        1.20e-01  34
+CsgD_4879                        2.28e-03  31
+CsgD_4880                        6.31e-06  13_[+1(2.63e-07)]_10
+CsgD_4881                        2.07e-01  31
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 62bf23053102
+
+********************************************************************************

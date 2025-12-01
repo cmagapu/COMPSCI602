@@ -1,0 +1,278 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/TorR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TorR_677                 1.0000     30  TorR_2323                1.0000     30  
+TorR_2333                1.0000     30  TorR_2404                1.0000     30  
+TorR_2422                1.0000     30  TorR_3155                1.0000     30  
+TorR_3168                1.0000     30  TorR_3169                1.0000     30  
+TorR_3328                1.0000     30  TorR_3765                1.0000     30  
+TorR_3766                1.0000     30  TorR_4270                1.0000     30  
+TorR_4271                1.0000     30  TorR_4272                1.0000     30  
+TorR_4273                1.0000     30  TorR_5105                1.0000     30  
+TorR_5277                1.0000     30  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/TorR.fasta -oc meme_pwms/TorR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       17    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             510    N=              17
+sample: seed=            0    hsfrac=          0
+        searchsize=    510    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.335 C 0.188 G 0.141 T 0.335 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.335 C 0.189 G 0.142 T 0.335 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YHGHTKWWCATATTKDCMMA MEME-1	width =  20  sites =  17  llr = 134  E-value = 1.9e-008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  25241:2529:612241555
+pos.-specific     C  52:4112:7:11112:624:
+probability       G  1:6::41:1111::2421:2
+matrix            T  33228655::8287431222
+
+         bits    2.8                     
+                 2.5                     
+                 2.3                     
+                 2.0                     
+Relative         1.7                     
+Entropy          1.4                     
+(11.3 bits)      1.1         **          
+                 0.8   * **  *** *   *   
+                 0.6   * ** **** ** **   
+                 0.3 ****** ******* ** **
+                 0.0 --------------------
+
+Multilevel           CAGATTTTCATATTTACAAA
+consensus            TTTC GAA     AGGGCCG
+sequence              C T           T   T
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+TorR_4273                     8  1.48e-09    ACCAGTG CCGCTGTTCATATTTGCTCA TTA       
+TorR_4271                     8  3.33e-06    CTGTTCA TATCTGTTCATATTCTGCCG TAA       
+TorR_5105                     8  4.89e-06    AAAATAT CTGATTTTGATATTTTCCAT CAA       
+TorR_3328                    10  4.89e-06  CAGAACTAC TCGATTCACGTTTTGGCGCA A         
+TorR_2422                    10  4.89e-06  CAGAACTAC TCGATTCACGTTTTGGCGCA A         
+TorR_2323                     8  4.89e-06    AAAATAT CTGATTTTGATATTTTCCAT CAA       
+TorR_4272                    10  3.70e-05  TTCTGCCGT AAGCCGTTCATCCTGACCAG T         
+TorR_2404                    11  4.09e-05 ATAATAAAGT CTGTTTTTAATATTATCATG           
+TorR_677                     11  4.09e-05 ATAATAAAGT CTGTTTTTAATATTATCATG           
+TorR_3765                    10  8.73e-05  GATTGTGAT TCGATTCACATTTAAACAAT T         
+TorR_3155                     4  1.36e-04        CAT CAACATGACATATACAGAAA ACCAGGT   
+TorR_2333                     4  1.36e-04        CAT CAACATGACATATACAGAAA ACCAGGT   
+TorR_3169                    10  3.03e-04  TTACGGCAG AATATGAACAGATATGAACA G         
+TorR_4270                     8  5.39e-04    TTTACTC ATTCTGTTCATATCTGTTCA TAT       
+TorR_5277                    11  1.22e-03 GCACCGGAAC CAGTTCAACACGCTTGCATT           
+TorR_3168                    10  1.30e-03  ATATGAACA GATATGAACAGAATGAGTAA A         
+TorR_3766                     3  1.90e-03         CG TAATTTATAATCTTTAAAAA AAGCATTT  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TorR_4273                         1.5e-09  7_[+1]_3
+TorR_4271                         3.3e-06  7_[+1]_3
+TorR_5105                         4.9e-06  7_[+1]_3
+TorR_3328                         4.9e-06  9_[+1]_1
+TorR_2422                         4.9e-06  9_[+1]_1
+TorR_2323                         4.9e-06  7_[+1]_3
+TorR_4272                         3.7e-05  9_[+1]_1
+TorR_2404                         4.1e-05  10_[+1]
+TorR_677                          4.1e-05  10_[+1]
+TorR_3765                         8.7e-05  9_[+1]_1
+TorR_3155                         0.00014  3_[+1]_7
+TorR_2333                         0.00014  3_[+1]_7
+TorR_3169                          0.0003  9_[+1]_1
+TorR_4270                         0.00054  7_[+1]_3
+TorR_5277                          0.0012  10_[+1]
+TorR_3168                          0.0013  9_[+1]_1
+TorR_3766                          0.0019  2_[+1]_8
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YHGHTKWWCATATTKDCMMA width=20 seqs=17
+TorR_4273                (    8) CCGCTGTTCATATTTGCTCA  1 
+TorR_4271                (    8) TATCTGTTCATATTCTGCCG  1 
+TorR_5105                (    8) CTGATTTTGATATTTTCCAT  1 
+TorR_3328                (   10) TCGATTCACGTTTTGGCGCA  1 
+TorR_2422                (   10) TCGATTCACGTTTTGGCGCA  1 
+TorR_2323                (    8) CTGATTTTGATATTTTCCAT  1 
+TorR_4272                (   10) AAGCCGTTCATCCTGACCAG  1 
+TorR_2404                (   11) CTGTTTTTAATATTATCATG  1 
+TorR_677                 (   11) CTGTTTTTAATATTATCATG  1 
+TorR_3765                (   10) TCGATTCACATTTAAACAAT  1 
+TorR_3155                (    4) CAACATGACATATACAGAAA  1 
+TorR_2333                (    4) CAACATGACATATACAGAAA  1 
+TorR_3169                (   10) AATATGAACAGATATGAACA  1 
+TorR_4270                (    8) ATTCTGTTCATATCTGTTCA  1 
+TorR_5277                (   11) CAGTTCAACACGCTTGCATT  1 
+TorR_3168                (   10) GATATGAACAGAATGAGTAA  1 
+TorR_3766                (    3) TAATTTATAATCTTTAAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 187 bayes= 3.32193 E= 1.9e-008 
+   -92    132   -127    -19 
+    49     32  -1073    -19 
+   -92  -1073    205    -51 
+    30     90  -1073    -51 
+  -151   -168  -1073    130 
+ -1073   -168    131     81 
+   -51    -10    -27     49 
+    49  -1073  -1073     66 
+   -92    190    -27  -1073 
+   140  -1073    -27  -1073 
+ -1073   -168    -27    130 
+    95    -68   -127    -92 
+  -250    -68  -1073    130 
+   -51   -168  -1073    108 
+   -92    -10     73     30 
+     8  -1073    131    -19 
+  -151    164     73   -250 
+    49     32    -27    -92 
+    49     90  -1073    -92 
+    66  -1073     73    -51 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 17 E= 1.9e-008 
+ 0.176471  0.470588  0.058824  0.294118 
+ 0.470588  0.235294  0.000000  0.294118 
+ 0.176471  0.000000  0.588235  0.235294 
+ 0.411765  0.352941  0.000000  0.235294 
+ 0.117647  0.058824  0.000000  0.823529 
+ 0.000000  0.058824  0.352941  0.588235 
+ 0.235294  0.176471  0.117647  0.470588 
+ 0.470588  0.000000  0.000000  0.529412 
+ 0.176471  0.705882  0.117647  0.000000 
+ 0.882353  0.000000  0.117647  0.000000 
+ 0.000000  0.058824  0.117647  0.823529 
+ 0.647059  0.117647  0.058824  0.176471 
+ 0.058824  0.117647  0.000000  0.823529 
+ 0.235294  0.058824  0.000000  0.705882 
+ 0.176471  0.176471  0.235294  0.411765 
+ 0.352941  0.000000  0.352941  0.294118 
+ 0.117647  0.588235  0.235294  0.058824 
+ 0.470588  0.235294  0.117647  0.176471 
+ 0.470588  0.352941  0.000000  0.176471 
+ 0.529412  0.000000  0.235294  0.235294 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YHGHTKWWCATATTKDCMMA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT][ATC][GT][ACT]T[TG][TA][TA]CATAT[TA][TG][AGT][CG][AC][AC][AGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TorR_677                         4.49e-04  10_[+1(4.09e-05)]
+TorR_2323                        5.38e-05  7_[+1(4.89e-06)]_3
+TorR_2333                        1.49e-03  30
+TorR_2404                        4.49e-04  10_[+1(4.09e-05)]
+TorR_2422                        5.38e-05  9_[+1(4.89e-06)]_1
+TorR_3155                        1.49e-03  30
+TorR_3168                        1.42e-02  30
+TorR_3169                        3.33e-03  30
+TorR_3328                        5.38e-05  9_[+1(4.89e-06)]_1
+TorR_3765                        9.61e-04  9_[+1(8.73e-05)]_1
+TorR_3766                        2.07e-02  30
+TorR_4270                        5.91e-03  30
+TorR_4271                        3.67e-05  7_[+1(3.33e-06)]_3
+TorR_4272                        4.07e-04  9_[+1(3.70e-05)]_1
+TorR_4273                        1.62e-08  7_[+1(1.48e-09)]_3
+TorR_5105                        5.38e-05  7_[+1(4.89e-06)]_3
+TorR_5277                        1.34e-02  30
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 70eede9ddfee
+
+********************************************************************************

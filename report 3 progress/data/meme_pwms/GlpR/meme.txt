@@ -1,0 +1,295 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/GlpR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GlpR_3007                1.0000     40  GlpR_3008                1.0000     40  
+GlpR_3009                1.0000     40  GlpR_3010                1.0000     40  
+GlpR_3011                1.0000     40  GlpR_3014                1.0000     40  
+GlpR_3015                1.0000     40  GlpR_3016                1.0000     40  
+GlpR_3017                1.0000     40  GlpR_3023                1.0000     40  
+GlpR_3026                1.0000     40  GlpR_3027                1.0000     40  
+GlpR_3028                1.0000     40  GlpR_3029                1.0000     40  
+GlpR_3030                1.0000     40  GlpR_3031                1.0000     40  
+GlpR_3032                1.0000     40  GlpR_4057                1.0000     40  
+GlpR_4058                1.0000     40  GlpR_4059                1.0000     40  
+GlpR_4060                1.0000     40  GlpR_4061                1.0000     40  
+GlpR_4062                1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/GlpR.fasta -oc meme_pwms/GlpR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       23    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             920    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    920    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.29 C 0.186 G 0.198 T 0.326 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.29 C 0.186 G 0.198 T 0.326 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GYKCGWWWTYGMDCR MEME-1	width =  15  sites =  23  llr = 193  E-value = 5.0e-022
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :11:35533::43:6
+pos.-specific     C  :4:81::::316:a:
+probability       G  815:71:::27:3:3
+matrix            T  2341:447741:3:1
+
+         bits    2.4                
+                 2.2              * 
+                 1.9              * 
+                 1.7              * 
+Relative         1.5    *         * 
+Entropy          1.2 *  *         * 
+(12.1 bits)      1.0 *  **     ** * 
+                 0.7 * ***  *  ** **
+                 0.5 * **** ** ** **
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           GCGCGAATTTGCGCA
+consensus             TT ATTAAC AT G
+sequence                         A  
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+GlpR_4062                    15  1.03e-08 GCGTGTCGCA GCGCGAATTTGAGCA AATCTACCCA
+GlpR_4060                    14  2.25e-07 GGAATAAATG GCGCGATAACGCTCA TTTTATGACG
+GlpR_3031                     4  2.25e-07        TTC GCGCATATTCGCTCA TAATTCGAAA
+GlpR_3030                    23  2.25e-07 GTTTGATTTC GCGCATATTCGCTCA TAA       
+GlpR_3010                     5  7.13e-07       TTAT GAGCGAATATGCGCG AAATCAAACA
+GlpR_3009                    24  7.13e-07 TTCGAATTAT GAGCGAATATGCGCG AA        
+GlpR_3026                    15  8.33e-07 GTATCGGATC GCTCGAATCCGCGCG TTTTCCTGCC
+GlpR_3015                    15  6.09e-06 ATCAACTGGT TTGCGTTTTGGCGCA AATTCAGTGT
+GlpR_4058                    24  6.85e-06 GTTCGATATT TCTCGTTTTTGCTCG TT        
+GlpR_4057                     4  6.85e-06        ATT TCTCGTTTTTGCTCG TTAACGATAA
+GlpR_3016                    14  7.67e-06 TTGCTAATAT GTTCGATAACGAACA TTTATGAGCT
+GlpR_4061                    15  1.65e-05 GCTCCCGCGC GGTCGTAATGGATCA CGATGCCAAT
+GlpR_3014                    15  4.03e-05 CGGAAATTAA GCGCGGATTCGAATA TTCTGACTGT
+GlpR_3032                    14  6.36e-05 GTGATTTCAT GCGTCATTTTGAACA TTTTGTAAAT
+GlpR_3008                    14  1.25e-04 TTTACAAAAT GTTCAAAATGACGCA TGAAATCACG
+GlpR_3029                    13  1.59e-04 TCCCTCTGAA GTTCGTTTTTTACCA TTTAGCCATA
+GlpR_3028                    15  1.72e-04 GCTTATGGAT TTTCGAAATTCATCA TGGGTTCGGT
+GlpR_3023                    14  2.89e-04 TTAATAATGT GTGCGGCAATTCACA TTTAATTTAT
+GlpR_3007                    12  6.08e-04 CATAAATTAA ATGTGAATTGCCGCA CACATTATTA
+GlpR_3017                     5  6.90e-04       TAAC GAACATTTATGAGCT TTAACGAAAG
+GlpR_4059                     3  1.82e-03         AC GCTCATTTTATGACG AGGCACACAC
+GlpR_3011                    15  2.34e-03 ATGGCTAAAT GGTAAAAAACGAACT TCAGAGGGAT
+GlpR_3027                    20  2.45e-03 CATGGGTTCG GTATCGGATCGCTCG AATCCG    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GlpR_4062                           1e-08  14_[+1]_11
+GlpR_4060                         2.3e-07  13_[+1]_12
+GlpR_3031                         2.3e-07  3_[+1]_22
+GlpR_3030                         2.3e-07  22_[+1]_3
+GlpR_3010                         7.1e-07  4_[+1]_21
+GlpR_3009                         7.1e-07  23_[+1]_2
+GlpR_3026                         8.3e-07  14_[+1]_11
+GlpR_3015                         6.1e-06  14_[+1]_11
+GlpR_4058                         6.8e-06  23_[+1]_2
+GlpR_4057                         6.8e-06  3_[+1]_22
+GlpR_3016                         7.7e-06  13_[+1]_12
+GlpR_4061                         1.6e-05  14_[+1]_11
+GlpR_3014                           4e-05  14_[+1]_11
+GlpR_3032                         6.4e-05  13_[+1]_12
+GlpR_3008                         0.00013  13_[+1]_12
+GlpR_3029                         0.00016  12_[+1]_13
+GlpR_3028                         0.00017  14_[+1]_11
+GlpR_3023                         0.00029  13_[+1]_12
+GlpR_3007                         0.00061  11_[+1]_14
+GlpR_3017                         0.00069  4_[+1]_21
+GlpR_4059                          0.0018  2_[+1]_23
+GlpR_3011                          0.0023  14_[+1]_11
+GlpR_3027                          0.0025  19_[+1]_6
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GYKCGWWWTYGMDCR width=15 seqs=23
+GlpR_4062                (   15) GCGCGAATTTGAGCA  1 
+GlpR_4060                (   14) GCGCGATAACGCTCA  1 
+GlpR_3031                (    4) GCGCATATTCGCTCA  1 
+GlpR_3030                (   23) GCGCATATTCGCTCA  1 
+GlpR_3010                (    5) GAGCGAATATGCGCG  1 
+GlpR_3009                (   24) GAGCGAATATGCGCG  1 
+GlpR_3026                (   15) GCTCGAATCCGCGCG  1 
+GlpR_3015                (   15) TTGCGTTTTGGCGCA  1 
+GlpR_4058                (   24) TCTCGTTTTTGCTCG  1 
+GlpR_4057                (    4) TCTCGTTTTTGCTCG  1 
+GlpR_3016                (   14) GTTCGATAACGAACA  1 
+GlpR_4061                (   15) GGTCGTAATGGATCA  1 
+GlpR_3014                (   15) GCGCGGATTCGAATA  1 
+GlpR_3032                (   14) GCGTCATTTTGAACA  1 
+GlpR_3008                (   14) GTTCAAAATGACGCA  1 
+GlpR_3029                (   13) GTTCGTTTTTTACCA  1 
+GlpR_3028                (   15) TTTCGAAATTCATCA  1 
+GlpR_3023                (   14) GTGCGGCAATTCACA  1 
+GlpR_3007                (   12) ATGTGAATTGCCGCA  1 
+GlpR_3017                (    5) GAACATTTATGAGCT  1 
+GlpR_4059                (    3) GCTCATTTTATGACG  1 
+GlpR_3011                (   15) GGTAAAAAACGAACT  1 
+GlpR_3027                (   20) GTATCGGATCGCTCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 598 bayes= 4.64386 E= 5.0e-022 
+  -273  -1117    198    -90 
+  -115    122   -119      9 
+  -174  -1117    127     42 
+  -273    215  -1117   -132 
+   -15   -110    172  -1117 
+    72  -1117    -60     26 
+    85   -210   -219     26 
+    26  -1117  -1117    100 
+     7   -210  -1117    100 
+  -273     90    -19     42 
+  -273   -110    190   -132 
+    43    160   -219  -1117 
+   -15   -210     81      9 
+ -1117    236  -1117   -290 
+   107  -1117     62   -190 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 23 E= 5.0e-022 
+ 0.043478  0.000000  0.782609  0.173913 
+ 0.130435  0.434783  0.086957  0.347826 
+ 0.086957  0.000000  0.478261  0.434783 
+ 0.043478  0.826087  0.000000  0.130435 
+ 0.260870  0.086957  0.652174  0.000000 
+ 0.478261  0.000000  0.130435  0.391304 
+ 0.521739  0.043478  0.043478  0.391304 
+ 0.347826  0.000000  0.000000  0.652174 
+ 0.304348  0.043478  0.000000  0.652174 
+ 0.043478  0.347826  0.173913  0.434783 
+ 0.043478  0.086957  0.739130  0.130435 
+ 0.391304  0.565217  0.043478  0.000000 
+ 0.260870  0.043478  0.347826  0.347826 
+ 0.000000  0.956522  0.000000  0.043478 
+ 0.608696  0.000000  0.304348  0.086957 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GYKCGWWWTYGMDCR MEME-1 regular expression
+--------------------------------------------------------------------------------
+G[CT][GT]C[GA][AT][AT][TA][TA][TC]G[CA][GTA]C[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GlpR_3007                        1.57e-02  40
+GlpR_3008                        3.25e-03  40
+GlpR_3009                        1.85e-05  23_[+1(7.13e-07)]_2
+GlpR_3010                        1.85e-05  4_[+1(7.13e-07)]_21
+GlpR_3011                        5.90e-02  40
+GlpR_3014                        1.05e-03  14_[+1(4.03e-05)]_11
+GlpR_3015                        1.58e-04  14_[+1(6.09e-06)]_11
+GlpR_3016                        1.99e-04  13_[+1(7.67e-06)]_12
+GlpR_3017                        1.78e-02  40
+GlpR_3023                        7.50e-03  40
+GlpR_3026                        2.16e-05  14_[+1(8.33e-07)]_11
+GlpR_3027                        6.18e-02  40
+GlpR_3028                        4.45e-03  40
+GlpR_3029                        4.12e-03  40
+GlpR_3030                        5.86e-06  22_[+1(2.25e-07)]_3
+GlpR_3031                        5.86e-06  3_[+1(2.25e-07)]_22
+GlpR_3032                        1.65e-03  13_[+1(6.36e-05)]_12
+GlpR_4057                        1.78e-04  3_[+1(6.85e-06)]_22
+GlpR_4058                        1.78e-04  23_[+1(6.85e-06)]_2
+GlpR_4059                        4.61e-02  40
+GlpR_4060                        5.86e-06  13_[+1(2.25e-07)]_12
+GlpR_4061                        4.29e-04  14_[+1(1.65e-05)]_11
+GlpR_4062                        2.68e-07  14_[+1(1.03e-08)]_11
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 5ebb39b132ec
+
+********************************************************************************

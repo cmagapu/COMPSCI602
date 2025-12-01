@@ -1,0 +1,275 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/PdhR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PdhR_583                 1.0000     37  PdhR_584                 1.0000     37  
+PdhR_2204                1.0000     37  PdhR_3459                1.0000     37  
+PdhR_3640                1.0000     37  PdhR_4802                1.0000     37  
+PdhR_4989                1.0000     37  PdhR_4990                1.0000     37  
+PdhR_4991                1.0000     37  PdhR_4992                1.0000     37  
+PdhR_5207                1.0000     37  PdhR_5208                1.0000     37  
+PdhR_5280                1.0000     37  PdhR_5281                1.0000     37  
+PdhR_5282                1.0000     37  PdhR_5283                1.0000     37  
+PdhR_5284                1.0000     37  PdhR_5285                1.0000     37  
+PdhR_5286                1.0000     37  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/PdhR.fasta -oc meme_pwms/PdhR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       19    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             703    N=              19
+sample: seed=            0    hsfrac=          0
+        searchsize=    703    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.29 C 0.222 G 0.212 T 0.276 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.29 C 0.222 G 0.212 T 0.276 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGGTHWKACCARTT MEME-1	width =  14  sites =  19  llr = 195  E-value = 5.9e-034
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  11:13419:18512
+pos.-specific     C  :111411:99:22:
+probability       G  :99:1:6:1:1311
+matrix            T  9::83631::1167
+
+         bits    2.2               
+                 2.0   *           
+                 1.8   *     *     
+                 1.6  **    ***    
+Relative         1.3 ***    ***    
+Entropy          1.1 ****   ***    
+(14.8 bits)      0.9 ****   ****   
+                 0.7 **** ******  *
+                 0.4 **** ****** **
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           TGGTCTGACCAATT
+consensus                AAT    GCA
+sequence                 T         
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+PdhR_3459                    14  6.56e-08 GACATGAAAT TGGTAAGACCAATT GACTTCGGCA
+PdhR_2204                    14  6.56e-08 GACATGAAAT TGGTAAGACCAATT GACTTCGGCA
+PdhR_4802                    14  1.10e-07 CAAGCAACAA TGGTTTTACCAATT GGCCGCGACA
+PdhR_4990                    14  2.48e-07 TATTTCACAT TGGTTATACCAATT GCCCGCCCAG
+PdhR_4989                    14  3.13e-07 ACATCAATTT TGGTATGACCAATG CACCATTCAT
+PdhR_5286                    14  6.87e-07 CGCTTCAATC TGGTCTGACCTCTT TGTGTTTTGT
+PdhR_583                     14  1.09e-06 GGAAAAAAAA TGGTCTGACCGGTA GCTAAAGAGA
+PdhR_5280                    14  1.35e-06 GTGAAAGTAA AGGTCTGACCAGCT TTCAGAGAAA
+PdhR_5207                    14  3.74e-06 GCTGGTGCTT TGGTATAACCAACT CGGCATGAAT
+PdhR_5285                    14  7.16e-06 AAACACAAAG AGGTCAGACCAGAT TGAAGCGATA
+PdhR_5281                    14  7.87e-06 CCACAAGAAT TGGCCCTACCAATT CTTCGCTTAT
+PdhR_4992                    14  8.47e-06 GATCACTTAT TGGTCATACAAATA AGATGACGGC
+PdhR_5282                    14  9.23e-06 GGGATGTACA TGGTCTGACCGCGA TTTGCACAAA
+PdhR_5208                    14  1.19e-05 CATGCCGAGT TGGTTATACCAAAG CACCAGCGGT
+PdhR_5283                    14  1.93e-05 CAAAAAGTCC TGGTCATAGCACCT GCCCGTACTT
+PdhR_584                     14  2.25e-05 GCCTTGTGAC TGGCTTGACAAGCT TTTCCTCAGC
+PdhR_5284                    14  3.24e-05 TACGGGCAGG TGCTATGACCAGGA CTTTTTGACC
+PdhR_4991                    14  6.43e-05 ATCCTGGTAT TAGTGTCACCAATT TCATCTGGCG
+PdhR_3640                    21  1.41e-03 AATTCTTATT TCGATTGTCCTTTT TAC       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PdhR_3459                         6.6e-08  13_[+1]_10
+PdhR_2204                         6.6e-08  13_[+1]_10
+PdhR_4802                         1.1e-07  13_[+1]_10
+PdhR_4990                         2.5e-07  13_[+1]_10
+PdhR_4989                         3.1e-07  13_[+1]_10
+PdhR_5286                         6.9e-07  13_[+1]_10
+PdhR_583                          1.1e-06  13_[+1]_10
+PdhR_5280                         1.4e-06  13_[+1]_10
+PdhR_5207                         3.7e-06  13_[+1]_10
+PdhR_5285                         7.2e-06  13_[+1]_10
+PdhR_5281                         7.9e-06  13_[+1]_10
+PdhR_4992                         8.5e-06  13_[+1]_10
+PdhR_5282                         9.2e-06  13_[+1]_10
+PdhR_5208                         1.2e-05  13_[+1]_10
+PdhR_5283                         1.9e-05  13_[+1]_10
+PdhR_584                          2.3e-05  13_[+1]_10
+PdhR_5284                         3.2e-05  13_[+1]_10
+PdhR_4991                         6.4e-05  13_[+1]_10
+PdhR_3640                          0.0014  20_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGGTHWKACCARTT width=14 seqs=19
+PdhR_3459                (   14) TGGTAAGACCAATT  1 
+PdhR_2204                (   14) TGGTAAGACCAATT  1 
+PdhR_4802                (   14) TGGTTTTACCAATT  1 
+PdhR_4990                (   14) TGGTTATACCAATT  1 
+PdhR_4989                (   14) TGGTATGACCAATG  1 
+PdhR_5286                (   14) TGGTCTGACCTCTT  1 
+PdhR_583                 (   14) TGGTCTGACCGGTA  1 
+PdhR_5280                (   14) AGGTCTGACCAGCT  1 
+PdhR_5207                (   14) TGGTATAACCAACT  1 
+PdhR_5285                (   14) AGGTCAGACCAGAT  1 
+PdhR_5281                (   14) TGGCCCTACCAATT  1 
+PdhR_4992                (   14) TGGTCATACAAATA  1 
+PdhR_5282                (   14) TGGTCTGACCGCGA  1 
+PdhR_5208                (   14) TGGTTATACCAAAG  1 
+PdhR_5283                (   14) TGGTCATAGCACCT  1 
+PdhR_584                 (   14) TGGCTTGACAAGCT  1 
+PdhR_5284                (   14) TGCTATGACCAGGA  1 
+PdhR_4991                (   14) TAGTGTCACCAATT  1 
+PdhR_3640                (   21) TCGATTGTCCTTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 456 bayes= 4.52356 E= 5.9e-034 
+  -146  -1089  -1089    170 
+  -246   -207    208  -1089 
+ -1089   -207    216  -1089 
+  -246   -108  -1089    161 
+   -14     92   -201     -7 
+    35   -207  -1089    107 
+  -246   -207    145     20 
+   171  -1089  -1089   -239 
+ -1089    209   -201  -1089 
+  -146    201  -1089  -1089 
+   144  -1089   -101   -139 
+    86    -49     31   -239 
+  -146     -8   -101    107 
+   -46  -1089   -101    131 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 19 E= 5.9e-034 
+ 0.105263  0.000000  0.000000  0.894737 
+ 0.052632  0.052632  0.894737  0.000000 
+ 0.000000  0.052632  0.947368  0.000000 
+ 0.052632  0.105263  0.000000  0.842105 
+ 0.263158  0.421053  0.052632  0.263158 
+ 0.368421  0.052632  0.000000  0.578947 
+ 0.052632  0.052632  0.578947  0.315789 
+ 0.947368  0.000000  0.000000  0.052632 
+ 0.000000  0.947368  0.052632  0.000000 
+ 0.105263  0.894737  0.000000  0.000000 
+ 0.789474  0.000000  0.105263  0.105263 
+ 0.526316  0.157895  0.263158  0.052632 
+ 0.105263  0.210526  0.105263  0.578947 
+ 0.210526  0.000000  0.105263  0.684211 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGGTHWKACCARTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TGGT[CAT][TA][GT]ACCA[AG][TC][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PdhR_583                         2.61e-05  13_[+1(1.09e-06)]_10
+PdhR_584                         5.40e-04  13_[+1(2.25e-05)]_10
+PdhR_2204                        1.57e-06  13_[+1(6.56e-08)]_10
+PdhR_3459                        1.57e-06  13_[+1(6.56e-08)]_10
+PdhR_3640                        3.32e-02  37
+PdhR_4802                        2.64e-06  13_[+1(1.10e-07)]_10
+PdhR_4989                        7.51e-06  13_[+1(3.13e-07)]_10
+PdhR_4990                        5.95e-06  13_[+1(2.48e-07)]_10
+PdhR_4991                        1.54e-03  13_[+1(6.43e-05)]_10
+PdhR_4992                        2.03e-04  13_[+1(8.47e-06)]_10
+PdhR_5207                        8.97e-05  13_[+1(3.74e-06)]_10
+PdhR_5208                        2.85e-04  13_[+1(1.19e-05)]_10
+PdhR_5280                        3.24e-05  13_[+1(1.35e-06)]_10
+PdhR_5281                        1.89e-04  13_[+1(7.87e-06)]_10
+PdhR_5282                        2.22e-04  13_[+1(9.23e-06)]_10
+PdhR_5283                        4.63e-04  13_[+1(1.93e-05)]_10
+PdhR_5284                        7.77e-04  13_[+1(3.24e-05)]_10
+PdhR_5285                        1.72e-04  13_[+1(7.16e-06)]_10
+PdhR_5286                        1.65e-05  13_[+1(6.87e-07)]_10
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 0a13e386bab0
+
+********************************************************************************

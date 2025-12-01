@@ -1,0 +1,299 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/PurR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PurR_1076                1.0000     36  PurR_2946                1.0000     36  
+PurR_2948                1.0000     36  PurR_2949                1.0000     36  
+PurR_2950                1.0000     36  PurR_3586                1.0000     36  
+PurR_3620                1.0000     36  PurR_3655                1.0000     36  
+PurR_3757                1.0000     36  PurR_3778                1.0000     36  
+PurR_3945                1.0000     36  PurR_3946                1.0000     36  
+PurR_4035                1.0000     36  PurR_4047                1.0000     36  
+PurR_4124                1.0000     36  PurR_4126                1.0000     36  
+PurR_4183                1.0000     36  PurR_4229                1.0000     36  
+PurR_4243                1.0000     36  PurR_4244                1.0000     36  
+PurR_4247                1.0000     36  PurR_4496                1.0000     36  
+PurR_4497                1.0000     36  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/PurR.fasta -oc meme_pwms/PurR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       23    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             828    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    828    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.273 C 0.204 G 0.229 T 0.293 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.273 C 0.204 G 0.23 T 0.293 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AVGCAAACGTTTKCGTT MEME-1	width =  17  sites =  23  llr = 311  E-value = 2.1e-072
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  82:3aa7::2::2:111
+pos.-specific     C  :4:7::1a::::19221
+probability       G  12a:::::a2::3:5:2
+matrix            T  :1::::1::6aa4:276
+
+         bits    2.3        *         
+                 2.1   *    **        
+                 1.8   *  * **    *   
+                 1.6   * ** ** ** *   
+Relative         1.4   * ** ** ** *   
+Entropy          1.1   * ** ** ** *   
+(19.5 bits)      0.9 * **** ** ** *   
+                 0.7 * ******* ** * * 
+                 0.5 * ********** * **
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           ACGCAAACGTTTTCGTT
+consensus             A A     A  G CCG
+sequence              G       G       
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+PurR_1076                    11  1.32e-10 ATAAAGACAC ACGCAAACGTTTTCGTT TATACTGCG 
+PurR_3620                    12  1.54e-09 GGAAATCCCT ACGCAAACGTTTTCTTT TTCTGTTA  
+PurR_2948                    11  4.03e-09 CGCGAGCGTT GCGCAAACGTTTTCGTT ACAATGCGG 
+PurR_3945                    11  1.02e-08 AGGTGTGTAA AGGCAAACGTTTACCTT GCGATTTTG 
+PurR_2949                    11  1.30e-08 TTTTATTTCC ACGCAAACGGTTTCGTC AGCGCATCA 
+PurR_3757                    11  1.80e-08 TTTCACAGCC ACGCAACCGTTTTCCTT GCTCTCTTT 
+PurR_4035                    11  3.61e-08 ATATTTCCCC ACGAAAACGATTGCTTT TTATCTTCA 
+PurR_4243                    11  6.74e-08 AGGTTATCGC AAGAAAACGTTTTCGCG AGGTTGATG 
+PurR_2950                    11  8.13e-08 TTTCGTGCAA AGGAAAACGTTTCCGCT TATCCTTTG 
+PurR_3586                    11  1.14e-07 TTTGCTGCCG ACGCAATCGGTTACCTT GATGCAATC 
+PurR_4126                    11  1.28e-07 TAAAGCAGTC TCGCAAACGTTTGCTTT CCCTGTTAG 
+PurR_3655                    11  1.73e-07 GAAACAGGTT CGGAAAACGTTTGCGTT TTTTTTGCC 
+PurR_2946                    11  1.73e-07 CTGATATGAT ACGCAAACGTGTGCGTC TGCAGGAAA 
+PurR_4047                    11  5.46e-07 GTTCAGGCAA AAGAGAACGATTGCGTT GGGGACCGG 
+PurR_4247                    11  5.96e-07 AAAGGGGTAG ATGCAATCGGTTACGCT CTGTATAAT 
+PurR_3946                    11  7.05e-07 GTAGCGAAAC GAGCAAACGTTTCCACT ACAACTGTG 
+PurR_4124                    11  1.03e-06 CACGAGCTGG ATGCAAACGATTTCAAG GAATGAATT 
+PurR_3778                    11  1.03e-06 CACGAGCTGG ATGCAAACGATTTCAAG GAATGAATT 
+PurR_4244                    11  1.82e-06 TGTTATGAAA AAGAAACCGGTTGCGCA GTTGGAGCG 
+PurR_4496                    11  2.07e-06 CTACATGTTG AGGAAAACGATTGGCTG AACAAAAAA 
+PurR_4183                    11  2.21e-06 TCTTCTTGCT GCGCAAGCGTTTTCCAG AACAGGTTA 
+PurR_4229                    11  2.36e-06 CGTAGCCTGA AGGTAATCGTTTGCGTA AATTCCTTT 
+PurR_4497                    11  1.04e-05 ATCCATTTTT AAGCAAACGGTGATTTT GAAAAATGG 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PurR_1076                         1.3e-10  10_[+1]_9
+PurR_3620                         1.5e-09  11_[+1]_8
+PurR_2948                           4e-09  10_[+1]_9
+PurR_3945                           1e-08  10_[+1]_9
+PurR_2949                         1.3e-08  10_[+1]_9
+PurR_3757                         1.8e-08  10_[+1]_9
+PurR_4035                         3.6e-08  10_[+1]_9
+PurR_4243                         6.7e-08  10_[+1]_9
+PurR_2950                         8.1e-08  10_[+1]_9
+PurR_3586                         1.1e-07  10_[+1]_9
+PurR_4126                         1.3e-07  10_[+1]_9
+PurR_3655                         1.7e-07  10_[+1]_9
+PurR_2946                         1.7e-07  10_[+1]_9
+PurR_4047                         5.5e-07  10_[+1]_9
+PurR_4247                           6e-07  10_[+1]_9
+PurR_3946                         7.1e-07  10_[+1]_9
+PurR_4124                           1e-06  10_[+1]_9
+PurR_3778                           1e-06  10_[+1]_9
+PurR_4244                         1.8e-06  10_[+1]_9
+PurR_4496                         2.1e-06  10_[+1]_9
+PurR_4183                         2.2e-06  10_[+1]_9
+PurR_4229                         2.4e-06  10_[+1]_9
+PurR_4497                           1e-05  10_[+1]_9
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AVGCAAACGTTTKCGTT width=17 seqs=23
+PurR_1076                (   11) ACGCAAACGTTTTCGTT  1 
+PurR_3620                (   12) ACGCAAACGTTTTCTTT  1 
+PurR_2948                (   11) GCGCAAACGTTTTCGTT  1 
+PurR_3945                (   11) AGGCAAACGTTTACCTT  1 
+PurR_2949                (   11) ACGCAAACGGTTTCGTC  1 
+PurR_3757                (   11) ACGCAACCGTTTTCCTT  1 
+PurR_4035                (   11) ACGAAAACGATTGCTTT  1 
+PurR_4243                (   11) AAGAAAACGTTTTCGCG  1 
+PurR_2950                (   11) AGGAAAACGTTTCCGCT  1 
+PurR_3586                (   11) ACGCAATCGGTTACCTT  1 
+PurR_4126                (   11) TCGCAAACGTTTGCTTT  1 
+PurR_3655                (   11) CGGAAAACGTTTGCGTT  1 
+PurR_2946                (   11) ACGCAAACGTGTGCGTC  1 
+PurR_4047                (   11) AAGAGAACGATTGCGTT  1 
+PurR_4247                (   11) ATGCAATCGGTTACGCT  1 
+PurR_3946                (   11) GAGCAAACGTTTCCACT  1 
+PurR_4124                (   11) ATGCAAACGATTTCAAG  1 
+PurR_3778                (   11) ATGCAAACGATTTCAAG  1 
+PurR_4244                (   11) AAGAAACCGGTTGCGCA  1 
+PurR_4496                (   11) AGGAAAACGATTGGCTG  1 
+PurR_4183                (   11) GCGCAAGCGTTTTCCAG  1 
+PurR_4229                (   11) AGGTAATCGTTTGCGTA  1 
+PurR_4497                (   11) AAGCAAACGGTGATTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 460 bayes= 4.24793 E= 2.1e-072 
+   152   -223    -82   -275 
+   -33    109     -8   -117 
+ -1117  -1117    212  -1117 
+    16    167  -1117   -275 
+   181  -1117   -240  -1117 
+   187  -1117  -1117  -1117 
+   144   -123   -240   -117 
+ -1117    229  -1117  -1117 
+ -1117  -1117    212  -1117 
+   -33  -1117     -8     95 
+ -1117  -1117   -240    171 
+ -1117  -1117   -240    171 
+   -65   -123     60     42 
+ -1117    216   -240   -275 
+  -106      9    106    -75 
+  -106      9  -1117    115 
+  -165   -123     -8    105 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 23 E= 2.1e-072 
+ 0.782609  0.043478  0.130435  0.043478 
+ 0.217391  0.434783  0.217391  0.130435 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.304348  0.652174  0.000000  0.043478 
+ 0.956522  0.000000  0.043478  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.739130  0.086957  0.043478  0.130435 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.217391  0.000000  0.217391  0.565217 
+ 0.000000  0.000000  0.043478  0.956522 
+ 0.000000  0.000000  0.043478  0.956522 
+ 0.173913  0.086957  0.347826  0.391304 
+ 0.000000  0.913043  0.043478  0.043478 
+ 0.130435  0.217391  0.478261  0.173913 
+ 0.130435  0.217391  0.000000  0.652174 
+ 0.086957  0.086957  0.217391  0.608696 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AVGCAAACGTTTKCGTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CAG]G[CA]AAACG[TAG]TT[TG]C[GC][TC][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PurR_1076                        2.64e-09  10_[+1(1.32e-10)]_9
+PurR_2946                        3.46e-06  10_[+1(1.73e-07)]_9
+PurR_2948                        8.07e-08  10_[+1(4.03e-09)]_9
+PurR_2949                        2.59e-07  10_[+1(1.30e-08)]_9
+PurR_2950                        1.63e-06  10_[+1(8.13e-08)]_9
+PurR_3586                        2.27e-06  10_[+1(1.14e-07)]_9
+PurR_3620                        3.08e-08  11_[+1(1.54e-09)]_8
+PurR_3655                        3.46e-06  10_[+1(1.73e-07)]_9
+PurR_3757                        3.61e-07  10_[+1(1.80e-08)]_9
+PurR_3778                        2.06e-05  10_[+1(1.03e-06)]_9
+PurR_3945                        2.04e-07  10_[+1(1.02e-08)]_9
+PurR_3946                        1.41e-05  10_[+1(7.05e-07)]_9
+PurR_4035                        7.23e-07  10_[+1(3.61e-08)]_9
+PurR_4047                        1.09e-05  10_[+1(5.46e-07)]_9
+PurR_4124                        2.06e-05  10_[+1(1.03e-06)]_9
+PurR_4126                        2.56e-06  10_[+1(1.28e-07)]_9
+PurR_4183                        4.42e-05  10_[+1(2.21e-06)]_9
+PurR_4229                        4.72e-05  10_[+1(2.36e-06)]_9
+PurR_4243                        1.35e-06  10_[+1(6.74e-08)]_9
+PurR_4244                        3.64e-05  10_[+1(1.82e-06)]_9
+PurR_4247                        1.19e-05  10_[+1(5.96e-07)]_9
+PurR_4496                        4.14e-05  10_[+1(2.07e-06)]_9
+PurR_4497                        2.09e-04  10_[+1(1.04e-05)]_9
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: f8227cd5d300
+
+********************************************************************************

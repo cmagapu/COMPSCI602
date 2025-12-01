@@ -1,0 +1,455 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/GadW.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GadW_0                   1.0000     40  GadW_1                   1.0000     40  
+GadW_15                  1.0000     40  GadW_383                 1.0000     40  
+GadW_384                 1.0000     40  GadW_385                 1.0000     40  
+GadW_386                 1.0000     40  GadW_387                 1.0000     39  
+GadW_388                 1.0000     39  GadW_389                 1.0000     40  
+GadW_390                 1.0000     40  GadW_391                 1.0000     40  
+GadW_392                 1.0000     40  GadW_393                 1.0000     40  
+GadW_394                 1.0000     40  GadW_395                 1.0000     40  
+GadW_396                 1.0000     40  GadW_397                 1.0000     40  
+GadW_398                 1.0000     40  GadW_401                 1.0000     40  
+GadW_402                 1.0000     40  GadW_403                 1.0000     40  
+GadW_404                 1.0000     40  GadW_406                 1.0000     40  
+GadW_407                 1.0000     40  GadW_408                 1.0000     40  
+GadW_2260                1.0000     40  GadW_2261                1.0000     40  
+GadW_2262                1.0000     40  GadW_2263                1.0000     40  
+GadW_2264                1.0000     40  GadW_2265                1.0000     40  
+GadW_2266                1.0000     40  GadW_2267                1.0000     40  
+GadW_2310                1.0000     40  GadW_2311                1.0000     40  
+GadW_2312                1.0000     40  GadW_2313                1.0000     40  
+GadW_2318                1.0000     40  GadW_2322                1.0000     40  
+GadW_2405                1.0000     40  GadW_2406                1.0000     40  
+GadW_2407                1.0000     39  GadW_2408                1.0000     39  
+GadW_2409                1.0000     40  GadW_2410                1.0000     40  
+GadW_2411                1.0000     40  GadW_2421                1.0000     40  
+GadW_3329                1.0000     40  GadW_4952                1.0000     40  
+GadW_5197                1.0000     40  GadW_5205                1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/GadW.fasta -oc meme_pwms/GadW -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       52    maxsites=       52    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2076    N=              52
+sample: seed=            0    hsfrac=          0
+        searchsize=   2076    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.356 C 0.108 G 0.136 T 0.399 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.356 C 0.109 G 0.136 T 0.399 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1	width =  30  sites =  52  llr = 460  E-value = 2.7e-077
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  882225134:3::26361373873325228
+pos.-specific     C  1:2:24::1:::1113::1::211:33131
+probability       G  :135::342111:32:2:211::22:2231
+matrix            T  113361633959841528425:2554162:
+
+         bits    3.2                               
+                 2.9                               
+                 2.6                               
+                 2.2                               
+Relative         1.9                               
+Entropy          1.6                               
+(12.8 bits)      1.3                               
+                 1.0          * **        *        
+                 0.6 ** * **  * **    *   *       *
+                 0.3 ** ***** * ******* ****  *****
+                 0.0 ------------------------------
+
+Multilevel           AATGTATGATTTTTATATTATAATTTATGA
+consensus              GTCCGTT A  G C  ATACTAACC C 
+sequence               AA   A       A        G   A 
+                                                 T 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                         Site           
+-------------             ----- ---------            ------------------------------
+GadW_2265                    10  1.67e-12  TGATATTTT AAGGTCTGATTTTTACGTGATAATTCAGGA G         
+GadW_2264                    10  1.67e-12  TGATATTTT AAGGTCTGATTTTTACGTGATAATTCAGGA G         
+GadW_394                     10  1.67e-12  TGATATTTT AAGGTCTGATTTTTACGTGATAATTCAGGA G         
+GadW_393                     10  1.67e-12  TGATATTTT AAGGTCTGATTTTTACGTGATAATTCAGGA G         
+GadW_2312                    10  1.54e-07  TGCATCTGT AACTCATTGTATTGAAATAAAAATATCTGA T         
+GadW_2311                    10  1.54e-07  TGCATCTGT AACTCATTGTATTGAAATAAAAATATCTGA T         
+GadW_403                     10  1.54e-07  TGCATCTGT AACTCATTGTATTGAAATAAAAATATCTGA T         
+GadW_402                     10  1.54e-07  TGCATCTGT AACTCATTGTATTGAAATAAAAATATCTGA T         
+GadW_2322                    10  2.42e-07  TGAAATAAA AATATCTGATTTTGATATTTTCCATCAACA T         
+GadW_2313                    10  2.42e-07  TGAAATAAA AATATCTGATTTTGATATTTTCCATCAACA T         
+GadW_401                     10  2.42e-07  TGAAATAAA AATATCTGATTTTGATATTTTCCATCAACA T         
+GadW_1                       10  2.42e-07  TGAAATAAA AATATCTGATTTTGATATTTTCCATCAACA T         
+GadW_2267                    10  4.95e-07  ATAATAATC AAGTACTAATAGTGATATTTTAAGGTCTGA T         
+GadW_2266                    10  4.95e-07  ATAATAATC AAGTACTAATAGTGATATTTTAAGGTCTGA T         
+GadW_392                     10  4.95e-07  ATAATAATC AAGTACTAATAGTGATATTTTAAGGTCTGA T         
+GadW_391                     10  4.95e-07  ATAATAATC AAGTACTAATAGTGATATTTTAAGGTCTGA T         
+GadW_3329                    10  3.48e-06  TACGATAAT AAAGTCTGTTTTTAATATTATCATGTTAAA T         
+GadW_2421                    10  3.48e-06  TACGATAAT AAAGTCTGTTTTTAATATTATCATGTTAAA T         
+GadW_2411                    10  3.48e-06  TACGATAAT AAAGTCTGTTTTTAATATTATCATGTTAAA T         
+GadW_384                     10  3.48e-06  TACGATAAT AAAGTCTGTTTTTAATATTATCATGTTAAA T         
+GadW_2408                    10  2.30e-05  ATATTATAA AAAGTCGTTTTTCTGCTTAGGATTTTGTTA           
+GadW_2407                    10  2.30e-05  ATATTATAA AAAGTCGTTTTTCTGCTTAGGATTTTGTTA           
+GadW_388                     10  2.30e-05  ATATTATAA AAAGTCGTTTTTCTGCTTAGGATTTTGTTA           
+GadW_387                     10  2.30e-05  ATATTATAA AAAGTCGTTTTTCTGCTTAGGATTTTGTTA           
+GadW_2261                     8  4.16e-05    TTCAATG AAAAAATATTATTCGCGTAATATCTCACGA TAA       
+GadW_2260                     8  4.16e-05    TTCAATG AAAAAATATTATTCGCGTAATATCTCACGA TAA       
+GadW_398                      8  4.16e-05    TTCAATG AAAAAATATTATTCGCGTAATATCTCACGA TAA       
+GadW_397                      8  4.16e-05    TTCAATG AAAAAATATTATTCGCGTAATATCTCACGA TAA       
+GadW_2263                    10  4.58e-05  GAATTTCAT ATTGTATTGTTTTTCAATGAAAAAATATTA T         
+GadW_2262                    10  4.58e-05  GAATTTCAT ATTGTATTGTTTTTCAATGAAAAAATATTA T         
+GadW_396                     10  4.58e-05  GAATTTCAT ATTGTATTGTTTTTCAATGAAAAAATATTA T         
+GadW_395                     10  4.58e-05  GAATTTCAT ATTGTATTGTTTTTCAATGAAAAAATATTA T         
+GadW_2318                    10  5.53e-05  GCGTCTAAG AATGCAGTCGATTTAATAAAAATTTCCTAA T         
+GadW_2310                    10  5.53e-05  GCGTCTAAG AATGCAGTCGATTTAATAAAAATTTCCTAA T         
+GadW_404                     10  5.53e-05  GCGTCTAAG AATGCAGTCGATTTAATAAAAATTTCCTAA T         
+GadW_15                      10  5.53e-05  GCGTCTAAG AATGCAGTCGATTTAATAAAAATTTCCTAA T         
+GadW_406                     10  1.88e-04  CGCACAGCG TATAGCTTATGTTTATAAAAAAATGGCTGA T         
+GadW_2410                    10  2.04e-04  TAATATTAT CATGTTAAATGTTTATATTATAAAAAGTCG T         
+GadW_2409                    10  2.04e-04  TAATATTAT CATGTTAAATGTTTATATTATAAAAAGTCG T         
+GadW_386                     10  2.04e-04  TAATATTAT CATGTTAAATGTTTATATTATAAAAAGTCG T         
+GadW_385                     10  2.04e-04  TAATATTAT CATGTTAAATGTTTATATTATAAAAAGTCG T         
+GadW_2406                     3  2.79e-04         TC TGCTTAGGATTTTGTTATTTAAATTAAGCC TGTAATGC  
+GadW_2405                     3  2.79e-04         TC TGCTTAGGATTTTGTTATTTAAATTAAGCC TGTAATGC  
+GadW_390                      3  2.79e-04         TC TGCTTAGGATTTTGTTATTTAAATTAAGCC TGTAATGC  
+GadW_389                      3  2.79e-04         TC TGCTTAGGATTTTGTTATTTAAATTAAGCC TGTAATGC  
+GadW_4952                     3  3.79e-04         CT ATGGCAAATTAGCCATTTCAAACATTATCA TGGCTGAT  
+GadW_408                     11  1.65e-03 AAACATTATC ATGGCTGATATTTTCCGTAGTCAGGTTTAA           
+GadW_383                      6  1.75e-03      CTAAA CAGAAAGGATATAAACATCAGACAGGTTTA CGTTA     
+GadW_0                        3  1.86e-03         AT CAGACAGGTTTACGTTACTATCAGGCATAT CACCTCAG  
+GadW_407                      3  3.24e-03         AT CAGCCATTTTTTTATAAACATAAGCTATAC GCTGTGCG  
+GadW_5205                     3  1.23e-02         AT AACTTTTACTGGAAATAAGATCAGCCATTT TTTTATAA  
+GadW_5197                    10  1.38e-02  TTATAAAAA AATGGCTGATCTTATTTCCAGTAAAAGTTA T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GadW_2265                         1.7e-12  9_[+1]_1
+GadW_2264                         1.7e-12  9_[+1]_1
+GadW_394                          1.7e-12  9_[+1]_1
+GadW_393                          1.7e-12  9_[+1]_1
+GadW_2312                         1.5e-07  9_[+1]_1
+GadW_2311                         1.5e-07  9_[+1]_1
+GadW_403                          1.5e-07  9_[+1]_1
+GadW_402                          1.5e-07  9_[+1]_1
+GadW_2322                         2.4e-07  9_[+1]_1
+GadW_2313                         2.4e-07  9_[+1]_1
+GadW_401                          2.4e-07  9_[+1]_1
+GadW_1                            2.4e-07  9_[+1]_1
+GadW_2267                           5e-07  9_[+1]_1
+GadW_2266                           5e-07  9_[+1]_1
+GadW_392                            5e-07  9_[+1]_1
+GadW_391                            5e-07  9_[+1]_1
+GadW_3329                         3.5e-06  9_[+1]_1
+GadW_2421                         3.5e-06  9_[+1]_1
+GadW_2411                         3.5e-06  9_[+1]_1
+GadW_384                          3.5e-06  9_[+1]_1
+GadW_2408                         2.3e-05  9_[+1]
+GadW_2407                         2.3e-05  9_[+1]
+GadW_388                          2.3e-05  9_[+1]
+GadW_387                          2.3e-05  9_[+1]
+GadW_2261                         4.2e-05  7_[+1]_3
+GadW_2260                         4.2e-05  7_[+1]_3
+GadW_398                          4.2e-05  7_[+1]_3
+GadW_397                          4.2e-05  7_[+1]_3
+GadW_2263                         4.6e-05  9_[+1]_1
+GadW_2262                         4.6e-05  9_[+1]_1
+GadW_396                          4.6e-05  9_[+1]_1
+GadW_395                          4.6e-05  9_[+1]_1
+GadW_2318                         5.5e-05  9_[+1]_1
+GadW_2310                         5.5e-05  9_[+1]_1
+GadW_404                          5.5e-05  9_[+1]_1
+GadW_15                           5.5e-05  9_[+1]_1
+GadW_406                          0.00019  9_[+1]_1
+GadW_2410                          0.0002  9_[+1]_1
+GadW_2409                          0.0002  9_[+1]_1
+GadW_386                           0.0002  9_[+1]_1
+GadW_385                           0.0002  9_[+1]_1
+GadW_2406                         0.00028  2_[+1]_8
+GadW_2405                         0.00028  2_[+1]_8
+GadW_390                          0.00028  2_[+1]_8
+GadW_389                          0.00028  2_[+1]_8
+GadW_4952                         0.00038  2_[+1]_8
+GadW_408                           0.0016  10_[+1]
+GadW_383                           0.0018  5_[+1]_5
+GadW_0                             0.0019  2_[+1]_8
+GadW_407                           0.0032  2_[+1]_8
+GadW_5205                           0.012  2_[+1]_8
+GadW_5197                           0.014  9_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AADGTMTDWTWTTKAHATWAWAAWWYMTNA width=30 seqs=52
+GadW_2265                (   10) AAGGTCTGATTTTTACGTGATAATTCAGGA  1 
+GadW_2264                (   10) AAGGTCTGATTTTTACGTGATAATTCAGGA  1 
+GadW_394                 (   10) AAGGTCTGATTTTTACGTGATAATTCAGGA  1 
+GadW_393                 (   10) AAGGTCTGATTTTTACGTGATAATTCAGGA  1 
+GadW_2312                (   10) AACTCATTGTATTGAAATAAAAATATCTGA  1 
+GadW_2311                (   10) AACTCATTGTATTGAAATAAAAATATCTGA  1 
+GadW_403                 (   10) AACTCATTGTATTGAAATAAAAATATCTGA  1 
+GadW_402                 (   10) AACTCATTGTATTGAAATAAAAATATCTGA  1 
+GadW_2322                (   10) AATATCTGATTTTGATATTTTCCATCAACA  1 
+GadW_2313                (   10) AATATCTGATTTTGATATTTTCCATCAACA  1 
+GadW_401                 (   10) AATATCTGATTTTGATATTTTCCATCAACA  1 
+GadW_1                   (   10) AATATCTGATTTTGATATTTTCCATCAACA  1 
+GadW_2267                (   10) AAGTACTAATAGTGATATTTTAAGGTCTGA  1 
+GadW_2266                (   10) AAGTACTAATAGTGATATTTTAAGGTCTGA  1 
+GadW_392                 (   10) AAGTACTAATAGTGATATTTTAAGGTCTGA  1 
+GadW_391                 (   10) AAGTACTAATAGTGATATTTTAAGGTCTGA  1 
+GadW_3329                (   10) AAAGTCTGTTTTTAATATTATCATGTTAAA  1 
+GadW_2421                (   10) AAAGTCTGTTTTTAATATTATCATGTTAAA  1 
+GadW_2411                (   10) AAAGTCTGTTTTTAATATTATCATGTTAAA  1 
+GadW_384                 (   10) AAAGTCTGTTTTTAATATTATCATGTTAAA  1 
+GadW_2408                (   10) AAAGTCGTTTTTCTGCTTAGGATTTTGTTA  1 
+GadW_2407                (   10) AAAGTCGTTTTTCTGCTTAGGATTTTGTTA  1 
+GadW_388                 (   10) AAAGTCGTTTTTCTGCTTAGGATTTTGTTA  1 
+GadW_387                 (   10) AAAGTCGTTTTTCTGCTTAGGATTTTGTTA  1 
+GadW_2261                (    8) AAAAAATATTATTCGCGTAATATCTCACGA  1 
+GadW_2260                (    8) AAAAAATATTATTCGCGTAATATCTCACGA  1 
+GadW_398                 (    8) AAAAAATATTATTCGCGTAATATCTCACGA  1 
+GadW_397                 (    8) AAAAAATATTATTCGCGTAATATCTCACGA  1 
+GadW_2263                (   10) ATTGTATTGTTTTTCAATGAAAAAATATTA  1 
+GadW_2262                (   10) ATTGTATTGTTTTTCAATGAAAAAATATTA  1 
+GadW_396                 (   10) ATTGTATTGTTTTTCAATGAAAAAATATTA  1 
+GadW_395                 (   10) ATTGTATTGTTTTTCAATGAAAAAATATTA  1 
+GadW_2318                (   10) AATGCAGTCGATTTAATAAAAATTTCCTAA  1 
+GadW_2310                (   10) AATGCAGTCGATTTAATAAAAATTTCCTAA  1 
+GadW_404                 (   10) AATGCAGTCGATTTAATAAAAATTTCCTAA  1 
+GadW_15                  (   10) AATGCAGTCGATTTAATAAAAATTTCCTAA  1 
+GadW_406                 (   10) TATAGCTTATGTTTATAAAAAAATGGCTGA  1 
+GadW_2410                (   10) CATGTTAAATGTTTATATTATAAAAAGTCG  1 
+GadW_2409                (   10) CATGTTAAATGTTTATATTATAAAAAGTCG  1 
+GadW_386                 (   10) CATGTTAAATGTTTATATTATAAAAAGTCG  1 
+GadW_385                 (   10) CATGTTAAATGTTTATATTATAAAAAGTCG  1 
+GadW_2406                (    3) TGCTTAGGATTTTGTTATTTAAATTAAGCC  1 
+GadW_2405                (    3) TGCTTAGGATTTTGTTATTTAAATTAAGCC  1 
+GadW_390                 (    3) TGCTTAGGATTTTGTTATTTAAATTAAGCC  1 
+GadW_389                 (    3) TGCTTAGGATTTTGTTATTTAAATTAAGCC  1 
+GadW_4952                (    3) ATGGCAAATTAGCCATTTCAAACATTATCA  1 
+GadW_408                 (   11) ATGGCTGATATTTTCCGTAGTCAGGTTTAA  1 
+GadW_383                 (    6) CAGAAAGGATATAAACATCAGACAGGTTTA  1 
+GadW_0                   (    3) CAGACAGGTTTACGTTACTATCAGGCATAT  1 
+GadW_407                 (    3) CAGCCATTTTTTTATAAACATAAGCTATAC  1 
+GadW_5205                (    3) AACTTTTACTGGAAATAAGATCAGCCATTT  1 
+GadW_5197                (   10) AATGGCTGATCTTATTTCCAGTAAAAGTTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 30 n= 568 bayes= 3.31079 E= 2.7e-077 
+   111     31  -1234   -205 
+   118  -1234    -82   -179 
+   -63     67     88    -21 
+   -75   -250    193    -67 
+  -104    109   -182     48 
+    37    196  -1234   -179 
+  -189  -1234    108     62 
+   -30  -1234    143    -21 
+    31    -18     18    -37 
+  -421  -1234    -82    118 
+    -4   -250    -24     38 
+  -421  -1234    -24    112 
+  -321      9  -1234    108 
+  -121    -18    126      8 
+    79    -18     18   -157 
+   -51    131  -1234     27 
+    83  -1234     35   -105 
+  -140   -150  -1234    105 
+    -4    -50     35      2 
+    92  -1234    -50    -79 
+    -4  -1234    -24     43 
+   111     96  -1234   -437 
+    88      9  -1234    -79 
+   -30    -50     18     27 
+   -51   -150     76     27 
+  -104    167   -182     15 
+    37    120     35   -179 
+  -121    -50     18     62 
+   -75    120    126    -92 
+   115    -18    -82   -337 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 30 nsites= 52 E= 2.7e-077 
+ 0.769231  0.134615  0.000000  0.096154 
+ 0.807692  0.000000  0.076923  0.115385 
+ 0.230769  0.173077  0.250000  0.346154 
+ 0.211538  0.019231  0.519231  0.250000 
+ 0.173077  0.230769  0.038462  0.557692 
+ 0.461538  0.423077  0.000000  0.115385 
+ 0.096154  0.000000  0.288462  0.615385 
+ 0.288462  0.000000  0.365385  0.346154 
+ 0.442308  0.096154  0.153846  0.307692 
+ 0.019231  0.000000  0.076923  0.903846 
+ 0.346154  0.019231  0.115385  0.519231 
+ 0.019231  0.000000  0.115385  0.865385 
+ 0.038462  0.115385  0.000000  0.846154 
+ 0.153846  0.096154  0.326923  0.423077 
+ 0.615385  0.096154  0.153846  0.134615 
+ 0.250000  0.269231  0.000000  0.480769 
+ 0.634615  0.000000  0.173077  0.192308 
+ 0.134615  0.038462  0.000000  0.826923 
+ 0.346154  0.076923  0.173077  0.403846 
+ 0.673077  0.000000  0.096154  0.230769 
+ 0.346154  0.000000  0.115385  0.538462 
+ 0.769231  0.211538  0.000000  0.019231 
+ 0.653846  0.115385  0.000000  0.230769 
+ 0.288462  0.076923  0.153846  0.480769 
+ 0.250000  0.038462  0.230769  0.480769 
+ 0.173077  0.346154  0.038462  0.442308 
+ 0.461538  0.250000  0.173077  0.115385 
+ 0.153846  0.076923  0.153846  0.615385 
+ 0.211538  0.250000  0.326923  0.211538 
+ 0.788462  0.096154  0.076923  0.038462 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AADGTMTDWTWTTKAHATWAWAAWWYMTNA MEME-1 regular expression
+--------------------------------------------------------------------------------
+AA[TGA][GTA][TC][AC][TG][GTA][AT]T[TA]TT[TG]A[TCA]AT[TA][AT][TA][AC][AT][TA][TAG][TC][AC]T[GCAT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GadW_0                           2.02e-02  40
+GadW_1                           2.66e-06  9_[+1(2.42e-07)]_1
+GadW_15                          6.09e-04  9_[+1(5.53e-05)]_1
+GadW_383                         1.91e-02  40
+GadW_384                         3.83e-05  9_[+1(3.48e-06)]_1
+GadW_385                         2.24e-03  40
+GadW_386                         2.24e-03  40
+GadW_387                         2.30e-04  9_[+1(2.30e-05)]
+GadW_388                         2.30e-04  9_[+1(2.30e-05)]
+GadW_389                         3.07e-03  40
+GadW_390                         3.07e-03  40
+GadW_391                         5.45e-06  9_[+1(4.95e-07)]_1
+GadW_392                         5.45e-06  9_[+1(4.95e-07)]_1
+GadW_393                         1.84e-11  9_[+1(1.67e-12)]_1
+GadW_394                         1.84e-11  9_[+1(1.67e-12)]_1
+GadW_395                         5.04e-04  9_[+1(4.58e-05)]_1
+GadW_396                         5.04e-04  9_[+1(4.58e-05)]_1
+GadW_397                         4.58e-04  7_[+1(4.16e-05)]_3
+GadW_398                         4.58e-04  7_[+1(4.16e-05)]_3
+GadW_401                         2.66e-06  9_[+1(2.42e-07)]_1
+GadW_402                         1.70e-06  9_[+1(1.54e-07)]_1
+GadW_403                         1.70e-06  9_[+1(1.54e-07)]_1
+GadW_404                         6.09e-04  9_[+1(5.53e-05)]_1
+GadW_406                         2.06e-03  40
+GadW_407                         3.51e-02  40
+GadW_408                         1.80e-02  40
+GadW_2260                        4.58e-04  7_[+1(4.16e-05)]_3
+GadW_2261                        4.58e-04  7_[+1(4.16e-05)]_3
+GadW_2262                        5.04e-04  9_[+1(4.58e-05)]_1
+GadW_2263                        5.04e-04  9_[+1(4.58e-05)]_1
+GadW_2264                        1.84e-11  9_[+1(1.67e-12)]_1
+GadW_2265                        1.84e-11  9_[+1(1.67e-12)]_1
+GadW_2266                        5.45e-06  9_[+1(4.95e-07)]_1
+GadW_2267                        5.45e-06  9_[+1(4.95e-07)]_1
+GadW_2310                        6.09e-04  9_[+1(5.53e-05)]_1
+GadW_2311                        1.70e-06  9_[+1(1.54e-07)]_1
+GadW_2312                        1.70e-06  9_[+1(1.54e-07)]_1
+GadW_2313                        2.66e-06  9_[+1(2.42e-07)]_1
+GadW_2318                        6.09e-04  9_[+1(5.53e-05)]_1
+GadW_2322                        2.66e-06  9_[+1(2.42e-07)]_1
+GadW_2405                        3.07e-03  40
+GadW_2406                        3.07e-03  40
+GadW_2407                        2.30e-04  9_[+1(2.30e-05)]
+GadW_2408                        2.30e-04  9_[+1(2.30e-05)]
+GadW_2409                        2.24e-03  40
+GadW_2410                        2.24e-03  40
+GadW_2411                        3.83e-05  9_[+1(3.48e-06)]_1
+GadW_2421                        3.83e-05  9_[+1(3.48e-06)]_1
+GadW_3329                        3.83e-05  9_[+1(3.48e-06)]_1
+GadW_4952                        4.16e-03  40
+GadW_5197                        1.41e-01  40
+GadW_5205                        1.27e-01  40
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 865a7fd70555
+
+********************************************************************************

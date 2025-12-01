@@ -1,0 +1,420 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/LexA.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LexA_39                  1.0000     40  LexA_77                  1.0000     40  
+LexA_170                 1.0000     40  LexA_774                 1.0000     40  
+LexA_791                 1.0000     40  LexA_1016                1.0000     35  
+LexA_1081                1.0000     36  LexA_1082                1.0000     36  
+LexA_1085                1.0000     36  LexA_1086                1.0000     36  
+LexA_2197                1.0000     40  LexA_3049                1.0000     40  
+LexA_3050                1.0000     40  LexA_3380                1.0000     40  
+LexA_3381                1.0000     40  LexA_3693                1.0000     40  
+LexA_3813                1.0000     40  LexA_3840                1.0000     40  
+LexA_3841                1.0000     40  LexA_3852                1.0000     40  
+LexA_3853                1.0000     36  LexA_3854                1.0000     40  
+LexA_3875                1.0000     40  LexA_3876                1.0000     40  
+LexA_4316                1.0000     40  LexA_4318                1.0000     40  
+LexA_4369                1.0000     40  LexA_4412                1.0000     40  
+LexA_4413                1.0000     40  LexA_4415                1.0000     40  
+LexA_4416                1.0000     40  LexA_4429                1.0000     40  
+LexA_4449                1.0000     40  LexA_4471                1.0000     40  
+LexA_4857                1.0000     40  LexA_4858                1.0000     40  
+LexA_4860                1.0000     40  LexA_4890                1.0000     40  
+LexA_4891                1.0000     40  LexA_4974                1.0000     40  
+LexA_4975                1.0000     40  LexA_5175                1.0000     40  
+LexA_5176                1.0000     40  LexA_5177                1.0000     40  
+LexA_5178                1.0000     40  LexA_5180                1.0000     40  
+LexA_5181                1.0000     40  LexA_5182                1.0000     40  
+LexA_5230                1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/LexA.fasta -oc meme_pwms/LexA -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       49    maxsites=       49    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1935    N=              49
+sample: seed=            0    hsfrac=          0
+        searchsize=   1935    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.306 C 0.192 G 0.184 T 0.318 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.306 C 0.192 G 0.184 T 0.318 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACTGTATAWAWAWMCAGYD MEME-1	width =  19  sites =  49  llr = 485  E-value = 6.6e-102
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  6:::1617363635:8:14
+pos.-specific     C  19::111:1111249::3:
+probability       G  2::a2111::::1::1912
+matrix            T  1:a:72725252411:153
+
+         bits    2.4    *               
+                 2.2    *               
+                 2.0  * *               
+                 1.7  ***          *    
+Relative         1.5  ***          * *  
+Entropy          1.2  ***          * *  
+(14.3 bits)      1.0  ***          ***  
+                 0.7  ***          ***  
+                 0.5 ***** **     ****  
+                 0.2 ************ ******
+                 0.0 -------------------
+
+Multilevel           ACTGTATATATATACAGTA
+consensus                GT  ATATAC   CT
+sequence                               G
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+LexA_5178                    12  1.51e-09 TTGCAACTAT ACTGTATATAAAAACAGTA TCAATGGAGG
+LexA_3875                    12  1.51e-09 AGAACAGACT ACTGTATATAAAAACAGTA TAACTTCAGG
+LexA_5175                    12  2.10e-09 GATACTCACA ACTGTATATAAATACAGTT ACAGATTTAC
+LexA_4857                    12  4.51e-09 CAGCCTCTTT ACTGTATATAAAACCAGTT TATACTGTAC
+LexA_5180                    12  7.57e-09 AACAGGACTC ACTGTATAAATAAACAGCT ATTTTGTTGA
+LexA_4471                    12  1.17e-08 TCCAAATATT ACTGTTTATTTATACAGTA AACTTCTATA
+LexA_5177                    12  1.46e-08 GGTTATTTTA CCTGTATAAATAACCAGTA TATTCAACAG
+LexA_3050                    12  2.75e-08 TCACAGCATA ACTGTATATACACCCAGGG GGCGGAATGA
+LexA_4416                    12  4.89e-08 TTCATCCTTC GCTGGATATCTATCCAGCA TTTTTTTATC
+LexA_4413                    13  4.89e-08 TTCATCCTTC GCTGGATATCTATCCAGCA TTTTTTTAT 
+LexA_5181                    12  1.16e-07 CGCCTGTTAC ACTGGATAGATAACCAGCA TTCGGAGTCA
+LexA_5176                    12  1.16e-07 AAAGAAATAT ACTGTATAAAATCACAGTT ATTATGAGAG
+LexA_4318                    12  1.37e-07 ACCTGCATGT ACTGTATGATTATCCAGTT AGCTCTGAGG
+LexA_3853                    10  1.37e-07  TGGTGATGA ACTGTTTTTTTATCCAGTA TAATTTGT  
+LexA_3841                    12  1.37e-07 CACTGGATGT ACTGTACATCCATACAGTA ACTCACAGGG
+LexA_3049                    12  1.37e-07 ATCGCCTTTT GCTGTATATACTCACAGCA TAACTGTATA
+LexA_1081                    10  1.37e-07  TGGTGATGA ACTGTTTTTTTATCCAGTA TAATTTGT  
+LexA_2197                    12  1.87e-07 CCCTGAAATC ACTGTATACTTTACCAGTG TTGAGAGGTG
+LexA_77                      12  1.87e-07 CCCTGAAATC ACTGTATACTTTACCAGTG TTGAGAGGTG
+LexA_3854                    12  2.19e-07 AATCAGCAAA TCTGTATATATACCCAGCT TTTTGGCGGA
+LexA_39                      12  2.19e-07 TACAATTCAA GCTGAATAAATATACAGCA CAGGAGATAC
+LexA_4860                    13  2.54e-07 TCTGCATTCA ACTGGATAAAATTACAGGG ATGCAGAAT 
+LexA_4858                    12  4.51e-07 ACCAGTTTAT ACTGTACACAATAACAGTA ATGGTTTTTC
+LexA_5182                    12  1.13e-06 GATTAACGCA ACTGATTAAAAACCCAGCG TCCGCGTCGC
+LexA_4369                    12  1.28e-06 GGCAGTAATG ACTGTATAAAACCACAGCC AATCAAACGA
+LexA_3813                    12  1.28e-06 AACACTTGAT ACTGTATGAGCATACAGTA TAATTGCTTC
+LexA_3840                    12  1.44e-06 CACAAATTGA CCTGAATGAATATACAGTA TTGGAATGCA
+LexA_4316                    12  2.31e-06 AAAATCCTAT ACTGTACGTATCGACAGTT TAGTGAGTTT
+LexA_3852                    12  2.31e-06 GCATTCCAAT ACTGTATATTCATTCAGGT CAATTTGTGT
+LexA_4890                    12  4.03e-06 CCCCATATTT ACTGATGATATATACAGGT ATTTAGCGCG
+LexA_5230                    12  5.00e-06 TGACATAATC CCTGTTCAAATCAACAGGG GGTAGTGTGA
+LexA_4975                    12  6.82e-06 TGATTACACT CCTGTTAATCCATACAGCA ACAGTACTGG
+LexA_774                     12  1.49e-05 GCAAGGACGT GCTGGTTTTATAACCTGCA TGTACTGTAT
+LexA_4891                    12  2.36e-05 ACTTCCGTGC ACTGTATAAAAATCCTATA CTGTACGTAT
+LexA_4429                    12  4.31e-05 CGTAGGGCTT ACTGTGAAACGATCCGGTA AGCCGTTGGT
+LexA_4449                    12  5.51e-05 ATGCCACAAT ATTGGCTGTTTATACAGTA TTTCAGGTTT
+LexA_3380                    12  7.58e-05 CCAGCAGCTG GCTGCGCTTATCGACAGTT ATCGCCGTGG
+LexA_1016                    10  8.19e-05  AAAATAGCG CCTGTTTTTATTTCAGGCA ATCGGGG   
+LexA_4415                    12  1.20e-04 AATAAATTAT ACTGTGCCATTTTTCAGTT CATCGAGACA
+LexA_4412                    11  1.20e-04 AATAAATTAT ACTGTGCCATTTTTCAGTT CATCGAGACA
+LexA_3693                    13  2.77e-04 TTTGAAATAA GCTGGCGTTGATGCCAGCG GCAAACCGA 
+LexA_791                     14  3.37e-04 GTCACGGACT GATGGTTATATAAACATAG GCTGACTC  
+LexA_3381                    12  5.22e-04 TATCCTGACG CCTGGCTTTCAGGGCAGCG TTATTTCGAA
+LexA_1085                    10  1.50e-03  TATTTTTTA ACTGGTTAGATAAATGCAA TGGCAGTC  
+LexA_1082                    10  1.92e-03  TCCACTATT CCTGTGGATAACCATGTGT ATTAGAGT  
+LexA_3876                    12  3.48e-03 TCAGTATTGA TCTGCTGGCAAGAACAGAC TACTGTATAT
+LexA_170                      5  6.32e-03       TTAT GATGTATACTATTATGTAT ATTCTGGTGT
+LexA_1086                    10  7.57e-03  TGCCATAAA ACTGTCATCACTCATCTTG ACAAATGT  
+LexA_4974                    12  2.06e-02 GTAGTTCAGT TCTGCGTATTGCAGAGAGG ACGAATGCAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LexA_5178                         1.5e-09  11_[+1]_10
+LexA_3875                         1.5e-09  11_[+1]_10
+LexA_5175                         2.1e-09  11_[+1]_10
+LexA_4857                         4.5e-09  11_[+1]_10
+LexA_5180                         7.6e-09  11_[+1]_10
+LexA_4471                         1.2e-08  11_[+1]_10
+LexA_5177                         1.5e-08  11_[+1]_10
+LexA_3050                         2.8e-08  11_[+1]_10
+LexA_4416                         4.9e-08  11_[+1]_10
+LexA_4413                         4.9e-08  12_[+1]_9
+LexA_5181                         1.2e-07  11_[+1]_10
+LexA_5176                         1.2e-07  11_[+1]_10
+LexA_4318                         1.4e-07  11_[+1]_10
+LexA_3853                         1.4e-07  9_[+1]_8
+LexA_3841                         1.4e-07  11_[+1]_10
+LexA_3049                         1.4e-07  11_[+1]_10
+LexA_1081                         1.4e-07  9_[+1]_8
+LexA_2197                         1.9e-07  11_[+1]_10
+LexA_77                           1.9e-07  11_[+1]_10
+LexA_3854                         2.2e-07  11_[+1]_10
+LexA_39                           2.2e-07  11_[+1]_10
+LexA_4860                         2.5e-07  12_[+1]_9
+LexA_4858                         4.5e-07  11_[+1]_10
+LexA_5182                         1.1e-06  11_[+1]_10
+LexA_4369                         1.3e-06  11_[+1]_10
+LexA_3813                         1.3e-06  11_[+1]_10
+LexA_3840                         1.4e-06  11_[+1]_10
+LexA_4316                         2.3e-06  11_[+1]_10
+LexA_3852                         2.3e-06  11_[+1]_10
+LexA_4890                           4e-06  11_[+1]_10
+LexA_5230                           5e-06  11_[+1]_10
+LexA_4975                         6.8e-06  11_[+1]_10
+LexA_774                          1.5e-05  11_[+1]_10
+LexA_4891                         2.4e-05  11_[+1]_10
+LexA_4429                         4.3e-05  11_[+1]_10
+LexA_4449                         5.5e-05  11_[+1]_10
+LexA_3380                         7.6e-05  11_[+1]_10
+LexA_1016                         8.2e-05  9_[+1]_7
+LexA_4415                         0.00012  11_[+1]_10
+LexA_4412                         0.00012  10_[+1]_11
+LexA_3693                         0.00028  12_[+1]_9
+LexA_791                          0.00034  13_[+1]_8
+LexA_3381                         0.00052  11_[+1]_10
+LexA_1085                          0.0015  9_[+1]_8
+LexA_1082                          0.0019  9_[+1]_8
+LexA_3876                          0.0035  11_[+1]_10
+LexA_170                           0.0063  4_[+1]_17
+LexA_1086                          0.0076  9_[+1]_8
+LexA_4974                           0.021  11_[+1]_10
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACTGTATAWAWAWMCAGYD width=19 seqs=49
+LexA_5178                (   12) ACTGTATATAAAAACAGTA  1 
+LexA_3875                (   12) ACTGTATATAAAAACAGTA  1 
+LexA_5175                (   12) ACTGTATATAAATACAGTT  1 
+LexA_4857                (   12) ACTGTATATAAAACCAGTT  1 
+LexA_5180                (   12) ACTGTATAAATAAACAGCT  1 
+LexA_4471                (   12) ACTGTTTATTTATACAGTA  1 
+LexA_5177                (   12) CCTGTATAAATAACCAGTA  1 
+LexA_3050                (   12) ACTGTATATACACCCAGGG  1 
+LexA_4416                (   12) GCTGGATATCTATCCAGCA  1 
+LexA_4413                (   13) GCTGGATATCTATCCAGCA  1 
+LexA_5181                (   12) ACTGGATAGATAACCAGCA  1 
+LexA_5176                (   12) ACTGTATAAAATCACAGTT  1 
+LexA_4318                (   12) ACTGTATGATTATCCAGTT  1 
+LexA_3853                (   10) ACTGTTTTTTTATCCAGTA  1 
+LexA_3841                (   12) ACTGTACATCCATACAGTA  1 
+LexA_3049                (   12) GCTGTATATACTCACAGCA  1 
+LexA_1081                (   10) ACTGTTTTTTTATCCAGTA  1 
+LexA_2197                (   12) ACTGTATACTTTACCAGTG  1 
+LexA_77                  (   12) ACTGTATACTTTACCAGTG  1 
+LexA_3854                (   12) TCTGTATATATACCCAGCT  1 
+LexA_39                  (   12) GCTGAATAAATATACAGCA  1 
+LexA_4860                (   13) ACTGGATAAAATTACAGGG  1 
+LexA_4858                (   12) ACTGTACACAATAACAGTA  1 
+LexA_5182                (   12) ACTGATTAAAAACCCAGCG  1 
+LexA_4369                (   12) ACTGTATAAAACCACAGCC  1 
+LexA_3813                (   12) ACTGTATGAGCATACAGTA  1 
+LexA_3840                (   12) CCTGAATGAATATACAGTA  1 
+LexA_4316                (   12) ACTGTACGTATCGACAGTT  1 
+LexA_3852                (   12) ACTGTATATTCATTCAGGT  1 
+LexA_4890                (   12) ACTGATGATATATACAGGT  1 
+LexA_5230                (   12) CCTGTTCAAATCAACAGGG  1 
+LexA_4975                (   12) CCTGTTAATCCATACAGCA  1 
+LexA_774                 (   12) GCTGGTTTTATAACCTGCA  1 
+LexA_4891                (   12) ACTGTATAAAAATCCTATA  1 
+LexA_4429                (   12) ACTGTGAAACGATCCGGTA  1 
+LexA_4449                (   12) ATTGGCTGTTTATACAGTA  1 
+LexA_3380                (   12) GCTGCGCTTATCGACAGTT  1 
+LexA_1016                (   10) CCTGTTTTTATTTCAGGCA  1 
+LexA_4415                (   12) ACTGTGCCATTTTTCAGTT  1 
+LexA_4412                (   11) ACTGTGCCATTTTTCAGTT  1 
+LexA_3693                (   13) GCTGGCGTTGATGCCAGCG  1 
+LexA_791                 (   14) GATGGTTATATAAACATAG  1 
+LexA_3381                (   12) CCTGGCTTTCAGGGCAGCG  1 
+LexA_1085                (   10) ACTGGTTAGATAAATGCAA  1 
+LexA_1082                (   10) CCTGTGGATAACCATGTGT  1 
+LexA_3876                (   12) TCTGCTGGCAAGAACAGAC  1 
+LexA_170                 (    5) GATGTATACTATTATGTAT  1 
+LexA_1086                (   10) ACTGTCATCACTCATCTTG  1 
+LexA_4974                (   12) TCTGCGTATTGCAGAGAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 1053 bayes= 4.35683 E= 6.6e-102 
+   100    -43      0   -237 
+  -291    229  -1226   -396 
+ -1226  -1226  -1226    165 
+ -1226  -1226    244  -1226 
+  -191   -165     15    104 
+    85   -123    -59    -38 
+  -232    -43   -117    117 
+   114   -223    -59    -96 
+     0    -65   -217     74 
+    95    -65   -217    -38 
+     0    -43   -217     68 
+    95    -65   -217    -38 
+     0    -23   -117     50 
+    79     94   -217   -237 
+  -291    219  -1226   -196 
+   141   -323    -59   -296 
+  -291   -323    222   -196 
+  -191     57    -37     62 
+    55   -223     29    -15 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 49 E= 6.6e-102 
+ 0.612245  0.142857  0.183673  0.061224 
+ 0.040816  0.938776  0.000000  0.020408 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.081633  0.061224  0.204082  0.653061 
+ 0.551020  0.081633  0.122449  0.244898 
+ 0.061224  0.142857  0.081633  0.714286 
+ 0.673469  0.040816  0.122449  0.163265 
+ 0.306122  0.122449  0.040816  0.530612 
+ 0.591837  0.122449  0.040816  0.244898 
+ 0.306122  0.142857  0.040816  0.510204 
+ 0.591837  0.122449  0.040816  0.244898 
+ 0.306122  0.163265  0.081633  0.448980 
+ 0.530612  0.367347  0.040816  0.061224 
+ 0.040816  0.877551  0.000000  0.081633 
+ 0.816327  0.020408  0.122449  0.040816 
+ 0.040816  0.020408  0.857143  0.081633 
+ 0.081633  0.285714  0.142857  0.489796 
+ 0.448980  0.040816  0.224490  0.285714 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACTGTATAWAWAWMCAGYD MEME-1 regular expression
+--------------------------------------------------------------------------------
+ACTG[TG][AT]TA[TA][AT][TA][AT][TA][AC]CAG[TC][ATG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LexA_39                          4.81e-06  11_[+1(2.19e-07)]_10
+LexA_77                          4.12e-06  11_[+1(1.87e-07)]_10
+LexA_170                         1.30e-01  40
+LexA_774                         3.28e-04  11_[+1(1.49e-05)]_10
+LexA_791                         7.39e-03  40
+LexA_1016                        1.39e-03  9_[+1(8.19e-05)]_7
+LexA_1081                        2.46e-06  9_[+1(1.37e-07)]_8
+LexA_1082                        3.40e-02  36
+LexA_1085                        2.66e-02  36
+LexA_1086                        1.28e-01  36
+LexA_2197                        4.12e-06  11_[+1(1.87e-07)]_10
+LexA_3049                        3.01e-06  11_[+1(1.37e-07)]_10
+LexA_3050                        6.05e-07  11_[+1(2.75e-08)]_10
+LexA_3380                        1.67e-03  11_[+1(7.58e-05)]_10
+LexA_3381                        1.14e-02  40
+LexA_3693                        6.08e-03  40
+LexA_3813                        2.81e-05  11_[+1(1.28e-06)]_10
+LexA_3840                        3.18e-05  11_[+1(1.44e-06)]_10
+LexA_3841                        3.01e-06  11_[+1(1.37e-07)]_10
+LexA_3852                        5.09e-05  11_[+1(2.31e-06)]_10
+LexA_3853                        2.46e-06  9_[+1(1.37e-07)]_8
+LexA_3854                        4.81e-06  11_[+1(2.19e-07)]_10
+LexA_3875                        3.32e-08  11_[+1(1.51e-09)]_10
+LexA_3876                        7.38e-02  40
+LexA_4316                        5.09e-05  11_[+1(2.31e-06)]_10
+LexA_4318                        3.01e-06  11_[+1(1.37e-07)]_10
+LexA_4369                        2.81e-05  11_[+1(1.28e-06)]_10
+LexA_4412                        2.63e-03  40
+LexA_4413                        1.07e-06  12_[+1(4.89e-08)]_9
+LexA_4415                        2.63e-03  40
+LexA_4416                        1.07e-06  11_[+1(4.89e-08)]_10
+LexA_4429                        9.48e-04  11_[+1(4.31e-05)]_10
+LexA_4449                        1.21e-03  11_[+1(5.51e-05)]_10
+LexA_4471                        2.58e-07  11_[+1(1.17e-08)]_10
+LexA_4857                        9.93e-08  11_[+1(4.51e-09)]_10
+LexA_4858                        9.92e-06  11_[+1(4.51e-07)]_10
+LexA_4860                        5.60e-06  12_[+1(2.54e-07)]_9
+LexA_4890                        8.88e-05  11_[+1(4.03e-06)]_10
+LexA_4891                        5.18e-04  11_[+1(2.36e-05)]_10
+LexA_4974                        3.67e-01  40
+LexA_4975                        1.50e-04  11_[+1(6.82e-06)]_10
+LexA_5175                        4.62e-08  11_[+1(2.10e-09)]_10
+LexA_5176                        2.56e-06  11_[+1(1.16e-07)]_10
+LexA_5177                        3.22e-07  11_[+1(1.46e-08)]_10
+LexA_5178                        3.32e-08  11_[+1(1.51e-09)]_10
+LexA_5180                        1.66e-07  11_[+1(7.57e-09)]_10
+LexA_5181                        2.56e-06  11_[+1(1.16e-07)]_10
+LexA_5182                        2.49e-05  11_[+1(1.13e-06)]_10
+LexA_5230                        1.10e-04  11_[+1(5.00e-06)]_10
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 39a6d669b211
+
+********************************************************************************

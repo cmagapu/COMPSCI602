@@ -1,0 +1,281 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/MalT.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MalT_2821                1.0000     30  MalT_2822                1.0000     30  
+MalT_2823                1.0000     30  MalT_2824                1.0000     30  
+MalT_3051                1.0000     30  MalT_3052                1.0000     30  
+MalT_3057                1.0000     30  MalT_3058                1.0000     30  
+MalT_3059                1.0000     30  MalT_3061                1.0000     30  
+MalT_3062                1.0000     30  MalT_3064                1.0000     30  
+MalT_3067                1.0000     30  MalT_3068                1.0000     30  
+MalT_3897                1.0000     30  MalT_3898                1.0000     30  
+MalT_3900                1.0000     30  MalT_4450                1.0000     30  
+MalT_4451                1.0000     30  MalT_4452                1.0000     30  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/MalT.fasta -oc meme_pwms/MalT -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       20    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             600    N=              20
+sample: seed=            0    hsfrac=          0
+        searchsize=    600    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.187 C 0.343 G 0.237 T 0.233 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.187 C 0.343 G 0.237 T 0.233 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MKCCBBSSKSMTSMK MEME-1	width =  15  sites =  20  llr = 116  E-value = 3.9e-001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  7::12:22214:14:
+pos.-specific     C  42783535245:561
+probability       G  :432235445134:4
+matrix            T  :51:431:3118::6
+
+         bits    2.4                
+                 2.2                
+                 1.9                
+                 1.7                
+Relative         1.5                
+Entropy          1.2 *          *   
+(8.4 bits)       1.0 *          * * 
+                 0.7 * **       * **
+                 0.5 ****   *   ****
+                 0.2 **** **********
+                 0.0 ---------------
+
+Multilevel           ATCCTCGCGGCTCCT
+consensus            CGGGCGCGTCAGGAG
+sequence              C  GT A       
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+MalT_3062                     2  1.27e-05          C ATCCTCCCGCCTCCT CCCCCATAAA
+MalT_3061                    12  1.27e-05 CCGTGTTCTC ATCCTCCCGCCTCCT CCCC      
+MalT_3052                     8  1.85e-05    GGGGAGG AGGCGGGAGGATGAG AACACGGC  
+MalT_3898                     2  1.62e-04          C ACCCTTGCTTCTCAT CCTGTGGACT
+MalT_3897                    15  1.62e-04 GAGATCGCTC ACCCTTGCTTCTCAT C         
+MalT_2823                     2  1.62e-04          C ATCCCCGCAACTCCT CCCTGCCTAA
+MalT_2822                    15  1.62e-04 TTCCTTGCTC ATCCCCGCAACTCCT C         
+MalT_3068                     5  3.35e-04       AAAA AGCCAGGGGGTGGAG GATTTAAGCC
+MalT_3900                     5  3.74e-04       CTTA CCGCTCAGGGATGAG TTTTGTTTGG
+MalT_3051                     8  4.64e-04    CTTTTTT ATGGGGGAGGAGGCG GGAGGATG  
+MalT_4452                    12  5.69e-04 TATCCTTCAG ATGATGAGTGATCCT GCAT      
+MalT_4451                     2  6.92e-04          C CGCCCCCGTCCTCCT CCCCCAAATA
+MalT_4450                    15  6.92e-04 GAAAGTTATC CGCCCCCGTCCTCCT C         
+MalT_3059                     8  6.92e-04    GGGGCGT AGGGGCAAGGAGGAT GGAAAGAG  
+MalT_2824                     5  8.35e-04       TAAT CCCCCGCAGGATGAG GAAGGTCAAC
+MalT_3067                    12  1.40e-03 TCTTTCCATC CTCCTTGCCCCTACG CCCC      
+MalT_3064                     2  1.40e-03          C CTCCTTGCCCCTACG CCCCACCGTC
+MalT_3058                     2  2.34e-03          A AGCGACGGTGGGGCG TAGGGGCAAG
+MalT_3057                    12  6.39e-03 GGCTTAAATC CTCCACCCCCTGGCT TTTT      
+MalT_2821                    10  1.64e-02  CTAGCTTTA AGTGGTTGAGATCAC ATTTCC    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MalT_3062                         1.3e-05  1_[+1]_14
+MalT_3061                         1.3e-05  11_[+1]_4
+MalT_3052                         1.8e-05  7_[+1]_8
+MalT_3898                         0.00016  1_[+1]_14
+MalT_3897                         0.00016  14_[+1]_1
+MalT_2823                         0.00016  1_[+1]_14
+MalT_2822                         0.00016  14_[+1]_1
+MalT_3068                         0.00033  4_[+1]_11
+MalT_3900                         0.00037  4_[+1]_11
+MalT_3051                         0.00046  7_[+1]_8
+MalT_4452                         0.00057  11_[+1]_4
+MalT_4451                         0.00069  1_[+1]_14
+MalT_4450                         0.00069  14_[+1]_1
+MalT_3059                         0.00069  7_[+1]_8
+MalT_2824                         0.00083  4_[+1]_11
+MalT_3067                          0.0014  11_[+1]_4
+MalT_3064                          0.0014  1_[+1]_14
+MalT_3058                          0.0023  1_[+1]_14
+MalT_3057                          0.0064  11_[+1]_4
+MalT_2821                           0.016  9_[+1]_6
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MKCCBBSSKSMTSMK width=15 seqs=20
+MalT_3062                (    2) ATCCTCCCGCCTCCT  1 
+MalT_3061                (   12) ATCCTCCCGCCTCCT  1 
+MalT_3052                (    8) AGGCGGGAGGATGAG  1 
+MalT_3898                (    2) ACCCTTGCTTCTCAT  1 
+MalT_3897                (   15) ACCCTTGCTTCTCAT  1 
+MalT_2823                (    2) ATCCCCGCAACTCCT  1 
+MalT_2822                (   15) ATCCCCGCAACTCCT  1 
+MalT_3068                (    5) AGCCAGGGGGTGGAG  1 
+MalT_3900                (    5) CCGCTCAGGGATGAG  1 
+MalT_3051                (    8) ATGGGGGAGGAGGCG  1 
+MalT_4452                (   12) ATGATGAGTGATCCT  1 
+MalT_4451                (    2) CGCCCCCGTCCTCCT  1 
+MalT_4450                (   15) CGCCCCCGTCCTCCT  1 
+MalT_3059                (    8) AGGGGCAAGGAGGAT  1 
+MalT_2824                (    5) CCCCCGCAGGATGAG  1 
+MalT_3067                (   12) CTCCTTGCCCCTACG  1 
+MalT_3064                (    2) CTCCTTGCCCCTACG  1 
+MalT_3058                (    2) AGCGACGGTGGGGCG  1 
+MalT_3057                (   12) CTCCACCCCCTGGCT  1 
+MalT_2821                (   10) AGTGGTTGAGATCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 320 bayes= 3.90689 E= 3.9e-001 
+   180      3  -1097  -1097 
+ -1097    -78     56     95 
+ -1097    103      8   -222 
+  -190    113    -24  -1097 
+   -32    -45    -24     78 
+ -1097     54      8     10 
+   -32    -19    108   -222 
+    10     39     56  -1097 
+   -32   -119     76     36 
+   -90      3     93   -122 
+    90     54   -224   -122 
+ -1097  -1097      8    168 
+   -90     54     76  -1097 
+   110     81  -1097  -1097 
+ -1097   -277     76    124 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 20 E= 3.9e-001 
+ 0.650000  0.350000  0.000000  0.000000 
+ 0.000000  0.200000  0.350000  0.450000 
+ 0.000000  0.700000  0.250000  0.050000 
+ 0.050000  0.750000  0.200000  0.000000 
+ 0.150000  0.250000  0.200000  0.400000 
+ 0.000000  0.500000  0.250000  0.250000 
+ 0.150000  0.300000  0.500000  0.050000 
+ 0.200000  0.450000  0.350000  0.000000 
+ 0.150000  0.150000  0.400000  0.300000 
+ 0.100000  0.350000  0.450000  0.100000 
+ 0.350000  0.500000  0.050000  0.100000 
+ 0.000000  0.000000  0.250000  0.750000 
+ 0.100000  0.500000  0.400000  0.000000 
+ 0.400000  0.600000  0.000000  0.000000 
+ 0.000000  0.050000  0.400000  0.550000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MKCCBBSSKSMTSMK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AC][TGC][CG][CG][TCG][CGT][GC][CGA][GT][GC][CA][TG][CG][CA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MalT_2821                        2.33e-01  30
+MalT_2822                        2.58e-03  30
+MalT_2823                        2.58e-03  30
+MalT_2824                        1.33e-02  30
+MalT_3051                        7.40e-03  30
+MalT_3052                        2.95e-04  7_[+1(1.85e-05)]_8
+MalT_3057                        9.75e-02  30
+MalT_3058                        3.68e-02  30
+MalT_3059                        1.10e-02  30
+MalT_3061                        2.04e-04  11_[+1(1.27e-05)]_4
+MalT_3062                        2.04e-04  1_[+1(1.27e-05)]_14
+MalT_3064                        2.21e-02  30
+MalT_3067                        2.21e-02  30
+MalT_3068                        5.34e-03  30
+MalT_3897                        2.58e-03  30
+MalT_3898                        2.58e-03  30
+MalT_3900                        5.97e-03  30
+MalT_4450                        1.10e-02  30
+MalT_4451                        1.10e-02  30
+MalT_4452                        9.07e-03  30
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 9d1a12489d5d
+
+********************************************************************************

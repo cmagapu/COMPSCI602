@@ -1,0 +1,295 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/SlyA.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SlyA_981                 1.0000     32  SlyA_982                 1.0000     32  
+SlyA_983                 1.0000     32  SlyA_984                 1.0000     32  
+SlyA_985                 1.0000     32  SlyA_986                 1.0000     32  
+SlyA_987                 1.0000     32  SlyA_988                 1.0000     32  
+SlyA_989                 1.0000     32  SlyA_990                 1.0000     32  
+SlyA_991                 1.0000     32  SlyA_992                 1.0000     32  
+SlyA_995                 1.0000     32  SlyA_996                 1.0000     32  
+SlyA_1094                1.0000     32  SlyA_1095                1.0000     33  
+SlyA_1096                1.0000     33  SlyA_3283                1.0000     32  
+SlyA_3286                1.0000     32  SlyA_4993                1.0000     32  
+SlyA_4994                1.0000     32  SlyA_4995                1.0000     32  
+SlyA_4996                1.0000     32  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/SlyA.fasta -oc meme_pwms/SlyA -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       23    maxsites=       23    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             738    N=              23
+sample: seed=            0    hsfrac=          0
+        searchsize=    738    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.397 C 0.107 G 0.148 T 0.348 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.396 C 0.108 G 0.148 T 0.348 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KAHTWAWATMDAYRM MEME-1	width =  15  sites =  23  llr = 130  E-value = 2.7e-001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  173:37582656:35
+pos.-specific     C  :23:::::14::3:4
+probability       G  5:::22::2:31:51
+matrix            T  414a51525:3361:
+
+         bits    3.2                
+                 2.9                
+                 2.6                
+                 2.2                
+Relative         1.9                
+Entropy          1.6                
+(8.1 bits)       1.3    *           
+                 1.0    *     *  * *
+                 0.6 *  *   * *  ***
+                 0.3 ******** ******
+                 0.0 ---------------
+
+Multilevel           GATTTAAATAAATGA
+consensus            TCA A T ACGTCAC
+sequence               C G   G T    
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+SlyA_4996                     1  9.19e-08          . GACTGAAATCGTTGC AGATAAAACG
+SlyA_4995                    15  9.19e-08 GAATGATTAT GACTGAAATCGTTGC AGA       
+SlyA_4994                     7  6.17e-05     TTTATA TATTTAAAGAGGCGA ATGATTATGA
+SlyA_4993                    16  6.17e-05 ACAATTTATA TATTTAAAGAGGCGA AT        
+SlyA_1096                     1  9.23e-05          . TAATTGTAGCTTTGC TATGCTAGTA
+SlyA_987                     15  2.16e-04 CTTACATTAT GCTGGGAACCAACGA CCT       
+SlyA_983                     14  2.16e-04 GAAGAGATCA GGATGATAACGATGA AAAA      
+SlyA_996                      8  4.17e-04    AATTAAT GCATTAAATATATAA ATTAATTATT
+SlyA_995                     16  4.17e-04 AAGAATTAAT GCATTAAATATATAA AT        
+SlyA_992                     12  5.65e-04 AAATACATAT TACTAATATAAATAA ATTTTG    
+SlyA_991                      1  7.54e-04          . GCATAATATCTTAGC AAGCTAATTA
+SlyA_3286                     6  1.09e-03      TATCA TATTAATAGAAATAA AGACATTGAC
+SlyA_3283                    17  1.09e-03 ATATTTATCA TATTAATAGAAATAA A         
+SlyA_988                      5  1.29e-03       ATCC TCATTATTTCAACCA TAATCACTGG
+SlyA_985                      8  1.29e-03    AAATAAT GATTTATAAAAATAG GGTGCGAAAT
+SlyA_1094                     1  1.41e-03          . ATCTTTAATCGATGC GCGGAAATAT
+SlyA_982                     12  1.80e-03 TGAATGTGAT TATTGAATTAATTAC GCCGTA    
+SlyA_990                     14  1.95e-03 TATTGCGTTA GATTAATAAATATTC TTTA      
+SlyA_984                      5  1.95e-03       TTGC TAATAGTTAAATCGC GAATCATAAA
+SlyA_1095                     8  2.28e-03    AATATTT AACTTGAACAAGCGG AAATAAATAG
+SlyA_989                     18  3.06e-03 CACTTAAGGT GTATATTTTCTATGC           
+SlyA_981                      8  4.31e-03    CTTATAA CACTTAGAAAAACAA CATGTTAAAA
+SlyA_986                      7  2.37e-02     ATTTGT GATTTTACTTAACTA TTGTGTAACT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SlyA_4996                         9.2e-08  [+1]_17
+SlyA_4995                         9.2e-08  14_[+1]_3
+SlyA_4994                         6.2e-05  6_[+1]_11
+SlyA_4993                         6.2e-05  15_[+1]_2
+SlyA_1096                         9.2e-05  [+1]_18
+SlyA_987                          0.00022  14_[+1]_3
+SlyA_983                          0.00022  13_[+1]_4
+SlyA_996                          0.00042  7_[+1]_10
+SlyA_995                          0.00042  15_[+1]_2
+SlyA_992                          0.00057  11_[+1]_6
+SlyA_991                          0.00075  [+1]_17
+SlyA_3286                          0.0011  5_[+1]_12
+SlyA_3283                          0.0011  16_[+1]_1
+SlyA_988                           0.0013  4_[+1]_13
+SlyA_985                           0.0013  7_[+1]_10
+SlyA_1094                          0.0014  [+1]_17
+SlyA_982                           0.0018  11_[+1]_6
+SlyA_990                           0.0019  13_[+1]_4
+SlyA_984                           0.0019  4_[+1]_13
+SlyA_1095                          0.0023  7_[+1]_11
+SlyA_989                           0.0031  17_[+1]
+SlyA_981                           0.0043  7_[+1]_10
+SlyA_986                            0.024  6_[+1]_11
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KAHTWAWATMDAYRM width=15 seqs=23
+SlyA_4996                (    1) GACTGAAATCGTTGC  1 
+SlyA_4995                (   15) GACTGAAATCGTTGC  1 
+SlyA_4994                (    7) TATTTAAAGAGGCGA  1 
+SlyA_4993                (   16) TATTTAAAGAGGCGA  1 
+SlyA_1096                (    1) TAATTGTAGCTTTGC  1 
+SlyA_987                 (   15) GCTGGGAACCAACGA  1 
+SlyA_983                 (   14) GGATGATAACGATGA  1 
+SlyA_996                 (    8) GCATTAAATATATAA  1 
+SlyA_995                 (   16) GCATTAAATATATAA  1 
+SlyA_992                 (   12) TACTAATATAAATAA  1 
+SlyA_991                 (    1) GCATAATATCTTAGC  1 
+SlyA_3286                (    6) TATTAATAGAAATAA  1 
+SlyA_3283                (   17) TATTAATAGAAATAA  1 
+SlyA_988                 (    5) TCATTATTTCAACCA  1 
+SlyA_985                 (    8) GATTTATAAAAATAG  1 
+SlyA_1094                (    1) ATCTTTAATCGATGC  1 
+SlyA_982                 (   12) TATTGAATTAATTAC  1 
+SlyA_990                 (   14) GATTAATAAATATTC  1 
+SlyA_984                 (    5) TAATAGTTAAATCGC  1 
+SlyA_1095                (    8) AACTTGAACAAGCGG  1 
+SlyA_989                 (   18) GTATATTTTCTATGC  1 
+SlyA_981                 (    8) CACTTAGAAAAACAA  1 
+SlyA_986                 (    7) GATTTTACTTAACTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 416 bayes= 4.09482 E= 2.7e-001 
+  -219   -131    169     17 
+    72    101   -177   -200 
+   -19    127  -1117     17 
+ -1117  -1117   -177    146 
+   -38  -1117     55     46 
+    81  -1117     23   -141 
+    27  -1117   -177     46 
+    98   -131  -1117   -100 
+   -87    -31     55     46 
+    51    186  -1117   -300 
+    27  -1117     82    -41 
+    62  -1117    -18    -41 
+  -318    169  -1117     81 
+   -19   -131    181   -200 
+    40    186    -77  -1117 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 23 E= 2.7e-001 
+ 0.086957  0.043478  0.478261  0.391304 
+ 0.652174  0.217391  0.043478  0.086957 
+ 0.347826  0.260870  0.000000  0.391304 
+ 0.000000  0.000000  0.043478  0.956522 
+ 0.304348  0.000000  0.217391  0.478261 
+ 0.695652  0.000000  0.173913  0.130435 
+ 0.478261  0.000000  0.043478  0.478261 
+ 0.782609  0.043478  0.000000  0.173913 
+ 0.217391  0.086957  0.217391  0.478261 
+ 0.565217  0.391304  0.000000  0.043478 
+ 0.478261  0.000000  0.260870  0.260870 
+ 0.608696  0.000000  0.130435  0.260870 
+ 0.043478  0.347826  0.000000  0.608696 
+ 0.347826  0.043478  0.521739  0.086957 
+ 0.521739  0.391304  0.086957  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KAHTWAWATMDAYRM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GT][AC][TAC]T[TAG]A[AT]A[TAG][AC][AGT][AT][TC][GA][AC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.14 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SlyA_981                         7.47e-02  32
+SlyA_982                         3.19e-02  32
+SlyA_983                         3.89e-03  32
+SlyA_984                         3.45e-02  32
+SlyA_985                         2.30e-02  32
+SlyA_986                         3.50e-01  32
+SlyA_987                         3.89e-03  32
+SlyA_988                         2.30e-02  32
+SlyA_989                         5.36e-02  32
+SlyA_990                         3.45e-02  32
+SlyA_991                         1.35e-02  32
+SlyA_992                         1.01e-02  32
+SlyA_995                         7.47e-03  32
+SlyA_996                         7.47e-03  32
+SlyA_1094                        2.50e-02  32
+SlyA_1095                        4.24e-02  33
+SlyA_1096                        1.75e-03  [+1(9.23e-05)]_18
+SlyA_3283                        1.94e-02  32
+SlyA_3286                        1.94e-02  32
+SlyA_4993                        1.11e-03  15_[+1(6.17e-05)]_2
+SlyA_4994                        1.11e-03  6_[+1(6.17e-05)]_11
+SlyA_4995                        1.65e-06  14_[+1(9.19e-08)]_3
+SlyA_4996                        1.65e-06  [+1(9.19e-08)]_17
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: de44d6cb1ab5
+
+********************************************************************************

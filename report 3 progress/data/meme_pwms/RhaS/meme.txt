@@ -1,0 +1,271 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/RhaS.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RhaS_160                 1.0000     37  RhaS_161                 1.0000     37  
+RhaS_617                 1.0000     37  RhaS_618                 1.0000     37  
+RhaS_2168                1.0000     37  RhaS_2169                1.0000     37  
+RhaS_2170                1.0000     37  RhaS_3681                1.0000     37  
+RhaS_3682                1.0000     37  RhaS_4281                1.0000     37  
+RhaS_4282                1.0000     37  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/RhaS.fasta -oc meme_pwms/RhaS -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       11    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             407    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    407    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.26 C 0.236 G 0.214 T 0.29 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.26 C 0.236 G 0.214 T 0.29 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1	width =  30  sites =  11  llr = 141  E-value = 3.7e-009
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5:36::2414455:114534533:524321
+pos.-specific     C  :15363444:2422:534:::35:3522:1
+probability       G  :::::61:52::2:2321464:1a1342:5
+matrix            T  59314143:55228722:4:252:111483
+
+         bits    2.2                        *      
+                 2.0                        *      
+                 1.8                        *      
+                 1.6                        *      
+Relative         1.3  *                     *      
+Entropy          1.1  *  *        *     *   *    * 
+(18.5 bits)      0.9 **  **  *    **    *   *    * 
+                 0.7 ** ***  *    **  * *   *    * 
+                 0.4 ****** ***** **  ***** **   **
+                 0.2 **************** ********** **
+                 0.0 ------------------------------
+
+Multilevel           TTCACGCAGTTAATTCAAGGATCGACATTG
+consensus            A ACTCTCCAAC   GCCTAGAA CGGA T
+sequence               T    T          A  C        
+                                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                         Site           
+-------------             ----- ---------            ------------------------------
+RhaS_2169                     1  1.46e-09          . TTCACGCTGTATCTTGAAAAATCGACGTTT TTTACGT   
+RhaS_161                      1  1.46e-09          . TTCACGCTGTATCTTGAAAAATCGACGTTT TTTACGT   
+RhaS_4282                     2  2.36e-09          C ATCACGTTCATCTTTCCCTGGTTGCCAATG GCCCAT    
+RhaS_2170                     7  4.67e-08     CGTGGT TTTCCGTCGAAAATTTAAGGTAAGAACCTG A         
+RhaS_160                      7  4.67e-08     CGTGGT TTTCCGTCGAAAATTTAAGGTAAGAACCTG A         
+RhaS_2168                     5  1.42e-07       GCGA ATAATCAACTTCGTTCTCTGGCCGAGGTAG CCA       
+RhaS_617                      5  1.42e-07       GCGA ATAATCAACTTCGTTCTCTGGCCGAGGTAG CCA       
+RhaS_3681                     2  5.02e-07          A ATCACCCACTTAATGCCGTGATTGCCAGTA AATCGA    
+RhaS_4281                     6  4.81e-06      CCATT TTCCTGTCAGTAACGAGAAGGTCGCGAATT CA        
+RhaS_618                      2  1.44e-05          C TTTTTTCAGACCTTTCCAGAACAGGCTGTG GTTAGC    
+RhaS_3682                     4  1.23e-04        TCG ACAACGGCGGCAACAGGCGAAAGGTTAATC GACA      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RhaS_2169                         1.5e-09  [+1]_7
+RhaS_161                          1.5e-09  [+1]_7
+RhaS_4282                         2.4e-09  1_[+1]_6
+RhaS_2170                         4.7e-08  6_[+1]_1
+RhaS_160                          4.7e-08  6_[+1]_1
+RhaS_2168                         1.4e-07  4_[+1]_3
+RhaS_617                          1.4e-07  4_[+1]_3
+RhaS_3681                           5e-07  1_[+1]_6
+RhaS_4281                         4.8e-06  5_[+1]_2
+RhaS_618                          1.4e-05  1_[+1]_6
+RhaS_3682                         0.00012  3_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTHAYGHHSWWMATTSNMDRRHMGMSVNTK width=30 seqs=11
+RhaS_2169                (    1) TTCACGCTGTATCTTGAAAAATCGACGTTT  1 
+RhaS_161                 (    1) TTCACGCTGTATCTTGAAAAATCGACGTTT  1 
+RhaS_4282                (    2) ATCACGTTCATCTTTCCCTGGTTGCCAATG  1 
+RhaS_2170                (    7) TTTCCGTCGAAAATTTAAGGTAAGAACCTG  1 
+RhaS_160                 (    7) TTTCCGTCGAAAATTTAAGGTAAGAACCTG  1 
+RhaS_2168                (    5) ATAATCAACTTCGTTCTCTGGCCGAGGTAG  1 
+RhaS_617                 (    5) ATAATCAACTTCGTTCTCTGGCCGAGGTAG  1 
+RhaS_3681                (    2) ATCACCCACTTAATGCCGTGATTGCCAGTA  1 
+RhaS_4281                (    6) TTCCTGTCAGTAACGAGAAGGTCGCGAATT  1 
+RhaS_618                 (    2) TTTTTTCAGACCTTTCCAGAACAGGCTGTG  1 
+RhaS_3682                (    4) ACAACGGCGGCAACAGGCGAAAGGTTAATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 30 n= 88 bayes= 2.80735 E= 3.7e-009 
+    80  -1010  -1010     91 
+ -1010   -137  -1010    165 
+     7     94  -1010     -9 
+   129     21  -1010   -167 
+ -1010    143  -1010     33 
+ -1010     21    157   -167 
+   -52     62   -123     33 
+    48     62  -1010     -9 
+  -152     62    135  -1010 
+    48  -1010    -24     65 
+    48    -38  -1010     65 
+    80     62  -1010    -67 
+    80    -38    -24    -67 
+ -1010    -38  -1010    150 
+  -152  -1010    -24    133 
+  -152     94     35    -67 
+    48     21    -24    -67 
+   107     62   -123  -1010 
+     7  -1010     76     33 
+    48  -1010    157  -1010 
+    80  -1010     76    -67 
+     7     21  -1010     65 
+     7     94   -123    -67 
+ -1010  -1010    222  -1010 
+   107     21   -123   -167 
+   -52     94     35   -167 
+    48    -38     76   -167 
+     7    -38    -24     33 
+   -52  -1010  -1010    150 
+  -152   -137    135     -9 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 30 nsites= 11 E= 3.7e-009 
+ 0.454545  0.000000  0.000000  0.545455 
+ 0.000000  0.090909  0.000000  0.909091 
+ 0.272727  0.454545  0.000000  0.272727 
+ 0.636364  0.272727  0.000000  0.090909 
+ 0.000000  0.636364  0.000000  0.363636 
+ 0.000000  0.272727  0.636364  0.090909 
+ 0.181818  0.363636  0.090909  0.363636 
+ 0.363636  0.363636  0.000000  0.272727 
+ 0.090909  0.363636  0.545455  0.000000 
+ 0.363636  0.000000  0.181818  0.454545 
+ 0.363636  0.181818  0.000000  0.454545 
+ 0.454545  0.363636  0.000000  0.181818 
+ 0.454545  0.181818  0.181818  0.181818 
+ 0.000000  0.181818  0.000000  0.818182 
+ 0.090909  0.000000  0.181818  0.727273 
+ 0.090909  0.454545  0.272727  0.181818 
+ 0.363636  0.272727  0.181818  0.181818 
+ 0.545455  0.363636  0.090909  0.000000 
+ 0.272727  0.000000  0.363636  0.363636 
+ 0.363636  0.000000  0.636364  0.000000 
+ 0.454545  0.000000  0.363636  0.181818 
+ 0.272727  0.272727  0.000000  0.454545 
+ 0.272727  0.454545  0.090909  0.181818 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.545455  0.272727  0.090909  0.090909 
+ 0.181818  0.454545  0.272727  0.090909 
+ 0.363636  0.181818  0.363636  0.090909 
+ 0.272727  0.181818  0.181818  0.363636 
+ 0.181818  0.000000  0.000000  0.818182 
+ 0.090909  0.090909  0.545455  0.272727 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTHAYGHHSWWMATTSNMDRRHMGMSVNTK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]T[CAT][AC][CT][GC][CT][ACT][GC][TA][TA][AC]ATT[CG][AC][AC][GTA][GA][AG][TAC][CA]G[AC][CG][AG][TA]T[GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.15 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RhaS_160                         3.74e-07  6_[+1(4.67e-08)]_1
+RhaS_161                         1.17e-08  [+1(1.46e-09)]_7
+RhaS_617                         1.14e-06  4_[+1(1.42e-07)]_3
+RhaS_618                         1.15e-04  1_[+1(1.44e-05)]_6
+RhaS_2168                        1.14e-06  4_[+1(1.42e-07)]_3
+RhaS_2169                        1.17e-08  [+1(1.46e-09)]_7
+RhaS_2170                        3.74e-07  6_[+1(4.67e-08)]_1
+RhaS_3681                        4.01e-06  1_[+1(5.02e-07)]_6
+RhaS_3682                        9.87e-04  37
+RhaS_4281                        3.85e-05  5_[+1(4.81e-06)]_2
+RhaS_4282                        1.89e-08  1_[+1(2.36e-09)]_6
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: d7fd5bf2ee50
+
+********************************************************************************

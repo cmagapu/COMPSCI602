@@ -1,0 +1,261 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/AgaR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AgaR_4189                1.0000     40  AgaR_4190                1.0000     40  
+AgaR_4191                1.0000     40  AgaR_4192                1.0000     40  
+AgaR_4193                1.0000     40  AgaR_4439                1.0000     40  
+AgaR_4440                1.0000     40  AgaR_4441                1.0000     40  
+AgaR_4442                1.0000     40  AgaR_4443                1.0000     40  
+AgaR_4444                1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/AgaR.fasta -oc meme_pwms/AgaR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       11    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             440    N=              11
+sample: seed=            0    hsfrac=          0
+        searchsize=    440    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.28 C 0.186 G 0.159 T 0.375 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.279 C 0.187 G 0.16 T 0.374 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1	width =  25  sites =  11  llr = 107  E-value = 7.1e+000
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  345214:443211334124443153
+pos.-specific     C  254:1184::1132::62:::2:2:
+probability       G  511211:21:116::::4:1:2521
+matrix            T  :::675215767:576336564516
+
+         bits    2.6                          
+                 2.4                          
+                 2.1                          
+                 1.9                          
+Relative         1.6       *                  
+Entropy          1.3       *     *            
+(14.0 bits)      1.1 *     *     *            
+                 0.8 ***   *  *  * * *     *  
+                 0.5 ****  *  *  * *** * * * *
+                 0.3 ***** *************** ***
+                 0.0 -------------------------
+
+Multilevel           GCATTTCATTTTGTTTCGTTTTGAT
+consensus            AAC  A CAA  CAAATTAAAAT A
+sequence                                      
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+AgaR_4440                     8  1.04e-08    CCGTAAG GCCTTTCTTTTTCTTTCGTTTTGAT CTGTGCAG  
+AgaR_4441                     8  2.03e-07    GCATCCA GCAATCCCTTTTGCTTCCTTTATCT TTTCTTTC  
+AgaR_4189                     8  3.47e-07    TTTCAGT GACTTTCATTATGTTTCTTTTGTGA ATCAGATC  
+AgaR_4443                     8  3.86e-06    TCCATTG AACTTTCAGTTTCTTTTCTATAGAT TTTAATCA  
+AgaR_4439                     8  8.34e-06    CTGGATT CAGGGTCAATTAGCTTCGTTTTGAT AGTTTGCT  
+AgaR_4442                     8  1.09e-05    CGATCAC AAATTTCGTTTTATTTCTTTTTTCT CCATTGAA  
+AgaR_4191                     5  1.83e-05       TGAC GCAGTATCAACTGAAACAAAACGAA AGATTAATAT
+AgaR_4190                     3  1.83e-05         AA CCATTATCTTTCGTTTTATTTTTAT CTCACCATGA
+AgaR_4444                     5  2.15e-05       AAAG ACATCACCAAGTGAAATGAAACGAA AGGCAAGTGA
+AgaR_4193                    10  5.70e-05  CGTTAATAG GCAAAACGAAATGAAACGAAAGTTT TACGAA    
+AgaR_4192                     3  8.05e-04         TG GGCTTGCATTTGCTTAATAGAAAGG CGTTAATAGG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AgaR_4440                           1e-08  7_[+1]_8
+AgaR_4441                           2e-07  7_[+1]_8
+AgaR_4189                         3.5e-07  7_[+1]_8
+AgaR_4443                         3.9e-06  7_[+1]_8
+AgaR_4439                         8.3e-06  7_[+1]_8
+AgaR_4442                         1.1e-05  7_[+1]_8
+AgaR_4191                         1.8e-05  4_[+1]_11
+AgaR_4190                         1.8e-05  2_[+1]_13
+AgaR_4444                         2.2e-05  4_[+1]_11
+AgaR_4193                         5.7e-05  9_[+1]_6
+AgaR_4192                         0.00081  2_[+1]_13
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RMMTTWCVWTTTGWTWCNWWWHKAT width=25 seqs=11
+AgaR_4440                (    8) GCCTTTCTTTTTCTTTCGTTTTGAT  1 
+AgaR_4441                (    8) GCAATCCCTTTTGCTTCCTTTATCT  1 
+AgaR_4189                (    8) GACTTTCATTATGTTTCTTTTGTGA  1 
+AgaR_4443                (    8) AACTTTCAGTTTCTTTTCTATAGAT  1 
+AgaR_4439                (    8) CAGGGTCAATTAGCTTCGTTTTGAT  1 
+AgaR_4442                (    8) AAATTTCGTTTTATTTCTTTTTTCT  1 
+AgaR_4191                (    5) GCAGTATCAACTGAAACAAAACGAA  1 
+AgaR_4190                (    3) CCATTATCTTTCGTTTTATTTTTAT  1 
+AgaR_4444                (    5) ACATCACCAAGTGAAATGAAACGAA  1 
+AgaR_4193                (   10) GCAAAACGAAATGAAACGAAAGTTT  1 
+AgaR_4192                (    3) GGCTTGCATTTGCTTAATAGAAAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 176 bayes= 3.90689 E= 7.1e+000 
+    -3     -4    177  -1010 
+    38    154    -81  -1010 
+    97     96    -81  -1010 
+   -62  -1010     19     77 
+  -162   -104    -81     96 
+    38   -104    -81     28 
+ -1010    213  -1010   -104 
+    38     96     19   -204 
+    38  -1010    -81     54 
+    -3  -1010  -1010     96 
+   -62   -104    -81     77 
+  -162   -104    -81     96 
+  -162     54    199  -1010 
+    -3     -4  -1010     54 
+    -3  -1010  -1010     96 
+    38  -1010  -1010     77 
+  -162    177  -1010    -45 
+   -62     -4    118    -45 
+    38  -1010  -1010     77 
+    38  -1010    -81     54 
+    38  -1010  -1010     77 
+    -3     -4     19     -4 
+  -162  -1010    151     28 
+    97     -4     19   -204 
+    -3  -1010    -81     77 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 11 E= 7.1e+000 
+ 0.272727  0.181818  0.545455  0.000000 
+ 0.363636  0.545455  0.090909  0.000000 
+ 0.545455  0.363636  0.090909  0.000000 
+ 0.181818  0.000000  0.181818  0.636364 
+ 0.090909  0.090909  0.090909  0.727273 
+ 0.363636  0.090909  0.090909  0.454545 
+ 0.000000  0.818182  0.000000  0.181818 
+ 0.363636  0.363636  0.181818  0.090909 
+ 0.363636  0.000000  0.090909  0.545455 
+ 0.272727  0.000000  0.000000  0.727273 
+ 0.181818  0.090909  0.090909  0.636364 
+ 0.090909  0.090909  0.090909  0.727273 
+ 0.090909  0.272727  0.636364  0.000000 
+ 0.272727  0.181818  0.000000  0.545455 
+ 0.272727  0.000000  0.000000  0.727273 
+ 0.363636  0.000000  0.000000  0.636364 
+ 0.090909  0.636364  0.000000  0.272727 
+ 0.181818  0.181818  0.363636  0.272727 
+ 0.363636  0.000000  0.000000  0.636364 
+ 0.363636  0.000000  0.090909  0.545455 
+ 0.363636  0.000000  0.000000  0.636364 
+ 0.272727  0.181818  0.181818  0.363636 
+ 0.090909  0.000000  0.454545  0.454545 
+ 0.545455  0.181818  0.181818  0.090909 
+ 0.272727  0.000000  0.090909  0.636364 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RMMTTWCVWTTTGWTWCNWWWHKAT MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GA][CA][AC]TT[TA]C[AC][TA][TA]TT[GC][TA][TA][TA][CT][GT][TA][TA][TA][TA][GT]A[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AgaR_4189                        5.55e-06  7_[+1(3.47e-07)]_8
+AgaR_4190                        2.93e-04  2_[+1(1.83e-05)]_13
+AgaR_4191                        2.93e-04  4_[+1(1.83e-05)]_11
+AgaR_4192                        1.28e-02  40
+AgaR_4193                        9.12e-04  9_[+1(5.70e-05)]_6
+AgaR_4439                        1.33e-04  7_[+1(8.34e-06)]_8
+AgaR_4440                        1.67e-07  7_[+1(1.04e-08)]_8
+AgaR_4441                        3.25e-06  7_[+1(2.03e-07)]_8
+AgaR_4442                        1.75e-04  7_[+1(1.09e-05)]_8
+AgaR_4443                        6.18e-05  7_[+1(3.86e-06)]_8
+AgaR_4444                        3.45e-04  4_[+1(2.15e-05)]_11
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 6b4e6ad554f1
+
+********************************************************************************

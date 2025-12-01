@@ -1,0 +1,312 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/SrsR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SrsR_5359                1.0000     31  SrsR_5360                1.0000     31  
+SrsR_5361                1.0000     31  SrsR_5362                1.0000     31  
+SrsR_5363                1.0000     31  SrsR_5364                1.0000     31  
+SrsR_5365                1.0000     31  SrsR_5366                1.0000     31  
+SrsR_5367                1.0000     31  SrsR_5368                1.0000     31  
+SrsR_5369                1.0000     31  SrsR_5370                1.0000     31  
+SrsR_5371                1.0000     31  SrsR_5372                1.0000     31  
+SrsR_5373                1.0000     31  SrsR_5374                1.0000     31  
+SrsR_5378                1.0000     36  SrsR_5379                1.0000     36  
+SrsR_5380                1.0000     36  SrsR_5381                1.0000     36  
+SrsR_5382                1.0000     36  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/SrsR.fasta -oc meme_pwms/SrsR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       21    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             676    N=              21
+sample: seed=            0    hsfrac=          0
+        searchsize=    676    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.265 C 0.228 G 0.232 T 0.275 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.265 C 0.228 G 0.232 T 0.275 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1	width =  28  sites =  21  llr = 202  E-value = 6.1e-025
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1111711:22376631:1:62112::44
+pos.-specific     C  233124232:61:1312:235341:61:
+probability       G  :2:7:25543::42111:7:14431234
+matrix            T  735:121215:1::3768:122149211
+
+         bits    2.1                             
+                 1.9                             
+                 1.7                             
+                 1.5                         *   
+Relative         1.3                         *   
+Entropy          1.1             *           *   
+(13.9 bits)      0.9    *        *    **     *   
+                 0.6 * ***  *  ***    ***    *  *
+                 0.4 * ***  *  **** *****    ** *
+                 0.2 ****************************
+                 0.0 ----------------------------
+
+Multilevel           TCTGACGGGTCAAACTTTGACGCTTCAA
+consensus            CTC  TCCAGA GGA C  CTCGG  GG
+sequence              G      C     T             
+                                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+SrsR_5371                     2  4.22e-13          T TTTGACGGGTCAGATTTTGATGCGTCAG AT        
+SrsR_5370                     2  9.74e-13          T TTTGATGCGTCAGATTTTGACGGGTCAG AG        
+SrsR_5369                     2  9.74e-13          T TTCGACGCATCAAATTTTGACGGGTCAG AT        
+SrsR_5368                     2  5.74e-12          A TCTGACGCATCAAAATCTGACCCGTCAA AA        
+SrsR_5365                     2  9.16e-12          A TCTGACCCGTCAAAATTTGATGCGTCGA AA        
+SrsR_5367                     2  1.15e-11          C TCTGACCCGTCAAAATCTGACGCATCAA AA        
+SrsR_5372                     2  4.24e-10          T TTTGACGGGTCAGAGTCTGACAGTTGAG AA        
+SrsR_5366                     2  1.41e-08          T TCTCAACTGTCAGACTCTGACCCGTCAA AA        
+SrsR_5373                     2  3.36e-05          G CCCGAACTCGCTGGTTTTGCACTTTTGA AA        
+SrsR_5359                     2  8.51e-05          T CGCGCGTGAAAAGGCATTGCCGTTTGAT TT        
+SrsR_5361                     2  9.16e-05          T CATTTTGGCGCAGGTTTTGCTGGTTTGT TA        
+SrsR_5374                     2  1.41e-04          T TTCAAAAGTGCAAAACCAGCGAGTTCGG GC        
+SrsR_5382                     6  4.88e-04      ATCGA TGCCTGATGTACAACCGTGTCGCATCCG ACA       
+SrsR_5381                     8  4.88e-04    GGCGAAA AGCGATGCTGAAAGGTGTCAGCTTTGCA A         
+SrsR_5379                     8  6.95e-04    GCCGCAG CCTGATGGACAAAGCGTTCATTATGGTG C         
+SrsR_5360                     4  6.95e-04        AAA TCAAACGGCAATGCCTTTTCACGCGCGA           
+SrsR_5380                     4  9.75e-04        TCC CTTGCCTGATGCACAATGGATTCATCGG CAGTC     
+SrsR_5363                     4  9.75e-04        AAA ATAGGGTGCGAAATCCGTCACAGTTCAA           
+SrsR_5364                     4  1.49e-03        AAA TATGACAGCATAACCTTTACATAATTTA           
+SrsR_5378                     6  3.08e-03      TGAGC TGCGCGCCGGACAAAGAACTCTGTTTCG TCC       
+SrsR_5362                     2  6.78e-03          T TGAACTGTGACGGATTTCGCACCCTATT TT        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SrsR_5371                         4.2e-13  1_[+1]_2
+SrsR_5370                         9.7e-13  1_[+1]_2
+SrsR_5369                         9.7e-13  1_[+1]_2
+SrsR_5368                         5.7e-12  1_[+1]_2
+SrsR_5365                         9.2e-12  1_[+1]_2
+SrsR_5367                         1.2e-11  1_[+1]_2
+SrsR_5372                         4.2e-10  1_[+1]_2
+SrsR_5366                         1.4e-08  1_[+1]_2
+SrsR_5373                         3.4e-05  1_[+1]_2
+SrsR_5359                         8.5e-05  1_[+1]_2
+SrsR_5361                         9.2e-05  1_[+1]_2
+SrsR_5374                         0.00014  1_[+1]_2
+SrsR_5382                         0.00049  5_[+1]_3
+SrsR_5381                         0.00049  7_[+1]_1
+SrsR_5379                          0.0007  7_[+1]_1
+SrsR_5360                          0.0007  3_[+1]
+SrsR_5380                         0.00098  3_[+1]_5
+SrsR_5363                         0.00098  3_[+1]
+SrsR_5364                          0.0015  3_[+1]
+SrsR_5378                          0.0031  5_[+1]_3
+SrsR_5362                          0.0068  1_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TBYGAYSSVKMARAHTTTGMYBSKTCRR width=28 seqs=21
+SrsR_5371                (    2) TTTGACGGGTCAGATTTTGATGCGTCAG  1 
+SrsR_5370                (    2) TTTGATGCGTCAGATTTTGACGGGTCAG  1 
+SrsR_5369                (    2) TTCGACGCATCAAATTTTGACGGGTCAG  1 
+SrsR_5368                (    2) TCTGACGCATCAAAATCTGACCCGTCAA  1 
+SrsR_5365                (    2) TCTGACCCGTCAAAATTTGATGCGTCGA  1 
+SrsR_5367                (    2) TCTGACCCGTCAAAATCTGACGCATCAA  1 
+SrsR_5372                (    2) TTTGACGGGTCAGAGTCTGACAGTTGAG  1 
+SrsR_5366                (    2) TCTCAACTGTCAGACTCTGACCCGTCAA  1 
+SrsR_5373                (    2) CCCGAACTCGCTGGTTTTGCACTTTTGA  1 
+SrsR_5359                (    2) CGCGCGTGAAAAGGCATTGCCGTTTGAT  1 
+SrsR_5361                (    2) CATTTTGGCGCAGGTTTTGCTGGTTTGT  1 
+SrsR_5374                (    2) TTCAAAAGTGCAAAACCAGCGAGTTCGG  1 
+SrsR_5382                (    6) TGCCTGATGTACAACCGTGTCGCATCCG  1 
+SrsR_5381                (    8) AGCGATGCTGAAAGGTGTCAGCTTTGCA  1 
+SrsR_5379                (    8) CCTGATGGACAAAGCGTTCATTATGGTG  1 
+SrsR_5360                (    4) TCAAACGGCAATGCCTTTTCACGCGCGA  1 
+SrsR_5380                (    4) CTTGCCTGATGCACAATGGATTCATCGG  1 
+SrsR_5363                (    4) ATAGGGTGCGAAATCCGTCACAGTTCAA  1 
+SrsR_5364                (    4) TATGACAGCATAACCTTTACATAATTTA  1 
+SrsR_5378                (    6) TGCGCGCCGGACAAAGAACTCTGTTTCG  1 
+SrsR_5362                (    2) TGAACTGTGACGGATTTCGCACCCTATT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 109 bayes= 2.06711 E= 6.1e-025 
+  -147      6  -1104    128 
+  -147     55      4     28 
+   -89     55  -1104     93 
+   -89   -126    162   -253 
+   133    -26   -228   -153 
+   -89     91    -29    -21 
+   -89      6    103    -94 
+ -1104     55    103    -53 
+   -15      6     88   -153 
+   -47   -226     30     79 
+    33    133   -228   -253 
+   143    -67   -228   -153 
+   111  -1104     88  -1104 
+   111    -67      4   -253 
+    11     55   -129      6 
+  -147    -67   -129    128 
+  -247      6    -70    105 
+  -147   -226   -228    156 
+  -247    -26    162   -253 
+   111     55  -1104   -153 
+   -47    106   -129    -21 
+   -89     33     71    -53 
+  -147     74     71    -94 
+   -47   -126     30     64 
+ -1104  -1104   -129    172 
+  -247    133    -29    -53 
+    69    -67     30    -94 
+    69  -1104     88    -94 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 21 E= 6.1e-025 
+ 0.095238  0.238095  0.000000  0.666667 
+ 0.095238  0.333333  0.238095  0.333333 
+ 0.142857  0.333333  0.000000  0.523810 
+ 0.142857  0.095238  0.714286  0.047619 
+ 0.666667  0.190476  0.047619  0.095238 
+ 0.142857  0.428571  0.190476  0.238095 
+ 0.142857  0.238095  0.476190  0.142857 
+ 0.000000  0.333333  0.476190  0.190476 
+ 0.238095  0.238095  0.428571  0.095238 
+ 0.190476  0.047619  0.285714  0.476190 
+ 0.333333  0.571429  0.047619  0.047619 
+ 0.714286  0.142857  0.047619  0.095238 
+ 0.571429  0.000000  0.428571  0.000000 
+ 0.571429  0.142857  0.238095  0.047619 
+ 0.285714  0.333333  0.095238  0.285714 
+ 0.095238  0.142857  0.095238  0.666667 
+ 0.047619  0.238095  0.142857  0.571429 
+ 0.095238  0.047619  0.047619  0.809524 
+ 0.047619  0.190476  0.714286  0.047619 
+ 0.571429  0.333333  0.000000  0.095238 
+ 0.190476  0.476190  0.095238  0.238095 
+ 0.142857  0.285714  0.380952  0.190476 
+ 0.095238  0.380952  0.380952  0.142857 
+ 0.190476  0.095238  0.285714  0.428571 
+ 0.000000  0.000000  0.095238  0.904762 
+ 0.047619  0.571429  0.190476  0.190476 
+ 0.428571  0.142857  0.285714  0.142857 
+ 0.428571  0.000000  0.428571  0.142857 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TBYGAYSSVKMARAHTTTGMYBSKTCRR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC][CTG][TC]GA[CT][GC][GC][GAC][TG][CA]A[AG][AG][CAT]T[TC]TG[AC][CT][GC][CG][TG]TC[AG][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.16 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SrsR_5359                        3.40e-04  1_[+1(8.51e-05)]_2
+SrsR_5360                        2.78e-03  31
+SrsR_5361                        3.66e-04  1_[+1(9.16e-05)]_2
+SrsR_5362                        2.68e-02  31
+SrsR_5363                        3.90e-03  31
+SrsR_5364                        5.96e-03  31
+SrsR_5365                        3.66e-11  1_[+1(9.16e-12)]_2
+SrsR_5366                        5.66e-08  1_[+1(1.41e-08)]_2
+SrsR_5367                        4.60e-11  1_[+1(1.15e-11)]_2
+SrsR_5368                        2.29e-11  1_[+1(5.74e-12)]_2
+SrsR_5369                        3.90e-12  1_[+1(9.74e-13)]_2
+SrsR_5370                        3.90e-12  1_[+1(9.74e-13)]_2
+SrsR_5371                        1.69e-12  1_[+1(4.22e-13)]_2
+SrsR_5372                        1.70e-09  1_[+1(4.24e-10)]_2
+SrsR_5373                        1.34e-04  1_[+1(3.36e-05)]_2
+SrsR_5374                        5.64e-04  31
+SrsR_5378                        2.74e-02  36
+SrsR_5379                        6.24e-03  36
+SrsR_5380                        8.74e-03  36
+SrsR_5381                        4.38e-03  36
+SrsR_5382                        4.38e-03  36
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: e2e0820b65e5
+
+********************************************************************************

@@ -1,0 +1,248 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/TrpR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TrpR_3111                1.0000     38  TrpR_3112                1.0000     38  
+TrpR_3113                1.0000     38  TrpR_3117                1.0000     38  
+TrpR_3789                1.0000     38  TrpR_3790                1.0000     38  
+TrpR_3842                1.0000     38  TrpR_3843                1.0000     38  
+TrpR_3844                1.0000     38  TrpR_3845                1.0000     38  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/TrpR.fasta -oc meme_pwms/TrpR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       10    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             380    N=              10
+sample: seed=            0    hsfrac=          0
+        searchsize=    380    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.295 C 0.171 G 0.2 T 0.334 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.294 C 0.172 G 0.201 T 0.333 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TYGTACTAGTKWACTRGTACR MEME-1	width =  21  sites =  10  llr = 200  E-value = 2.0e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2::3a::7:2:672:6::8:5
+pos.-specific     C  :4:::a:3:::::8:::::8:
+probability       G  ::a:::::9:4:3:14a:2:5
+matrix            T  86:7::a:1864::9::a:2:
+
+         bits    2.5      *               
+                 2.3   *  *          *    
+                 2.0   *  *          *    
+                 1.8   * **  *    *  *    
+Relative         1.5   * *** *    *  ** * 
+Entropy          1.3   * *** *    ** **** 
+(28.9 bits)      1.0 *** ******* *********
+                 0.8 *********************
+                 0.5 *********************
+                 0.3 *********************
+                 0.0 ---------------------
+
+Multilevel           TTGTACTAGTTAACTAGTACA
+consensus            AC A   C AGTGA G  GTG
+sequence                                  
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+TrpR_3844                     9  1.72e-11   ATTAATCA TCGAACTAGTTAACTAGTACG CAAGTTCAC 
+TrpR_3843                     1  1.72e-11          . TCGAACTAGTTAACTAGTACG CAAGTTCACG
+TrpR_3842                    17  1.72e-11 CAATTAATCA TCGAACTAGTTAACTAGTACG C         
+TrpR_3790                     9  5.64e-11   TCTGTCTT TTGTACTCGTGTACTGGTACA GTGCAATGC 
+TrpR_3789                     1  5.64e-11          . TTGTACTCGTGTACTGGTACA GTGCAATGCA
+TrpR_3112                     9  1.17e-09   GTCGCCGA ATGTACTAGAGAACTAGTGCA TTAGCTTAT 
+TrpR_3111                     1  1.17e-09          . ATGTACTAGAGAACTAGTGCA TTAGCTTATT
+TrpR_3117                     9  2.78e-09   AATCGAAA TTGTACTAGTTTGATGGTATG ATCGCTATT 
+TrpR_3113                    17  2.78e-09 ACAATCGAAA TTGTACTAGTTTGATGGTATG A         
+TrpR_3845                     9  3.43e-09   ATATGCTA TCGTACTCTTTAGCGAGTACA ACCGGGGGA 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TrpR_3844                         1.7e-11  8_[+1]_9
+TrpR_3843                         1.7e-11  [+1]_17
+TrpR_3842                         1.7e-11  16_[+1]_1
+TrpR_3790                         5.6e-11  8_[+1]_9
+TrpR_3789                         5.6e-11  [+1]_17
+TrpR_3112                         1.2e-09  8_[+1]_9
+TrpR_3111                         1.2e-09  [+1]_17
+TrpR_3117                         2.8e-09  8_[+1]_9
+TrpR_3113                         2.8e-09  16_[+1]_1
+TrpR_3845                         3.4e-09  8_[+1]_9
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TYGTACTAGTKWACTRGTACR width=21 seqs=10
+TrpR_3844                (    9) TCGAACTAGTTAACTAGTACG  1 
+TrpR_3843                (    1) TCGAACTAGTTAACTAGTACG  1 
+TrpR_3842                (   17) TCGAACTAGTTAACTAGTACG  1 
+TrpR_3790                (    9) TTGTACTCGTGTACTGGTACA  1 
+TrpR_3789                (    1) TTGTACTCGTGTACTGGTACA  1 
+TrpR_3112                (    9) ATGTACTAGAGAACTAGTGCA  1 
+TrpR_3111                (    1) ATGTACTAGAGAACTAGTGCA  1 
+TrpR_3117                (    9) TTGTACTAGTTTGATGGTATG  1 
+TrpR_3113                (   17) TTGTACTAGTTTGATGGTATG  1 
+TrpR_3845                (    9) TCGTACTCTTTAGCGAGTACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 180 bayes= 4.08746 E= 2.0e-039 
+   -56   -997   -997    126 
+  -997    122   -997     85 
+  -997   -997    232   -997 
+     3   -997   -997    107 
+   176   -997   -997   -997 
+  -997    254   -997   -997 
+  -997   -997   -997    158 
+   125     80   -997   -997 
+  -997   -997    217   -173 
+   -56   -997   -997    126 
+  -997   -997    100     85 
+   103   -997   -997     26 
+   125   -997     58   -997 
+   -56    222   -997   -997 
+  -997   -997   -100    143 
+   103   -997    100   -997 
+  -997   -997    232   -997 
+  -997   -997   -997    158 
+   144   -997      0   -997 
+  -997    222   -997    -74 
+    76   -997    132   -997 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 10 E= 2.0e-039 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.300000  0.000000  0.000000  0.700000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.700000  0.300000  0.000000  0.000000 
+ 0.000000  0.000000  0.900000  0.100000 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.000000  0.400000  0.600000 
+ 0.600000  0.000000  0.000000  0.400000 
+ 0.700000  0.000000  0.300000  0.000000 
+ 0.200000  0.800000  0.000000  0.000000 
+ 0.000000  0.000000  0.100000  0.900000 
+ 0.600000  0.000000  0.400000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.800000  0.000000  0.200000  0.000000 
+ 0.000000  0.800000  0.000000  0.200000 
+ 0.500000  0.000000  0.500000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TYGTACTAGTKWACTRGTACR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][TC]G[TA]ACT[AC]G[TA][TG][AT][AG][CA]T[AG]GT[AG][CT][AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.13 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TrpR_3111                        2.10e-08  [+1(1.17e-09)]_17
+TrpR_3112                        2.10e-08  8_[+1(1.17e-09)]_9
+TrpR_3113                        5.01e-08  16_[+1(2.78e-09)]_1
+TrpR_3117                        5.01e-08  8_[+1(2.78e-09)]_9
+TrpR_3789                        1.02e-09  [+1(5.64e-11)]_17
+TrpR_3790                        1.02e-09  8_[+1(5.64e-11)]_9
+TrpR_3842                        3.10e-10  16_[+1(1.72e-11)]_1
+TrpR_3843                        3.10e-10  [+1(1.72e-11)]_17
+TrpR_3844                        3.10e-10  8_[+1(1.72e-11)]_9
+TrpR_3845                        6.17e-08  8_[+1(3.43e-09)]_9
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 27eb1fe0cabc
+
+********************************************************************************

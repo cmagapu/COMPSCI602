@@ -1,0 +1,409 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/SoxS.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SoxS_67                  1.0000     40  SoxS_237                 1.0000     40  
+SoxS_240                 1.0000     40  SoxS_244                 1.0000     40  
+SoxS_682                 1.0000     40  SoxS_721                 1.0000     40  
+SoxS_805                 1.0000     40  SoxS_806                 1.0000     40  
+SoxS_1000                1.0000     40  SoxS_1003                1.0000     40  
+SoxS_1006                1.0000     40  SoxS_1009                1.0000     40  
+SoxS_1070                1.0000     40  SoxS_1071                1.0000     40  
+SoxS_1072                1.0000     40  SoxS_1073                1.0000     40  
+SoxS_2063                1.0000     40  SoxS_2064                1.0000     40  
+SoxS_2178                1.0000     40  SoxS_2393                1.0000     40  
+SoxS_2395                1.0000     40  SoxS_3261                1.0000     40  
+SoxS_3272                1.0000     40  SoxS_3463                1.0000     40  
+SoxS_3486                1.0000     40  SoxS_3489                1.0000     40  
+SoxS_3525                1.0000     40  SoxS_3526                1.0000     40  
+SoxS_3825                1.0000     40  SoxS_4171                1.0000     40  
+SoxS_4222                1.0000     40  SoxS_4269                1.0000     40  
+SoxS_4287                1.0000     40  SoxS_4289                1.0000     40  
+SoxS_4616                1.0000     40  SoxS_4617                1.0000     40  
+SoxS_4685                1.0000     40  SoxS_4696                1.0000     40  
+SoxS_4721                1.0000     40  SoxS_4723                1.0000     40  
+SoxS_5125                1.0000     40  SoxS_5126                1.0000     40  
+SoxS_5186                1.0000     40  SoxS_5188                1.0000     40  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/SoxS.fasta -oc meme_pwms/SoxS -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       44    maxsites=       44    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1760    N=              44
+sample: seed=            0    hsfrac=          0
+        searchsize=   1760    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.292 C 0.223 G 0.188 T 0.297 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.292 C 0.223 G 0.188 T 0.296 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1	width =  25  sites =  44  llr = 262  E-value = 5.7e-012
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5123:62555313126653213224
+pos.-specific     C  :23:815:::22145221323:153
+probability       G  314611121::2621111:221411
+matrix            T  261:123345451331234435422
+
+         bits    2.4                          
+                 2.2                          
+                 1.9                          
+                 1.7                          
+Relative         1.4                          
+Entropy          1.2     *                    
+(8.6 bits)       1.0    **                    
+                 0.7    **    *  *            
+                 0.5 *  **    *  *  *         
+                 0.2 ******************* *****
+                 0.0 -------------------------
+
+Multilevel           ATGGCACAATTTGCCAAATTCTGCA
+consensus            G CA TTTTAAGATT  TAGTATAC
+sequence             T A    G  CC      CAG AT 
+                                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                      Site         
+-------------             ----- ---------            -------------------------
+SoxS_1000                    11  2.34e-08 AAAACCTTCA GTGGCACGTTTGGCGAAATTCAGAA TGATT     
+SoxS_67                      12  1.48e-07 CAACTAAACC GTGGCACAAATGGGCAATTTATCCA TCGG      
+SoxS_5188                    11  3.15e-07 TTAACGCCCT ATGGCACGTAACGCCAACCTTTTGC GGTAG     
+SoxS_5186                    11  3.15e-07 TTAACGCCCT ATGGCACGTAACGCCAACCTTTTGC GGTAG     
+SoxS_1009                    11  7.63e-07 GCGATGGAAA GTCGCTCGTTACGTTAAAAATTGCC CGTTT     
+SoxS_4171                    12  1.76e-06 GTTTTTTTAC ATGGCACGAAAGACCAAACATTTGT TATC      
+SoxS_3463                     9  2.83e-06   CCGCGGCA AAAGCAGAAACTGTAAAACGCAGCA GTAGCAA   
+SoxS_2393                     9  2.83e-06   CCGCGGCA AAAGCAGAAACTGTAAAACGCAGCA GTAGCAA   
+SoxS_3489                    10  9.33e-06  CAAAGCGTC ATCGCATAAACCACTACATCTTGCT CCTGTT    
+SoxS_4696                    11  1.42e-05 GGTTTAACCT GTTGCATTAATTGCTAAAAGCTATA ACTGT     
+SoxS_5125                     5  2.43e-05       TTGT GACATATGTTTTGTCAAAATGTGCA ACTTCTCCAA
+SoxS_1003                    11  2.77e-05 CGCAAAAGAC TTTGCACATTTTGCTAATTTCACCG TACCG     
+SoxS_4685                    11  3.58e-05 ATTCATTAAT ACGACACGTTTCATTAAGATTTTCC TCAGG     
+SoxS_806                      7  8.44e-05     ATGTGG GGGACACAAAAGCGAAAATGCAGAA GAAAGCCAT 
+SoxS_805                     11  8.44e-05 GCTGATGTGG GGGACACAAAAGCGAAAATGCAGAA GAAAG     
+SoxS_3525                     8  9.48e-05    GTATTTG ACAGCACTGAATGTCAAAACAAAAC CTTCACTC  
+SoxS_2064                     8  9.48e-05    GTATTTG ACAGCACTGAATGTCAAAACAAAAC CTTCACTC  
+SoxS_4617                     4  2.57e-04        CAT TTGATCCATTATGCCTTATTGTGCC GTGACTAAAG
+SoxS_4616                    15  2.57e-04 GGTCACTCAT TTGATCCATTATGCCTTATTGTGCC G         
+SoxS_1006                    11  3.17e-04 GCCTAAGTAA ATAGCTCACTTTGTTAACAACTTTA ACTAC     
+SoxS_3526                    15  3.88e-04 TTATTGCGGA ATGGCGAAATAAGCACCTAACATCA A         
+SoxS_2063                    15  3.88e-04 TTATTGCGGA ATGGCGAAATAAGCACCTAACATCA A         
+SoxS_5126                    13  5.23e-04 TTACGCTAAC GGCACTAAAACCATCACATTTTTCT GTG       
+SoxS_2395                    13  5.23e-04 TTACGCTAAC GGCACTAAAACCATCACATTTTTCT GTG       
+SoxS_4287                    11  5.76e-04 TTTTCCCGTA ATCGCACGGGTGGATAAGCGTTTAC AGTTT     
+SoxS_3272                     4  6.97e-04        TTC ATCGGGCTATTTAACCGTTAGTGCC TCCTTTCTCT
+SoxS_2178                     4  6.97e-04        TTC ATCGGGCTATTTAACCGTTAGTGCC TCCTTTCTCT
+SoxS_237                     11  6.97e-04 TTAATTGCTA AAAGCTATAACTGTTAAACACAATA CAGTG     
+SoxS_721                     11  7.65e-04 CGCAAAGCTG ACCGCACAAAAGGGGAGTGCTTTTC TGTGC     
+SoxS_3825                    15  9.20e-04 TACGAAAAGT ACGGCATTGATAATCATTTTCAATA T         
+SoxS_682                     14  1.70e-03 GAATGCTAAA ACAGCAAAAAATGCTATTATCCAAT TA        
+SoxS_4269                    15  2.36e-03 TATACTCCCC AACAGATGAATTAACGAACTGAACA C         
+SoxS_4222                     4  2.36e-03        ACT TGAACCGATTTAGCAAAACGTGGCA TCGGTCAATT
+SoxS_4721                    10  2.56e-03  TACGCCGTA TTAATAGATAATGCCAATCAAAATA ATTGCT    
+SoxS_4289                     9  2.56e-03   AGGAAAAA TTGACAGATTTGTGCCATTCCGTGA ACGATCG   
+SoxS_1072                     4  4.05e-03        TAA GAGGCATTGTTTAGGTTTTGTTTAA GTTAATCGAC
+SoxS_1073                    10  5.80e-03  GTTAAAGTG GTCGGCTTTTCCCCTGAAACATGCC ACGGGT    
+SoxS_244                     13  8.67e-03 GGAAATCTAT AGCGCATTTTTCTCGCTTACCATTT CTC       
+SoxS_4723                    13  1.05e-02 CCACTTTCAT GTAGCACAGTGTGCAGTCCTGCTCG TTT       
+SoxS_3261                    13  1.42e-02 GCGCTTCTTG TTTGGTTTTTCGTGCCATATGTTCG TGA       
+SoxS_240                      6  1.69e-02      AAGGT TTCTCCTCTTTTATCAATTTGGGTT GTTATCAAAT
+SoxS_1070                    11  1.99e-02 TTTGCGTTGA ATTTGTCATTTTGTGCCGTGGTGTT TAAAC     
+SoxS_3486                     8  2.21e-02    CCTCTGA TTGATTTGATCGATTGAGCCTTCCA GTCCTTCG  
+SoxS_1071                     8  4.71e-02    CGCATAA ACCACTACATCTTGCTCCTGTTAAC CCGCTATC  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SoxS_1000                         2.3e-08  10_[+1]_5
+SoxS_67                           1.5e-07  11_[+1]_4
+SoxS_5188                         3.1e-07  10_[+1]_5
+SoxS_5186                         3.1e-07  10_[+1]_5
+SoxS_1009                         7.6e-07  10_[+1]_5
+SoxS_4171                         1.8e-06  11_[+1]_4
+SoxS_3463                         2.8e-06  8_[+1]_7
+SoxS_2393                         2.8e-06  8_[+1]_7
+SoxS_3489                         9.3e-06  9_[+1]_6
+SoxS_4696                         1.4e-05  10_[+1]_5
+SoxS_5125                         2.4e-05  4_[+1]_11
+SoxS_1003                         2.8e-05  10_[+1]_5
+SoxS_4685                         3.6e-05  10_[+1]_5
+SoxS_806                          8.4e-05  6_[+1]_9
+SoxS_805                          8.4e-05  10_[+1]_5
+SoxS_3525                         9.5e-05  7_[+1]_8
+SoxS_2064                         9.5e-05  7_[+1]_8
+SoxS_4617                         0.00026  3_[+1]_12
+SoxS_4616                         0.00026  14_[+1]_1
+SoxS_1006                         0.00032  10_[+1]_5
+SoxS_3526                         0.00039  14_[+1]_1
+SoxS_2063                         0.00039  14_[+1]_1
+SoxS_5126                         0.00052  12_[+1]_3
+SoxS_2395                         0.00052  12_[+1]_3
+SoxS_4287                         0.00058  10_[+1]_5
+SoxS_3272                          0.0007  3_[+1]_12
+SoxS_2178                          0.0007  3_[+1]_12
+SoxS_237                           0.0007  10_[+1]_5
+SoxS_721                          0.00076  10_[+1]_5
+SoxS_3825                         0.00092  14_[+1]_1
+SoxS_682                           0.0017  13_[+1]_2
+SoxS_4269                          0.0024  14_[+1]_1
+SoxS_4222                          0.0024  3_[+1]_12
+SoxS_4721                          0.0026  9_[+1]_6
+SoxS_4289                          0.0026  8_[+1]_7
+SoxS_1072                           0.004  3_[+1]_12
+SoxS_1073                          0.0058  9_[+1]_6
+SoxS_244                           0.0087  12_[+1]_3
+SoxS_4723                            0.01  12_[+1]_3
+SoxS_3261                           0.014  12_[+1]_3
+SoxS_240                            0.017  5_[+1]_10
+SoxS_1070                            0.02  10_[+1]_5
+SoxS_3486                           0.022  7_[+1]_8
+SoxS_1071                           0.047  7_[+1]_8
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF RTVRCAYWWWHTGYYAAWHDBWDCM width=25 seqs=44
+SoxS_1000                (   11) GTGGCACGTTTGGCGAAATTCAGAA  1 
+SoxS_67                  (   12) GTGGCACAAATGGGCAATTTATCCA  1 
+SoxS_5188                (   11) ATGGCACGTAACGCCAACCTTTTGC  1 
+SoxS_5186                (   11) ATGGCACGTAACGCCAACCTTTTGC  1 
+SoxS_1009                (   11) GTCGCTCGTTACGTTAAAAATTGCC  1 
+SoxS_4171                (   12) ATGGCACGAAAGACCAAACATTTGT  1 
+SoxS_3463                (    9) AAAGCAGAAACTGTAAAACGCAGCA  1 
+SoxS_2393                (    9) AAAGCAGAAACTGTAAAACGCAGCA  1 
+SoxS_3489                (   10) ATCGCATAAACCACTACATCTTGCT  1 
+SoxS_4696                (   11) GTTGCATTAATTGCTAAAAGCTATA  1 
+SoxS_5125                (    5) GACATATGTTTTGTCAAAATGTGCA  1 
+SoxS_1003                (   11) TTTGCACATTTTGCTAATTTCACCG  1 
+SoxS_4685                (   11) ACGACACGTTTCATTAAGATTTTCC  1 
+SoxS_806                 (    7) GGGACACAAAAGCGAAAATGCAGAA  1 
+SoxS_805                 (   11) GGGACACAAAAGCGAAAATGCAGAA  1 
+SoxS_3525                (    8) ACAGCACTGAATGTCAAAACAAAAC  1 
+SoxS_2064                (    8) ACAGCACTGAATGTCAAAACAAAAC  1 
+SoxS_4617                (    4) TTGATCCATTATGCCTTATTGTGCC  1 
+SoxS_4616                (   15) TTGATCCATTATGCCTTATTGTGCC  1 
+SoxS_1006                (   11) ATAGCTCACTTTGTTAACAACTTTA  1 
+SoxS_3526                (   15) ATGGCGAAATAAGCACCTAACATCA  1 
+SoxS_2063                (   15) ATGGCGAAATAAGCACCTAACATCA  1 
+SoxS_5126                (   13) GGCACTAAAACCATCACATTTTTCT  1 
+SoxS_2395                (   13) GGCACTAAAACCATCACATTTTTCT  1 
+SoxS_4287                (   11) ATCGCACGGGTGGATAAGCGTTTAC  1 
+SoxS_3272                (    4) ATCGGGCTATTTAACCGTTAGTGCC  1 
+SoxS_2178                (    4) ATCGGGCTATTTAACCGTTAGTGCC  1 
+SoxS_237                 (   11) AAAGCTATAACTGTTAAACACAATA  1 
+SoxS_721                 (   11) ACCGCACAAAAGGGGAGTGCTTTTC  1 
+SoxS_3825                (   15) ACGGCATTGATAATCATTTTCAATA  1 
+SoxS_682                 (   14) ACAGCAAAAAATGCTATTATCCAAT  1 
+SoxS_4269                (   15) AACAGATGAATTAACGAACTGAACA  1 
+SoxS_4222                (    4) TGAACCGATTTAGCAAAACGTGGCA  1 
+SoxS_4721                (   10) TTAATAGATAATGCCAATCAAAATA  1 
+SoxS_4289                (    9) TTGACAGATTTGTGCCATTCCGTGA  1 
+SoxS_1072                (    4) GAGGCATTGTTTAGGTTTTGTTTAA  1 
+SoxS_1073                (   10) GTCGGCTTTTCCCCTGAAACATGCC  1 
+SoxS_244                 (   13) AGCGCATTTTTCTCGCTTACCATTT  1 
+SoxS_4723                (   13) GTAGCACAGTGTGCAGTCCTGCTCG  1 
+SoxS_3261                (   13) TTTGGTTTTTCGTGCCATATGTTCG  1 
+SoxS_240                 (    6) TTCTCCTCTTTTATCAATTTGGGTT  1 
+SoxS_1070                (   11) ATTTGTCATTTTGTGCCGTGGTGTT  1 
+SoxS_3486                (    8) TTGATTTGATCGATTGAGCCTTCCA  1 
+SoxS_1071                (    8) ACCACTACATCTTGCTCCTGTTAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 25 n= 704 bayes= 3.90689 E= 5.7e-012 
+    84  -1210     54    -54 
+  -110    -49    -46     94 
+   -36     51     95   -170 
+    12  -1210    176   -270 
+ -1210    175    -46   -138 
+   102    -97   -105    -54 
+   -88    110    -73    -25 
+    71   -230     27    -25 
+    64   -329    -46     38 
+    64  -1210   -305     82 
+    22      3   -305     46 
+  -168    -13     27     69 
+   -10   -171    159   -170 
+  -168     79     -5     20 
+   -68    102    -73    -25 
+   112    -30   -105   -170 
+   107    -49   -146    -90 
+    64    -97   -105     20 
+     2     29   -305     46 
+   -51    -30     27     38 
+  -136     61     27     10 
+    22   -230   -146     88 
+   -51   -171     95     29 
+   -51    116   -105    -54 
+    56     51   -146    -71 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 25 nsites= 44 E= 5.7e-012 
+ 0.522727  0.000000  0.272727  0.204545 
+ 0.136364  0.159091  0.136364  0.568182 
+ 0.227273  0.318182  0.363636  0.090909 
+ 0.318182  0.000000  0.636364  0.045455 
+ 0.000000  0.750000  0.136364  0.113636 
+ 0.590909  0.113636  0.090909  0.204545 
+ 0.159091  0.477273  0.113636  0.250000 
+ 0.477273  0.045455  0.227273  0.250000 
+ 0.454545  0.022727  0.136364  0.386364 
+ 0.454545  0.000000  0.022727  0.522727 
+ 0.340909  0.227273  0.022727  0.409091 
+ 0.090909  0.204545  0.227273  0.477273 
+ 0.272727  0.068182  0.568182  0.090909 
+ 0.090909  0.386364  0.181818  0.340909 
+ 0.181818  0.454545  0.113636  0.250000 
+ 0.636364  0.181818  0.090909  0.090909 
+ 0.613636  0.159091  0.068182  0.159091 
+ 0.454545  0.113636  0.090909  0.340909 
+ 0.295455  0.272727  0.022727  0.409091 
+ 0.204545  0.181818  0.227273  0.386364 
+ 0.113636  0.340909  0.227273  0.318182 
+ 0.340909  0.045455  0.068182  0.545455 
+ 0.204545  0.068182  0.363636  0.363636 
+ 0.204545  0.500000  0.090909  0.204545 
+ 0.431818  0.318182  0.068182  0.181818 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif RTVRCAYWWWHTGYYAAWHDBWDCM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AGT]T[GCA][GA]C[AT][CT][ATG][AT][TA][TAC][TGC][GA][CT][CT]AA[AT][TAC][TGA][CTG][TA][GTA][CAT][AC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SoxS_67                          2.37e-06  11_[+1(1.48e-07)]_4
+SoxS_237                         1.11e-02  40
+SoxS_240                         2.38e-01  40
+SoxS_244                         1.30e-01  40
+SoxS_682                         2.68e-02  40
+SoxS_721                         1.22e-02  40
+SoxS_805                         1.35e-03  10_[+1(8.44e-05)]_5
+SoxS_806                         1.35e-03  6_[+1(8.44e-05)]_9
+SoxS_1000                        3.75e-07  10_[+1(2.34e-08)]_5
+SoxS_1003                        4.43e-04  10_[+1(2.77e-05)]_5
+SoxS_1006                        5.05e-03  40
+SoxS_1009                        1.22e-05  10_[+1(7.63e-07)]_5
+SoxS_1070                        2.14e-03  40
+SoxS_1071                        5.38e-01  40
+SoxS_1072                        6.28e-02  40
+SoxS_1073                        8.88e-02  40
+SoxS_2063                        6.19e-03  40
+SoxS_2064                        1.52e-03  7_[+1(9.48e-05)]_8
+SoxS_2178                        1.11e-02  40
+SoxS_2393                        4.53e-05  8_[+1(2.83e-06)]_7
+SoxS_2395                        8.33e-03  40
+SoxS_3261                        2.04e-01  40
+SoxS_3272                        1.11e-02  40
+SoxS_3463                        4.53e-05  8_[+1(2.83e-06)]_7
+SoxS_3486                        3.01e-01  40
+SoxS_3489                        1.49e-04  9_[+1(9.33e-06)]_6
+SoxS_3525                        1.52e-03  7_[+1(9.48e-05)]_8
+SoxS_3526                        6.19e-03  40
+SoxS_3825                        1.46e-02  40
+SoxS_4171                        2.81e-05  11_[+1(1.76e-06)]_4
+SoxS_4222                        3.71e-02  40
+SoxS_4269                        3.71e-02  40
+SoxS_4287                        9.17e-03  40
+SoxS_4289                        4.01e-02  40
+SoxS_4616                        4.10e-03  40
+SoxS_4617                        4.10e-03  40
+SoxS_4685                        5.73e-04  10_[+1(3.58e-05)]_5
+SoxS_4696                        2.27e-04  10_[+1(1.42e-05)]_5
+SoxS_4721                        4.01e-02  40
+SoxS_4723                        1.55e-01  40
+SoxS_5125                        3.89e-04  4_[+1(2.43e-05)]_11
+SoxS_5126                        8.33e-03  40
+SoxS_5186                        5.03e-06  10_[+1(3.15e-07)]_5
+SoxS_5188                        5.03e-06  10_[+1(3.15e-07)]_5
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 58a197173e1a
+
+********************************************************************************

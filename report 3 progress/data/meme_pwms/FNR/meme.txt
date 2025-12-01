@@ -1,0 +1,873 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/FNR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+FNR_41                   1.0000     34  FNR_57                   1.0000     34  
+FNR_59                   1.0000     34  FNR_60                   1.0000     34  
+FNR_62                   1.0000     34  FNR_187                  1.0000     34  
+FNR_251                  1.0000     34  FNR_576                  1.0000     34  
+FNR_578                  1.0000     34  FNR_947                  1.0000     34  
+FNR_978                  1.0000     34  FNR_979                  1.0000     34  
+FNR_1557                 1.0000     35  FNR_1558                 1.0000     35  
+FNR_1559                 1.0000     35  FNR_1560                 1.0000     35  
+FNR_1561                 1.0000     35  FNR_1562                 1.0000     35  
+FNR_1563                 1.0000     35  FNR_1564                 1.0000     35  
+FNR_1565                 1.0000     35  FNR_1566                 1.0000     35  
+FNR_1567                 1.0000     35  FNR_1568                 1.0000     35  
+FNR_1569                 1.0000     35  FNR_1570                 1.0000     35  
+FNR_1571                 1.0000     35  FNR_1572                 1.0000     35  
+FNR_1573                 1.0000     35  FNR_1574                 1.0000     35  
+FNR_1575                 1.0000     35  FNR_1576                 1.0000     35  
+FNR_1577                 1.0000     35  FNR_1578                 1.0000     35  
+FNR_1579                 1.0000     35  FNR_1580                 1.0000     35  
+FNR_1581                 1.0000     35  FNR_1582                 1.0000     35  
+FNR_1583                 1.0000     35  FNR_1584                 1.0000     35  
+FNR_1585                 1.0000     34  FNR_1586                 1.0000     35  
+FNR_1587                 1.0000     35  FNR_1588                 1.0000     35  
+FNR_1589                 1.0000     35  FNR_1590                 1.0000     35  
+FNR_1591                 1.0000     35  FNR_1592                 1.0000     35  
+FNR_1593                 1.0000     35  FNR_1594                 1.0000     35  
+FNR_1595                 1.0000     35  FNR_1596                 1.0000     35  
+FNR_2120                 1.0000     34  FNR_2203                 1.0000     34  
+FNR_2205                 1.0000     34  FNR_2226                 1.0000     34  
+FNR_2337                 1.0000     34  FNR_2424                 1.0000     34  
+FNR_2820                 1.0000     34  FNR_2854                 1.0000     34  
+FNR_2865                 1.0000     34  FNR_2868                 1.0000     34  
+FNR_2873                 1.0000     34  FNR_2964                 1.0000     34  
+FNR_2966                 1.0000     34  FNR_3001                 1.0000     34  
+FNR_3004                 1.0000     34  FNR_3018                 1.0000     34  
+FNR_3020                 1.0000     34  FNR_3035                 1.0000     34  
+FNR_3036                 1.0000     34  FNR_3141                 1.0000     34  
+FNR_3147                 1.0000     34  FNR_3172                 1.0000     34  
+FNR_3176                 1.0000     34  FNR_3196                 1.0000     34  
+FNR_3232                 1.0000     34  FNR_3244                 1.0000     34  
+FNR_3278                 1.0000     34  FNR_3284                 1.0000     34  
+FNR_3326                 1.0000     34  FNR_3370                 1.0000     34  
+FNR_3373                 1.0000     34  FNR_3410                 1.0000     34  
+FNR_3411                 1.0000     34  FNR_3458                 1.0000     34  
+FNR_3468                 1.0000     34  FNR_3470                 1.0000     34  
+FNR_3474                 1.0000     34  FNR_3480                 1.0000     34  
+FNR_3493                 1.0000     34  FNR_3508                 1.0000     34  
+FNR_3563                 1.0000     34  FNR_3659                 1.0000     34  
+FNR_3703                 1.0000     34  FNR_3704                 1.0000     34  
+FNR_3705                 1.0000     34  FNR_3723                 1.0000     34  
+FNR_3745                 1.0000     34  FNR_3811                 1.0000     34  
+FNR_3812                 1.0000     34  FNR_3828                 1.0000     34  
+FNR_3861                 1.0000     34  FNR_3920                 1.0000     34  
+FNR_3937                 1.0000     34  FNR_3948                 1.0000     34  
+FNR_3949                 1.0000     34  FNR_3997                 1.0000     34  
+FNR_3998                 1.0000     34  FNR_4082                 1.0000     34  
+FNR_4085                 1.0000     34  FNR_4101                 1.0000     34  
+FNR_4102                 1.0000     34  FNR_4105                 1.0000     34  
+FNR_4106                 1.0000     34  FNR_4107                 1.0000     34  
+FNR_4110                 1.0000     34  FNR_4125                 1.0000     34  
+FNR_4131                 1.0000     34  FNR_4154                 1.0000     34  
+FNR_4254                 1.0000     34  FNR_4290                 1.0000     34  
+FNR_4292                 1.0000     34  FNR_4323                 1.0000     34  
+FNR_4327                 1.0000     34  FNR_4406                 1.0000     34  
+FNR_4453                 1.0000     34  FNR_4461                 1.0000     34  
+FNR_4535                 1.0000     34  FNR_4536                 1.0000     34  
+FNR_4557                 1.0000     34  FNR_4594                 1.0000     34  
+FNR_4608                 1.0000     34  FNR_4610                 1.0000     34  
+FNR_4612                 1.0000     34  FNR_4614                 1.0000     34  
+FNR_4649                 1.0000     34  FNR_4700                 1.0000     34  
+FNR_4709                 1.0000     34  FNR_4710                 1.0000     34  
+FNR_4711                 1.0000     34  FNR_4778                 1.0000     34  
+FNR_4801                 1.0000     34  FNR_4803                 1.0000     34  
+FNR_4806                 1.0000     34  FNR_4847                 1.0000     42  
+FNR_4875                 1.0000     34  FNR_4900                 1.0000     34  
+FNR_4910                 1.0000     34  FNR_4926                 1.0000     34  
+FNR_5118                 1.0000     34  FNR_5250                 1.0000     34  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/FNR.fasta -oc meme_pwms/FNR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=      152    maxsites=      152    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            5215    N=             152
+sample: seed=            0    hsfrac=          0
+        searchsize=   5215    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.328 C 0.17 G 0.164 T 0.338 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.328 C 0.17 G 0.164 T 0.338 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTGATHTWDATCAA MEME-1	width =  14  sites = 152  llr = 759  E-value = 9.1e-084
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  1:17:324471197
+pos.-specific     C  :111221211:712
+probability       G  1:7:11112111:1
+matrix            T  79:174533182:1
+
+         bits    2.6               
+                 2.3               
+                 2.1               
+                 1.8               
+Relative         1.6               
+Entropy          1.3   *           
+(7.2 bits)       1.0  **           
+                 0.8  **        ** 
+                 0.5 *****     ****
+                 0.3 *****    *****
+                 0.0 --------------
+
+Multilevel           TTGATTTAAATCAA
+consensus                 AATT     
+sequence                  C CG     
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+FNR_4926                     11  2.22e-07 GTGGTTTTTA TTGATTTAAATCAA AGATTCAAGG
+FNR_4801                     11  2.22e-07 GTGGTTTTTA TTGATTTAAATCAA AGATTCAAGG
+FNR_3704                      4  6.37e-07        AAT TTGATGTAAATCAA ACGATAAGAT
+FNR_251                      11  1.09e-06 GTTATTTTGT TTGATATATATCAA TTGGTACTTT
+FNR_2873                     11  1.41e-06 AAAGGTGAAT TTGATTTACATCAA TAAGCGGGGT
+FNR_2868                     11  1.41e-06 ATCTTATCGT TTGATTTACATCAA ATTGCCTTTA
+FNR_1585                     18  1.41e-06 ATCTTATCGT TTGATTTACATCAA ATT       
+FNR_5118                     11  2.38e-06 GTAATTTTAA TTGATAACGATCAA TGTTAAGGGC
+FNR_947                      11  2.38e-06 TATTTAAAAA TTGATTTAAATCAC ATTAACCAGG
+FNR_4612                     11  3.64e-06 TTTGTAGGAA TTGATATTTATCAA TGTATAAGTC
+FNR_4608                     11  3.64e-06 TTTGTAGGAA TTGATATTTATCAA TGTATAAGTC
+FNR_3811                     11  3.64e-06 TTTGTAGGAA TTGATATTTATCAA TGTATAAGTC
+FNR_3370                     11  3.64e-06 TTTGTAGGAA TTGATATTTATCAA TGTATAAGTC
+FNR_2854                     11  3.64e-06 CCCATCACTC TTGATCGTTATCAA TTCCCACGCT
+FNR_3723                     11  4.42e-06 ATGTAATTGA TTGATTCCTATCAA AAAGCGTATC
+FNR_3278                     11  5.36e-06 TTGCAAAAAT TTGATTTGGATCAC GTAATCAGTA
+FNR_4614                     11  6.64e-06 AAGAGATAAA TTGTTCTCGATCAA ATTGGCTGAA
+FNR_4610                     11  6.64e-06 AAGAGATAAA TTGTTCTCGATCAA ATTGGCTGAA
+FNR_4536                     11  6.64e-06 GCTTTTTACT TTGAGCTACATCAA AAAAAGCTCA
+FNR_4290                     11  6.64e-06 ACAATTGAAC TTGATATATGTCAA CGAAGCGTAG
+FNR_4101                     11  6.64e-06 GCAACAAAAC TTGATTAACATCAA TTTTGGTATG
+FNR_3812                     11  6.64e-06 AAGAGATAAA TTGTTCTCGATCAA ATTGGCTGAA
+FNR_3480                     11  6.64e-06 ACAATTGAAC TTGATATATGTCAA CGAAGCGTAG
+FNR_3373                     11  6.64e-06 AAGAGATAAA TTGTTCTCGATCAA ATTGGCTGAA
+FNR_3493                     11  7.95e-06 CAGGCGAGAT ATGATCTATATCAA TTTCTCATCT
+FNR_4900                     11  9.80e-06 GCACAGTTTC ATGATTTCAATCAA AACCTGTATG
+FNR_3458                     11  9.80e-06 GCACAGTTTC ATGATTTCAATCAA AACCTGTATG
+FNR_2205                     11  9.80e-06 GCACAGTTTC ATGATTTCAATCAA AACCTGTATG
+FNR_2203                     11  9.80e-06 GCACAGTTTC ATGATTTCAATCAA AACCTGTATG
+FNR_4406                     11  1.41e-05 GCCGCCAAAA TTGCGCTAAATCAA TCTCCCTTAA
+FNR_3172                     11  1.70e-05 TAAGATGCAT TTGAGATACATCAA TTAAGATGCA
+FNR_2964                     11  1.70e-05 GATGTTAAAA TTGACAAATATCAA TTACGGCTTG
+FNR_4910                     11  2.01e-05 TCTACCGCTA TTGAGGTAGGTCAA TTTGCGAAGG
+FNR_4125                     11  2.01e-05 ATTCTTTTCG TTGACTTTAGTCAA AATGATAACG
+FNR_4082                     11  2.01e-05 TCTACCGCTA TTGAGGTAGGTCAA TTTGCGAAGG
+FNR_4847                     15  2.44e-05 CGATATAACC TTGAGCCACATCAA CATTGAGTCA
+FNR_4803                     11  2.44e-05 CCCGCATAAG TTGATGTAAAACAA TAAAATCCAT
+FNR_4778                     11  2.44e-05 TGCCTCCCTG ATGATGTATATCAA AGTAAAACCG
+FNR_187                      11  2.44e-05 GCCGCAAAGT TTGAGCGAAGTCAA TAAACTCTCT
+FNR_4700                     11  2.86e-05 ATCGCAAATT GCGATCTAAATCAA ATTAATCGGT
+FNR_4594                     21  2.86e-05 CGTTATCATT TTGACTAAAGTCAA           
+FNR_4453                     11  4.07e-05 TACCCTTCTA TTGATATGGATTAA TAATTCTTAA
+FNR_2337                     11  4.07e-05 TACCCTTCTA TTGATATGGATTAA TAATTCTTAA
+FNR_4875                     11  4.78e-05 AACTTCTAAA TTAATCCAGATCAA TAAAGGGTGA
+FNR_3563                     11  4.78e-05 AGCTTGCCAT TTGACCTGTATCAG CTTTCCCGAT
+FNR_2120                     11  4.78e-05 AGCTTGCCAT TTGACCTGTATCAG CTTTCCCGAT
+FNR_4292                     11  5.69e-05 TCTCTGATGA TTGATGTTAATTAA CAATGTATTC
+FNR_3141                     11  5.69e-05 TTGTCTCCCT TTGATACCGAACAA TAATTACTCC
+FNR_4085                     11  6.58e-05 GATGTTCTTT TTGATTTCGCGCAA AAAGATTCAG
+FNR_2865                     11  6.58e-05 ACTATGGGTA ATGATAAATATCAA TGATAGATAA
+FNR_576                      11  6.58e-05 GCGTGAAATT TTGATTTATTTCAC ATAGAGTTAG
+FNR_3997                     11  7.75e-05 GTCATTTTTT TTGACAAAAATCAG GGTTTATGCT
+FNR_3035                     12  7.75e-05 TCAAAAAAGC TTAATTAAGATCAA TTTGATCTA 
+FNR_3949                     11  9.02e-05 AAACAAAAAT GTGATACCAATCAC AGAATACAGC
+FNR_3703                     10  1.22e-04  TATCTATCA TTGATATTTATCAT TACCCATAGT
+FNR_3284                     11  1.22e-04 TAAACATTGT TTGATATTTATCAT ATTAATAGAA
+FNR_60                       11  1.22e-04 TCAGCAGGGG TTGATGATATTCAA ATGGAAATAG
+FNR_4535                     11  1.40e-04 TCAAACATCC TTGATGCAAAGCAC TATATATAGA
+FNR_3147                     11  1.40e-04 TGCCCATCTA TTGATCCAGAACAG GTAATCAGTA
+FNR_4254                     11  1.62e-04 GCACTTACAA TTGATTAAAGACAA CATTCACAGT
+FNR_5250                     11  2.13e-04 CTACCAAAAT TTGCGCTATCTCAA TTTGGGCCAG
+FNR_57                       11  2.13e-04 GTCCTCTCCT TTGTGAGAAATCAA ATTACCGCGT
+FNR_3001                     11  2.79e-04 ATGAGCGAAT ATGCGCGAAATCAA ACAATTCATG
+FNR_4110                     11  3.20e-04 GACACTTAAA GTGATCCAGATTAC GGTAGAAATC
+FNR_3036                     11  3.20e-04 TAAGATCAAT TTGATCTACATCTC TTTAACCAAC
+FNR_979                      11  3.20e-04 CGGGCAATGA TTGCTTATTATCAG TGCTCATAGA
+FNR_4649                     11  3.64e-04 AAGGGATTAT TTGCTTACTATTAA TTTCCCTGTG
+FNR_3861                     11  3.64e-04 ACGTTGTAAA TTGTTTAACGTCAA ATTTCCCATA
+FNR_3920                     11  4.15e-04 TCACCAAATG TTGCTAAATATTAA GCTGATTGTT
+FNR_578                      11  4.15e-04 CTAACTCTAT GTGAAATAAATCAA AATTTCACGC
+FNR_3474                     11  6.06e-04 CGTTTTTTCG TTAATTTTGATTAA TAATCAGTTT
+FNR_4154                     12  6.82e-04 TGTTAAATAA TTGTTTTATTTCAC ATTGGTTAT 
+FNR_3948                     11  6.82e-04 AAACTGATTA TTAATCAAAATTAA CGAAAAAACG
+FNR_978                      11  6.82e-04 TGCGGCCACA TTAACCTGGCTCAA AGAAAAATAC
+FNR_3018                     11  9.74e-04 CATGAATTGT TTGATTTCGCGCAT ATTCGCTCAT
+FNR_1563                      5  9.74e-04       TTCT TTGATGTAAACAAA TTAATACAAC
+FNR_4806                     12  1.10e-03 ACTGTCGGGC ATGGTCGTCATCAA CACGACGCA 
+FNR_62                       11  1.10e-03 AAATCTCATT TTGTTTAACATCCA TTGAGATTCC
+FNR_3745                     11  1.22e-03 ATGATGAATT TTGATGGTAAGGAA TATTACTTCT
+FNR_1579                      3  1.22e-03         CC GTGATCGGGGTAAA AAAAAGGTTG
+FNR_59                       11  1.22e-03 ATGAGAGTTT TTGATATATAACTA CAGACAGCTA
+FNR_4131                     11  1.37e-03 CTCTCTTTTA TTGATCTTACGCAT CCTGTATGAT
+FNR_4461                     11  1.53e-03 ATCACTTAAT TTGCTTTACATCTC CCGTAAACAC
+FNR_1580                     20  1.53e-03 CAACCTTTTT TTTACCCCGATCAC GG        
+FNR_3326                      4  1.71e-03        TTA TTGCCTTCAAATAA ATTTAAGGAG
+FNR_3176                     11  1.71e-03 AATCCATTTT TTGCTGAACGTTAA TGACCATCAT
+FNR_2424                      4  1.71e-03        TTA TTGCCTTCAAATAA ATTTAAGGAG
+FNR_2820                     11  1.90e-03 TTGCATTGAT TTGATGCTAATCCT GTGGTTTGCA
+FNR_4710                     11  2.35e-03 ACATTATTAT GTGATAATTGCCAA CCGCTAAATA
+FNR_3468                     11  2.35e-03 TGCTGTGTTA TTGACAGTTAGCAT AAACTAGGTG
+FNR_4105                     11  2.88e-03 TCTGCCGGGG TTGATTGGTGTGAG CGTATCGTGC
+FNR_3232                     11  2.88e-03 CTGAAAACAG TTCATACAAAACAG AACGTGACTG
+FNR_41                       11  2.88e-03 ATTTTACGCT TTGATAACGAGCGG AAAACAAACC
+FNR_3244                     11  3.52e-03 TTTATCAATT TGGGTTGTTATCAA ATCGTTACGC
+FNR_4323                     11  3.88e-03 GGGCCGATGA TTGAATCTTAACAA CAGCGTACGT
+FNR_1581                      4  4.71e-03        TAT TTGTTAGTGAATAA AAGGTTGCCT
+FNR_4327                     11  5.17e-03 ATGGCAGCAC TTGATGCGGAACGC TACCTCGATG
+FNR_3196                     11  5.17e-03 CGCCACTCTT TTGATCCTGCTACA GGTTTTACCC
+FNR_1593                      2  5.17e-03          G TTGTTGCTGATAAC ATCCTGGTAA
+FNR_3828                     14  5.67e-03 TACGGCATTG ATAATCATTTTCAA TATCATT   
+FNR_1570                      4  5.67e-03        AAC TTAAGGGTTTTCAA ATAGATAGAC
+FNR_1560                      9  5.67e-03   GGAGTTTT TTAACGATTATTAA ACTATAAAAA
+FNR_3998                      9  6.22e-03   ACTTTAAC TTGTTGATATTTAA AGGTATTTAA
+FNR_3705                     18  6.22e-03 AGAATGTATC GTCACATTCATTAA GGT       
+FNR_3411                     11  6.22e-03 GCCTTTTGTT TTGATCTGGTTTGC CGCGGCAGCG
+FNR_1572                      5  6.22e-03       ATGC TCCCTTTTAATTAA CTGTTTTAGC
+FNR_1565                     19  6.80e-03 GGCGTAATAT ATACGTGGGATCAA TTT       
+FNR_4102                     11  7.44e-03 ACTCTGTTTT TTGATCTCACCCGG TAAAGTCGCC
+FNR_3659                     11  7.44e-03 CAGGAGTGTT TTCATGGAATTTAC CACCGGATTG
+FNR_1587                      4  7.44e-03        GCC GTGAGTAAATTAAA ATTTTATTGA
+FNR_2966                     11  8.86e-03 ACTAAAAAAA TCGATCTCGTCAAA TTTCAGACTT
+FNR_2226                     11  8.86e-03 ACTAAAAAAA TCGATCTCGTCAAA TTTCAGACTT
+FNR_4709                      7  9.66e-03     GCTAAC ACCATTGCAATTAA CAAATTTGCA
+FNR_4557                     12  9.66e-03 AACTCATCTT TGCCTCACTGTCAA TTTGACTAT 
+FNR_1596                     11  1.05e-02 TGTTGCAGGG TTAACATTTTTTAA CTGTTCTACC
+FNR_4711                     11  1.14e-02 AATATGCGTT TTGTTATCTATGTA TAAAAACAGC
+FNR_3410                     11  1.24e-02 GGCACTGGAA TTGATCGAACAGCA GGCCGCAAAA
+FNR_1586                      3  1.24e-02         TG GTTGTTTCAGTCAA CGGAGTATTA
+FNR_1578                      4  1.34e-02        GGT TCGACCTGGTTTAT AAATAGTGTG
+FNR_1558                      3  1.34e-02         CG ATGATTTCATCAAA CTGTTAACGT
+FNR_1567                     22  1.46e-02 AAACATAAAT GTCACTAAAGTTAC           
+FNR_1566                      2  1.46e-02          T GTCACTAAAGTTAC CTTATTGAAA
+FNR_4107                     15  1.70e-02 GATGTACGGG TTCTTATAAATGCA CTTTGC    
+FNR_4106                     11  1.70e-02 GATGTACGGG TTCTTATAAATGCA CTTTGCGTGC
+FNR_1584                      2  1.84e-02          A ATTATATAGAGTAA AATATTTGAT
+FNR_3004                     11  1.98e-02 GTTCAAAATG ACGCATGAAATCAC GTTTCACTTT
+FNR_1582                     18  1.98e-02 GTGTTAATGT TTTGTTAGAATCAG TCAC      
+FNR_1591                      2  2.14e-02          T TGGCTAAATGTAAA AAAATGGTTA
+FNR_1561                     20  2.14e-02 TTTCAAAGTT GTAACTATGCACAA AT        
+FNR_1559                      2  2.14e-02          A TTCACCACGTTTAT TAGTTGTATG
+FNR_1562                     21  2.30e-02 AACAAAGTAT TCACCTTATGTCCA T         
+FNR_1557                     20  2.30e-02 CTACAATTTA TTAACTGTTAGCTA TA        
+FNR_3470                      2  2.47e-02          A TCGATATTTTTGAT GACATAAGCA
+FNR_3020                     11  2.65e-02 AAAGTGAAAC GTGATTTCATGCGT CATTTTGAAC
+FNR_1590                     22  2.65e-02 TAACGTAAAA ACAACTTCAGACAA           
+FNR_1575                     15  2.85e-02 CATTAATAAA ATAATTGTAATTAT AAGGTTA   
+FNR_1574                      4  2.85e-02        AAA ATAATTGTAATTAT AAGGTTAAAT
+FNR_1568                      2  2.85e-02          A GCCTTATAACTCAC ACATTTTAAA
+FNR_3937                     15  3.05e-02 GGAGTAAAAA ACCACATCAATTAG CTGTAT    
+FNR_1576                     13  3.05e-02 AGACCAGGTC CTCATTTTAATAAC CCCTGGCTG 
+FNR_1573                     21  3.05e-02 TTAAATATCG GTAATTTGTATTTA A         
+FNR_1589                      5  3.27e-02       GTCA TTGCCCATATGAAC GAATTATTAA
+FNR_3508                      6  3.74e-02      GCATT CTGGGCAAAATAAA ATCAAATAGC
+FNR_1592                      4  3.74e-02        ATT GCGAATAGCAACAA CTAAACAACC
+FNR_1577                     20  3.99e-02 GATCACAAAT TTTAAACAGAGCAC AA        
+FNR_1571                      3  4.26e-02         TT ATTTGGATAATCAA ATATTTACTC
+FNR_1564                     11  5.46e-02 TGAGTTTTTA TTAACATGTTTGCA ACCTTTCTTT
+FNR_1595                     15  6.51e-02 GAAACCAACA TTGCGACAACCTCA TACTCAA   
+FNR_1583                      8  9.04e-02    GAAATCA ACGGTTGAAAAAAC GATTCAGCAA
+FNR_1594                     21  1.05e-01 AACAATGGTT TTACCAATTGGCCG C         
+FNR_1569                     13  1.46e-01 TGAATTTTAT AGCATTTTTTTAAC TGGCCTGTC 
+FNR_1588                     21  2.02e-01 GGTAAAACCA TTGTTGCTTGAGTG T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FNR_4926                          2.2e-07  10_[+1]_10
+FNR_4801                          2.2e-07  10_[+1]_10
+FNR_3704                          6.4e-07  3_[+1]_17
+FNR_251                           1.1e-06  10_[+1]_10
+FNR_2873                          1.4e-06  10_[+1]_10
+FNR_2868                          1.4e-06  10_[+1]_10
+FNR_1585                          1.4e-06  17_[+1]_3
+FNR_5118                          2.4e-06  10_[+1]_10
+FNR_947                           2.4e-06  10_[+1]_10
+FNR_4612                          3.6e-06  10_[+1]_10
+FNR_4608                          3.6e-06  10_[+1]_10
+FNR_3811                          3.6e-06  10_[+1]_10
+FNR_3370                          3.6e-06  10_[+1]_10
+FNR_2854                          3.6e-06  10_[+1]_10
+FNR_3723                          4.4e-06  10_[+1]_10
+FNR_3278                          5.4e-06  10_[+1]_10
+FNR_4614                          6.6e-06  10_[+1]_10
+FNR_4610                          6.6e-06  10_[+1]_10
+FNR_4536                          6.6e-06  10_[+1]_10
+FNR_4290                          6.6e-06  10_[+1]_10
+FNR_4101                          6.6e-06  10_[+1]_10
+FNR_3812                          6.6e-06  10_[+1]_10
+FNR_3480                          6.6e-06  10_[+1]_10
+FNR_3373                          6.6e-06  10_[+1]_10
+FNR_3493                          7.9e-06  10_[+1]_10
+FNR_4900                          9.8e-06  10_[+1]_10
+FNR_3458                          9.8e-06  10_[+1]_10
+FNR_2205                          9.8e-06  10_[+1]_10
+FNR_2203                          9.8e-06  10_[+1]_10
+FNR_4406                          1.4e-05  10_[+1]_10
+FNR_3172                          1.7e-05  10_[+1]_10
+FNR_2964                          1.7e-05  10_[+1]_10
+FNR_4910                            2e-05  10_[+1]_10
+FNR_4125                            2e-05  10_[+1]_10
+FNR_4082                            2e-05  10_[+1]_10
+FNR_4847                          2.4e-05  14_[+1]_14
+FNR_4803                          2.4e-05  10_[+1]_10
+FNR_4778                          2.4e-05  10_[+1]_10
+FNR_187                           2.4e-05  10_[+1]_10
+FNR_4700                          2.9e-05  10_[+1]_10
+FNR_4594                          2.9e-05  20_[+1]
+FNR_4453                          4.1e-05  10_[+1]_10
+FNR_2337                          4.1e-05  10_[+1]_10
+FNR_4875                          4.8e-05  10_[+1]_10
+FNR_3563                          4.8e-05  10_[+1]_10
+FNR_2120                          4.8e-05  10_[+1]_10
+FNR_4292                          5.7e-05  10_[+1]_10
+FNR_3141                          5.7e-05  10_[+1]_10
+FNR_4085                          6.6e-05  10_[+1]_10
+FNR_2865                          6.6e-05  10_[+1]_10
+FNR_576                           6.6e-05  10_[+1]_10
+FNR_3997                          7.8e-05  10_[+1]_10
+FNR_3035                          7.8e-05  11_[+1]_9
+FNR_3949                            9e-05  10_[+1]_10
+FNR_3703                          0.00012  9_[+1]_11
+FNR_3284                          0.00012  10_[+1]_10
+FNR_60                            0.00012  10_[+1]_10
+FNR_4535                          0.00014  10_[+1]_10
+FNR_3147                          0.00014  10_[+1]_10
+FNR_4254                          0.00016  10_[+1]_10
+FNR_5250                          0.00021  10_[+1]_10
+FNR_57                            0.00021  10_[+1]_10
+FNR_3001                          0.00028  10_[+1]_10
+FNR_4110                          0.00032  10_[+1]_10
+FNR_3036                          0.00032  10_[+1]_10
+FNR_979                           0.00032  10_[+1]_10
+FNR_4649                          0.00036  10_[+1]_10
+FNR_3861                          0.00036  10_[+1]_10
+FNR_3920                          0.00041  10_[+1]_10
+FNR_578                           0.00041  10_[+1]_10
+FNR_3474                          0.00061  10_[+1]_10
+FNR_4154                          0.00068  11_[+1]_9
+FNR_3948                          0.00068  10_[+1]_10
+FNR_978                           0.00068  10_[+1]_10
+FNR_3018                          0.00097  10_[+1]_10
+FNR_1563                          0.00097  4_[+1]_17
+FNR_4806                           0.0011  11_[+1]_9
+FNR_62                             0.0011  10_[+1]_10
+FNR_3745                           0.0012  10_[+1]_10
+FNR_1579                           0.0012  2_[+1]_19
+FNR_59                             0.0012  10_[+1]_10
+FNR_4131                           0.0014  10_[+1]_10
+FNR_4461                           0.0015  10_[+1]_10
+FNR_1580                           0.0015  19_[+1]_2
+FNR_3326                           0.0017  3_[+1]_17
+FNR_3176                           0.0017  10_[+1]_10
+FNR_2424                           0.0017  3_[+1]_17
+FNR_2820                           0.0019  10_[+1]_10
+FNR_4710                           0.0023  10_[+1]_10
+FNR_3468                           0.0023  10_[+1]_10
+FNR_4105                           0.0029  10_[+1]_10
+FNR_3232                           0.0029  10_[+1]_10
+FNR_41                             0.0029  10_[+1]_10
+FNR_3244                           0.0035  10_[+1]_10
+FNR_4323                           0.0039  10_[+1]_10
+FNR_1581                           0.0047  3_[+1]_18
+FNR_4327                           0.0052  10_[+1]_10
+FNR_3196                           0.0052  10_[+1]_10
+FNR_1593                           0.0052  1_[+1]_20
+FNR_3828                           0.0057  13_[+1]_7
+FNR_1570                           0.0057  3_[+1]_18
+FNR_1560                           0.0057  8_[+1]_13
+FNR_3998                           0.0062  8_[+1]_12
+FNR_3705                           0.0062  17_[+1]_3
+FNR_3411                           0.0062  10_[+1]_10
+FNR_1572                           0.0062  4_[+1]_17
+FNR_1565                           0.0068  18_[+1]_3
+FNR_4102                           0.0074  10_[+1]_10
+FNR_3659                           0.0074  10_[+1]_10
+FNR_1587                           0.0074  3_[+1]_18
+FNR_2966                           0.0089  10_[+1]_10
+FNR_2226                           0.0089  10_[+1]_10
+FNR_4709                           0.0097  6_[+1]_14
+FNR_4557                           0.0097  11_[+1]_9
+FNR_1596                            0.011  10_[+1]_11
+FNR_4711                            0.011  10_[+1]_10
+FNR_3410                            0.012  10_[+1]_10
+FNR_1586                            0.012  2_[+1]_19
+FNR_1578                            0.013  3_[+1]_18
+FNR_1558                            0.013  2_[+1]_19
+FNR_1567                            0.015  21_[+1]
+FNR_1566                            0.015  1_[+1]_20
+FNR_4107                            0.017  14_[+1]_6
+FNR_4106                            0.017  10_[+1]_10
+FNR_1584                            0.018  1_[+1]_20
+FNR_3004                             0.02  10_[+1]_10
+FNR_1582                             0.02  17_[+1]_4
+FNR_1591                            0.021  1_[+1]_20
+FNR_1561                            0.021  19_[+1]_2
+FNR_1559                            0.021  1_[+1]_20
+FNR_1562                            0.023  20_[+1]_1
+FNR_1557                            0.023  19_[+1]_2
+FNR_3470                            0.025  1_[+1]_19
+FNR_3020                            0.027  10_[+1]_10
+FNR_1590                            0.027  21_[+1]
+FNR_1575                            0.028  14_[+1]_7
+FNR_1574                            0.028  3_[+1]_18
+FNR_1568                            0.028  1_[+1]_20
+FNR_3937                            0.031  14_[+1]_6
+FNR_1576                            0.031  12_[+1]_9
+FNR_1573                            0.031  20_[+1]_1
+FNR_1589                            0.033  4_[+1]_17
+FNR_3508                            0.037  5_[+1]_15
+FNR_1592                            0.037  3_[+1]_18
+FNR_1577                             0.04  19_[+1]_2
+FNR_1571                            0.043  2_[+1]_19
+FNR_1564                            0.055  10_[+1]_11
+FNR_1595                            0.065  14_[+1]_7
+FNR_1583                             0.09  7_[+1]_14
+FNR_1594                             0.11  20_[+1]_1
+FNR_1569                             0.15  12_[+1]_9
+FNR_1588                              0.2  20_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTGATHTWDATCAA width=14 seqs=152
+FNR_4926                 (   11) TTGATTTAAATCAA  1 
+FNR_4801                 (   11) TTGATTTAAATCAA  1 
+FNR_3704                 (    4) TTGATGTAAATCAA  1 
+FNR_251                  (   11) TTGATATATATCAA  1 
+FNR_2873                 (   11) TTGATTTACATCAA  1 
+FNR_2868                 (   11) TTGATTTACATCAA  1 
+FNR_1585                 (   18) TTGATTTACATCAA  1 
+FNR_5118                 (   11) TTGATAACGATCAA  1 
+FNR_947                  (   11) TTGATTTAAATCAC  1 
+FNR_4612                 (   11) TTGATATTTATCAA  1 
+FNR_4608                 (   11) TTGATATTTATCAA  1 
+FNR_3811                 (   11) TTGATATTTATCAA  1 
+FNR_3370                 (   11) TTGATATTTATCAA  1 
+FNR_2854                 (   11) TTGATCGTTATCAA  1 
+FNR_3723                 (   11) TTGATTCCTATCAA  1 
+FNR_3278                 (   11) TTGATTTGGATCAC  1 
+FNR_4614                 (   11) TTGTTCTCGATCAA  1 
+FNR_4610                 (   11) TTGTTCTCGATCAA  1 
+FNR_4536                 (   11) TTGAGCTACATCAA  1 
+FNR_4290                 (   11) TTGATATATGTCAA  1 
+FNR_4101                 (   11) TTGATTAACATCAA  1 
+FNR_3812                 (   11) TTGTTCTCGATCAA  1 
+FNR_3480                 (   11) TTGATATATGTCAA  1 
+FNR_3373                 (   11) TTGTTCTCGATCAA  1 
+FNR_3493                 (   11) ATGATCTATATCAA  1 
+FNR_4900                 (   11) ATGATTTCAATCAA  1 
+FNR_3458                 (   11) ATGATTTCAATCAA  1 
+FNR_2205                 (   11) ATGATTTCAATCAA  1 
+FNR_2203                 (   11) ATGATTTCAATCAA  1 
+FNR_4406                 (   11) TTGCGCTAAATCAA  1 
+FNR_3172                 (   11) TTGAGATACATCAA  1 
+FNR_2964                 (   11) TTGACAAATATCAA  1 
+FNR_4910                 (   11) TTGAGGTAGGTCAA  1 
+FNR_4125                 (   11) TTGACTTTAGTCAA  1 
+FNR_4082                 (   11) TTGAGGTAGGTCAA  1 
+FNR_4847                 (   15) TTGAGCCACATCAA  1 
+FNR_4803                 (   11) TTGATGTAAAACAA  1 
+FNR_4778                 (   11) ATGATGTATATCAA  1 
+FNR_187                  (   11) TTGAGCGAAGTCAA  1 
+FNR_4700                 (   11) GCGATCTAAATCAA  1 
+FNR_4594                 (   21) TTGACTAAAGTCAA  1 
+FNR_4453                 (   11) TTGATATGGATTAA  1 
+FNR_2337                 (   11) TTGATATGGATTAA  1 
+FNR_4875                 (   11) TTAATCCAGATCAA  1 
+FNR_3563                 (   11) TTGACCTGTATCAG  1 
+FNR_2120                 (   11) TTGACCTGTATCAG  1 
+FNR_4292                 (   11) TTGATGTTAATTAA  1 
+FNR_3141                 (   11) TTGATACCGAACAA  1 
+FNR_4085                 (   11) TTGATTTCGCGCAA  1 
+FNR_2865                 (   11) ATGATAAATATCAA  1 
+FNR_576                  (   11) TTGATTTATTTCAC  1 
+FNR_3997                 (   11) TTGACAAAAATCAG  1 
+FNR_3035                 (   12) TTAATTAAGATCAA  1 
+FNR_3949                 (   11) GTGATACCAATCAC  1 
+FNR_3703                 (   10) TTGATATTTATCAT  1 
+FNR_3284                 (   11) TTGATATTTATCAT  1 
+FNR_60                   (   11) TTGATGATATTCAA  1 
+FNR_4535                 (   11) TTGATGCAAAGCAC  1 
+FNR_3147                 (   11) TTGATCCAGAACAG  1 
+FNR_4254                 (   11) TTGATTAAAGACAA  1 
+FNR_5250                 (   11) TTGCGCTATCTCAA  1 
+FNR_57                   (   11) TTGTGAGAAATCAA  1 
+FNR_3001                 (   11) ATGCGCGAAATCAA  1 
+FNR_4110                 (   11) GTGATCCAGATTAC  1 
+FNR_3036                 (   11) TTGATCTACATCTC  1 
+FNR_979                  (   11) TTGCTTATTATCAG  1 
+FNR_4649                 (   11) TTGCTTACTATTAA  1 
+FNR_3861                 (   11) TTGTTTAACGTCAA  1 
+FNR_3920                 (   11) TTGCTAAATATTAA  1 
+FNR_578                  (   11) GTGAAATAAATCAA  1 
+FNR_3474                 (   11) TTAATTTTGATTAA  1 
+FNR_4154                 (   12) TTGTTTTATTTCAC  1 
+FNR_3948                 (   11) TTAATCAAAATTAA  1 
+FNR_978                  (   11) TTAACCTGGCTCAA  1 
+FNR_3018                 (   11) TTGATTTCGCGCAT  1 
+FNR_1563                 (    5) TTGATGTAAACAAA  1 
+FNR_4806                 (   12) ATGGTCGTCATCAA  1 
+FNR_62                   (   11) TTGTTTAACATCCA  1 
+FNR_3745                 (   11) TTGATGGTAAGGAA  1 
+FNR_1579                 (    3) GTGATCGGGGTAAA  1 
+FNR_59                   (   11) TTGATATATAACTA  1 
+FNR_4131                 (   11) TTGATCTTACGCAT  1 
+FNR_4461                 (   11) TTGCTTTACATCTC  1 
+FNR_1580                 (   20) TTTACCCCGATCAC  1 
+FNR_3326                 (    4) TTGCCTTCAAATAA  1 
+FNR_3176                 (   11) TTGCTGAACGTTAA  1 
+FNR_2424                 (    4) TTGCCTTCAAATAA  1 
+FNR_2820                 (   11) TTGATGCTAATCCT  1 
+FNR_4710                 (   11) GTGATAATTGCCAA  1 
+FNR_3468                 (   11) TTGACAGTTAGCAT  1 
+FNR_4105                 (   11) TTGATTGGTGTGAG  1 
+FNR_3232                 (   11) TTCATACAAAACAG  1 
+FNR_41                   (   11) TTGATAACGAGCGG  1 
+FNR_3244                 (   11) TGGGTTGTTATCAA  1 
+FNR_4323                 (   11) TTGAATCTTAACAA  1 
+FNR_1581                 (    4) TTGTTAGTGAATAA  1 
+FNR_4327                 (   11) TTGATGCGGAACGC  1 
+FNR_3196                 (   11) TTGATCCTGCTACA  1 
+FNR_1593                 (    2) TTGTTGCTGATAAC  1 
+FNR_3828                 (   14) ATAATCATTTTCAA  1 
+FNR_1570                 (    4) TTAAGGGTTTTCAA  1 
+FNR_1560                 (    9) TTAACGATTATTAA  1 
+FNR_3998                 (    9) TTGTTGATATTTAA  1 
+FNR_3705                 (   18) GTCACATTCATTAA  1 
+FNR_3411                 (   11) TTGATCTGGTTTGC  1 
+FNR_1572                 (    5) TCCCTTTTAATTAA  1 
+FNR_1565                 (   19) ATACGTGGGATCAA  1 
+FNR_4102                 (   11) TTGATCTCACCCGG  1 
+FNR_3659                 (   11) TTCATGGAATTTAC  1 
+FNR_1587                 (    4) GTGAGTAAATTAAA  1 
+FNR_2966                 (   11) TCGATCTCGTCAAA  1 
+FNR_2226                 (   11) TCGATCTCGTCAAA  1 
+FNR_4709                 (    7) ACCATTGCAATTAA  1 
+FNR_4557                 (   12) TGCCTCACTGTCAA  1 
+FNR_1596                 (   11) TTAACATTTTTTAA  1 
+FNR_4711                 (   11) TTGTTATCTATGTA  1 
+FNR_3410                 (   11) TTGATCGAACAGCA  1 
+FNR_1586                 (    3) GTTGTTTCAGTCAA  1 
+FNR_1578                 (    4) TCGACCTGGTTTAT  1 
+FNR_1558                 (    3) ATGATTTCATCAAA  1 
+FNR_1567                 (   22) GTCACTAAAGTTAC  1 
+FNR_1566                 (    2) GTCACTAAAGTTAC  1 
+FNR_4107                 (   15) TTCTTATAAATGCA  1 
+FNR_4106                 (   11) TTCTTATAAATGCA  1 
+FNR_1584                 (    2) ATTATATAGAGTAA  1 
+FNR_3004                 (   11) ACGCATGAAATCAC  1 
+FNR_1582                 (   18) TTTGTTAGAATCAG  1 
+FNR_1591                 (    2) TGGCTAAATGTAAA  1 
+FNR_1561                 (   20) GTAACTATGCACAA  1 
+FNR_1559                 (    2) TTCACCACGTTTAT  1 
+FNR_1562                 (   21) TCACCTTATGTCCA  1 
+FNR_1557                 (   20) TTAACTGTTAGCTA  1 
+FNR_3470                 (    2) TCGATATTTTTGAT  1 
+FNR_3020                 (   11) GTGATTTCATGCGT  1 
+FNR_1590                 (   22) ACAACTTCAGACAA  1 
+FNR_1575                 (   15) ATAATTGTAATTAT  1 
+FNR_1574                 (    4) ATAATTGTAATTAT  1 
+FNR_1568                 (    2) GCCTTATAACTCAC  1 
+FNR_3937                 (   15) ACCACATCAATTAG  1 
+FNR_1576                 (   13) CTCATTTTAATAAC  1 
+FNR_1573                 (   21) GTAATTTGTATTTA  1 
+FNR_1589                 (    5) TTGCCCATATGAAC  1 
+FNR_3508                 (    6) CTGGGCAAAATAAA  1 
+FNR_1592                 (    4) GCGAATAGCAACAA  1 
+FNR_1577                 (   20) TTTAAACAGAGCAC  1 
+FNR_1571                 (    3) ATTTGGATAATCAA  1 
+FNR_1564                 (   11) TTAACATGTTTGCA  1 
+FNR_1595                 (   15) TTGCGACAACCTCA  1 
+FNR_1583                 (    8) ACGGTTGAAAAAAC  1 
+FNR_1594                 (   21) TTACCAATTGGCCG  1 
+FNR_1569                 (   13) AGCATTTTTTTAAC  1 
+FNR_1588                 (   21) TTGTTGCTTGAGTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 3239 bayes= 4.34406 E= 9.1e-084 
+  -118   -369    -64    112 
+ -1389    -88   -264    138 
+  -139    -78    217   -310 
+   114    -44   -205   -160 
+  -332      1    -64    103 
+   -28     52    -32      7 
+   -55    -52    -25     62 
+    36     26    -64    -33 
+    22    -78     49    -22 
+    99   -123    -18   -136 
+  -155   -188    -94    116 
+  -183    194   -147    -78 
+   138   -137   -232   -288 
+   106    -17    -94   -210 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 152 E= 9.1e-084 
+ 0.144737  0.013158  0.105263  0.736842 
+ 0.000000  0.092105  0.026316  0.881579 
+ 0.125000  0.098684  0.736842  0.039474 
+ 0.723684  0.125000  0.039474  0.111842 
+ 0.032895  0.171053  0.105263  0.690789 
+ 0.269737  0.243421  0.131579  0.355263 
+ 0.223684  0.118421  0.138158  0.519737 
+ 0.421053  0.203947  0.105263  0.269737 
+ 0.381579  0.098684  0.230263  0.289474 
+ 0.651316  0.072368  0.144737  0.131579 
+ 0.111842  0.046053  0.085526  0.756579 
+ 0.092105  0.651316  0.059211  0.197368 
+ 0.855263  0.065789  0.032895  0.046053 
+ 0.684211  0.151316  0.085526  0.078947 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTGATHTWDATCAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TTGAT[TAC][TA][ATC][ATG]ATCAA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.57 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FNR_41                           5.88e-02  34
+FNR_57                           4.47e-03  34
+FNR_59                           2.54e-02  34
+FNR_60                           2.55e-03  34
+FNR_62                           2.28e-02  34
+FNR_187                          5.13e-04  10_[+1(2.44e-05)]_10
+FNR_251                          2.30e-05  10_[+1(1.09e-06)]_10
+FNR_576                          1.38e-03  10_[+1(6.58e-05)]_10
+FNR_578                          8.67e-03  34
+FNR_947                          5.01e-05  10_[+1(2.38e-06)]_10
+FNR_978                          1.42e-02  34
+FNR_979                          6.70e-03  34
+FNR_1557                         4.00e-01  35
+FNR_1558                         2.57e-01  35
+FNR_1559                         3.78e-01  35
+FNR_1560                         1.18e-01  35
+FNR_1561                         3.78e-01  35
+FNR_1562                         4.00e-01  35
+FNR_1563                         2.12e-02  35
+FNR_1564                         6.86e-01  35
+FNR_1565                         1.39e-01  35
+FNR_1566                         2.76e-01  35
+FNR_1567                         2.76e-01  35
+FNR_1568                         4.70e-01  35
+FNR_1569                         9.69e-01  35
+FNR_1570                         1.18e-01  35
+FNR_1571                         6.16e-01  35
+FNR_1572                         1.28e-01  35
+FNR_1573                         4.94e-01  35
+FNR_1574                         4.70e-01  35
+FNR_1575                         4.70e-01  35
+FNR_1576                         4.94e-01  35
+FNR_1577                         4.47e-01  35
+FNR_1578                         2.57e-01  35
+FNR_1579                         2.66e-02  35
+FNR_1580                         3.32e-02  35
+FNR_1581                         9.86e-02  35
+FNR_1582                         3.56e-01  35
+FNR_1583                         8.76e-01  35
+FNR_1584                         3.35e-01  35
+FNR_1585                         2.95e-05  17_[+1(1.41e-06)]_3
+FNR_1586                         2.40e-01  35
+FNR_1587                         1.52e-01  35
+FNR_1588                         9.93e-01  35
+FNR_1589                         5.19e-01  35
+FNR_1590                         4.47e-01  35
+FNR_1591                         3.56e-01  35
+FNR_1592                         5.67e-01  35
+FNR_1593                         1.08e-01  35
+FNR_1594                         9.13e-01  35
+FNR_1595                         7.72e-01  35
+FNR_1596                         2.07e-01  35
+FNR_2120                         1.00e-03  10_[+1(4.78e-05)]_10
+FNR_2203                         2.06e-04  10_[+1(9.80e-06)]_10
+FNR_2205                         2.06e-04  10_[+1(9.80e-06)]_10
+FNR_2226                         1.70e-01  34
+FNR_2337                         8.54e-04  10_[+1(4.07e-05)]_10
+FNR_2424                         3.52e-02  34
+FNR_2820                         3.92e-02  34
+FNR_2854                         7.63e-05  10_[+1(3.64e-06)]_10
+FNR_2865                         1.38e-03  10_[+1(6.58e-05)]_10
+FNR_2868                         2.95e-05  10_[+1(1.41e-06)]_10
+FNR_2873                         2.95e-05  10_[+1(1.41e-06)]_10
+FNR_2964                         3.57e-04  10_[+1(1.70e-05)]_10
+FNR_2966                         1.70e-01  34
+FNR_3001                         5.85e-03  34
+FNR_3004                         3.43e-01  34
+FNR_3018                         2.03e-02  34
+FNR_3020                         4.32e-01  34
+FNR_3035                         1.63e-03  11_[+1(7.75e-05)]_9
+FNR_3036                         6.70e-03  34
+FNR_3141                         1.19e-03  10_[+1(5.69e-05)]_10
+FNR_3147                         2.93e-03  34
+FNR_3172                         3.57e-04  10_[+1(1.70e-05)]_10
+FNR_3176                         3.52e-02  34
+FNR_3196                         1.03e-01  34
+FNR_3232                         5.88e-02  34
+FNR_3244                         7.14e-02  34
+FNR_3278                         1.13e-04  10_[+1(5.36e-06)]_10
+FNR_3284                         2.55e-03  34
+FNR_3326                         3.52e-02  34
+FNR_3370                         7.63e-05  10_[+1(3.64e-06)]_10
+FNR_3373                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_3410                         2.30e-01  34
+FNR_3411                         1.23e-01  34
+FNR_3458                         2.06e-04  10_[+1(9.80e-06)]_10
+FNR_3468                         4.82e-02  34
+FNR_3470                         4.09e-01  34
+FNR_3474                         1.26e-02  34
+FNR_3480                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_3493                         1.67e-04  10_[+1(7.95e-06)]_10
+FNR_3508                         5.51e-01  34
+FNR_3563                         1.00e-03  10_[+1(4.78e-05)]_10
+FNR_3659                         1.45e-01  34
+FNR_3703                         2.55e-03  34
+FNR_3704                         1.34e-05  3_[+1(6.37e-07)]_17
+FNR_3705                         1.23e-01  34
+FNR_3723                         9.29e-05  10_[+1(4.42e-06)]_10
+FNR_3745                         2.54e-02  34
+FNR_3811                         7.63e-05  10_[+1(3.64e-06)]_10
+FNR_3812                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_3828                         1.13e-01  34
+FNR_3861                         7.61e-03  34
+FNR_3920                         8.67e-03  34
+FNR_3937                         4.79e-01  34
+FNR_3948                         1.42e-02  34
+FNR_3949                         1.89e-03  10_[+1(9.02e-05)]_10
+FNR_3997                         1.63e-03  10_[+1(7.75e-05)]_10
+FNR_3998                         1.23e-01  34
+FNR_4082                         4.23e-04  10_[+1(2.01e-05)]_10
+FNR_4085                         1.38e-03  10_[+1(6.58e-05)]_10
+FNR_4101                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_4102                         1.45e-01  34
+FNR_4105                         5.88e-02  34
+FNR_4106                         3.03e-01  34
+FNR_4107                         3.03e-01  34
+FNR_4110                         6.70e-03  34
+FNR_4125                         4.23e-04  10_[+1(2.01e-05)]_10
+FNR_4131                         2.84e-02  34
+FNR_4154                         1.42e-02  34
+FNR_4254                         3.40e-03  34
+FNR_4290                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_4292                         1.19e-03  10_[+1(5.69e-05)]_10
+FNR_4323                         7.85e-02  34
+FNR_4327                         1.03e-01  34
+FNR_4406                         2.96e-04  10_[+1(1.41e-05)]_10
+FNR_4453                         8.54e-04  10_[+1(4.07e-05)]_10
+FNR_4461                         3.17e-02  34
+FNR_4535                         2.93e-03  34
+FNR_4536                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_4557                         1.84e-01  34
+FNR_4594                         6.02e-04  20_[+1(2.86e-05)]
+FNR_4608                         7.63e-05  10_[+1(3.64e-06)]_10
+FNR_4610                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_4612                         7.63e-05  10_[+1(3.64e-06)]_10
+FNR_4614                         1.39e-04  10_[+1(6.64e-06)]_10
+FNR_4649                         7.61e-03  34
+FNR_4700                         6.02e-04  10_[+1(2.86e-05)]_10
+FNR_4709                         1.84e-01  34
+FNR_4710                         4.82e-02  34
+FNR_4711                         2.14e-01  34
+FNR_4778                         5.13e-04  10_[+1(2.44e-05)]_10
+FNR_4801                         4.66e-06  10_[+1(2.22e-07)]_10
+FNR_4803                         5.13e-04  10_[+1(2.44e-05)]_10
+FNR_4806                         2.28e-02  34
+FNR_4847                         7.08e-04  14_[+1(2.44e-05)]_14
+FNR_4875                         1.00e-03  10_[+1(4.78e-05)]_10
+FNR_4900                         2.06e-04  10_[+1(9.80e-06)]_10
+FNR_4910                         4.23e-04  10_[+1(2.01e-05)]_10
+FNR_4926                         4.66e-06  10_[+1(2.22e-07)]_10
+FNR_5118                         5.01e-05  10_[+1(2.38e-06)]_10
+FNR_5250                         4.47e-03  34
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: cec442057757
+
+********************************************************************************

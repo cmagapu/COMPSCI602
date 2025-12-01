@@ -1,0 +1,548 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/Cra.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cra_19                   1.0000     38  Cra_20                   1.0000     38  
+Cra_21                   1.0000     36  Cra_317                  1.0000     38  
+Cra_318                  1.0000     38  Cra_319                  1.0000     38  
+Cra_320                  1.0000     38  Cra_321                  1.0000     38  
+Cra_322                  1.0000     38  Cra_323                  1.0000     38  
+Cra_324                  1.0000     38  Cra_325                  1.0000     38  
+Cra_326                  1.0000     38  Cra_327                  1.0000     38  
+Cra_328                  1.0000     38  Cra_329                  1.0000     38  
+Cra_500                  1.0000     38  Cra_501                  1.0000     38  
+Cra_502                  1.0000     38  Cra_503                  1.0000     38  
+Cra_650                  1.0000     38  Cra_651                  1.0000     38  
+Cra_652                  1.0000     36  Cra_653                  1.0000     38  
+Cra_654                  1.0000     36  Cra_655                  1.0000     38  
+Cra_656                  1.0000     36  Cra_657                  1.0000     38  
+Cra_658                  1.0000     36  Cra_659                  1.0000     38  
+Cra_660                  1.0000     38  Cra_661                  1.0000     38  
+Cra_662                  1.0000     38  Cra_663                  1.0000     38  
+Cra_851                  1.0000     36  Cra_2080                 1.0000     38  
+Cra_2109                 1.0000     36  Cra_2143                 1.0000     38  
+Cra_2175                 1.0000     38  Cra_2191                 1.0000     38  
+Cra_2202                 1.0000     38  Cra_2297                 1.0000     38  
+Cra_2358                 1.0000     38  Cra_2359                 1.0000     38  
+Cra_2360                 1.0000     38  Cra_2361                 1.0000     38  
+Cra_2396                 1.0000     36  Cra_2397                 1.0000     38  
+Cra_2440                 1.0000     38  Cra_2883                 1.0000     38  
+Cra_3069                 1.0000     38  Cra_3145                 1.0000     38  
+Cra_3159                 1.0000     38  Cra_3215                 1.0000     36  
+Cra_3536                 1.0000     38  Cra_3585                 1.0000     38  
+Cra_3678                 1.0000     38  Cra_3695                 1.0000     38  
+Cra_3711                 1.0000     36  Cra_3721                 1.0000     38  
+Cra_3907                 1.0000     38  Cra_3908                 1.0000     38  
+Cra_3909                 1.0000     38  Cra_3910                 1.0000     38  
+Cra_3911                 1.0000     38  Cra_3932                 1.0000     38  
+Cra_4023                 1.0000     38  Cra_4343                 1.0000     38  
+Cra_4385                 1.0000     38  Cra_4493                 1.0000     38  
+Cra_5665                 1.0000     36  Cra_5666                 1.0000     36  
+Cra_5667                 1.0000     47  Cra_5668                 1.0000     51  
+Cra_5671                 1.0000     57  Cra_5689                 1.0000     38  
+Cra_5690                 1.0000     38  Cra_5691                 1.0000     38  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/Cra.fasta -oc meme_pwms/Cra -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       78    maxsites=       78    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2981    N=              78
+sample: seed=            0    hsfrac=          0
+        searchsize=   2981    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.288 C 0.192 G 0.21 T 0.31 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.288 C 0.192 G 0.21 T 0.31 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WRYTGAAWCGWTTCAGYW MEME-1	width =  18  sites =  78  llr = 715  E-value = 1.2e-157
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  34111884:16:227214
+pos.-specific     C  :151::119:1:161161
+probability       G  251171:119:1:::5:1
+matrix            T  51382:141:39822234
+
+         bits    2.4                   
+                 2.1                   
+                 1.9                   
+                 1.7         **        
+Relative         1.4         **        
+Entropy          1.2         ** *      
+(13.2 bits)      1.0     *** ** * *    
+                 0.7    **** ** ***  * 
+                 0.5  ****** ******* * 
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           TGCTGAATCGATTCAGCA
+consensus            AAT    A  T     TT
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Cra_2175                     11  8.84e-08 TGACCTTCGC TGTTGAACCGATTAAGCT GGCGCTATCT
+Cra_328                      11  8.84e-08 TGACCTTCGC TGTTGAACCGATTAAGCT GGCGCTATCT
+Cra_327                      13  1.21e-07 TTCTCATAGA GGCTGAATCGTTTCAATT CAGCAAGA  
+Cra_326                      11  1.93e-07 TTTATTCGTT TGCTGAAGCGATTTCGCA GCATTTGACG
+Cra_3159                     11  2.60e-07 ATTTGGCCTG ACCTGAATCAATTCAGCA GGAAGTGATT
+Cra_2297                     11  2.60e-07 ATTTGGCCTG ACCTGAATCAATTCAGCA GGAAGTGATT
+Cra_5691                     11  3.01e-07 CTGCAATTGG TGCTGAAACGATAAAGTA ATTGTGTGAC
+Cra_5690                     11  3.01e-07 CTGCAATTGG TGCTGAAACGATAAAGTA ATTGTGTGAC
+Cra_4385                     11  3.01e-07 CTGCAATTGG TGCTGAAACGATAAAGTA ATTGTGTGAC
+Cra_3721                     12  3.01e-07 TATTATGCTT TCTTGAAACGTTTCAGCG CGATCTTGT 
+Cra_2080                     11  3.01e-07 CTGCAATTGG TGCTGAAACGATAAAGTA ATTGTGTGAC
+Cra_3932                     11  4.05e-07 CGCTTATCCT AGCTGAAGCGTTTCAGTC GATTAAATGT
+Cra_2440                     11  4.05e-07 CGCTTATCCT AGCTGAAGCGTTTCAGTC GATTAAATGT
+Cra_3678                     11  5.40e-07 GAACGTTGCG AGCTGAATCGCTTAACCT GGTGATTTCT
+Cra_3911                     11  6.21e-07 CTGGAGAATT TGATGAACCGTTTCATCA TTGCTGACGC
+Cra_660                      11  6.21e-07 CTGGAGAATT TGATGAACCGTTTCATCA TTGCTGACGC
+Cra_20                       11  6.21e-07 TAAAAATCCG AATTGAACCGATTCACTT ACCAATTTTG
+Cra_19                       11  6.21e-07 TAAAAATCCG AATTGAACCGATTCACTT ACCAATTTTG
+Cra_5666                     10  8.19e-07  TCATCTTGC TGCTGCTTCGATTCAGCA AGGATAAAG 
+Cra_2396                     10  8.19e-07  GGAATAAGT TGCTGAATCGTTTTTTCA ACCGTTGAT 
+Cra_658                      10  8.19e-07  GGAATAAGT TGCTGAATCGTTTTTTCA ACCGTTGAT 
+Cra_656                      10  8.19e-07  GGAATAAGT TGCTGAATCGTTTTTTCA ACCGTTGAT 
+Cra_654                      10  8.19e-07  GGAATAAGT TGCTGAATCGTTTTTTCA ACCGTTGAT 
+Cra_652                      10  8.19e-07  GGAATAAGT TGCTGAATCGTTTTTTCA ACCGTTGAT 
+Cra_3910                     11  9.40e-07 GGTTATCATT TGCTGAATGGATTCAGTC TTAATGAGTG
+Cra_321                      11  1.08e-06 ATTGAACAAA ACTTGAACCGATTTAGCA AAACGTGGCA
+Cra_4493                     11  1.23e-06 TTGTCGCAAT GATTGACACGATTCCGCT TGACGCTGCG
+Cra_3215                     10  1.23e-06  GAAAAGCGA TGCTGAAAGGTGTCAGCT TTGCAAAAA 
+Cra_2397                     11  1.23e-06 TTGTCGCAAT GATTGACACGATTCCGCT TGACGCTGCG
+Cra_2109                     10  1.23e-06  GAAAAGCGA TGCTGAAAGGTGTCAGCT TTGCAAAAA 
+Cra_657                      11  1.23e-06 TTGTCGCAAT GATTGACACGATTCCGCT TGACGCTGCG
+Cra_655                      11  1.23e-06 TTGTCGCAAT GATTGACACGATTCCGCT TGACGCTGCG
+Cra_653                      11  1.23e-06 TTGTCGCAAT GATTGACACGATTCCGCT TGACGCTGCG
+Cra_320                      11  1.23e-06 AATTCTATTT TTCTTACACGATTCAGCT AATGAGTCTT
+Cra_3711                     10  1.40e-06  AAATATATT TGCTTGAACGATTCACCG TTTTTTTCA 
+Cra_5689                     11  1.59e-06 ATCCGTAATT TGCTGGCGCGATTCACCT GAGCGCAACA
+Cra_5671                     38  1.81e-06 ATTGCTTCAC AACGGACACGATTCAACA AC        
+Cra_851                      10  2.05e-06  CCTGGGTCA TGCTGAAGCGAGACACCA GGAGACACA 
+Cra_3695                     11  2.64e-06 GCCAATTGAC TCTTGAATGGTTTCAGCA CTTTGGACTG
+Cra_3069                     11  2.98e-06 TGATAGTCGA TCGTTAAGCGATTCAGCA CCTTACCTCA
+Cra_4343                     11  3.37e-06 TTATTACACT GACTGAAACGTTTTTGCC CTATGAGCTC
+Cra_5665                     10  4.29e-06  ATCAACGGT TGAAAAAACGATTCAGCA ACTTATTCC 
+Cra_3585                     11  5.43e-06 GAAAAGCCAA AGCTGAATCGATTTTATG ATTTGGTTCA
+Cra_3536                     11  5.43e-06 GAAAAGCCAA AGCTGAATCGATTTTATG ATTTGGTTCA
+Cra_3909                     11  7.66e-06 GACGATTATA TTTGTAAACGATTCAGCT TAAACTGCCC
+Cra_3908                     11  7.66e-06 GACGATTATA TTTGTAAACGATTCAGCT TAAACTGCCC
+Cra_3907                     11  7.66e-06 GACGATTATA TTTGTAAACGATTCAGCT TAAACTGCCC
+Cra_325                      11  7.66e-06 CTTCAGAGGC TATTTTATCGATTCAGCT GTAGTAAAAT
+Cra_323                      11  8.57e-06 ACATTTTTTC TGATGAATCGAGCCAACA GAAAACGCTG
+Cra_3145                     11  9.57e-06 AAAGTTAGCG TGGTGAATCGATACTTTA CCGGTTGAAT
+Cra_2191                     11  9.57e-06 TGTTGCGCTC AGGTGAATCGCGCCAGCA AATTACGGAT
+Cra_329                      11  9.57e-06 TGTTGCGCTC AGGTGAATCGCGCCAGCA AATTACGGAT
+Cra_2202                     11  1.65e-05 CAAAATTGGT AAGTGAATCGGTTCAATT CGGATTTTTA
+Cra_318                      11  1.65e-05 CAAAATTGGT AAGTGAATCGGTTCAATT CGGATTTTTA
+Cra_21                       11  1.65e-05 TGTAGCCCTT ATCTGAATCGATTCGATT GTGGACGA  
+Cra_2883                     11  2.25e-05 TAAGCGGGGT TGCTGAATCGTTAAGGTA GGCGGTAATA
+Cra_2358                     10  3.37e-05  CATTTAAGA AATTAAATCATTTCAACT TGGTTGTTAA
+Cra_503                      10  3.37e-05  CATTTAAGA AATTAAATCATTTCAACT TGGTTGTTAA
+Cra_2143                     11  1.03e-04 TGCACCAGTT GATCGATACGATCCTGCT CCAGCAGGTC
+Cra_317                      11  1.03e-04 TGCACCAGTT GATCGATACGATCCTGCT CCAGCAGGTC
+Cra_4023                     11  1.13e-04 GTCGACTGGA CAGTTAACCGATTCAGTG CCAGATTTCG
+Cra_5667                     14  2.04e-04 TTCGCTGCGT TTCGGGAACGTTCCCGTT TTTAAATTTT
+Cra_663                      11  4.83e-04 CGTCAACATC AAACTGATCGATTCACAA GATGTTGAAA
+Cra_662                      11  4.83e-04 CGTCAACATC AAACTGATCGATTCACAA GATGTTGAAA
+Cra_661                      11  4.83e-04 CGTCAACATC AAACTGATCGATTCACAA GATGTTGAAA
+Cra_650                      10  5.59e-04  AAACCTGTT TATTGTAAGGATTTTGCG GCGTAATATA
+Cra_319                      11  7.44e-04 CTGAAACGTT AACTGAAACGCATATTTG CGGATTAGTT
+Cra_651                      11  9.16e-04 CGTCGAAAAA TGCAAATTTGCTTCAACA AAAACCTGTT
+Cra_2359                     12  9.80e-04 GTGGAGAAAA AACAAGAACGTTTTACAT GACGAAAGG 
+Cra_502                      12  9.80e-04 GTGGAGAAAA AACAAGAACGTTTTACAT GACGAAAGG 
+Cra_2361                     12  1.45e-03 ACCCATTTAG GGCTGATTTATTACTACA CACAGCAGT 
+Cra_500                      12  1.45e-03 ACCCATTTAG GGCTGATTTATTACTACA CACAGCAGT 
+Cra_324                      10  2.11e-03  AATTGATGT AACATAATCACTTACGTG ATGTGCGTGT
+Cra_659                       7  3.73e-03     CAGTTG ATCTGGATTGTTAAATTC ATATAATGCG
+Cra_322                       4  5.13e-03        GGG TGGATAAGCGTTTACAGT TTTCGCAAGC
+Cra_2360                      7  5.67e-03     CGAAAG GACTACACCGAAATATTT TTTATATGCA
+Cra_501                       7  5.67e-03     CGAAAG GACTACACCGAAATATTT TTTATATGCA
+Cra_5668                      9  1.14e-02   CGTCGCAC AACCTAAATATTCAAAAA AATGAATATT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cra_2175                          8.8e-08  10_[+1]_10
+Cra_328                           8.8e-08  10_[+1]_10
+Cra_327                           1.2e-07  12_[+1]_8
+Cra_326                           1.9e-07  10_[+1]_10
+Cra_3159                          2.6e-07  10_[+1]_10
+Cra_2297                          2.6e-07  10_[+1]_10
+Cra_5691                            3e-07  10_[+1]_10
+Cra_5690                            3e-07  10_[+1]_10
+Cra_4385                            3e-07  10_[+1]_10
+Cra_3721                            3e-07  11_[+1]_9
+Cra_2080                            3e-07  10_[+1]_10
+Cra_3932                            4e-07  10_[+1]_10
+Cra_2440                            4e-07  10_[+1]_10
+Cra_3678                          5.4e-07  10_[+1]_10
+Cra_3911                          6.2e-07  10_[+1]_10
+Cra_660                           6.2e-07  10_[+1]_10
+Cra_20                            6.2e-07  10_[+1]_10
+Cra_19                            6.2e-07  10_[+1]_10
+Cra_5666                          8.2e-07  9_[+1]_9
+Cra_2396                          8.2e-07  9_[+1]_9
+Cra_658                           8.2e-07  9_[+1]_9
+Cra_656                           8.2e-07  9_[+1]_9
+Cra_654                           8.2e-07  9_[+1]_9
+Cra_652                           8.2e-07  9_[+1]_9
+Cra_3910                          9.4e-07  10_[+1]_10
+Cra_321                           1.1e-06  10_[+1]_10
+Cra_4493                          1.2e-06  10_[+1]_10
+Cra_3215                          1.2e-06  9_[+1]_9
+Cra_2397                          1.2e-06  10_[+1]_10
+Cra_2109                          1.2e-06  9_[+1]_9
+Cra_657                           1.2e-06  10_[+1]_10
+Cra_655                           1.2e-06  10_[+1]_10
+Cra_653                           1.2e-06  10_[+1]_10
+Cra_320                           1.2e-06  10_[+1]_10
+Cra_3711                          1.4e-06  9_[+1]_9
+Cra_5689                          1.6e-06  10_[+1]_10
+Cra_5671                          1.8e-06  37_[+1]_2
+Cra_851                           2.1e-06  9_[+1]_9
+Cra_3695                          2.6e-06  10_[+1]_10
+Cra_3069                            3e-06  10_[+1]_10
+Cra_4343                          3.4e-06  10_[+1]_10
+Cra_5665                          4.3e-06  9_[+1]_9
+Cra_3585                          5.4e-06  10_[+1]_10
+Cra_3536                          5.4e-06  10_[+1]_10
+Cra_3909                          7.7e-06  10_[+1]_10
+Cra_3908                          7.7e-06  10_[+1]_10
+Cra_3907                          7.7e-06  10_[+1]_10
+Cra_325                           7.7e-06  10_[+1]_10
+Cra_323                           8.6e-06  10_[+1]_10
+Cra_3145                          9.6e-06  10_[+1]_10
+Cra_2191                          9.6e-06  10_[+1]_10
+Cra_329                           9.6e-06  10_[+1]_10
+Cra_2202                          1.6e-05  10_[+1]_10
+Cra_318                           1.6e-05  10_[+1]_10
+Cra_21                            1.6e-05  10_[+1]_8
+Cra_2883                          2.2e-05  10_[+1]_10
+Cra_2358                          3.4e-05  9_[+1]_11
+Cra_503                           3.4e-05  9_[+1]_11
+Cra_2143                           0.0001  10_[+1]_10
+Cra_317                            0.0001  10_[+1]_10
+Cra_4023                          0.00011  10_[+1]_10
+Cra_5667                           0.0002  13_[+1]_16
+Cra_663                           0.00048  10_[+1]_10
+Cra_662                           0.00048  10_[+1]_10
+Cra_661                           0.00048  10_[+1]_10
+Cra_650                           0.00056  9_[+1]_11
+Cra_319                           0.00074  10_[+1]_10
+Cra_651                           0.00092  10_[+1]_10
+Cra_2359                          0.00098  11_[+1]_9
+Cra_502                           0.00098  11_[+1]_9
+Cra_2361                           0.0015  11_[+1]_9
+Cra_500                            0.0015  11_[+1]_9
+Cra_324                            0.0021  9_[+1]_11
+Cra_659                            0.0037  6_[+1]_14
+Cra_322                            0.0051  3_[+1]_17
+Cra_2360                           0.0057  6_[+1]_14
+Cra_501                            0.0057  6_[+1]_14
+Cra_5668                            0.011  8_[+1]_25
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WRYTGAAWCGWTTCAGYW width=18 seqs=78
+Cra_2175                 (   11) TGTTGAACCGATTAAGCT  1 
+Cra_328                  (   11) TGTTGAACCGATTAAGCT  1 
+Cra_327                  (   13) GGCTGAATCGTTTCAATT  1 
+Cra_326                  (   11) TGCTGAAGCGATTTCGCA  1 
+Cra_3159                 (   11) ACCTGAATCAATTCAGCA  1 
+Cra_2297                 (   11) ACCTGAATCAATTCAGCA  1 
+Cra_5691                 (   11) TGCTGAAACGATAAAGTA  1 
+Cra_5690                 (   11) TGCTGAAACGATAAAGTA  1 
+Cra_4385                 (   11) TGCTGAAACGATAAAGTA  1 
+Cra_3721                 (   12) TCTTGAAACGTTTCAGCG  1 
+Cra_2080                 (   11) TGCTGAAACGATAAAGTA  1 
+Cra_3932                 (   11) AGCTGAAGCGTTTCAGTC  1 
+Cra_2440                 (   11) AGCTGAAGCGTTTCAGTC  1 
+Cra_3678                 (   11) AGCTGAATCGCTTAACCT  1 
+Cra_3911                 (   11) TGATGAACCGTTTCATCA  1 
+Cra_660                  (   11) TGATGAACCGTTTCATCA  1 
+Cra_20                   (   11) AATTGAACCGATTCACTT  1 
+Cra_19                   (   11) AATTGAACCGATTCACTT  1 
+Cra_5666                 (   10) TGCTGCTTCGATTCAGCA  1 
+Cra_2396                 (   10) TGCTGAATCGTTTTTTCA  1 
+Cra_658                  (   10) TGCTGAATCGTTTTTTCA  1 
+Cra_656                  (   10) TGCTGAATCGTTTTTTCA  1 
+Cra_654                  (   10) TGCTGAATCGTTTTTTCA  1 
+Cra_652                  (   10) TGCTGAATCGTTTTTTCA  1 
+Cra_3910                 (   11) TGCTGAATGGATTCAGTC  1 
+Cra_321                  (   11) ACTTGAACCGATTTAGCA  1 
+Cra_4493                 (   11) GATTGACACGATTCCGCT  1 
+Cra_3215                 (   10) TGCTGAAAGGTGTCAGCT  1 
+Cra_2397                 (   11) GATTGACACGATTCCGCT  1 
+Cra_2109                 (   10) TGCTGAAAGGTGTCAGCT  1 
+Cra_657                  (   11) GATTGACACGATTCCGCT  1 
+Cra_655                  (   11) GATTGACACGATTCCGCT  1 
+Cra_653                  (   11) GATTGACACGATTCCGCT  1 
+Cra_320                  (   11) TTCTTACACGATTCAGCT  1 
+Cra_3711                 (   10) TGCTTGAACGATTCACCG  1 
+Cra_5689                 (   11) TGCTGGCGCGATTCACCT  1 
+Cra_5671                 (   38) AACGGACACGATTCAACA  1 
+Cra_851                  (   10) TGCTGAAGCGAGACACCA  1 
+Cra_3695                 (   11) TCTTGAATGGTTTCAGCA  1 
+Cra_3069                 (   11) TCGTTAAGCGATTCAGCA  1 
+Cra_4343                 (   11) GACTGAAACGTTTTTGCC  1 
+Cra_5665                 (   10) TGAAAAAACGATTCAGCA  1 
+Cra_3585                 (   11) AGCTGAATCGATTTTATG  1 
+Cra_3536                 (   11) AGCTGAATCGATTTTATG  1 
+Cra_3909                 (   11) TTTGTAAACGATTCAGCT  1 
+Cra_3908                 (   11) TTTGTAAACGATTCAGCT  1 
+Cra_3907                 (   11) TTTGTAAACGATTCAGCT  1 
+Cra_325                  (   11) TATTTTATCGATTCAGCT  1 
+Cra_323                  (   11) TGATGAATCGAGCCAACA  1 
+Cra_3145                 (   11) TGGTGAATCGATACTTTA  1 
+Cra_2191                 (   11) AGGTGAATCGCGCCAGCA  1 
+Cra_329                  (   11) AGGTGAATCGCGCCAGCA  1 
+Cra_2202                 (   11) AAGTGAATCGGTTCAATT  1 
+Cra_318                  (   11) AAGTGAATCGGTTCAATT  1 
+Cra_21                   (   11) ATCTGAATCGATTCGATT  1 
+Cra_2883                 (   11) TGCTGAATCGTTAAGGTA  1 
+Cra_2358                 (   10) AATTAAATCATTTCAACT  1 
+Cra_503                  (   10) AATTAAATCATTTCAACT  1 
+Cra_2143                 (   11) GATCGATACGATCCTGCT  1 
+Cra_317                  (   11) GATCGATACGATCCTGCT  1 
+Cra_4023                 (   11) CAGTTAACCGATTCAGTG  1 
+Cra_5667                 (   14) TTCGGGAACGTTCCCGTT  1 
+Cra_663                  (   11) AAACTGATCGATTCACAA  1 
+Cra_662                  (   11) AAACTGATCGATTCACAA  1 
+Cra_661                  (   11) AAACTGATCGATTCACAA  1 
+Cra_650                  (   10) TATTGTAAGGATTTTGCG  1 
+Cra_319                  (   11) AACTGAAACGCATATTTG  1 
+Cra_651                  (   11) TGCAAATTTGCTTCAACA  1 
+Cra_2359                 (   12) AACAAGAACGTTTTACAT  1 
+Cra_502                  (   12) AACAAGAACGTTTTACAT  1 
+Cra_2361                 (   12) GGCTGATTTATTACTACA  1 
+Cra_500                  (   12) GGCTGATTTATTACTACA  1 
+Cra_324                  (   10) AACATAATCACTTACGTG  1 
+Cra_659                  (    7) ATCTGGATTGTTAAATTC  1 
+Cra_322                  (    4) TGGATAAGCGTTTACAGT  1 
+Cra_2360                 (    7) GACTACACCGAAATATTT  1 
+Cra_501                  (    7) GACTACACCGAAATATTT  1 
+Cra_5668                 (    9) AACCTAAATATTCAAAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 1655 bayes= 4.33756 E= 1.2e-157 
+    26   -390    -34     62 
+    32   -132    117   -179 
+  -168    149   -104    -20 
+  -191   -132   -171    134 
+  -149  -1293    177    -79 
+   151   -232    -87   -359 
+   151    -90  -1293   -201 
+    32    -58   -123     45 
+ -1293    219   -171   -227 
+  -149  -1293    209  -1293 
+    97   -132   -304     11 
+  -291  -1293   -145    151 
+   -91   -109  -1293    129 
+   -79    174  -1293    -69 
+   121    -73   -304    -69 
+   -58    -44    129   -101 
+  -191    165   -403     -1 
+    55   -158   -104     41 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 78 E= 1.2e-157 
+ 0.346154  0.012821  0.166667  0.474359 
+ 0.358974  0.076923  0.474359  0.089744 
+ 0.089744  0.538462  0.102564  0.269231 
+ 0.076923  0.076923  0.064103  0.782051 
+ 0.102564  0.000000  0.717949  0.179487 
+ 0.820513  0.038462  0.115385  0.025641 
+ 0.820513  0.102564  0.000000  0.076923 
+ 0.358974  0.128205  0.089744  0.423077 
+ 0.000000  0.871795  0.064103  0.064103 
+ 0.102564  0.000000  0.897436  0.000000 
+ 0.564103  0.076923  0.025641  0.333333 
+ 0.038462  0.000000  0.076923  0.884615 
+ 0.153846  0.089744  0.000000  0.756410 
+ 0.166667  0.641026  0.000000  0.192308 
+ 0.666667  0.115385  0.025641  0.192308 
+ 0.192308  0.141026  0.512821  0.153846 
+ 0.076923  0.602564  0.012821  0.307692 
+ 0.423077  0.064103  0.102564  0.410256 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WRYTGAAWCGWTTCAGYW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][GA][CT]TGAA[TA]CG[AT]TTCAG[CT][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.26 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cra_19                           1.30e-05  10_[+1(6.21e-07)]_10
+Cra_20                           1.30e-05  10_[+1(6.21e-07)]_10
+Cra_21                           3.13e-04  10_[+1(1.65e-05)]_8
+Cra_317                          2.17e-03  38
+Cra_318                          3.46e-04  10_[+1(1.65e-05)]_10
+Cra_319                          1.55e-02  38
+Cra_320                          2.58e-05  10_[+1(1.23e-06)]_10
+Cra_321                          2.26e-05  10_[+1(1.08e-06)]_10
+Cra_322                          1.02e-01  38
+Cra_323                          1.80e-04  10_[+1(8.57e-06)]_10
+Cra_324                          4.33e-02  38
+Cra_325                          1.61e-04  10_[+1(7.66e-06)]_10
+Cra_326                          4.06e-06  10_[+1(1.93e-07)]_10
+Cra_327                          2.54e-06  12_[+1(1.21e-07)]_8
+Cra_328                          1.86e-06  10_[+1(8.84e-08)]_10
+Cra_329                          2.01e-04  10_[+1(9.57e-06)]_10
+Cra_500                          3.01e-02  38
+Cra_501                          1.13e-01  38
+Cra_502                          2.04e-02  38
+Cra_503                          7.07e-04  9_[+1(3.37e-05)]_11
+Cra_650                          1.17e-02  38
+Cra_651                          1.91e-02  38
+Cra_652                          1.56e-05  9_[+1(8.19e-07)]_9
+Cra_653                          2.58e-05  10_[+1(1.23e-06)]_10
+Cra_654                          1.56e-05  9_[+1(8.19e-07)]_9
+Cra_655                          2.58e-05  10_[+1(1.23e-06)]_10
+Cra_656                          1.56e-05  9_[+1(8.19e-07)]_9
+Cra_657                          2.58e-05  10_[+1(1.23e-06)]_10
+Cra_658                          1.56e-05  9_[+1(8.19e-07)]_9
+Cra_659                          7.56e-02  38
+Cra_660                          1.30e-05  10_[+1(6.21e-07)]_10
+Cra_661                          1.01e-02  38
+Cra_662                          1.01e-02  38
+Cra_663                          1.01e-02  38
+Cra_851                          3.90e-05  9_[+1(2.05e-06)]_9
+Cra_2080                         6.32e-06  10_[+1(3.01e-07)]_10
+Cra_2109                         2.33e-05  9_[+1(1.23e-06)]_9
+Cra_2143                         2.17e-03  38
+Cra_2175                         1.86e-06  10_[+1(8.84e-08)]_10
+Cra_2191                         2.01e-04  10_[+1(9.57e-06)]_10
+Cra_2202                         3.46e-04  10_[+1(1.65e-05)]_10
+Cra_2297                         5.45e-06  10_[+1(2.60e-07)]_10
+Cra_2358                         7.07e-04  9_[+1(3.37e-05)]_11
+Cra_2359                         2.04e-02  38
+Cra_2360                         1.13e-01  38
+Cra_2361                         3.01e-02  38
+Cra_2396                         1.56e-05  9_[+1(8.19e-07)]_9
+Cra_2397                         2.58e-05  10_[+1(1.23e-06)]_10
+Cra_2440                         8.50e-06  10_[+1(4.05e-07)]_10
+Cra_2883                         4.72e-04  10_[+1(2.25e-05)]_10
+Cra_3069                         6.26e-05  10_[+1(2.98e-06)]_10
+Cra_3145                         2.01e-04  10_[+1(9.57e-06)]_10
+Cra_3159                         5.45e-06  10_[+1(2.60e-07)]_10
+Cra_3215                         2.33e-05  9_[+1(1.23e-06)]_9
+Cra_3536                         1.14e-04  10_[+1(5.43e-06)]_10
+Cra_3585                         1.14e-04  10_[+1(5.43e-06)]_10
+Cra_3678                         1.13e-05  10_[+1(5.40e-07)]_10
+Cra_3695                         5.53e-05  10_[+1(2.64e-06)]_10
+Cra_3711                         2.65e-05  9_[+1(1.40e-06)]_9
+Cra_3721                         6.32e-06  11_[+1(3.01e-07)]_9
+Cra_3907                         1.61e-04  10_[+1(7.66e-06)]_10
+Cra_3908                         1.61e-04  10_[+1(7.66e-06)]_10
+Cra_3909                         1.61e-04  10_[+1(7.66e-06)]_10
+Cra_3910                         1.97e-05  10_[+1(9.40e-07)]_10
+Cra_3911                         1.30e-05  10_[+1(6.21e-07)]_10
+Cra_3932                         8.50e-06  10_[+1(4.05e-07)]_10
+Cra_4023                         2.37e-03  38
+Cra_4343                         7.07e-05  10_[+1(3.37e-06)]_10
+Cra_4385                         6.32e-06  10_[+1(3.01e-07)]_10
+Cra_4493                         2.58e-05  10_[+1(1.23e-06)]_10
+Cra_5665                         8.15e-05  9_[+1(4.29e-06)]_9
+Cra_5666                         1.56e-05  9_[+1(8.19e-07)]_9
+Cra_5667                         6.12e-03  47
+Cra_5668                         3.22e-01  51
+Cra_5671                         7.23e-05  37_[+1(1.81e-06)]_2
+Cra_5689                         3.33e-05  10_[+1(1.59e-06)]_10
+Cra_5690                         6.32e-06  10_[+1(3.01e-07)]_10
+Cra_5691                         6.32e-06  10_[+1(3.01e-07)]_10
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: 3e304376e5d3
+
+********************************************************************************

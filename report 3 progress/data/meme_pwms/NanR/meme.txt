@@ -1,0 +1,241 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/NanR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NanR_807                 1.0000     26  NanR_808                 1.0000     26  
+NanR_809                 1.0000     26  NanR_4422                1.0000     26  
+NanR_4423                1.0000     26  NanR_4424                1.0000     26  
+NanR_4705                1.0000     26  NanR_4706                1.0000     26  
+NanR_4707                1.0000     26  NanR_4959                1.0000     26  
+NanR_4960                1.0000     26  NanR_4961                1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/NanR.fasta -oc meme_pwms/NanR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           26
+nsites: minsites=       12    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             312    N=              12
+sample: seed=            0    hsfrac=          0
+        searchsize=    312    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.353 C 0.138 G 0.199 T 0.311 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.351 C 0.139 G 0.199 T 0.31 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CWGGTATAAMRGT MEME-1	width =  13  sites =  12  llr = 142  E-value = 8.4e-027
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :5:::9:a853:1
+pos.-specific     C  91::::1:35:::
+probability       G  ::98:1::::593
+matrix            T  1412a:9:::217
+
+         bits    2.8              
+                 2.6              
+                 2.3 *            
+                 2.0 * *        * 
+Relative         1.7 * ***      * 
+Entropy          1.4 * *** **   * 
+(17.1 bits)      1.1 * ******** * 
+                 0.9 * ******** * 
+                 0.6 * ***********
+                 0.3 *************
+                 0.0 -------------
+
+Multilevel           CAGGTATAAAGGT
+consensus             T      CCA G
+sequence                          
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+NanR_4706                     9  9.92e-08   TGGTATAA CAGGTATAAAGGT ATATC     
+NanR_4705                     1  9.92e-08          . CAGGTATAAAGGT ATATCGTTTA
+NanR_4424                     9  9.92e-08   TGGTATAA CAGGTATAAAGGT GCACC     
+NanR_4422                     1  9.92e-08          . CAGGTATAAAGGT GCACCAAGAT
+NanR_809                      1  9.92e-08          . CAGGTATAAAGGT ATACAGAAAA
+NanR_808                      9  9.92e-08   TGGTATAA CAGGTATAAAGGT ATACA     
+NanR_4707                     9  3.27e-07   TAATTGAT CTGGTATAACAGG TATAA     
+NanR_4423                     9  3.27e-07   TTTTTGAT CTGGTATAACAGG TATAA     
+NanR_807                      9  3.27e-07   TTTTTGAT CTGGTATAACAGG TATAA     
+NanR_4959                     7  1.10e-05     TTATAC CTGTTATACCAGA TCAAAAA   
+NanR_4961                     7  3.38e-05     GGTGCA CCTTTATACCTGT TATACCA   
+NanR_4960                     7  1.57e-04     ACTATC TTGGTGCACCTTT ATACCTG   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NanR_4706                         9.9e-08  8_[+1]_5
+NanR_4705                         9.9e-08  [+1]_13
+NanR_4424                         9.9e-08  8_[+1]_5
+NanR_4422                         9.9e-08  [+1]_13
+NanR_809                          9.9e-08  [+1]_13
+NanR_808                          9.9e-08  8_[+1]_5
+NanR_4707                         3.3e-07  8_[+1]_5
+NanR_4423                         3.3e-07  8_[+1]_5
+NanR_807                          3.3e-07  8_[+1]_5
+NanR_4959                         1.1e-05  6_[+1]_7
+NanR_4961                         3.4e-05  6_[+1]_7
+NanR_4960                         0.00016  6_[+1]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CWGGTATAAMRGT width=13 seqs=12
+NanR_4706                (    9) CAGGTATAAAGGT  1 
+NanR_4705                (    1) CAGGTATAAAGGT  1 
+NanR_4424                (    9) CAGGTATAAAGGT  1 
+NanR_4422                (    1) CAGGTATAAAGGT  1 
+NanR_809                 (    1) CAGGTATAAAGGT  1 
+NanR_808                 (    9) CAGGTATAAAGGT  1 
+NanR_4707                (    9) CTGGTATAACAGG  1 
+NanR_4423                (    9) CTGGTATAACAGG  1 
+NanR_807                 (    9) CTGGTATAACAGG  1 
+NanR_4959                (    7) CTGTTATACCAGA  1 
+NanR_4961                (    7) CCTTTATACCTGT  1 
+NanR_4960                (    7) TTGGTGCACCTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 168 bayes= 3.70044 E= 8.4e-027 
+ -1023    272  -1023   -189 
+    51    -74  -1023     43 
+ -1023  -1023    220   -189 
+ -1023  -1023    206    -89 
+ -1023  -1023  -1023    169 
+   138  -1023   -126  -1023 
+ -1023    -74  -1023    156 
+   151  -1023  -1023  -1023 
+   109     84  -1023  -1023 
+    51    184  -1023  -1023 
+    -8  -1023    133    -89 
+ -1023  -1023    220   -189 
+  -207  -1023     33    110 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 12 E= 8.4e-027 
+ 0.000000  0.916667  0.000000  0.083333 
+ 0.500000  0.083333  0.000000  0.416667 
+ 0.000000  0.000000  0.916667  0.083333 
+ 0.000000  0.000000  0.833333  0.166667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.916667  0.000000  0.083333  0.000000 
+ 0.000000  0.083333  0.000000  0.916667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.750000  0.250000  0.000000  0.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.333333  0.000000  0.500000  0.166667 
+ 0.000000  0.000000  0.916667  0.083333 
+ 0.083333  0.000000  0.250000  0.666667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CWGGTATAAMRGT MEME-1 regular expression
+--------------------------------------------------------------------------------
+C[AT]GGTATA[AC][AC][GA]G[TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NanR_807                         4.58e-06  8_[+1(3.27e-07)]_5
+NanR_808                         1.39e-06  8_[+1(9.92e-08)]_5
+NanR_809                         1.39e-06  [+1(9.92e-08)]_13
+NanR_4422                        1.39e-06  [+1(9.92e-08)]_13
+NanR_4423                        4.58e-06  8_[+1(3.27e-07)]_5
+NanR_4424                        1.39e-06  8_[+1(9.92e-08)]_5
+NanR_4705                        1.39e-06  [+1(9.92e-08)]_13
+NanR_4706                        1.39e-06  8_[+1(9.92e-08)]_5
+NanR_4707                        4.58e-06  8_[+1(3.27e-07)]_5
+NanR_4959                        1.53e-04  6_[+1(1.10e-05)]_7
+NanR_4960                        2.20e-03  26
+NanR_4961                        4.73e-04  6_[+1(3.38e-05)]_7
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: eca59762dd9a
+
+********************************************************************************

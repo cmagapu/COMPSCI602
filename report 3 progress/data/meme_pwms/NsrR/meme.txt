@@ -1,0 +1,390 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access http://localhost:8080/meme_5.5.7.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= data/tfbs_fastas/NsrR.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NsrR_91                  1.0000     31  NsrR_105                 1.0000     31  
+NsrR_106                 1.0000     31  NsrR_107                 1.0000     31  
+NsrR_108                 1.0000     31  NsrR_109                 1.0000     39  
+NsrR_110                 1.0000     31  NsrR_111                 1.0000     31  
+NsrR_112                 1.0000     31  NsrR_113                 1.0000     31  
+NsrR_114                 1.0000     31  NsrR_115                 1.0000     31  
+NsrR_116                 1.0000     31  NsrR_117                 1.0000     31  
+NsrR_118                 1.0000     31  NsrR_119                 1.0000     31  
+NsrR_120                 1.0000     31  NsrR_121                 1.0000     31  
+NsrR_122                 1.0000     31  NsrR_123                 1.0000     31  
+NsrR_124                 1.0000     31  NsrR_125                 1.0000     31  
+NsrR_126                 1.0000     31  NsrR_127                 1.0000     31  
+NsrR_128                 1.0000     31  NsrR_129                 1.0000     31  
+NsrR_130                 1.0000     31  NsrR_131                 1.0000     31  
+NsrR_132                 1.0000     31  NsrR_133                 1.0000     31  
+NsrR_134                 1.0000     31  NsrR_135                 1.0000     31  
+NsrR_136                 1.0000     31  NsrR_137                 1.0000     31  
+NsrR_138                 1.0000     31  NsrR_139                 1.0000     31  
+NsrR_2344                1.0000     31  NsrR_3171                1.0000     39  
+NsrR_4862                1.0000     39  NsrR_4864                1.0000     39  
+NsrR_4865                1.0000     39  NsrR_4886                1.0000     39  
+NsrR_4887                1.0000     31  NsrR_4980                1.0000     39  
+NsrR_5184                1.0000     31  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme data/tfbs_fastas/NsrR.fasta -oc meme_pwms/NsrR -dna -mod oops -nmotifs 1 -minw 6 -maxw 30 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           30
+nsites: minsites=       45    maxsites=       45    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1451    N=              45
+sample: seed=            0    hsfrac=          0
+        searchsize=   1451    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.34 C 0.164 G 0.172 T 0.323 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.34 C 0.164 G 0.173 T 0.323 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AARATGCATWTTW MEME-1	width =  13  sites =  45  llr = 244  E-value = 3.6e-019
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  7847111823126
+pos.-specific     C  1:21::7::1:21
+probability       G  2:4118::11:1:
+matrix            T  12128:2165963
+
+         bits    2.6              
+                 2.3              
+                 2.1              
+                 1.8              
+Relative         1.6      *       
+Entropy          1.3      *       
+(7.8 bits)       1.0      **   *  
+                 0.8  *  ***   *  
+                 0.5  *  ***** *  
+                 0.3 *************
+                 0.0 -------------
+
+Multilevel           AAAATGCATTTTA
+consensus              G     AA  T
+sequence                          
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+NsrR_4865                     9  1.03e-06   TTGCCTTA AAGATGCATTTAA AATACATCTT
+NsrR_3171                     8  1.03e-06    TTTTTAT AAGATGCATTTGA GATACATCAA
+NsrR_4862                     9  1.55e-06   AATTCCAT AAAATGCATTTCA AATATACTTT
+NsrR_132                     11  2.15e-06 ACAAAAGGGA AAGATGCATTTCC CTTTTTTT  
+NsrR_128                     11  3.12e-06 ATCACCTCTT AAAATGCAATTTA GCAACCGA  
+NsrR_4980                    20  9.25e-06 AATGGTATTT AAAATGCAAATTA TCAGGCG   
+NsrR_137                     10  1.30e-05  TAGCATTAA AAGAGGCATATTA TGGCTATCC 
+NsrR_4886                     9  5.58e-05   TAACCTTA AACATGTATATTA AATATAACTT
+NsrR_134                     10  6.47e-05  CAAATTCTG ATAATGCATCTTT CCAGGGCAT 
+NsrR_116                     11  6.47e-05 GGTTCCGGGA AAGATGCTGTTTT GCAGCTTT  
+NsrR_4887                    11  7.30e-05 TTCTTTGAGG AACATGCAGTTAT GCATGCTG  
+NsrR_126                     10  8.16e-05  CTACAAGTT GAATTGCAATTTA TTGAATTTG 
+NsrR_125                     10  8.16e-05  CTACAAGTT GAATTGCAATTTA TTGAATTTG 
+NsrR_5184                    10  1.36e-04  TCGCTCTGT GAAATGTATTTTT ATTGTTGCA 
+NsrR_139                     10  1.36e-04  ACTGCCGAG AACGTGCATTTTG TATGCCCAT 
+NsrR_106                     11  1.36e-04 TGCAACAATA AAAATACATTTCA CAGAGCGA  
+NsrR_138                     11  1.53e-04 CATGTTATGC AATTTGCATATCA AATGGTTA  
+NsrR_133                     10  1.93e-04  AACAGTTTT GTAATGCATGTTA CATAATAAA 
+NsrR_108                     11  3.05e-04 TACATCAATT AAGATGCAAAAAA AGGAAGAC  
+NsrR_119                     10  3.40e-04  AAAGCAGGC AAAAAGCATGTTT TACGGTAAA 
+NsrR_4864                     9  4.28e-04   TTAAGATT AAGATGTAATATA AATACATCTT
+NsrR_111                     11  4.28e-04 TTTTAAGCTA AAGATGAATTTCG TCGCCGTG  
+NsrR_109                      9  4.77e-04   TAACTCTA AAGTGGTATTTTA CATGCACTTA
+NsrR_131                     10  5.29e-04  TAGCTTTCA CTGCTGCATTTTT TTGCGCTCG 
+NsrR_120                     11  6.46e-04 CATTATCACT AACATGCTGTTAT ACGCTGAA  
+NsrR_113                     11  6.46e-04 CAGTGAGGCA AAGATGAGTTTTT CCGTTGAT  
+NsrR_115                     10  9.71e-04  GATGTAATA TAAATACATCTTA ATGAGGTGG 
+NsrR_130                     11  1.29e-03 AAGCGTGATG AAAATGTTATTTT CCGATGCC  
+NsrR_105                     10  1.43e-03  CACGGCGAC GAAATTCATCTTT AGCTTAAAA 
+NsrR_2344                    14  2.91e-03 TATCCAGAAG ATGTTGTAAATCA AGCGC     
+NsrR_110                     14  2.91e-03 TATCCAGAAG ATGTTGTAAATCA AGCGC     
+NsrR_107                     10  3.17e-03  AAAACACCA AAGAACCATTTAC ATTGCAGGG 
+NsrR_129                     10  3.75e-03  GTCTATTAT CATCGGCATATTA CAGATGAGC 
+NsrR_124                      2  3.75e-03          A ATCATGCCGATAA CTCATATAAC
+NsrR_91                       2  3.75e-03          A ATCATGCCGATAA CTCATATAAC
+NsrR_136                     10  5.16e-03  CGCAAAAAT CCTCTGCATTTTA CGCTCTTTT 
+NsrR_121                     11  8.15e-03 TAATCTGTTA AATATGTAAAATC CTGTCAGT  
+NsrR_122                     11  9.47e-03 TCAATGGAGT GATTTACATCTAA AAATGAAG  
+NsrR_135                     11  1.09e-02 TTTTTTGACT TAGATGGAACATT GCATCAGC  
+NsrR_117                     10  1.09e-02  GCAACAGGG TAAGTTCATCTTT TGTCTCACC 
+NsrR_112                     11  1.17e-02 GTTATCCCAT TACATGATTATGA GGCAACGC  
+NsrR_123                     10  1.34e-02  CATGCATGT AAATACCATGTTT ACCGTGCTA 
+NsrR_114                     10  1.34e-02  CTCAATAGC GAAGAACATTTTC ATTGCTGTA 
+NsrR_118                     11  1.75e-02 TAAATTAAAC AAAATGAGTAAGA AGATGCAG  
+NsrR_127                     11  5.23e-02 ATTTGTTGGC TAGATGGTTTCGC AATGAACT  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NsrR_4865                           1e-06  8_[+1]_18
+NsrR_3171                           1e-06  7_[+1]_19
+NsrR_4862                         1.5e-06  8_[+1]_18
+NsrR_132                          2.2e-06  10_[+1]_8
+NsrR_128                          3.1e-06  10_[+1]_8
+NsrR_4980                         9.3e-06  19_[+1]_7
+NsrR_137                          1.3e-05  9_[+1]_9
+NsrR_4886                         5.6e-05  8_[+1]_18
+NsrR_134                          6.5e-05  9_[+1]_9
+NsrR_116                          6.5e-05  10_[+1]_8
+NsrR_4887                         7.3e-05  10_[+1]_8
+NsrR_126                          8.2e-05  9_[+1]_9
+NsrR_125                          8.2e-05  9_[+1]_9
+NsrR_5184                         0.00014  9_[+1]_9
+NsrR_139                          0.00014  9_[+1]_9
+NsrR_106                          0.00014  10_[+1]_8
+NsrR_138                          0.00015  10_[+1]_8
+NsrR_133                          0.00019  9_[+1]_9
+NsrR_108                          0.00031  10_[+1]_8
+NsrR_119                          0.00034  9_[+1]_9
+NsrR_4864                         0.00043  8_[+1]_18
+NsrR_111                          0.00043  10_[+1]_8
+NsrR_109                          0.00048  8_[+1]_18
+NsrR_131                          0.00053  9_[+1]_9
+NsrR_120                          0.00065  10_[+1]_8
+NsrR_113                          0.00065  10_[+1]_8
+NsrR_115                          0.00097  9_[+1]_9
+NsrR_130                           0.0013  10_[+1]_8
+NsrR_105                           0.0014  9_[+1]_9
+NsrR_2344                          0.0029  13_[+1]_5
+NsrR_110                           0.0029  13_[+1]_5
+NsrR_107                           0.0032  9_[+1]_9
+NsrR_129                           0.0038  9_[+1]_9
+NsrR_124                           0.0038  1_[+1]_17
+NsrR_91                            0.0038  1_[+1]_17
+NsrR_136                           0.0052  9_[+1]_9
+NsrR_121                           0.0082  10_[+1]_8
+NsrR_122                           0.0095  10_[+1]_8
+NsrR_135                            0.011  10_[+1]_8
+NsrR_117                            0.011  9_[+1]_9
+NsrR_112                            0.012  10_[+1]_8
+NsrR_123                            0.013  9_[+1]_9
+NsrR_114                            0.013  9_[+1]_9
+NsrR_118                            0.017  10_[+1]_8
+NsrR_127                            0.052  10_[+1]_8
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AARATGCATWTTW width=13 seqs=45
+NsrR_4865                (    9) AAGATGCATTTAA  1 
+NsrR_3171                (    8) AAGATGCATTTGA  1 
+NsrR_4862                (    9) AAAATGCATTTCA  1 
+NsrR_132                 (   11) AAGATGCATTTCC  1 
+NsrR_128                 (   11) AAAATGCAATTTA  1 
+NsrR_4980                (   20) AAAATGCAAATTA  1 
+NsrR_137                 (   10) AAGAGGCATATTA  1 
+NsrR_4886                (    9) AACATGTATATTA  1 
+NsrR_134                 (   10) ATAATGCATCTTT  1 
+NsrR_116                 (   11) AAGATGCTGTTTT  1 
+NsrR_4887                (   11) AACATGCAGTTAT  1 
+NsrR_126                 (   10) GAATTGCAATTTA  1 
+NsrR_125                 (   10) GAATTGCAATTTA  1 
+NsrR_5184                (   10) GAAATGTATTTTT  1 
+NsrR_139                 (   10) AACGTGCATTTTG  1 
+NsrR_106                 (   11) AAAATACATTTCA  1 
+NsrR_138                 (   11) AATTTGCATATCA  1 
+NsrR_133                 (   10) GTAATGCATGTTA  1 
+NsrR_108                 (   11) AAGATGCAAAAAA  1 
+NsrR_119                 (   10) AAAAAGCATGTTT  1 
+NsrR_4864                (    9) AAGATGTAATATA  1 
+NsrR_111                 (   11) AAGATGAATTTCG  1 
+NsrR_109                 (    9) AAGTGGTATTTTA  1 
+NsrR_131                 (   10) CTGCTGCATTTTT  1 
+NsrR_120                 (   11) AACATGCTGTTAT  1 
+NsrR_113                 (   11) AAGATGAGTTTTT  1 
+NsrR_115                 (   10) TAAATACATCTTA  1 
+NsrR_130                 (   11) AAAATGTTATTTT  1 
+NsrR_105                 (   10) GAAATTCATCTTT  1 
+NsrR_2344                (   14) ATGTTGTAAATCA  1 
+NsrR_110                 (   14) ATGTTGTAAATCA  1 
+NsrR_107                 (   10) AAGAACCATTTAC  1 
+NsrR_129                 (   10) CATCGGCATATTA  1 
+NsrR_124                 (    2) ATCATGCCGATAA  1 
+NsrR_91                  (    2) ATCATGCCGATAA  1 
+NsrR_136                 (   10) CCTCTGCATTTTA  1 
+NsrR_121                 (   11) AATATGTAAAATC  1 
+NsrR_122                 (   11) GATTTACATCTAA  1 
+NsrR_135                 (   11) TAGATGGAACATT  1 
+NsrR_117                 (   10) TAAGTTCATCTTT  1 
+NsrR_112                 (   11) TACATGATTATGA  1 
+NsrR_123                 (   10) AAATACCATGTTT  1 
+NsrR_114                 (   10) GAAGAACATTTTC  1 
+NsrR_118                 (   11) AAAATGAGTAAGA  1 
+NsrR_127                 (   11) TAGATGGTTTCGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 911 bayes= 4.26637 E= 3.6e-019 
+    97   -130    -15   -154 
+   127   -288  -1214   -105 
+    15     -8    104   -154 
+   102   -130   -137    -86 
+  -194  -1214   -137    139 
+  -194   -189    225   -286 
+  -194    207   -196    -86 
+   123   -189   -196   -154 
+   -48  -1214    -63    100 
+   -24    -30   -137     66 
+  -161   -288  -1214    142 
+   -94     -8    -96     84 
+    71    -56   -196    -16 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 45 E= 3.6e-019 
+ 0.666667  0.066667  0.155556  0.111111 
+ 0.822222  0.022222  0.000000  0.155556 
+ 0.377778  0.155556  0.355556  0.111111 
+ 0.688889  0.066667  0.066667  0.177778 
+ 0.088889  0.000000  0.066667  0.844444 
+ 0.088889  0.044444  0.822222  0.044444 
+ 0.088889  0.688889  0.044444  0.177778 
+ 0.800000  0.044444  0.044444  0.111111 
+ 0.244444  0.000000  0.111111  0.644444 
+ 0.288889  0.133333  0.066667  0.511111 
+ 0.111111  0.022222  0.000000  0.866667 
+ 0.177778  0.155556  0.088889  0.577778 
+ 0.555556  0.111111  0.044444  0.288889 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AARATGCATWTTW MEME-1 regular expression
+--------------------------------------------------------------------------------
+AA[AG]ATGCA[TA][TA]TT[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.17 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NsrR_91                          6.89e-02  31
+NsrR_105                         2.68e-02  31
+NsrR_106                         2.58e-03  31
+NsrR_107                         5.85e-02  31
+NsrR_108                         5.78e-03  31
+NsrR_109                         1.28e-02  39
+NsrR_110                         5.38e-02  31
+NsrR_111                         8.10e-03  31
+NsrR_112                         2.00e-01  31
+NsrR_113                         1.22e-02  31
+NsrR_114                         2.26e-01  31
+NsrR_115                         1.83e-02  31
+NsrR_116                         1.23e-03  10_[+1(6.47e-05)]_8
+NsrR_117                         1.88e-01  31
+NsrR_118                         2.85e-01  31
+NsrR_119                         6.44e-03  31
+NsrR_120                         1.22e-02  31
+NsrR_121                         1.44e-01  31
+NsrR_122                         1.65e-01  31
+NsrR_123                         2.26e-01  31
+NsrR_124                         6.89e-02  31
+NsrR_125                         1.55e-03  9_[+1(8.16e-05)]_9
+NsrR_126                         1.55e-03  9_[+1(8.16e-05)]_9
+NsrR_127                         6.40e-01  31
+NsrR_128                         5.92e-05  10_[+1(3.12e-06)]_8
+NsrR_129                         6.89e-02  31
+NsrR_130                         2.43e-02  31
+NsrR_131                         9.99e-03  31
+NsrR_132                         4.09e-05  10_[+1(2.15e-06)]_8
+NsrR_133                         3.67e-03  31
+NsrR_134                         1.23e-03  9_[+1(6.47e-05)]_9
+NsrR_135                         1.88e-01  31
+NsrR_136                         9.36e-02  31
+NsrR_137                         2.47e-04  9_[+1(1.30e-05)]_9
+NsrR_138                         2.91e-03  31
+NsrR_139                         2.58e-03  31
+NsrR_2344                        5.38e-02  31
+NsrR_3171                        2.78e-05  7_[+1(1.03e-06)]_19
+NsrR_4862                        4.18e-05  8_[+1(1.55e-06)]_18
+NsrR_4864                        1.15e-02  39
+NsrR_4865                        2.78e-05  8_[+1(1.03e-06)]_18
+NsrR_4886                        1.51e-03  8_[+1(5.58e-05)]_18
+NsrR_4887                        1.39e-03  10_[+1(7.30e-05)]_8
+NsrR_4980                        2.50e-04  19_[+1(9.25e-06)]_7
+NsrR_5184                        2.58e-03  31
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: cf07cb8235a6
+
+********************************************************************************
